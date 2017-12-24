@@ -16,3 +16,12 @@
   * [Python OOP](/backend/02-python-oop.md)
   * [Django Intro](/backend/03-django-intro.md)
 
+* Robotică
+  * [robotics/dialog.md](/robotics/dialog.md)
+  * [robotics/dialog-box-how-to-create.md](/robotics/dialog-box-how-to-create.md)
+  * [robotics/flow-control.md](/robotics/flow-control.md)
+  * [robotics/tracker.md](/robotics/tracker.md)
+  * [robotics/convention.m](/robotics/convention.md)d
+
+
+
