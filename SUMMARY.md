@@ -11,10 +11,8 @@
   * [CSS Specificity](/frontend/x02-css-specificity.md)
   * [Javascript Intro](/frontend/x03-js-intro.md)
   * [Wireframes](/frontend/xx01-wireframes.md)
-* [backend/README.md](/backend/README.md)
-  * [backend/01-python-intro.md](/backend/01-python-intro.md)
-  * [backend/02-python-oop.md](/backend/02-python-oop.md)
-  * [backend/03-django-intro.md](/backend/03-django-intro.md)
-
-
+* [Backend](/backend/README.md)
+  * [Python Intro](/backend/01-python-intro.md)
+  * [Python OOP](/backend/02-python-oop.md)
+  * [Django Intro](/backend/03-django-intro.md)
 
