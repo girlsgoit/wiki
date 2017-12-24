@@ -21,11 +21,8 @@
   * [Flow Control](/robotics/flow-control.md)
   * [Tracker](/robotics/tracker.md)
   * [Convenția GirlsGoIT Robotics Choregraphe](/robotics/convention.md)
-
-* [archive/README.md](/archive/README.md)
-  * [archive/os-ubuntu-quest.md](/archive/os-ubuntu-quest.md)
-  * [archive/f-hello-flask.md](/archive/f-hello-flask.md)
-  * [archive/dpl-heroku-deploy.md](/archive/dpl-heroku-deploy.md)
-
-
+* [Arhiva](/archive/README.md)
+  * [Ubuntu Quest](/archive/os-ubuntu-quest.md)
+  * [Hello Flask](/archive/f-hello-flask.md)
+  * [Heroku Deploy](/archive/dpl-heroku-deploy.md)
 
