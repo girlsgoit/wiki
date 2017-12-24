@@ -2,15 +2,13 @@
 
 * [Introduction](README.md)
 * [Frontend](frontend.md)
-  * [How web works](/frontend/01-how-web-works.md)
-  * [frontend/02-html-intro.md](/frontend/02-html-intro.md)
-  * [frontend/03-css-intro.md](/frontend/03-css-intro.md)
-  * [frontend/04-milligram-intro.md](/frontend/04-milligram-intro.md)
-  * [frontend/05-bootstrap-intro.md](/frontend/05-bootstrap-intro.md)
-  * [frontend/x01-interactive.md](/frontend/x01-interactive.md)
-  * [frontend/x02-css-specificity.md](/frontend/x02-css-specificity.md)
-  * [frontend/x03-js-intro.md](/frontend/x03-js-intro.md)
-  * [frontend/xx01-wireframes.md](/frontend/xx01-wireframes.md)
-
-
+  * [How Web Works](/frontend/01-how-web-works.md)
+  * [HTML Intro](/frontend/02-html-intro.md)
+  * [CSS Intro](/frontend/03-css-intro.md)
+  * [Milligram Intro](/frontend/04-milligram-intro.md)
+  * [Bootstrap Intro](/frontend/05-bootstrap-intro.md)
+  * [ Interactive Pages](/frontend/x01-interactive.md)
+  * [CSS Specificity](/frontend/x02-css-specificity.md)
+  * [Javascript Intro](/frontend/x03-js-intro.md)
+  * [Wireframes](/frontend/xx01-wireframes.md)
 
