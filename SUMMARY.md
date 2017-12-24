@@ -15,13 +15,10 @@
   * [Python Intro](/backend/01-python-intro.md)
   * [Python OOP](/backend/02-python-oop.md)
   * [Django Intro](/backend/03-django-intro.md)
-
 * Robotică
-  * [robotics/dialog.md](/robotics/dialog.md)
-  * [robotics/dialog-box-how-to-create.md](/robotics/dialog-box-how-to-create.md)
-  * [robotics/flow-control.md](/robotics/flow-control.md)
-  * [robotics/tracker.md](/robotics/tracker.md)
-  * [robotics/convention.m](/robotics/convention.md)d
-
-
+  * [Dialog - QiChat](/robotics/dialog.md)
+  * [Cum creez un Dialog box](/robotics/dialog-box-how-to-create.md)
+  * [Flow Control](/robotics/flow-control.md)
+  * [Tracker](/robotics/tracker.md)
+  * [Convenția GirlsGoIT Robotics Choregraphe](/robotics/convention.md)
 
