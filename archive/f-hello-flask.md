@@ -1,8 +1,3 @@
----
-layout: default
-title: Hello Flask
----
-
 # Hello Flask
 
 Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 50 centimetri pe 50 centimetri. Bănuiesc că ai face asta destul de ușor. Acum taie 1000 de bucăți de hârtie de aceleași dimensiuni. Nu e foarte eficient să măsori bucățile de hârtie de 1000 de ori. O metodă de a soluţiona această problemă ar fi să faci un cadru al unei forme de 50 cm pe 50 cm ce ar permite tăierea hârtiei cu dimensiunile dorite fără măsurarea ei. Cam aceasta ar însemna să folosești un framework (cadru, schelet). Un framework permite efectuarea sarcinilor complicate sau repetitive rapid și eficient. Flask este un **web framework**, adică un framework ce facilitează crearea unui site web.

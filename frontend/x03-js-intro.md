@@ -1,9 +1,3 @@
----
-layout: default
-title: Javascript Intro
-category: advanced
----
-
 # Hello Javascript!
 
 Stiati voi oare ca aveti un puterea unui limbaj de programare in aplicatia folosita zi de zi - browserul vostru? 

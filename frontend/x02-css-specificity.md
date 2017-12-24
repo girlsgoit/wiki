@@ -1,9 +1,3 @@
----
-layout: default
-title: CSS Specificity
-category: advanced
----
-
 # Specificitatea CSS
 
 Specificitatea determină care stiluri trebuie aplicate atunci când au fost aplicate mai mult de o regulă. Bântuie părerea că importanța unui slector este direct proporțională cu lungimea acestuia, dar cu părere de rău realitatea stă departe de această afirmație.

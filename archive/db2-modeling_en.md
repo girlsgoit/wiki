@@ -1,10 +1,3 @@
-<!---
-layout: default
-title: Database Modeling
---->
-
-
-
 ## Database Modeling
 
 During this session we'll learn how to model the data inside your database. There are few approaches when it comes to model the database architecture. 

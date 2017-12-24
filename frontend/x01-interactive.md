@@ -1,9 +1,3 @@
----
-layout: default
-title: Interactive Pages
-category: basic
----
-
 # Interactive Web Pages
 
 ## Ce reprezintă pseudo-clasele în CSS?

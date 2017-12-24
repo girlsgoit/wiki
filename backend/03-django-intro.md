@@ -1,9 +1,3 @@
----
-layout: default
-title: Django Intro
-category: basic
----
-
 ## Setarea Mediului de Lucru
 
 ### 1. Instalarea Sublime Text

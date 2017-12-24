@@ -1,9 +1,3 @@
----
-layout: default
-title: CSS Intro
-category: basic
----
-
 ## Ce este CSS ?
 
 Lecția trecută am studiat cum să creăm o pagină web cu ajutorul HTML. Însă HTML este limbajul care definește structura documentului și nu ne oferă posibilitatea de a face pagina noastră să arate frumos.

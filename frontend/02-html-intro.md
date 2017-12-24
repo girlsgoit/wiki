@@ -1,9 +1,3 @@
----
-layout: default
-title: HTML Intro
-category: basic
----
-
 ## Ce este HTML?
 
 Hai să începem tutorialul prin a arăta paşii simpli pe care îi facem pentru a verifica de exemplu starea vremii pe www.meteo.md.

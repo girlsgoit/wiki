@@ -1,9 +1,3 @@
----
-layout: default
-title: Bootstrap Intro
-category: basic
----
-
 # Bootstrap
 
 [Bootstrap](getbootstrap.com) sau Twitter Bootstrap Framework este un conglomerat de intstrumente și șabloane stilizate ce au ca scop ușurarea și facilitarea dezvoltării aplicațiilor web.

@@ -1,4 +1,3 @@
-# Welcome to GirlsGoIT Wiki
+# Welcome to GirlsGoIT Wiki :tulip:
 
-Here will be an image
-
+![](/images/index.png)   

@@ -1,9 +1,3 @@
----
-layout: default
-title: Heroku Deploy
-category: basic
----
-
 # Heroku Deployment
 
 ###### Cuvinte cheie:

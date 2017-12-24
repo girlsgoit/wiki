@@ -1,9 +1,3 @@
----
-layout: default
-title: Milligram Intro
-category: basic
----
-
 ## Intro
 
 Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go-it.github.io/tutorials/frontend/02-html-intro/) și [**CSS**](http://girls-go-it.github.io/tutorials/frontend/03-css-intro/), mai ales atunci când elementele create arată bine fără un efort adițional considerabil. Pentru acest scop, poate fi utilizat [**Milligram**](http://milligram.io/). 
