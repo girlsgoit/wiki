@@ -1,7 +1,3 @@
----
-description: ablablabla
----
-
 # Introduction
 
 ## Welcome to GirlsGoIT Wiki 🌷
