@@ -33,5 +33,4 @@
 * [Ubuntu Quest](arhiva/ubuntu-quest.md)
 * [Hello Flask](arhiva/hello-flask.md)
 * [Heroku Deploy](arhiva/heroku-deploy.md)
-* [RO](https://girlsgoit.gitbook.io/wiki-ro)
 
