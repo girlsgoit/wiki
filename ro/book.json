@@ -1,8 +1,0 @@
-{
-    "plugins": [
-        "advanced-emoji"
-    ],
-    "styles": {
-        "website": "styles/website.css"
-    }
-}
