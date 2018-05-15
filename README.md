@@ -1,3 +1,8 @@
-# Welcome to GirlsGoIT Wiki :tulip:
+---
+description: ablablabla
+---
 
-![](/images/index.png)   
+# Introduction
+
+![](.gitbook/assets/index.png)
+

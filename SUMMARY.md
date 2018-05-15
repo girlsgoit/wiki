@@ -1,30 +1,36 @@
-# Summary
+# Table of contents
 
-### [Introduction](README.md)
-### FRONTEND
-* [How Web Works](/frontend/01-how-web-works.md)
-* [HTML Intro](/frontend/02-html-intro.md)
-* [CSS Intro](/frontend/03-css-intro.md)
-* [Milligram Intro](/frontend/04-milligram-intro.md)
-* [Bootstrap Intro](/frontend/05-bootstrap-intro.md)
-* [Interactive Pages](/frontend/x01-interactive.md)
-* [CSS Specificity](/frontend/x02-css-specificity.md)
-* [Javascript Intro](/frontend/x03-js-intro.md)
-* [Wireframes](/frontend/xx01-wireframes.md)
+* [Introduction](README.md)
 
-### BACKEND
-* [Python Intro](/backend/01-python-intro.md)
-* [Python OOP](/backend/02-python-oop.md)
-* [Django Intro](/backend/03-django-intro.md)
+## FRONTEND
 
-### ROBOTICĂ
-* [Dialog - QiChat](/robotics/dialog.md)
-* [Cum creez un Dialog box](/robotics/dialog-box-how-to-create.md)
-* [Flow Control](/robotics/flow-control.md)
-* [Tracker](/robotics/tracker.md)
-* [Convenția GirlsGoIT Robotics Choregraphe](/robotics/convention.md)
+* [How Web Works](frontend/how-web-works.md)
+* [HTML Intro](frontend/html-intro.md)
+* [CSS Intro](frontend/css-intro.md)
+* [Milligram Intro](frontend/milligram-intro.md)
+* [Bootstrap Intro](frontend/bootstrap-intro.md)
+* [Interactive Pages](frontend/interactive-pages.md)
+* [CSS Specificity](frontend/css-specificity.md)
+* [Javascript Intro](frontend/javascript-intro.md)
+* [Wireframes](frontend/wireframes.md)
 
-### ARHIVA
-* [Ubuntu Quest](/archive/os-ubuntu-quest.md)
-* [Hello Flask](/archive/f-hello-flask.md)
-* [Heroku Deploy](/archive/dpl-heroku-deploy.md)
+## BACKEND
+
+* [Python Intro](backend/python-intro.md)
+* [Python OOP](backend/python-oop.md)
+* [Django Intro](backend/django-intro.md)
+
+## ROBOTICĂ
+
+* [Dialog - QiChat](robotica/dialog-qichat.md)
+* [Cum creez un Dialog box](robotica/cum-creez-un-dialog-box.md)
+* [Flow Control](robotica/flow-control.md)
+* [Tracker](robotica/tracker.md)
+* [Convenția GirlsGoIT Robotics Choregraphe](robotica/conventia-girlsgoit-robotics-choregraphe.md)
+
+## ARHIVA
+
+* [Ubuntu Quest](arhiva/ubuntu-quest.md)
+* [Hello Flask](arhiva/hello-flask.md)
+* [Heroku Deploy](arhiva/heroku-deploy.md)
+
