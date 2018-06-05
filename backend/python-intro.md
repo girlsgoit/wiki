@@ -567,7 +567,7 @@ print(current_day)
 
 Primele două linii deja le înțelegeți. În linia a treia, am luat `anul` din variabila `now` și l-am stocat în `current_year`. În liniile patru și cinci, am stocat `luna` și `ziua` din `now`.
 
-Să zicem că noi dorim să afișăm data de azi în formatul următor: _lună/ziuă/an_. Cum putem face asta? Aici ne vine în ajutor **substituția **`string`**-urilor**!
+Să zicem că noi dorim să afișăm data de azi în formatul următor: _lună/ziuă/an_. Cum putem face asta? Aici ne vine în ajutor **substituția** `string`**-urilor**!
 
 ```python
 from datetime import datetime
@@ -1352,7 +1352,7 @@ for i in range(10):
 
 `range` este o funcție care primește un parametru `n` și returnează o listă de la `0` la `n-1`.
 
-Această sintaxă ne spune următoarele: _"pentru fiecare număr _`i`_ din range de la _`0`_ la _`10`_, afișează _`i`_"_.
+Această sintaxă ne spune următoarele: _"pentru fiecare număr_ `i` _din range de la_ `0` _la_ `10`_, afișează_ `i`_"_.
 
 Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` \(sau `elif`, `else`\), necesită două puncte la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie identat.
 

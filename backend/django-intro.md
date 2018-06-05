@@ -118,7 +118,7 @@ Dar daca ne uitam in folderul **blog** sau mai general folderul applicatiei in p
 
 Observam ca fisierul **urls.py** lipseste din folderul applicatiei blog. Inseamna ca trebuie sa il adaugam
 
-Apasam **Click Dreapta** pe folderul applicatiei, in cazul dat **blog** si dam click la ** New File**
+Apasam **Click Dreapta** pe folderul applicatiei, in cazul dat **blog** si dam click la  **New File**
 
 Apoi mai jos dam denumirea fisierului **urls.py**. Asa am creat un fisier python. ![URLS](../.gitbook/assets/img6.png)
 

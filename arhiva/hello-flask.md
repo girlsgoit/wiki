@@ -185,7 +185,7 @@ Accesează acum `localhost:5000/date` şi totul trebuie să ruleze bine:
 
 ![](../.gitbook/assets/fixed_error.png)
 
-Probabil o să te întrebi: _"De ce nu am scris de la început _`'Azi e 20 august.'`_? Fără ca să-mi mai bat capul de _`string`_-uri, _`int`_-uri, concatenare..."_  
+Probabil o să te întrebi: _"De ce nu am scris de la început_ `'Azi e 20 august.'`_? Fără ca să-mi mai bat capul de_ `string`_-uri,_ `int`_-uri, concatenare..."_  
  Răspunsul e simplu: **flexibilitate**. Efectuând câteva modificări mici, poţi face ca pagina ta să afişeze data corect în fiecare zi a anului şi nu doar pe `20 august`. Importă modulul `datetime` despre care ţi s-a vorbit la **Basic Python Statements**, care îţi va permite să manipulezi timpul ca ora sau data \(dar nu; nu vei putea să călătoreşti în timp\). Scrie următorul cod chiar sub `from flask import Flask`:
 
 ```python
