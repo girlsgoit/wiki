@@ -22,15 +22,15 @@
 
 ## ROBOTICĂ
 
-* [Dialog - QiChat](robotica/dialog-qichat.md)
-* [Cum creez un Dialog box](robotica/cum-creez-un-dialog-box.md)
-* [Flow Control](robotica/flow-control.md)
-* [Tracker](robotica/tracker.md)
-* [Convenția GirlsGoIT Robotics Choregraphe](robotica/conventia-girlsgoit-robotics-choregraphe.md)
 * [mBlock](robotica/mblock.md)
 
 ## ARHIVA
 
+* [Dialog - QiChat](arhiva/dialog-qichat.md)
+* [Convenția GirlsGoIT Robotics Choregraphe](arhiva/conventia-girlsgoit-robotics-choregraphe.md)
+* [Tracker](arhiva/tracker.md)
+* [Flow Control](arhiva/flow-control.md)
+* [Cum creez un Dialog box](arhiva/cum-creez-un-dialog-box.md)
 * [Ubuntu Quest](arhiva/ubuntu-quest.md)
 * [Hello Flask](arhiva/hello-flask.md)
 * [Heroku Deploy](arhiva/heroku-deploy.md)
