@@ -37,3 +37,7 @@
 
 ## 3D Printing
 
+## Exerciții
+
+* [Frontend 1](exercitii/frontend-1.md)
+
