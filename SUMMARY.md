@@ -5,12 +5,12 @@
 ## FRONTEND
 
 * [How Web Works](frontend/how-web-works.md)
-* [HTML Intro](frontend/html-intro.md)
-* [CSS Intro](frontend/css-intro.md)
-* [Milligram Intro](frontend/milligram-intro.md)
+* [HTML](frontend/html-intro.md)
+* [CSS](frontend/css-intro.md)
+* [Milligram](frontend/milligram-intro.md)
 * [Bootstrap Intro](frontend/bootstrap-intro.md)
-* [Interactive Pages](frontend/interactive-pages.md)
-* [CSS Specificity](frontend/css-specificity.md)
+* [CSS Avansat](frontend/interactive-pages.md)
+* [CSS Specificitate](frontend/css-specificity.md)
 * [Javascript Intro](frontend/javascript-intro.md)
 * [Wireframes](frontend/wireframes.md)
 * [Exerciții](frontend/frontend-1.md)

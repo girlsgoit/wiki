@@ -1,4 +1,4 @@
-# Milligram Intro
+# Milligram
 
 ## Intro
 
