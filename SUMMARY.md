@@ -16,7 +16,7 @@
 
 ## BACKEND
 
-* [Python Intro](backend/python-intro.md)
+* [Python](backend/python-intro.md)
 * [Python OOP](backend/python-oop.md)
 * [Django Intro](backend/django-intro.md)
 
