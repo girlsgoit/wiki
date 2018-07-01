@@ -1,4 +1,4 @@
-# Frontend 1
+# Exerciții
 
 ## HTML
 

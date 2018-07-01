@@ -13,6 +13,7 @@
 * [CSS Specificity](frontend/css-specificity.md)
 * [Javascript Intro](frontend/javascript-intro.md)
 * [Wireframes](frontend/wireframes.md)
+* [Exerciții](frontend/frontend-1.md)
 
 ## BACKEND
 
@@ -38,6 +39,4 @@
 ## 3D Printing
 
 ## Exerciții
-
-* [Frontend 1](exercitii/frontend-1.md)
 
