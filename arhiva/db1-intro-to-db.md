@@ -1,4 +1,4 @@
-# Introducere in baza de date [[slides](http://slides.com/glebtocarenco/introducere-in-baze-de-date/live#/)]
+# Introducere in baze de date
 In acest tutorial vei primi raspunsuri la sa inrebari ca:
 
 - De ce avem nevoie de baza de date?
