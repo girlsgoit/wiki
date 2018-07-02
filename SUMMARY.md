@@ -2,13 +2,12 @@
 
 * [Introduction](README.md)
 
-## FRONTEND
+## FRONTEND STATIC
 
-* [How Web Works](frontend/how-web-works.md)
+* [Ce este internetul?](frontend/how-web-works.md)
 * [HTML](frontend/html-intro.md)
 * [CSS](frontend/css-intro.md)
 * [Milligram](frontend/milligram-intro.md)
-* [Javascript](frontend/javascript-intro.md)
 * [Exerciții](frontend/frontend-1.md)
 
 ## BACKEND
@@ -34,4 +33,8 @@
 * [Heroku Deploy](arhiva/heroku-deploy.md)
 
 ## 3D Printing
+
+## FRONTEND DINAMIC
+
+* [Javascript](frontend-dinamic/javascript-intro.md)
 
