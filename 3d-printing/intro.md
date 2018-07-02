@@ -1,4 +1,4 @@
 # Intro
 
-TODO
+În curând va apărea.
 
