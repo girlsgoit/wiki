@@ -8,7 +8,6 @@
 * [HTML](frontend/html-intro.md)
 * [CSS](frontend/css-intro.md)
 * [CSS Avansat](frontend/interactive-pages.md)
-* [CSS Specificitate](frontend/css-specificity.md)
 * [Milligram](frontend/milligram-intro.md)
 * [Javascript](frontend/javascript-intro.md)
 * [Wireframes](frontend/wireframes.md)

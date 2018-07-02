@@ -194,5 +194,131 @@ Completează spațiile libere și vezi ce v-a apărea în pagina ta web.
 </html>
 ```
 
+## Wireframes
+
+### Articol
+
+![](../.gitbook/assets/article-1%20%286%29.png)
+
+![](../.gitbook/assets/article-2.png)
+
+![](../.gitbook/assets/article-3%20%281%29.png)
+
+![](../.gitbook/assets/article-4.png)
+
+![](../.gitbook/assets/article-5.png)
+
+![](../.gitbook/assets/article-6.png)
+
+![](../.gitbook/assets/article-7.png)
+
+![](../.gitbook/assets/article-8.png)
+
+### Blog
+
+![](../.gitbook/assets/blog-1.png)
+
+![](../.gitbook/assets/blog-2.png)
+
+![](../.gitbook/assets/blog-3.png)
+
+![](../.gitbook/assets/blog-4.png)
+
+![](../.gitbook/assets/blog-5.png)
+
+![](../.gitbook/assets/blog-6.png)
+
+![](../.gitbook/assets/blog-7.png)
+
+![](../.gitbook/assets/blog-8.png)
+
+### Contacte
+
+![](../.gitbook/assets/contacts-1.png)
+
+![](../.gitbook/assets/contacts-2.png)
+
+![](../.gitbook/assets/contacts-3.png)
+
+![](../.gitbook/assets/contacts-4.png)
+
+![](../.gitbook/assets/contacts-5.png)
+
+![](../.gitbook/assets/contacts-6.png)
+
+![](../.gitbook/assets/contacts-7.png)
+
+![](../.gitbook/assets/contacts-8.png)
+
+### Content
+
+![](../.gitbook/assets/content-1.png)
+
+![](../.gitbook/assets/content-2.png)
+
+![](../.gitbook/assets/content-3.png)
+
+![](../.gitbook/assets/content-4.png)
+
+![](../.gitbook/assets/content-5.png)
+
+![](../.gitbook/assets/content-6.png)
+
+![](../.gitbook/assets/content-7.png)
+
+![](../.gitbook/assets/content-8.png)
+
+### Galerie
+
+![](../.gitbook/assets/gallery-1.png)
+
+![](../.gitbook/assets/gallery-2.png)
+
+![](../.gitbook/assets/gallery-3.png)
+
+### Multimedia
+
+![](../.gitbook/assets/multimedia-1%20%281%29.png)
+
+![](../.gitbook/assets/multimedia-2%20%281%29.png)
+
+![](../.gitbook/assets/multimedia-3.png)
+
+![](../.gitbook/assets/multimedia-4.png)
+
+![](../.gitbook/assets/multimedia-5.png)
+
+### Produse
+
+![](../.gitbook/assets/product-1.png)
+
+![](../.gitbook/assets/product-2.png)
+
+![](../.gitbook/assets/product-3.png)
+
+![](../.gitbook/assets/product-4.png)
+
+![](../.gitbook/assets/product-5.png)
+
+![](../.gitbook/assets/product-6.png)
+
+![](../.gitbook/assets/product-7.png)
+
+![](../.gitbook/assets/product-8.png)
+
+### Echipa
+
+![](../.gitbook/assets/team-1.png)
+
+![](../.gitbook/assets/team-2.png)
+
+![](../.gitbook/assets/team-3.png)
+
+![](../.gitbook/assets/team-4.png)
+
+![](../.gitbook/assets/team-5.png)
+
+![](../.gitbook/assets/team-6.png)
+
 
 
