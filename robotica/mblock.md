@@ -1,7 +1,3 @@
----
-description: Tutorial mBlock(Scratch 2.0)
----
-
 # mBlock
 
 ## Ce este mBlock? 

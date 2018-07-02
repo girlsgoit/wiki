@@ -4,33 +4,29 @@
 
 ## FRONTEND STATIC
 
-* [Internet](frontend/how-web-works.md)
-* [HTML](frontend/html-intro.md)
-* [CSS](frontend/css-intro.md)
-* [Milligram](frontend/milligram-intro.md)
-* [Exerciții](frontend/frontend-1.md)
+* [Internet](frontend-static/internet.md)
+* [HTML](frontend-static/html.md)
+* [CSS](frontend-static/css.md)
+* [Milligram](frontend-static/milligram.md)
+* [Exerciții](frontend-static/exercitii.md)
 
 ## FRONTEND DINAMIC
 
-* [JavaScript](frontend-dinamic/javascript-intro.md)
+* [JavaScript](frontend-dinamic/javascript.md)
 
 ## BACKEND
 
-* [Python](backend/python-intro.md)
+* [Python](backend/python.md)
 * [Python OOP](backend/python-oop.md)
 * [Django Intro](backend/django-intro.md)
-
-## 3D Printing
 
 ## ROBOTICĂ
 
 * [mBlock](robotica/mblock.md)
 
-## DRONE
-
 ## ARHIVA
 
-* [Bootstrap](arhiva/bootstrap-intro.md)
+* [Bootstrap](arhiva/bootstrap.md)
 * [Hello Flask](arhiva/hello-flask.md)
 * [Heroku Deploy](arhiva/heroku-deploy.md)
 * [Ubuntu Quest](arhiva/ubuntu-quest.md)
@@ -40,4 +36,11 @@
 * [Flow Control](arhiva/flow-control.md)
 * [Cum creez un Dialog box](arhiva/cum-creez-un-dialog-box.md)
 
+## 3D Printing
+
+* [Intro](3d-printing/intro.md)
+
+## Drone
+
+* [Intro](drone/intro.md)
 
