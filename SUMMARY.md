@@ -4,7 +4,7 @@
 
 ## FRONTEND STATIC
 
-* [Ce este internetul?](frontend/how-web-works.md)
+* [Internet](frontend/how-web-works.md)
 * [HTML](frontend/html-intro.md)
 * [CSS](frontend/css-intro.md)
 * [Milligram](frontend/milligram-intro.md)
@@ -36,5 +36,5 @@
 
 ## FRONTEND DINAMIC
 
-* [Javascript](frontend-dinamic/javascript-intro.md)
+* [JavaScript](frontend-dinamic/javascript-intro.md)
 

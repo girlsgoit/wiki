@@ -1,4 +1,4 @@
-# Ce este internetul?
+# Internet
 
 ​​Posibil îți imaginezi că internetul este router-ul wifi de acasă, data centers gigante undeva prin lume, numerele care se rotesc printr-un tub.
 

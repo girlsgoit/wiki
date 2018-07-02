@@ -194,6 +194,396 @@ Completează spațiile libere și vezi ce v-a apărea în pagina ta web.
 </html>
 ```
 
+## CSS Selectori
+
+Selectează toate tag-urile `<p>` din pagină.
+
+```markup
+<div>
+  <p>Dog</p>
+  <p>Cat</p>
+</div>
+```
+
+Selectează toate tag-urile `<span>` din pagină.
+
+```markup
+<div>
+  <span>Dog</span>
+  <p>Cat</p>
+  <span>Fish</span>
+</div>
+```
+
+Selectează tag-ul `<span>` cu clasa „black”.
+
+```markup
+<div>
+  <span class="black">Dog</span>
+  <p>Cat</p>
+  <span>Fish</span>
+</div>
+```
+
+Selectează tag-ul `<span>` care se află în tag-ul `<p>`.
+
+```markup
+<div>
+  <span class="black">Dog</span>
+  <p>
+    <span>Cat</span>
+  </p>
+  <span class="ultimul">Fish</span>
+</div>
+```
+
+Selectează tag-ul `<img>` care se află în tag-ul `<span>` cu clasa „black”.
+
+```markup
+<div>
+  <span class="black">
+    <img src="dog.jpg">
+  </span>
+  <span>
+    <img src="cat.jpg">
+  </span>
+  <img src="fish.jpg">
+</div>
+```
+
+Selectează tag-urile `<img>` cu clasa „animals”.
+
+```markup
+<div>
+  <p>
+    <img src="dog.jpg" class="animals">
+  </p>
+  <span>
+    <img src="cat.jpg">
+  </span>
+  <img src="fish.jpg" class="animals">
+</div>
+```
+
+Selectează tag-urile `<img>` cu clasa „animals” care se află în tag-urile `<p>`.
+
+```markup
+<div>
+  <p>
+    <img src="dog.jpg" class="animals">
+  </p>
+  <span>
+    <img src="cat.jpg" class="animals">
+  </span>
+  <img src="fish.jpg" class="animals">
+</div>
+```
+
+Selectează toate tag-urile `<img>` și `<p>`.
+
+```markup
+<div>
+  <p>
+    <img src="dog.jpg" class="animals">
+  </p>
+  <span>
+    <img src="cat.jpg" class="animals">
+  </span>
+  <img src="fish.jpg" class="animals">
+</div>
+```
+
+Selectează doar tag-urile `<span>` cu clasa „fancy”.
+
+```markup
+<div>
+  <h2>Poetry</h2>
+  <p class="fancy">Roses are red,</p>
+  <span class="fancy">Violets are blue.</span>
+  <p>CSS is awesome</p>
+  <span class="fancy">And pandas eat bamboo!</span>
+  <span>The End!</span>
+</div>
+```
+
+Selectează tag-ul `<span>` cu clasa „hidden” și conținutul „_I am the most hidden”_.
+
+```markup
+<div>
+  <span class="outside">I am outside</span>
+  <div>
+    <span class="hidden">I am hidden</span>
+    <div>
+      <span class="hidden">I am the most hidden</span>
+    </div>
+  </div>
+</div>
+```
+
+## CSS Proprietăți
+
+Modifică culoarea următorului paragraf în „blue”.
+
+```markup
+<p class="albastru">
+    Lorem ipsum dolor sit amet, sed dictas patrioque et. Ex efficiendi concludaturque vix, lorem utroque qui an. Pro semper timeam conceptam ad, pro vulputate deseruisse definitionem ad. Ex eos invidunt expetendis, hinc dolorem blandit no nam. Ne sed honestatis complectitur.
+</p>
+```
+
+Pentru următorul citat, aliniază numele autorului pe partea dreaptă.
+
+```markup
+<p class="citat">
+    „Dacă am făcut descoperiri valoroase în viaţă, aceasta se datorează mai mult răbdării şi atenţiei decât oricărui alt talent.”
+</p>
+<h4 class="autor">Isaac Newton</h4>
+```
+
+Pentru următorul citat, mărește textul citatului la „18px”, iar numele autorului la „21px”.
+
+```markup
+<p class="citat">
+	„Mulţi dintre cei care eşuează în viaţă sunt persoane care nu au realizat cât de aproape au fost de succes în momentul în care au renunţat.”
+</p>
+<h4 class="autor">Thomas A. Edison</h4>
+```
+
+Subliniază cu o linie și mărește grosimea termenului următoarei noțiuni. Modifică culoarea pe fundal în „hotpink”.
+
+```markup
+<div class="definitie">
+  <span class="notiune">Ninja</span> - luptător bine antrenat, cu costum special. Uneori acest termen se atribuie unei persoane care excelează într-o anumită abilitate sau în îndeplinirea unei sarcini.
+</div>
+```
+
+Modifică spațiul între litere la „1.5px” în textul următorului citat.
+
+```markup
+<p class="citat">
+	Timpul este limitat, nu ţi-l pierde trăind viaţă altcuiva. Nu te lasă prins în teoriile altora. Nu lasă opiniile zgomotoase ale altora să-ţi acopere vocea interioară. Şi cel mai important, ai curajul să-ţi urmezi inima şi intuiţia. Într-un fel, cele două ştiu ce vrei să devii. Toate celelalte sunt pe planul secund.
+</p>
+<h4 class="autor">Steve Jobs</h4>
+```
+
+## CSS Poziționare
+
+Poziționează butonul {save} în colțul dreapta-jos „10px x 10px” fiind disponibil chiar dacă scrolăm pagina.
+
+```markup
+<section>
+	<button>SAVE</button>
+	<img src="https://picsum.photos/1280/500?image=460" alt="">
+	<p>You love having a second home but the mortgage is putting a crater in your wallet. Many second home owners turn to renting their property as a vacation rental to help defray the costs of ownership. How do you price a vacation home rental without overcharging but making enough to cover your costs? Do your research.</p>
+
+	<p>Find out what other owners of, similar sized homes in the area are charging. You can ask a local real estate agent for a price range, scan local papers or go online. There are also vacation rental sites like eVaca.com. These types of sites have advertisements from owners around the world and weekly rates for the properties are listed.</p>
+	<img src="https://picsum.photos/1280/500?image=464" alt="">
+	<p>The time of year you rent out a property is important as well. If you want to rent out a ski lodge in Vermont, August is not going to be your “high time” of year, but January will. If you are going to rent the property in an “off” time of year you will not be able to charge as much as if you were renting the property in a peak time.</p>
+
+	<p>You also want to figure out what lengths you want to rent your property for. A Florida property in July near the beach will go for top dollar for a week. However, that same property in January you might only attract the snowbirds who want to rent at a lower price and rent it out on a monthly basis. You have to answer questions like, “do I want to mess around with weekend or nightly rentals” and “is it worth the hassle”.</p>
+</section>
+```
+
+```css
+button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+	background-color: #27a8f7;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+```
+
+Poziționează cardul astfel ca „70px” din el să fie pe imagine și spațiul inițial ocupat de card să rămână același.
+
+```markup
+<section>
+	<img src="https://picsum.photos/1280/400?image=1076" alt="">
+
+	<div class="card">
+		<h1>Card</h1>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, saepe quae doloribus recusandae praesentium odio eveniet in assumenda animi quisquam. Tempora voluptatem deleniti iure labore! Quas mollitia illo ad. Eos.</p>
+	</div>
+
+	<img src="https://picsum.photos/1280/400?image=1031" alt="">
+	<div class="card">
+		<h1>Card</h1>
+		<p>Ipsum dolor sit, lorem, amet consectetur adipisicing elit. Facere, saepe quae doloribus recusandae praesentium odio eveniet in assumenda animi quisquam. Tempora voluptatem deleniti iure labore! Quas mollitia illo ad. Eos.</p>
+	</div>
+</section>
+```
+
+```css
+body {
+	background-color: #333;
+}
+
+img {
+	width: 100%;
+}
+
+.card {
+	width: 400px;
+	max-width: 90%;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #333;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+h1 {
+	font-size: 46px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+```
+
+Poziționează titlurile  și  pe imagine centru-jos.
+
+```markup
+<section class="hero">
+	<img src="https://picsum.photos/1280/550?image=465" alt="">
+	
+	<div>
+		<h1>The Amazing Hubble</h1>
+		<h3>South Alfonsoville</h3>
+	</div>
+</section>
+
+<section>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum illo officia, eius, dicta dignissimos tempora ad optio, voluptate itaque ipsum eveniet quibusdam aliquam incidunt consequuntur enim repellendus ut! Animi, sequi!</p>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, laborum consequuntur. Ducimus ea dolorum impedit laudantium accusamus doloribus unde! Aliquam, qui! Autem tenetur tempora commodi labore facilis expedita dolor porro.</p>
+</section>
+```
+
+```css
+img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 46px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 28px; 
+}
+
+p {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+```
+
+Poziționează titlurile `<h1>` și `<h3>` pe imagine centru-jos și elementul cu clasa „overlay” pe imagine și în spatele titlurilor.
+
+```markup
+<section>
+	<img src="https://picsum.photos/1280/500?image=40" alt="">
+	
+	<div class="titles">
+		<h1>Title</h1>
+		<h3>Lorem Ipsum Dolor</h3>
+	</div>
+	
+	<div class="overlay"></div>
+</section>
+```
+
+```css
+body {
+	background-color: #333;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 46px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h1, h3 {
+	color: #fff;
+}
+
+.overlay {
+	background: rgba(0, 0, 0, 0.85);
+}
+```
+
+Poziționează elementul cu clasa „popup-overlay” pe toate elementele din pagină și elementul cu clasa boxa albă cu butoane centru-jos „50px”.
+
+```markup
+<section>
+	<h1>Lorem</h1>
+	<img src="https://picsum.photos/1280/720" alt="">
+</section>
+<section>
+	<h1>Lorem</h1>
+	<img src="https://picsum.photos/1280/720" alt="">
+</section>
+<div class="popup-overlay">
+	<div class="popup-container">
+		<div class="popup">
+			<h4>Lorem Ipsum</h4>
+			<button class="button">Yes</button>
+			<button class="button">No</button>
+		</div>
+	</div>
+</div>
+```
+
+```css
+img {
+	width: 100%;
+}
+
+h4 {
+	text-align: center;
+}
+
+.button {
+	margin: 0;
+}
+
+.popup-overlay {
+	background-color: rgba(0,0,0,0.7);
+	padding: 5px;
+}
+
+.popup {
+	display: inline-block;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+}
+```
+
 ## Wireframes
 
 ### Articol
