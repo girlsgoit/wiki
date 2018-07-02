@@ -24,6 +24,14 @@
 
 * [mBlock](robotica/mblock.md)
 
+## 3D Printing
+
+* [Intro](3d-printing/intro.md)
+
+## Drone
+
+* [Intro](drone/intro.md)
+
 ## ARHIVA
 
 * [Bootstrap](arhiva/bootstrap.md)
@@ -35,12 +43,4 @@
 * [Tracker](arhiva/tracker.md)
 * [Flow Control](arhiva/flow-control.md)
 * [Cum creez un Dialog box](arhiva/cum-creez-un-dialog-box.md)
-
-## 3D Printing
-
-* [Intro](3d-printing/intro.md)
-
-## Drone
-
-* [Intro](drone/intro.md)
 
