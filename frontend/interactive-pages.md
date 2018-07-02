@@ -1,6 +1,6 @@
 # CSS Avansat
 
-## Interactive Web Pages
+## Pseudo-clase și pseudo-elemente
 
 ### Ce reprezintă pseudo-clasele în CSS?
 
@@ -170,9 +170,9 @@ div:hover {
 }
 ```
 
-Pentru demo click [**aici**](https://jsfiddle.net/smqurzas/)
+Pentru demo click [**aici**](https://jsfiddle.net/smqurzas/)**.**
 
-### **BONUS:** Blur Menu
+### Blur Menu
 
 Pentru că sunt foarte multe lucruri care pot fi efectuate cu tranzițiile și transformările în CSS, o să experimentăm cu scopul de a realiza un efect de blur asupra unei bare de meniu.
 
@@ -228,4 +228,38 @@ Elementele HTML:
 ```
 
 Pentru demo click [**aici**](https://jsfiddle.net/28d7yvdx/)
+
+## Specificitate
+
+Specificitatea determină care stiluri trebuie aplicate atunci când au fost aplicate mai mult de o regulă. Bântuie părerea că importanța unui slector este direct proporțională cu lungimea acestuia, dar cu părere de rău realitatea stă departe de această afirmație.
+
+### Punctajul selectorelor
+
+Pentru a calcula specificitatea unui selectore putem folosi tabelul de mai jos.
+
+| Tag | 1 punct |
+| --- | --- | --- | --- |
+| Clasă | 10 puncte |
+| ID | 100 puncte |
+| Inline | 1000 puncte |
+
+### Un exemplu?
+
+| Selector | Specificitate |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| \* { } | 0 \(selector universal\) |
+| li { } | 1 \(un tag\) |
+| ul li { } | 2 \(două tag-uri\) |
+| ul ol li.red { } | 13 \(o clasă și trei tag-uri\) |
+| li.red.level { } | 21 \(două clase și un tag\) |
+| style=“” | 1000 puncte \(inline / pe tag\) |
+| .sith | 10 \(o clasă\) |
+| \#sith | 100 \(un ID\) |
+| body \#darkside .sith p { } | 112 \(un ID, o clasă și două tag-uri\) |
+
+În acest [exemplu](https://jsfiddle.net/gxep08g0/) putem vedea cum 6 clase nu sunt în stare să „bată” un singur ID.
+
+### Cum pot exersa?
+
+Noi am pregătit un [joc interactiv](http://apps.vsart.me/csswar/) care ilustrează comportamentele selectorelor CSS în diferite situații. Pentru a savura pe deplin aventura, vreau să vă recomand să parcurgeți un scurt ghid de introducere în acest joc.
 
