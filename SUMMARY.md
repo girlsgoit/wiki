@@ -7,10 +7,8 @@
 * [How Web Works](frontend/how-web-works.md)
 * [HTML](frontend/html-intro.md)
 * [CSS](frontend/css-intro.md)
-* [CSS Avansat](frontend/interactive-pages.md)
 * [Milligram](frontend/milligram-intro.md)
 * [Javascript](frontend/javascript-intro.md)
-* [Wireframes](frontend/wireframes.md)
 * [Exerciții](frontend/frontend-1.md)
 
 ## BACKEND
@@ -36,6 +34,4 @@
 * [Heroku Deploy](arhiva/heroku-deploy.md)
 
 ## 3D Printing
-
-## Exerciții
 
