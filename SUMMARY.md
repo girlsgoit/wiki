@@ -37,12 +37,16 @@
 * [Bootstrap](arhiva/bootstrap.md)
 * [Hello Flask](arhiva/hello-flask.md)
 * [Heroku Deploy](arhiva/heroku-deploy.md)
-* [Baze de date](arhiva/db1-intro-to-db.md)
-* [DB Modeling](arhiva/db2-modeling_en.md)
+* [Baze de date](arhiva/baze-de-date.md)
+* [DB Modeling](arhiva/db-modeling.md)
 * [Ubuntu Quest](arhiva/ubuntu-quest.md)
-* [Dialog - QiChat](arhiva/dialog-qichat.md)
-* [Convenția GirlsGoIT Robotics Choregraphe](arhiva/conventia-girlsgoit-robotics-choregraphe.md)
-* [Tracker](arhiva/tracker.md)
-* [Flow Control](arhiva/flow-control.md)
-* [Cum creez un Dialog box](arhiva/cum-creez-un-dialog-box.md)
-* [Finalizarea proiectelor](arhiva/finalizarea-proiectelor.md)
+
+## Arhiva Nao
+
+* [Dialog - QiChat](arhiva-nao/dialog-qichat.md)
+* [Convenția GirlsGoIT Robotics Choregraphe](arhiva-nao/conventia-girlsgoit-robotics-choregraphe.md)
+* [Tracker](arhiva-nao/tracker.md)
+* [Cum creez un Dialog box](arhiva-nao/cum-creez-un-dialog-box.md)
+* [Flow Control](arhiva-nao/flow-control.md)
+* [Finalizarea proiectelor](arhiva-nao/finalizarea-proiectelor.md)
+
