@@ -40,7 +40,7 @@ Clasa este definiția parametrilor și comportamentului unui obiect al acestei c
 Hai să scrim împreună prima noastră clasă:
 
 ```python
-class Animal(object):
+class Animal:
     pass
 ```
 
@@ -65,7 +65,7 @@ Felicitări! Ai creat prima ta clasă și ai mai și creat obiecte cu acea clas�
 După cum am zis mai sus, obiectele au atribute și metode. Metodele sunt de fapt funcții care își au sub formă de context obiectul sau clasa sa. Hai să adăugăm niște date și niște metode clasei noastre.
 
 ```python
-class Animal(object):
+class Animal:
     def say(self):
         print("Hello world!")
 ```
@@ -107,7 +107,7 @@ Eu însă nu am să intru în detalii prea mult, dar am să-ți explic în ce co
 Aici am creat din nou clasa `Animal` și i-am dat definit atributul `name`. Metoda `info()` va prezenta obiectul dat utilizând atributul `name`
 
 ```python
-class Animal(object):
+class Animal:
     name = "I don't have a name yet :("
 
     def info(self):
@@ -206,7 +206,7 @@ Dacă deja cunoști careva limbaj de programare orientat pe obiecte, probabil ș
 Totuși, nu ți-am povestit încă ce-i aia un constructor. Numele însă, vorbește pentru sine. Un constructor este o subrutină executată la crearea \(construirea\) unui obiect. Chiar dacă în Python, metoda `__init__()` nu este numită constructor, ea se comportă exact ca un constructor tradițional, adică se execută la crearea unui obiect nou. Ceea ce face această metodă să nu fie numită constructor, e faptul că la momentul execuției ei, scheletul obiectului e deja construit în interiorul interpretatorului Python. Din perspectiva programatorului, acest fapt nu are niciun efect advers. Hai să scriem primul nostru constructor:
 
 ```python
-class Animal(object):
+class Animal:
     name = "I don't have a name yet :("
 
     def __init__(self):
@@ -224,7 +224,7 @@ A new baby animal was born!
 Așa cum te-ai așteptat, la crearea unei instanțe noi, metoda `__init__()` a fost executată! Perfect, însă probabil te întrebi, dacă alte metode acceptă parametri adiționali, oare și `__init__`-ul poate accepta acești parametri? Răspunsul e: Cu siguranță! Hai să specificăm numele animăluțului nostru la crearea unui obiect nou:
 
 ```python
-class Animal(object):
+class Animal:
     def __init__(self, name):
         self.name = name
         print("A new baby animal was born!")
@@ -268,7 +268,7 @@ Te-ai descurcat foarte bine până acum! Hai să explorăm mai departe aspectele
 Haideți să creăm o clasă ceva mai completă, din nou cu numele `Animal` și cu atributele `name` și `age`.
 
 ```python
-class Animal(object):
+class Animal:
     def __init__(self, name, age):
         self.name = name
         self.age = age  # In months
@@ -304,7 +304,7 @@ Chiar dacă limbajul de programare Python urmează cele mai bune practici OOP, e
 Encapsularea clasică ține de restricționarea accesului la membrii unui obiect sau clase. În Java sau C++ fiecare atribut sau metodă a clasei sunt definite ca `public`, `private` și `protected`. În Python există posibilitatea de mimat comportamentul `private`. Deci, un atribut al clasei care va fi denotat ca privat, nu va fi accesibil din exterior, însă vom putea să-l accesăm din metodele clasei. Ca să facem un atribut privat, trebuie să-i punem prefixul `__`. Hai să vedem cum lucrează asta:
 
 ```python
-class Animal(object):
+class Animal:
     def __init__(self, name, age):
         self.__name = name
         self.__age = age  # In months
@@ -355,7 +355,7 @@ Moștenirea e proprietatea de unei clase că moștenească caracteristicile alte
 Hai acum să încercăm primul nostru model de moștenire. Iarăși, vom avea clasa `Animal` și clasa `Cat` care va moșteni de la `Animal`.
 
 ```python
-class Animal(object):
+class Animal:
     def __init__(self, name, age):
         self.name = name
         self.age = age  # In months
@@ -392,7 +392,7 @@ I am 12 months old.
 Totul merge așa cum ne-am așteptat. Avem acces atât la metodele din clasa `Cat` cât și la cele din clasa-părinte `Animal`. Hai acum să modificăm metodele `__init__()` utilizând funcția `super()`:
 
 ```python
-class Animal(object):
+class Animal:
     def __init__(self, name, age):
         self.name = name
         self.age = age  # In months
