@@ -54,9 +54,9 @@ Având definiția clasei, putem instanția primele obiecte:
 >>> first_animal = Animal()
 >>> second_animal = Animal()
 >>> type(first_animal)        # Verificăm tipul variabilei
-__main__.Animal
+<class '__main__.Animal'>
 >>> type(second_animal)
-__main__.Animal
+<class '__main__.Animal'>
 >>>
 ```
 
