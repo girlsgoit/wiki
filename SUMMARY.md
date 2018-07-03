@@ -19,6 +19,7 @@
 * [Python](backend/python.md)
 * [Python OOP](backend/python-oop.md)
 * [Django Intro](backend/django-intro.md)
+* [REST API's](backend/rest-apis.md)
 
 ## ROBOTICĂ
 
