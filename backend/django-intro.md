@@ -255,7 +255,7 @@ Pentru inceput deschidem fișierul `blog/admin.py`  și înlocuim compenentele a
 
 {% code-tabs %}
 {% code-tabs-item title="blog/admin.py" %}
-```text
+```python
 from django.contrib import admin
 from .models import Post
 
@@ -298,7 +298,7 @@ O adresă URL este pur și simplu o adresă web. Puteți vedea o adresă URL de 
 
 {% code-tabs %}
 {% code-tabs-item title="mysite/urls.py" %}
-```text
+```python
     url(r'^admin/', admin.site.urls),
 ```
 {% endcode-tabs-item %}
@@ -306,9 +306,13 @@ O adresă URL este pur și simplu o adresă web. Puteți vedea o adresă URL de 
 
 Pentru a păstra fișierul `mysite/urls.py`  cât mai simplu și curat vom importa adresele din aplicația `blog` pentru aceasta vom adauga linia 
 
-```text
+{% code-tabs %}
+{% code-tabs-item title="mysite/urls.py" %}
+```python
 url(r'', include('blog.urls')),
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
  observați că am folosit funcția `include`  deci ea trebuie importată. fisierul vostru trebuie să arate așa:
 
@@ -331,7 +335,7 @@ Deoarece în aplicația **blog** nu avem un fișier responsabil de URLs, acesta 
 
 {% code-tabs %}
 {% code-tabs-item title="blog/urls.py" %}
-```text
+```python
 from django.conf.urls import url
 from . import views
 ```
@@ -342,7 +346,7 @@ Acum este timpul să adăugăm primul URL. Adăugați următoarea linie.
 
 {% code-tabs %}
 {% code-tabs-item title="blog/urls.py" %}
-```text
+```python
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
 ]
@@ -364,7 +368,7 @@ Adăugați următoarele în fișier:
 
 {% code-tabs %}
 {% code-tabs-item title="blog/views.py" %}
-```text
+```python
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
 
@@ -396,7 +400,7 @@ Vă aflați acum în consola interactivă Django. Ca să putem folosi modelul `P
 
 {% code-tabs %}
 {% code-tabs-item title="command Prompt" %}
-```text
+```python
 >>> from blog.models import Post
 ```
 {% endcode-tabs-item %}
