@@ -56,7 +56,7 @@
 
 cd \(_aici folosind Ctrl+V , scrieți adresa directoriului copiată anterior_ \), 
 
-    Astfel sunteți siguri că orice comenzi rulate prin consolă vor acționa asupra fișierului cu care lucrați.
+    Astfel sunteți siguri că orice comenzi rulate prin consolă vor acționa asupra fișierului cu care lucrăm.
 
 ![](../.gitbook/assets/captureq%20%281%29.PNG)
 
@@ -162,9 +162,9 @@ python manage.py startapp blog
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-**blog** este denumirea applicatiei, puteti sa o schimbati
+**blog** este denumirea applicatiei.
 
-   Acesta commanda va crea applicatie in proiectul dorit, aici se vor contine toate fisierele care vor fi direct responsabile de site-ul care il creati\(URL’uri, imagini, text etc\)
+   Acesta commanda va crea o applicație in proiectul dorit, aici se vor contine toate fișierele care vor fi direct responsabile de site-ul care il creăm\(URL’uri, imagini, text etc\)
 
 In urma executarii acesteti comande , in folderul proiectului trebuie sa apara un nou folder `blog` . 
 
@@ -267,9 +267,9 @@ Asigurativa ca linia de comanda este deschis din folderul proiectului.
 
 ![Rezultatul ar trebui s&#x103; arate a&#x219;a.](../.gitbook/assets/hgdf.PNG)
 
-Deschideți pagina [http://127.0.0.1:8000/](http://127.0.0.1:8000/) unde ulteriorul vostru proiect ar trebui să opereze. 
+Deschideți pagina [http://127.0.0.1:8000/](http://127.0.0.1:8000/) unde ulteriorul nostru proiect ar trebui să opereze. 
 
-[http://127.0.0.1:8000/](http://127.0.0.1:8000/) este cunoscut ca _localhost_ ceea ce înseamna că proiectul vostru ruleaza doar pe calculatorul vostru și nu este încă online.
+[http://127.0.0.1:8000/](http://127.0.0.1:8000/) este cunoscut ca _localhost_ ceea ce înseamna că proiectul nostru ruleaza doar pe calculatorul nostru și nu este încă online.
 
 ![](../.gitbook/assets/fff.PNG)
 
@@ -346,7 +346,7 @@ url(r'', include('blog.urls')),
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
- observați că am folosit funcția `include`  deci ea trebuie importată. fisierul vostru trebuie să arate așa:
+ observați că am folosit funcția `include`  deci ea trebuie importată. Fișierul nostru trebuie să arate așa:
 
 {% code-tabs %}
 {% code-tabs-item title="mysite/urls.py" %}
@@ -386,9 +386,9 @@ urlpatterns = [
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-    După cum puteți vedea, acum atribuim un `view` numit `post_list` la adresa URL ^$. Această expresie regulată se va potrivi cu ^ \(un început\) urmat de $ \(un capăt\) - deci se va potrivi doar un șir gol.  Acest model îi va spune lui Django că `views.post_list` este locul potrivit pentru a merge dacă cineva intră pe site-ul dvs. web la adresa "[http://127.0.0.1:8000/](http://127.0.0.1:8000/)".
+    După cum puteți vedea, acum atribuim un `view` numit `post_list` la adresa URL.  Acest model îi va spune lui Django că `views.post_list` este locul potrivit pentru a merge dacă cineva intră pe site-ul dvs. web la adresa "[http://127.0.0.1:8000/](http://127.0.0.1:8000/)".
 
-    Ultima parte, `name = 'post_list'`, este numele adresei URL care va fi folosit pentru a identifica un `view`. Aceasta poate fi identică cu numele unui `view`, dar poate avea și alt nume. Vom utiliza URL-urile numite mai târziu în proiect, deci este important să denumiți fiecare adresă URL din aplicație. De asemenea, ar trebui să încercăm să păstrăm numele de URL-uri unice și ușor de reținut.
+    Ultima parte, `name = 'post_list'`, este numele adresei URL care va fi folosit pentru a identifica un `view`. Aceasta poate fi identică cu numele unui `view`, dar poate avea și alt nume. Vom utiliza URL-urile numite mai târziu în proiect, deci este important să denumim fiecare adresă URL din aplicație. De asemenea, ar trebui să încercăm să păstrăm numele de URL-uri unice și ușor de reținut.
 
 ### Django `view`
 
