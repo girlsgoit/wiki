@@ -331,7 +331,7 @@ Acum puteți explora puțin pagina, adaugând chiar și unele postari.
 {% code-tabs %}
 {% code-tabs-item title="mysite/urls.py" %}
 ```python
-    url(r'^admin/', admin.site.urls),
+url('admin/', admin.site.urls)
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -341,7 +341,7 @@ Pentru a păstra fișierul `mysite/urls.py`  cât mai simplu și curat vom impor
 {% code-tabs %}
 {% code-tabs-item title="mysite/urls.py" %}
 ```python
-url(r'', include('blog.urls')),
+url('', include('blog.urls')),
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -356,8 +356,8 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
+    url('admin/', admin.site.urls),
+    url('', include('blog.urls')),
 ]
 ```
 {% endcode-tabs-item %}
@@ -380,7 +380,7 @@ Acum este timpul să adăugăm primul URL. Adăugați următoarea linie.
 {% code-tabs-item title="blog/urls.py" %}
 ```python
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
+    url('', views.post_list, name='post_list'),
 ]
 ```
 {% endcode-tabs-item %}
@@ -401,14 +401,18 @@ Adăugați următoarele în fișier:
 {% code-tabs %}
 {% code-tabs-item title="blog/views.py" %}
 ```python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
 def post_list(request):
-    return render(request, 'blog/post_list.html', {})
+    return HttpResponse("return this string")
 
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/hdfghdfg.PNG)
 
     După cum puteți vedea, am creat o funcție \(def\) numită post\_list care ia cererea\(request\) și returnează `render` a funcției care va pune la un loc `template-ul` nostru `blog / post_list.html`
 
