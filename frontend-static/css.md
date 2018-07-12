@@ -664,8 +664,9 @@ Pentru a calcula specificitatea unui selectore putem folosi tabelul de mai jos.
 
 Noi am pregătit un [joc interactiv](http://apps.vsart.me/csswar/) care ilustrează comportamentele selectorelor CSS în diferite situații. Pentru a savura pe deplin aventura, vreau să vă recomand să parcurgeți un scurt ghid de introducere în acest joc.
 
-## Resurse utile despre CSS
+## Resurse
 
-* [https://www.w3schools.com/css/default.asp](https://www.w3schools.com/css/default.asp)
-* [https://css-tricks.com/](https://css-tricks.com/)
+* [W3Schools](https://www.w3schools.com/css/)
+* [CodeCademy](https://www.codecademy.com/)
+* [CSS Tricks](https://css-tricks.com/)
 

@@ -172,9 +172,9 @@ Mă bucur că ai ajuns la sfârșitul acestui articol. Acestea sunt cele 20% din
 
 Te invit să vizitezi următoarea secțiune pentru a afla ce-i aia CSS și cum să dai viață paginii tale aplicând noi culori și forme.
 
-## Exemplu
+## Resurse
 
-Pentu a vedea un exemplu de o pagina creată pur cu HTML \(desigur că are și ceva stilizare ascunsă\), descarcă [HTML Template](https://github.com/girlsgoit/HTML-VSCourse/archive/master.zip).
-
-Dezarhivezi fișierul zip într-un folder, și deschide `index.html` pentru a-l vedea.
+* [Google Chrome](https://www.google.com/chrome/)
+* [Sublime Text 3](https://www.sublimetext.com/3)
+* [Materiale workshop](https://github.com/girlsgoit/HTML-VSCourse/archive/master.zip)
 
