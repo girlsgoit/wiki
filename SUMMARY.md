@@ -13,6 +13,7 @@
 ## FRONTEND DINAMIC
 
 * [JavaScript](frontend-dinamic/javascript.md)
+* [Exercitii](frontend-dinamic/exercitii.md)
 
 ## BACKEND
 

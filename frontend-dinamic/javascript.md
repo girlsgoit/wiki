@@ -24,9 +24,9 @@ Desigur putem folosi consola din browser si javascript ca un calculator in conti
 
 ## Variabile
 
-Javascript e un limbaj de programare. Orice limbaj de programare are notiunea de variabila. Variabila este ceva ce poate sa se schimbe, e variabila :\). Ii setati o valoare, apoi puteti sa-i setati alta, daca vreti. Puteti sa cititi valoarea ei accesandu-i numele, puteti s-o transmiteti ca parametru la functii, etc. Variabila e elementul cheie a oricarui limbaj de programare, in Pascal la fel aveti variabile, si au fix acelasi rol.
+Javascript e un limbaj de programare. Orice limbaj de programare are notiunea de variabila. Variabila este ceva ce poate sa se schimbe, e variabila :\).Cu ajutorul lor puteti salva diferite date   de diferite tipuri. Ii setati o valoare, apoi puteti sa-i setati alta, daca vreti. Puteti sa cititi valoarea ei accesandu-i numele. Variabila e elementul cheie a oricarui limbaj de programare, in Pascal la fel aveti variabile, si au exact acelasi rol.
 
-Pentru a defini o variabila, cu valoarea 10, puteti scrie asa:
+Pentru a defini o variabila, cu valoarea 10, puteti scrie urmatorul rand:
 
 ```javascript
 var number = 10;
@@ -40,7 +40,7 @@ Putem folosi aceasta variabila in alte declaratii:
 var otherNumber = number + 5;
 ```
 
-Desigur `otherNumber` va avea valoarea 15.
+Desigur, `otherNumber` va avea valoarea 15.
 
 Pentru a defini un sir de caractere doar punem in jurul textului ghilimele simple sau duble:
 
@@ -51,13 +51,21 @@ console.log(h + w)
 ```
 
 Observati ca nu am pus `;` la sfasitul instructiunilor de data asta, in javascript `;` la sfarsit sunt optionale, limbajul le cere doar in cazuri rare cand nu poate deduce singur cand se termina o instructiune si se incepe alta.   
-Functia `console.log()` afiseaza ceva la consola, in cazul dat ea va afisa `Hello World!`.
+Functia `console.log()` afiseaza ceva la consola, in cazul dat ea va afisa `Hello World!`
+
+Pentru a uni 2 elemente de tip sir folosim operatorul +.
 
 Variabilele de tip boolean \(de logica\) se definesc la fel de simplu:
 
+Operatorul **NOT** inverseaza valoarea curenta a variabilei de tip boolean\( daca e true, obtinem false si invers\).
+
+Operatorul  **\| \|**: obtinem true in cazul in care macar una dintre variabile este true.
+
+Operatorul **&&:** obtinem true atunci cand ambele variabile sunt true,
+
 ```javascript
 var test = true
-test = !test            // operatia NOT (negare)
+test = !test            // operatia NOT (negare), inverseaza valoarea
 test = test || true     // operatia OR  (sau)
 test = test && false    // operatia AND (si)
 
@@ -78,23 +86,25 @@ if (a < 20) {
 
 > Hint: cand apasati \[Enter\] consola, Chrome incearca sa execute instructiunea, si daca ea nu-i finisata, da eroare. Ca sa scrieti o instructiune pe mai multe randuri, tastati \[Shift + Enter\]
 
-Observati ca e construit din cuvantul cheie `if`, intre `(...)` se pune conditia care o verificam, dupa care intre `{ ... }` scriem instructiunile care sa se execute in caz ca conditia intre `(...)` e adevarata \`
+Observati ca e construit din cuvantul cheie **`if`**, intre `(...)` se pune conditia pe care o verificam, dupa care intre `{ ... }` scriem instructiunile care sa se execute in caz ca conditia dintre `(...)` e adevarata \`
 
 Putem adauga `else` la conditia `if` pentru a specifica instructiuni care sa se execute in caz daca conditia nu e adevarata:
 
 ```javascript
-var b = 25
-if (b < 20) {
-    console.log(b + ' e mai mic ca 20')            // se executa daca b < 20
+let b = 25     // declaram variabila b cu valoarea 25  
+       
+if (b < 20) {  // in (...) verificam daca valoarea lui b este mai mica ca 20 (25 < 20) obtinem false
+    console.log(b + ' e mai mic ca 20')            // se executa daca b < 20, adica true
 } else {
-    console.log(b + ' e mai mare sau egal cu 20')  // se executa daca !(b < 20), adica b >=20
+    console.log(b + ' e mai mare sau egal cu 20')  // se executa daca !(b < 20), adica b >=20 
 }
 ```
 
 Instructiunea `else if` ne permite sa adaugam o noua conditie in caz ca conditia `if` nu e adevarata:
 
 ```javascript
-var c = 30
+let c = 30
+
 if (c < 30) {
     console.log(c + ' e mai mic ca 30')   // se executa daca c < 30
 } else if (c > 30) {
@@ -106,21 +116,19 @@ if (c < 30) {
 
 ## Switch
 
-Instructiunea `switch` ne permite sa executam unul din mai multe blocuri in dependenta de conditie:
+Instructiunea `switch` ne permite sa executam unul din mai multe blocuri posibile, in dependenta de conditie:
 
 ```javascript
-var day;
-switch (new Date().getDay()) { 
-    case 0:
-        day = "Sunday";
-        break;
-    case 1:
+let dayIndex = 3;   // declaram o variabila cu valoarea 3 care reprezinta nr zilei in saptamana
+switch (dayIndex) { 
+
+    case 1:             //false
         day = "Monday";
         break;
-    case 2:
+    case 2:             //false
         day = "Tuesday";
         break;
-    case 3:
+    case 3:             //true , se executa codul care urmeaza pana la break
         day = "Wednesday";
         break;
     case 4:
@@ -131,28 +139,40 @@ switch (new Date().getDay()) {
         break;
     case 6:
         day = "Saturday";
+        break;
+    case 7:
+        day = "Sunday";
+        break;
 }
 
 console.log(day);
 ```
 
-Instructiunea `new Date().getDay()` ne permite sa obtinem ziua curenta a saptamanii ca un numar de la 0 la 6.
+**break** ne permite sa oprim executarea blocului de cod curent. In cazul dat break nu face altceva decat muta punctul executarii la sfarsitul blocului switch. In caz contrar se vor exxecuta toate blocurile **case** care urmeaza.
+
+Optional instructiunea **switch** poate contine si blocul **default** care se executa atunci cand nici una din valorilor specificate in **case** nu corespunde.
+
+```javascript
+default:
+    console.log("nici una din valori nu corespunde");
+```
 
 ## Cicluri \(for, while\)
 
-Orice limbaj de programare are notiunea de a executa instructiuni in ciclu. Javascript are cateva:
+Orice limbaj de programare are posibilitatea de a executa instructiuni in ciclic. Javascript are cateva:
 
 Ciclul `while` ne permite sa executam un grup de instructiuni de multe ori atat timp cat o conditie e adevarata:
 
 ```javascript
-var i = 0;
+let i = 0;
+
 while (i < 10) {
     console.log(i)
     i++             // adunam 1 la i, echivalent cu i = i + 1
 }
 ```
 
-Codul de mai sus va afisa la consola cifrele de la 0 la 9, deoarece in momentul cand va fi variabila `i` va deveni `10`, conditia va fi falsa
+Codul de mai sus va afisa la consola cifrele de la 0 la 9, deoarece in momentul cand  variabila `i` va deveni egala cu `10`, conditia va fi falsa si executarea se va finisa
 
 Ciclul `for` echivalent al blocului de mai sus ar fi:
 
@@ -162,7 +182,7 @@ for (i = 0; i < 10; i++) {
 }
 ```
 
-Observati ca el combina 3 instructiuni intre paranteze:
+Observati ca el combina 3 instructiuni in paranteze:
 
 ```text
 for (instructiune1; instructiune2; instructiune3;) {
@@ -171,7 +191,7 @@ for (instructiune1; instructiune2; instructiune3;) {
 ```
 
 * `instructiune1` - e initializarea unei variabile, deobicei
-* `instructiune2` - e conditia de continuitate, fix ca in while
+* `instructiune2` - e conditia de continuitate, exact ca in while
 * `instructiune3` - e instructiunea care sa o execute dupa fiecare ciclu \(deobicei e o crestere/descrestere a variabilei\)
 
 Oricare din aceste instructiuni poate fi omisa, daca nu e relevanta, ba mai mult, pot fi omise toate 3!
@@ -202,7 +222,7 @@ function max(a, b) {    // functia cu numele 'max' si cu 2 parametri 'a' si 'b'
 }
 ```
 
-Sa apelam aceasta functie e la fel de simplu:
+Sa apelam aceasta functie  la fel de simplu:
 
 ```javascript
 max(3, 5)
