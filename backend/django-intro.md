@@ -414,9 +414,7 @@ def post_list(request):
 
 ![](../.gitbook/assets/hdfghdfg.PNG)
 
-    După cum puteți vedea, am creat o funcție \(def\) numită post\_list care ia cererea\(request\) și returnează `render` a funcției care va pune la un loc `template-ul` nostru `blog / post_list.html`
-
-Deoarece post\_list.html nu este creat încă pagina noastră va avea o eroare. Creați o pagină folosind HTML numită `post_list.html`  în fișierul `blog`  pentru a elimina eroarea.
+    După cum puteți vedea, am creat o funcție \(def\) numită post\_list care ia cererea\(request\) și returnează `HttpResponse` care primește ca parametru un string,  care va fi afișat pe pagină la deschiderea paginii.
 
 ### Django ORM 
 
