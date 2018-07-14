@@ -1,4 +1,4 @@
-# 2.1 Exercises Simple Programs
+# 2.1 Programe Simple
 
 * _Play Music_ 
 
