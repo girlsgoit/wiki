@@ -31,7 +31,7 @@
 * [1.4 Conectarea prin USB, Bluetooth sau 2.4GHz](robotica/conectarea-prin-usb-bluetooth-sau-2.4ghz.md)
 * [2.1 Programe Simple](robotica/exercises-day-1.md)
 * [2.2 Senzori](robotica/2.2-senzori.md)
-* [Exerciții avansate](robotica/exercitii-avansate.md)
+* [2.3 Exerciții avansate](robotica/exercitii-avansate.md)
 
 ## 3D Printing
 

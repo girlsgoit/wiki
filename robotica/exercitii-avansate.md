@@ -1,4 +1,4 @@
-# Exerciții avansate
+# 2.3 Exerciții avansate
 
 **Schimbarea culorilor utilizând variabilele.**
 
@@ -29,11 +29,11 @@ O regulă pentru a numi variabilele este că prima literă trebuie să fie o min
 
 Pentru a face o variabilă în mBlock, trebuie să mergi la scriptul "Data & Blocks" și să alegi "Make a Variable":
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 Când apeși butonul, îți va cere un nume:
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 Asigură-te că alegeți un nume care descrie informațiile pe care le va conține variabila. Odată ce ai definit o variabilă, va afișa câteva blocuri legate de variabila pe care o poți folosi pentru programare:
 
@@ -41,7 +41,7 @@ Asigură-te că alegeți un nume care descrie informațiile pe care le va conți
 
 Cu excepția cazului în care variabilele vor fi modificate de la începutul unui program, se consideră o bună practică inițializarea variabilelor la începutul unui program. Pentru programul tău,  începe cu albastru pornit, și verde și roșu oprit. Vei transforma LED-urile pe o valoare maximă de 100:
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../.gitbook/assets/image%20%2852%29.png)
 
 Și acum setează LED-urile la valorile acestor variabile:
 
@@ -49,7 +49,7 @@ Cu excepția cazului în care variabilele vor fi modificate de la începutul unu
 
 Acum scade setarea albastră unul câte unul până când ajung la zero. În același timp, mărește setarea verde până când ajunge la 100. Deci va trebui să repeți acest pas de 100 de ori:
 
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../.gitbook/assets/image%20%2856%29.png)
 
 _Challenge_:
 
@@ -60,14 +60,14 @@ _Challenge_:
 
  Butonul de la bord are 2 blocuri de programare asociate în mBlock. Primul este un header bloc:
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 
 Acesta poate fi folosită ca declanșator pentru ca un anumit cod să fie rulat.   
 _NOTĂ: acest bloc poate fi folosit numai când rulează programe mBlock._
 
 Al doilea bloc este un bloc boolean. Un bloc boolean este unul care poate fi folosit într-o condițional \(cum ar fi "if"\) și se va întoarce fie adevărat, fie fals:
 
-![](../.gitbook/assets/image%20%2876%29.png)
+![](../.gitbook/assets/image%20%2882%29.png)
 
 Meniurile drop-down pentru ambele blocuri sunt fie "pressed", fie "released"
 
@@ -116,7 +116,7 @@ End Loop
 
 La sfârșitul acestui program, numărul de linii peste care a trecut mBot-ul trebuie să fie salvat în variabila. Poți scrie acest lucru în codul mBlock. Mergi mai departe și să numără linii timp de 10 secunde:
 
-![](../.gitbook/assets/image%20%2868%29.png)
+![](../.gitbook/assets/image%20%2873%29.png)
 
 Există 2 probleme codul în acest moment. Prima este că nu există nicio modalitate de citire a variabilei de numărare. 
 
@@ -126,4 +126,39 @@ _Challenge:_
 2. Cu acest cod, valoarea variabilei înregistrate nu va fi corectă. Îți poți da seama de ce? Și cum să corectezi asta?
 
 
+
+## Scrierea programului prestabilit cu funcții\(Blocks\)
+
+Diferitele secțiuni ale unui program fac deseori lucruri diferite. Un program poate fi împărțit în părți separate, fiecare parte realizând o anumită funcție. Din programul principal, aceste funcții pot fi "numite" sau executate. Acest lucru face codul mult mai ușor de citit.
+
+În mBlock, faci o funcție \(sau bloc\) făcând clic pe "Make a Block" în script-ul "Data&Blocks":
+
+![](../.gitbook/assets/image%20%2849%29.png)
+
+Apoi alegeți un nume care reprezintă ceea ce face blocul:
+
+![](../.gitbook/assets/image%20%2846%29.png)
+
+Apoi, blocul este definit și gata de utilizare.  
+Deci, în acest exercițiu trebuie să se recreeze programul implicit. Va fi o aproximație a programul implicit, deși nu este o replică completă. Mai întâi, robotul inițializează cu beep-uri și lumini:
+
+![](../.gitbook/assets/image%20%2872%29.png)
+
+Vei pune acest lucru în propriul bloc de inițializare și îl vei chema\(call\) din programul mBot:
+
+![](../.gitbook/assets/image%20%2837%29.png)
+
+Acest lucru rulează exact la fel ca în cazul în care comenzile LED-urilor setate și comenzile tonurilor de redare au fost "chemate/called" direct din programul mBot. Codul este mult mai ușor de citit ca asta. Apoi, scrie codul pentru partea de telecomandă. Din nou, vei scrie acest cod în propriul bloc:
+
+![](../.gitbook/assets/image%20%2848%29.png)
+
+Apoi scrie blocuri similare pentru line follower și evitarea obiectului. Acum, trebuie să scrii aceste instrucțiuni în programul tău principal. După cum poți vedea, programul final arată foarte simplu:
+
+![](../.gitbook/assets/image%20%2875%29.png)
+
+_Challenge:_
+
+1. Scrie programe pentru funcțiile de  Object Avoidanceși Line Follower și adăugă-le la program.
+2. Uneori când este apăsat butonul, un mod sau 2 este omis. Poți rezolva acest bug?
+3. Cât de aproape de Programul implicit real poți să faci programul?
 

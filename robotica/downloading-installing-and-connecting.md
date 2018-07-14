@@ -14,7 +14,7 @@ Pentru utilizatorii de Mac, descărcați driverul. Din păcate, cea mai recentă
 
 4. Conectați robotul la computer prin intermediul cablului USB, porniți robotul și deschideți mBlock. Accesați Connect-&gt; Serial Port -&gt; \(port ID\).. \(TIP: Dacă nu cunoașteți ID-ul portului la care sunteți conectat, notați porturile disponibile, deconectați robotul și vedeți ce port dispare.\) După ce v-ați conectat cu succes, bara de titlu va spune că sunteți conectată iar punctul roșu din Scripturile "Robots" va deveni verde:
 
-![](../.gitbook/assets/image%20%2875%29.png)
+![](../.gitbook/assets/image%20%2881%29.png)
 
  **NOTĂ: Pentru a actualiza firmware-ul, pentru a reseta programul implicit și pentru a încărca un program pe placa robotului, TREBUIE să fii conectat prin USB.**
 
@@ -26,7 +26,7 @@ Ultimate 2.0 - Mega Pi
 
 În cazul dat, folosim mBot, deci board-ul mCore este selectat:
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
 Acum ești gata să începi să programeze.
 
