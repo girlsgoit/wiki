@@ -2,7 +2,7 @@
 
 ## Simple programs
 
-### 
+
 
 ## Using sensors
 

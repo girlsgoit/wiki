@@ -26,6 +26,7 @@
 ## ROBOTICĂ
 
 * [mBlock](robotica/mblock.md)
+* [Downloading, installing and connecting](robotica/downloading-installing-and-connecting.md)
 * [Exercises Day 1](exercises-day-1.md)
 
 ## 3D Printing
