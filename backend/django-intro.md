@@ -331,7 +331,7 @@ Acum puteți explora puțin pagina, adaugând chiar și unele postari.
 {% code-tabs %}
 {% code-tabs-item title="mysite/urls.py" %}
 ```python
-url('admin/', admin.site.urls)
+path('admin/', admin.site.urls)
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -341,7 +341,7 @@ Pentru a păstra fișierul `mysite/urls.py`  cât mai simplu și curat vom impor
 {% code-tabs %}
 {% code-tabs-item title="mysite/urls.py" %}
 ```python
-url('', include('blog.urls')),
+path('', include('blog.urls')),
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -352,12 +352,12 @@ url('', include('blog.urls')),
 {% code-tabs-item title="mysite/urls.py" %}
 ```python
 from django.conf.urls import include
-from django.conf.urls import url
+from django.urls import path
 from django.contrib import admin
 
 urlpatterns = [
-    url('admin/', admin.site.urls),
-    url('', include('blog.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
 ]
 ```
 {% endcode-tabs-item %}
@@ -368,7 +368,7 @@ urlpatterns = [
 {% code-tabs %}
 {% code-tabs-item title="blog/urls.py" %}
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 ```
 {% endcode-tabs-item %}
