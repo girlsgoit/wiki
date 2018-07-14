@@ -26,6 +26,7 @@
 ## ROBOTICĂ
 
 * [mBlock](robotica/mblock.md)
+* [Exercises Day 1](exercises-day-1.md)
 
 ## 3D Printing
 
