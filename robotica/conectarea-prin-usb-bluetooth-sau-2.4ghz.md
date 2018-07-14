@@ -56,5 +56,5 @@ Trebuie să selectezi: Connect -&gt; 2.4G Serial -&gt; Connect.
 
 **Mac:**
 
-Asociați și conectați-vă la "Makeblock" din meniul Bluetooth al sistemului dvs. Apoi găsiți robotul în meniul Serial Port.
+Asociați și conectați-vă la "Makeblock" din meniul Bluetooth al sistemului tău. Apoi găsiți robotul în meniul Serial Port.
 

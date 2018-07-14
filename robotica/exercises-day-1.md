@@ -104,7 +104,7 @@ _Challenge:_
 
 ## 2.1.3 Move in a Square
 
-NOTĂ: În timp ce urmați acest tutorial și dezvoltați propriul program, asigurați-vă că robotul dvs. este fie sprijinit, astfel încât roțile să nu fie în contact cu o suprafață sau într-un spațiu în care să se poată mișca liber - Vă rugăm să vă asigurați că nu cad de pe vreun birou sau mesă.
+NOTĂ: În timp ce urmezi acest tutorial și dezvoltați propriul program, asigură-te că robotul tău este fie sprijinit, astfel încât roțile să nu fie în contact cu o suprafață sau într-un spațiu în care să se poată mișca liber - Vă rugăm să vă asigurați că nu cad de pe vreun birou sau mesă.
 
 O altă NOTĂ: Acest tutorial rulează programe din IDE-ul mBlock. Nu actualizează niciun program pe placa robotului.
 
