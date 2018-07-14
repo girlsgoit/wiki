@@ -27,7 +27,8 @@
 
 * [mBlock](robotica/mblock.md)
 * [Downloading, installing and connecting](robotica/downloading-installing-and-connecting.md)
-* [Exercises Day 1](exercises-day-1.md)
+* [Execută un program de pe mBlock IDE sau încarcă pe Board](robotica/executa-un-program-de-pe-mblock-ide-sau-incarca-pe-board.md)
+* [Exercises Day 1](robotica/exercises-day-1.md)
 
 ## 3D Printing
 
