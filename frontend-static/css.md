@@ -669,4 +669,5 @@ Noi am pregătit un [joc interactiv](http://apps.vsart.me/csswar/) care ilustrea
 * [W3Schools](https://www.w3schools.com/css/)
 * [CodeCademy](https://www.codecademy.com/)
 * [CSS Tricks](https://css-tricks.com/)
+* [Workshop](https://github.com/girlsgoit/CSS-Workshop/archive/master.zip)
 
