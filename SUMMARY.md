@@ -25,11 +25,11 @@
 
 ## ROBOTICĂ
 
-* [mBlock](robotica/mblock.md)
-* [Downloading, installing and connecting](robotica/downloading-installing-and-connecting.md)
-* [Execută un program de pe mBlock IDE sau încarcă pe Board](robotica/executa-un-program-de-pe-mblock-ide-sau-incarca-pe-board.md)
-* [Conectarea prin USB, Bluetooth sau 2.4GHz](robotica/conectarea-prin-usb-bluetooth-sau-2.4ghz.md)
-* [Exercises Day 1](exercises-day-1.md)
+* [1.1 mBlock](robotica/mblock.md)
+* [1.2 Descărcarea, instalarea și conectarea](robotica/downloading-installing-and-connecting.md)
+* [1.3 Execută un program de pe mBlock IDE sau încarcă pe Board](robotica/executa-un-program-de-pe-mblock-ide-sau-incarca-pe-board.md)
+* [1.4 Conectarea prin USB, Bluetooth sau 2.4GHz](robotica/conectarea-prin-usb-bluetooth-sau-2.4ghz.md)
+* [2.1 Exercises Simple Programs](robotica/exercises-day-1.md)
 
 ## 3D Printing
 

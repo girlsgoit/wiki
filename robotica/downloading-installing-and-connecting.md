@@ -1,4 +1,4 @@
-# Downloading, installing and connecting
+# 1.2 Descărcarea, instalarea și conectarea
 
 Odată ce robotul dvs. a fost construit și rulat, vă încurajăm să vă aruncați cu toții în lumea programării cu mBlock. Ceea ce urmează este o prezentare a modului de obținere a configurației.
 

@@ -1,4 +1,4 @@
-# Conectarea prin USB, Bluetooth sau 2.4GHz
+# 1.4 Conectarea prin USB, Bluetooth sau 2.4GHz
 
 NOTĂ: Pentru a actualiza firmware-ul, pentru a reseta programul implicit și pentru a încărca un program pe placa robotului, TREBUIE să fie conectat prin USB.
 
