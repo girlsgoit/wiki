@@ -30,6 +30,7 @@
 * [1.3 Execută un program de pe mBlock IDE sau încarcă pe Board](robotica/executa-un-program-de-pe-mblock-ide-sau-incarca-pe-board.md)
 * [1.4 Conectarea prin USB, Bluetooth sau 2.4GHz](robotica/conectarea-prin-usb-bluetooth-sau-2.4ghz.md)
 * [2.1 Programe Simple](robotica/exercises-day-1.md)
+* [2.2 Senzori](robotica/2.2-senzori.md)
 
 ## 3D Printing
 
