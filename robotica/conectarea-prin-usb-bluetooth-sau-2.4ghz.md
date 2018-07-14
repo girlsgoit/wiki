@@ -4,7 +4,7 @@ NOTĂ: Pentru a actualiza firmware-ul, pentru a reseta programul implicit și pe
 
 Dacă doreșii să rulezi programe din mBlock IDE, te poți conecta prin Bluetooth sau 2.4GHz \(sau USB\). Iată cum să te conectezi în fiecare dintre cele 3 moduri:
 
-**Cablu USB**
+### **Cablu USB**
 
 Conectează robotul la computer prin intermediul cablului USB, pornește robotul și deschideți mBlock. Bara de titlu ar trebui să spună că ești deconectată.
 
@@ -20,7 +20,7 @@ Accesați Connect-&gt; Serial Port -&gt; \(ID port\). \(TIP: Dacă nu cunoaște�
 
 ![](../.gitbook/assets/image%20%2891%29.png)
 
-#### 2.4GHz Module
+### 2.4GHz Module
 
 Dacă utilizați pentru prima dată modulul 2.4GHz, trebuie să cuplați dongle-ul și modulul electronic:
 
@@ -40,7 +40,7 @@ Trebuie să selectezi: Connect -&gt; 2.4G Serial -&gt; Connect.
 
 ![](../.gitbook/assets/image%20%2816%29.png)
 
-#### Bluetooth
+### Bluetooth
 
 1.Asigură-te că robotul este pornit, modulul Bluetooth este introdus corect în placă și LED-ul albastru clipește.
 
