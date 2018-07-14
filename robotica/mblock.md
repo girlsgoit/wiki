@@ -84,3 +84,7 @@ Când faceți clic pe steagul verde \(cel din colțul din dreapta sus al Etapei 
 
 Dacă doriți să opriți un program, faceți clic pe butonul roșu din colțul din dreapta sus al Stage-ului sau faceți clic pe blocurile \(programul\) din Script Area. 
 
+
+
+link de asamblare a mBot-ului: [http://download.makeblock.com/mBot-V1.1\_Blue\_STD\_Instruction\_EN\_D1.2.1\_7.40.4100\_Print.pdf](http://download.makeblock.com/mBot-V1.1_Blue_STD_Instruction_EN_D1.2.1_7.40.4100_Print.pdf)
+

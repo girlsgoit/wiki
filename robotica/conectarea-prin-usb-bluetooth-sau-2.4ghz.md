@@ -8,23 +8,23 @@ Dacă doreșii să rulezi programe din mBlock IDE, te poți conecta prin Bluetoo
 
 Conectează robotul la computer prin intermediul cablului USB, pornește robotul și deschideți mBlock. Bara de titlu ar trebui să spună că ești deconectată.
 
-![](../.gitbook/assets/image%20%2857%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 Accesați Connect-&gt; Serial Port -&gt; \(ID port\). \(TIP: Dacă nu cunoașteți ID-ul portului la care ești conectat, noteazaă porturile disponibile, deconecteazaă robotul și vezi ce port dispare.\)
 
 **Windows:**
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%2897%29.png)
 
 **Mac:**
 
-![](../.gitbook/assets/image%20%2871%29.png)
+![](../.gitbook/assets/image%20%2883%29.png)
 
 #### 2.4GHz Module
 
 Dacă utilizați pentru prima dată modulul 2.4GHz, trebuie să cuplați dongle-ul și modulul electronic:
 
-![dongle](../.gitbook/assets/image%20%2873%29.png)
+![dongle](../.gitbook/assets/image%20%2885%29.png)
 
 1. Introduceți modulul 2.4GHz în placa robotului. 
 2. Porniți robotul. 
@@ -34,11 +34,11 @@ Dacă utilizați pentru prima dată modulul 2.4GHz, trebuie să cuplați dongle-
 
 Odată ce ați conectat componentele cu succes, deschideți mBlock. Bara de titlu va arăta în continuare că sunteți deconectat:
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2870%29.png)
 
 Trebuie să selectezi: Connect -&gt; 2.4G Serial -&gt; Connect.
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 #### Bluetooth
 
@@ -46,13 +46,13 @@ Trebuie să selectezi: Connect -&gt; 2.4G Serial -&gt; Connect.
 
  2.Bara de titlu ar trebui să spună că ești deconectat.
 
-![](../.gitbook/assets/image%20%2874%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
 3. Ești gata să te conectezi:
 
 **Windows:**
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 **Mac:**
 
