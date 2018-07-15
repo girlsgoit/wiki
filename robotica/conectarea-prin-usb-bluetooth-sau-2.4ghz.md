@@ -14,17 +14,17 @@ Accesați Connect-&gt; Serial Port -&gt; \(ID port\). \(TIP: Dacă nu cunoaște�
 
 **Windows:**
 
-![](../.gitbook/assets/image%20%28113%29.png)
+![](../.gitbook/assets/image%20%28114%29.png)
 
 **Mac:**
 
-![](../.gitbook/assets/image%20%2898%29.png)
+![](../.gitbook/assets/image%20%2899%29.png)
 
 ### 2.4GHz Module
 
 Dacă utilizați pentru prima dată modulul 2.4GHz, trebuie să cuplați dongle-ul și modulul electronic:
 
-![dongle](../.gitbook/assets/image%20%28101%29.png)
+![dongle](../.gitbook/assets/image%20%28102%29.png)
 
 1. Introduceți modulul 2.4GHz în placa robotului. 
 2. Porniți robotul. 
@@ -46,7 +46,7 @@ Trebuie să selectezi: Connect -&gt; 2.4G Serial -&gt; Connect.
 
  2.Bara de titlu ar trebui să spună că ești deconectat.
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28104%29.png)
 
 3. Ești gata să te conectezi:
 
