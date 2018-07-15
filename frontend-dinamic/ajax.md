@@ -43,6 +43,8 @@ Pentru comunicarea intre client si server sunt deja definite anumite reguli in p
 
 * GET \(folisita la citirea datelor de pe server de catre client\)
 * POST \(folosita la crearea datelor pe server de catre client\)
+* PUT \(folosita pentru modificarea datelor pe server de catre client\)
+* DELETE \(folosita pentru stergerea datelor de pe server de catre client\)
 
 
 
@@ -52,13 +54,37 @@ Considerind ca am invatat jQuery si Ajax o sa apelam la o solutie folosind acest
 
 #### **Syntax**
 
-`$.get(URL, functiaResponsabilaDeRaspuns);`
+{% code-tabs %}
+{% code-tabs-item title="GET request" %}
+```javascript
+$.ajax(requestObject);
+
+function handleResponse(data, status) {
+   console.log(data);
+}
+
+const requestObject = {
+   url: "http://carevaServer.com",
+   type: 'GET',
+   success: handleResponse,
+   contentType: "application/json”
+};
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 URL  - linkul catre server care implementeaza metoda GET pe acesta adresa.
 
+
+
+Pentru exemplul cu Dorin folositi urmatorul URL
+
+url = **192.168.2.13:3000/posts**
+
 #### 
 
-#### Exemplu
+#### Exemplu pentru \(GET/POST\) mai simplificat
 
 {% code-tabs %}
 {% code-tabs-item title="GET request" %}
@@ -72,4 +98,6 @@ function handleResponse(data, status) {
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+
 
