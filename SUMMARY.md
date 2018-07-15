@@ -12,9 +12,9 @@
 
 ## FRONTEND DINAMIC
 
-* [JavaScript](frontend-dinamic/javascript/README.md)
-  * [JSON](frontend-dinamic/javascript/json/README.md)
-    * [AJAX](frontend-dinamic/javascript/json/ajax.md)
+* [JavaScript](frontend-dinamic/javascript.md)
+* [JSON](frontend-dinamic/json.md)
+* [AJAX](frontend-dinamic/ajax.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 
 ## BACKEND
