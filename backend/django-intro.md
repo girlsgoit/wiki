@@ -380,7 +380,7 @@ Acum este timpul să adăugăm primul URL. Adăugați următoarea linie.
 {% code-tabs-item title="blog/urls.py" %}
 ```python
 urlpatterns = [
-    url('', views.post_list, name='post_list'),
+    path('', views.post_list, name='post_list'),
 ]
 ```
 {% endcode-tabs-item %}
