@@ -1,4 +1,4 @@
-# Django Intro
+# Django
 
 ## Setarea Mediului de Lucru
 
