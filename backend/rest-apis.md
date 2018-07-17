@@ -22,8 +22,6 @@ Termenul de **API** este acronimul de la Application Programing Interface care i
 
 HTTP oferă o tehnică de comunicare prin care paginile web se pot transmite de la un computer aflat la distanță spre propriul computer. Dacă se apelează un link sau o adresă de web cum ar fi [http://girlsgoit.org/](http://girlsgoit.org), atunci se cere calculatorului host să afișeze o pagină web \(index.html sau altele\). În prima fază, adresa  www.girlsgoit.org este convertit de protocolul DNS într-o adresă IP. Urmează transferul prin protocolul TCP pe portul standard 80 al serverului HTTP, ca răspuns la cererea HTTP-GET. Informații suplimentare ca de ex. indicații pentru browser, limba dorită ș.a. se pot adăuga în header-ul pachetului HTTP. În urma cererii HTTP-GET urmează din partea serverului răspunsul cu datele cerute, ca de ex.: pagini în HTML, cu fișiere atașate ca imagini, fișiere de stil \(CSS\), scripturi \(Javascript\), dar pot fi și pagini generate dinamic. Dacă dintr-un anumit motiv informațiile nu pot fi transmise, atunci serverul trimite înapoi un mesaj de eroare. Modul exact de desfășurare a acestei acțiuni \(cerere și răspuns\) este stabilit în specificațiile HTTP.
 
-
-
 ### Metodele HTTP
 
 Metodele HTTP furnizează operaţiile, cum ar fi crearea citirea, actualizarea şi ştergerea unei resurse din baza de date. În tablelul de mai jos găsiți cele mai utilizate metode folosite:
@@ -37,11 +35,17 @@ Metodele HTTP furnizează operaţiile, cum ar fi crearea citirea, actualizarea �
 
 Pentru o listă mai detaliată a metodelor disponibile puteți accesa acest [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
-### Mesaje de eroare HTTP
+### Mesaje de eroare HT
 
-Mai jos o să găsiți o listă de mesaje de eroare care pot fi returnate  de către un server care operează folosind protocolul HTTP:
+Codurile de stare a răspunsului HTTP indică dacă o anumită solicitare HTTP a fost finalizată cu succes. Răspunsurile sunt grupate în cinci clase: 
 
+* 1xx - răspunsuri informaționale
+* 2xx - răspunsuri reușite
+* 3xx - redirecționări
+* 4xx - erori de client
+* 5xx - erori de server
 
+Codurile de stare sunt definite în secțiunea [10 din RFC 2616](https://tools.ietf.org/html/rfc2616#section-10). Adițional, pentru o descriere mai detaliată, puteți accesa următorul [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 ## Django REST
 
