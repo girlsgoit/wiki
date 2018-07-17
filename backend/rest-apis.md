@@ -28,9 +28,14 @@ HTTP oferă o tehnică de comunicare prin care paginile web se pot transmite de 
 
 Metodele HTTP furnizează operaţiile, cum ar fi crearea citirea, actualizarea şi ştergerea unei resurse din baza de date. În tablelul de mai jos găsiți cele mai utilizate metode folosite:
 
-|  Metodă HTTP |  |  |
-| --- | --- |
-|  |  |  |
+|  **Metodă HTTP** | **Descrierea** |
+| --- | --- | --- | --- | --- |
+| GET | Extrage o resursă. |
+| POST |  Creează o nouă resursă. |
+| PUT | Actualizează o resursă existentă. |
+| DELETE | Șterge o resursă. |
+
+Pentru o listă mai detaliată a metodelor disponibile puteți accesa acest [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
 ### Mesaje de eroare HTTP
 
