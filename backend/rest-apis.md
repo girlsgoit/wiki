@@ -35,7 +35,7 @@ Metodele HTTP furnizează operaţiile, cum ar fi crearea citirea, actualizarea �
 
 Pentru o listă mai detaliată a metodelor disponibile puteți accesa acest [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
-### Mesaje de eroare HT
+### Mesaje de eroare HTTP
 
 Codurile de stare a răspunsului HTTP indică dacă o anumită solicitare HTTP a fost finalizată cu succes. Răspunsurile sunt grupate în cinci clase: 
 
@@ -48,4 +48,61 @@ Codurile de stare a răspunsului HTTP indică dacă o anumită solicitare HTTP a
 Codurile de stare sunt definite în secțiunea [10 din RFC 2616](https://tools.ietf.org/html/rfc2616#section-10). Adițional, pentru o descriere mai detaliată, puteți accesa următorul [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 ## Django REST
+
+Django REST framework este un set de instrumente puternic și flexibil pentru crearea API-urilor Web.
+
+Pentru a începe a dezolta un REST API folosing Django REST, e nevoie de instalat Django și de configurat proiectul Django astfel încât șa folosim instrumentele oferite de Django REST pentru a crea un API. 
+
+Pentru a ușura procesul de învățăre, vom folosi un proiect exemplu care va consta din un API pentru o aplicație de TODO. În imaginea de mai jos sunt reprezentate endpoint-urile pe care noi le vom crea și metodele HTTP care le vom folosi.
+
+![](../.gitbook/assets/image%20%2873%29.png)
+
+### Configurare proiect
+
+Primul pas pentru crearea unei aplicații web folosind Django, e nevoie să creăm un nou proiect Django rulând următoarea comanda:
+
+{% code-tabs %}
+{% code-tabs-item title="cmd.exe" %}
+```text
+django-admin.exe startproject todos_api
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+După care, în interiorul folder-ului creat de Django, todos\_api, rulam comanda de creare a unei aplicații Django:
+
+{% code-tabs %}
+{% code-tabs-item title="cmd.exe" %}
+```text
+python manage.py startapp todos
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Pentru a instala Django REST, deschidem linia de comandă și executăm urmatoarea comandă:
+
+{% code-tabs %}
+{% code-tabs-item title="cmd.exe" %}
+```text
+pip install djangorestframework
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
+Apoi, e nevoie de adăugat `django_rest` in lista `INSTALLED_APPS` în proiect.
+
+{% code-tabs %}
+{% code-tabs-item title="project/settings.py" %}
+```python
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+]
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
 

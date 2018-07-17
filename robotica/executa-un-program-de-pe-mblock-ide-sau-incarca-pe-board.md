@@ -4,7 +4,7 @@
 
 Când execuți un program în mBlock IDE, comenzile sunt trimise de pe computer pe placa robotului, unde sunt interpretate și apoi executate. Acest lucru înseamnă că utilizatorii pot folosi calculatoarele împreună cu robotul. De exemplu, poți utiliza tastatura pentru a controla robotul:
 
-![](../.gitbook/assets/image%20%2895%29.png)
+![](../.gitbook/assets/image%20%2897%29.png)
 
 Sau poți utiliza cronometrul furnizat în software-ul mBlock:
 
@@ -34,22 +34,22 @@ Când se încarcă pe placa robotului, programul rulează ca un **standalone**. 
 
 Când doriți să încărcați un program pe placa Arduino, ar trebui să intrați în modul Arduino. Puteți face acest lucru fie prin selectarea din meniu:
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
 Sau prin glisarea și plasarea programului "\(Board Name\)" în zona de programare și făcând clic pe acesta \(aici sunt blocurile de antet comune\):
 
-![](../.gitbook/assets/image%20%28131%29.png)
+![](../.gitbook/assets/image%20%28133%29.png)
 
 Când folosești Arduino, stage layout-ul \(în cazul în care panda este în stânga\) este ascuns și codul Arduino este afișat în partea dreaptă. În plus, toate scenariile de programare care au fost relevante doar pentru programarea mediului de mBlock \(cum ar fi "Motion" și "Looks"\) sunt blocate. Pe măsură ce scrieți programul mBlock, codul Arduino va fi generat automat în fereastra de editare Arduino.
 
-![](../.gitbook/assets/image%20%28115%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
   
 După ce ai terminat de scris programul, fă clic pe butonul "Upload to Arduino" și programul va începe să fie difuzat imediat ce a fost încărcat cu succes.
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![](../.gitbook/assets/image%20%2851%29.png)
 
 NOTĂ: Odată ce ai încărcat un program pe placa robotului, fie că este vorba de upgrade-ul firmware-ului, fie de unul pe care l-ai scris, acesta va fi suprascris programul preîncărcat. Dacă trebuie să reintroduci acest program pe placa robotului, mergi la Connect -&gt; Reset Default Program -&gt; \(Robot Name\):
 
-![](../.gitbook/assets/image%20%28110%29.png)
+![](../.gitbook/assets/image%20%28112%29.png)
 
