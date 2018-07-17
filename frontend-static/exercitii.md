@@ -215,7 +215,7 @@ Selectează toate tag-urile `<span>` din pagină.
 </div>
 ```
 
-Selectează tag-ul `<span>` cu clasa „black”.
+Selectează tag-ul `<span>` cu clasa `black`.
 
 ```markup
 <div>
@@ -237,7 +237,7 @@ Selectează tag-ul `<span>` care se află în tag-ul `<p>`.
 </div>
 ```
 
-Selectează tag-ul `<img>` care se află în tag-ul `<span>` cu clasa „black”.
+Selectează tag-ul `<img>` care se află în tag-ul `<span>` cu clasa `black`.
 
 ```markup
 <div>
@@ -251,7 +251,7 @@ Selectează tag-ul `<img>` care se află în tag-ul `<span>` cu clasa „black�
 </div>
 ```
 
-Selectează tag-urile `<img>` cu clasa „animals”.
+Selectează tag-urile `<img>` cu clasa `animals`.
 
 ```markup
 <div>
@@ -265,7 +265,7 @@ Selectează tag-urile `<img>` cu clasa „animals”.
 </div>
 ```
 
-Selectează tag-urile `<img>` cu clasa „animals” care se află în tag-urile `<p>`.
+Selectează tag-urile `<img>` cu clasa `animals` care se află în tag-urile `<p>`.
 
 ```markup
 <div>
@@ -293,7 +293,7 @@ Selectează toate tag-urile `<img>` și `<p>`.
 </div>
 ```
 
-Selectează doar tag-urile `<span>` cu clasa „fancy”.
+Selectează doar tag-urile `<span>` cu clasa `fancy`.
 
 ```markup
 <div>
@@ -306,7 +306,7 @@ Selectează doar tag-urile `<span>` cu clasa „fancy”.
 </div>
 ```
 
-Selectează tag-ul `<span>` cu clasa „hidden” și conținutul „_I am the most hidden”_.
+Selectează tag-ul `<span>` cu clasa `hidden` și conținutul `„I am the most hidden”`.
 
 ```markup
 <div>
@@ -322,7 +322,7 @@ Selectează tag-ul `<span>` cu clasa „hidden” și conținutul „_I am the m
 
 ## CSS Proprietăți
 
-Modifică culoarea următorului paragraf în „blue”.
+Modifică culoarea următorului paragraf în `blue`.
 
 ```markup
 <p class="albastru">
@@ -339,7 +339,7 @@ Pentru următorul citat, aliniază numele autorului pe partea dreaptă.
 <h4 class="autor">Isaac Newton</h4>
 ```
 
-Pentru următorul citat, mărește textul citatului la „18px”, iar numele autorului la „21px”.
+Pentru următorul citat, mărește textul citatului la `18px`, iar numele autorului la `21px`.
 
 ```markup
 <p class="citat">
@@ -348,7 +348,7 @@ Pentru următorul citat, mărește textul citatului la „18px”, iar numele au
 <h4 class="autor">Thomas A. Edison</h4>
 ```
 
-Subliniază cu o linie și mărește grosimea termenului următoarei noțiuni. Modifică culoarea pe fundal în „hotpink”.
+Subliniază cu o linie și mărește grosimea termenului următoarei noțiuni. Modifică culoarea pe fundal în `hotpink`.
 
 ```markup
 <div class="definitie">
@@ -356,7 +356,7 @@ Subliniază cu o linie și mărește grosimea termenului următoarei noțiuni. M
 </div>
 ```
 
-Modifică spațiul între litere la „1.5px” în textul următorului citat.
+Modifică spațiul între litere la `1.5px` în textul următorului citat.
 
 ```markup
 <p class="citat">
@@ -367,7 +367,7 @@ Modifică spațiul între litere la „1.5px” în textul următorului citat.
 
 ## CSS Poziționare
 
-Poziționează butonul {save} în colțul dreapta-jos „10px x 10px” fiind disponibil chiar dacă scrolăm pagina.
+Poziționează butonul `{save}` în colțul dreapta-jos `10px x 10px` fiind disponibil chiar dacă scrolăm pagina.
 
 ```markup
 <section>
@@ -405,7 +405,7 @@ p {
 }
 ```
 
-Poziționează cardul astfel ca „70px” din el să fie pe imagine și spațiul inițial ocupat de card să rămână același.
+Poziționează cardul astfel ca `70px` din el să fie pe imagine și spațiul inițial ocupat de card să rămână același.
 
 ```markup
 <section>
@@ -455,7 +455,7 @@ p {
 }
 ```
 
-Poziționează titlurile  și  pe imagine centru-jos.
+Poziționează titlurile `<h1>` și `<h2>` pe imagine centru-jos.
 
 ```markup
 <section class="hero">
@@ -494,7 +494,7 @@ p {
 }
 ```
 
-Poziționează titlurile `<h1>` și `<h3>` pe imagine centru-jos și elementul cu clasa „overlay” pe imagine și în spatele titlurilor.
+Poziționează titlurile `<h1>` și `<h3>` pe imagine centru-jos și elementul cu clasa `overlay` pe imagine și în spatele titlurilor.
 
 ```markup
 <section>
@@ -536,7 +536,7 @@ h1, h3 {
 }
 ```
 
-Poziționează elementul cu clasa „popup-overlay” pe toate elementele din pagină și elementul cu clasa boxa albă cu butoane centru-jos „50px”.
+Poziționează elementul cu clasa `popup-overlay` pe toate elementele din pagină și elementul cu clasa boxa albă cu butoane centru-jos `50px`.
 
 ```markup
 <section>
