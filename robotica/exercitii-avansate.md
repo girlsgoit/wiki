@@ -1,4 +1,4 @@
-# 2.3 Exerciții avansate
+# 2.3 Exerciții avansate - Scratch
 
 ## **Schimbarea culorilor utilizând variabilele.**
 
