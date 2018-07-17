@@ -1,13 +1,14 @@
 ---
-description: request/response communication
+description: comunicarea request/response
 ---
 
 # AJAX
 
-AJAX is the art of exchanging data with a server, and updating parts of a web page - without reloading the whole page.  
+Comunicarea intre doua aplicatii care pot fi pe acelasi calculator sau pe calculatoare diferite poate fi realizata in diferite moduri. Un mod foarte popular pe larg raspindit in lume este 
 
+AJAX este arta de a schimba datele cu serverul si modificarea partilor din pagina - fara a face refresh la intreaga pagina.
 
-jQuery provides several methods for AJAX functionality.
+jQuery are implementat deja diferite metode pentru interactiunea cu AJAX.
 
 With the jQuery AJAX methods, you can request text, HTML, XML, or JSON from a remote server using both HTTP Get and HTTP Post - And you can load the external data directly into the selected HTML elements of your web page!
 
@@ -80,7 +81,7 @@ URL  - linkul catre server care implementeaza metoda GET pe acesta adresa.
 
 Pentru exemplul cu Dorin folositi urmatorul URL
 
-url = **192.168.2.13:3000/posts**
+url = **192.168.1.148:3000/posts**
 
 #### 
 
