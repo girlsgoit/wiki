@@ -81,7 +81,7 @@ URL  - linkul catre server care implementeaza metoda GET pe acesta adresa.
 
 Pentru exemplul cu Dorin folositi urmatorul URL
 
-url = **192.168.1.148:3000/posts**
+url = **192.168.2.13:3000/posts**
 
 #### 
 
