@@ -1,8 +1,10 @@
 ---
-description: (robotelul construit de cei de la matrix)
+description: (robotelul construit de cei de la Matrix)
 ---
 
 # Custom robot
+
+![](../.gitbook/assets/img_20180716_1058269842.jpg)
 
 ### Setări și configurări
 
@@ -18,7 +20,7 @@ Bibliotecă: **MeMCore.h**
 #### Configurare \(la început, înainte de stup\)
 
 ```text
-P motor1(M1);
+MeDCMotor motor1(M1);
 MeDCMotor motor2(M2);
 ```
 
