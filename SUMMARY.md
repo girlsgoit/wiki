@@ -42,6 +42,7 @@
 * [3.4 Line follow - Arduino](robotica/line-follow-arduino.md)
 * [3.5 Ultimate robot](robotica/3.5-exemple-arduino-ultimate.md)
 * [4.1 Planificarea și managementul proiectelor](robotica/4.1-planificarea-si-managementul-proiectelor.md)
+* [Custom robot](robotica/custom-robot.md)
 * [Noțiuni și explicații](robotica/notiuni-si-explicatii.md)
 
 ## 3D Printing
