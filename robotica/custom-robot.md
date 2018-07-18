@@ -4,9 +4,10 @@ description: (robotelul construit de cei de la matrix)
 
 # Custom robot
 
-Setări Arduino:   
-Board: Arduino/Genuino Uno  
-Bibliotecă: MeMCore.h
+### Setări și configurări
+
+Board \(plăcuță\): **Arduino/Genuino Uno**  
+Bibliotecă: **MeMCore.h**
 
 ```text
 #include "MeMCore.h"
@@ -43,7 +44,31 @@ motor2.stop();
 
 ### Motoare pentru sticlă/vas
 
+#### Configurare
 
+```text
+MeDCMotor brat(PORT_1);
+```
+
+Mișcă în sus:
+
+```text
+brat.run(-motorSpeed);   /* valori: intre -255 si 255. */
+delay(4000);
+brat.stop();
+```
+
+Mișcă în jos:
+
+```text
+brat.run(motorSpeed);   /* valori: intre -255 si 255. */
+delay(1000);
+brat.stop();
+```
+
+## Exemplu de program complet
+
+Inițial brațul trebuie să fie în jos. Robotul o să ridice brațul în sus, apoi merge 5 secunde inainte, apoi mișcă brațul în jos.
 
 ```text
 #include "MeOrion.h"
