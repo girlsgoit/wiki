@@ -9,10 +9,10 @@ description: (robotelul construit de cei de la Matrix)
 ### Setări și configurări
 
 Board \(plăcuță\): **Arduino/Genuino Uno**  
-Bibliotecă: **MeMCore.h**
+Bibliotecă: **MeOrion.h**
 
 ```text
-#include "MeMCore.h"
+#include "MeOrion.h"
 ```
 
 ### Motoare
