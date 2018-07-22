@@ -1,6 +1,6 @@
 # 3.4 Line follow - Arduino
 
-## O versiune a codului final:
+## O versiune a codului final \(linia neagră\):
 
 {% hint style="info" %}
  Codul tău final poate arăta altfel. Nu e nevoie să copiezi acest cod. Aici ai doar un exemplu din care să te inspiri
