@@ -10,9 +10,10 @@ Click pe: http://www.mblock.cc/download pentru a descărca softul. 
 
 #### Pentru Windows: 
 
-1. Selectează: “Windows Download” și începe descărcarea 
-2. După ce se finalizează descărea, deschide fișietul zip “mBlock\_win\_Vx.x.x” și selectează limba engleză. 
-3. După instalare, click “Launch mBlock” și "Finish" pentru a deschide mBlock. 
+1. Selectează: “mBlock3” 
+2. Selectează: “Windows 7 and above” și începe descărcarea 
+3. După ce se finalizează descărea, deschide fișietul zip “mBlock\_win\_V3.4.11.exe” și selectează limba engleză. 
+4. După instalare, click “Launch mBlock” și "Finish" pentru a deschide mBlock. 
 
 #### Introducere în Interfața mBlock. 
 
