@@ -18,7 +18,7 @@ Când plasezi al doilea blog sub primul bloc, partea de jos a primului bloc devi
 
 Bine, acum vrei mai multe note? Pentru mai multe note, ai nevoie de mai multe comenzi/blocuri  "play tone on…". O scurtătură pe care o poți face, în loc să tragi și să renunți este să copii și să lipești. Dacă faci clic dreapta pe blocurile din zona de programare, îmi dă un meniu:
 
-![](../.gitbook/assets/image%20%28123%29.png)
+![](../.gitbook/assets/image%20%28124%29.png)
 
 Selectând "duplicate" copiază blocurile. Reține că acest lucru va duplica toate blocurile de mai jos și inclusiv blocul pe care ai făcut clic. Deci, dacă ai fi făcut clic pe blocul de jos, doar un bloc ar fi fost duplicat. Când vei face clic pe blocul superior, ambele blocuri vor fi duplicate:
 
@@ -34,7 +34,7 @@ Acum le poți adăuga la sfârșitul cântecului tău:
 
 Ok. Acum, vrei să ai o pauză? - Ai nevoie de un alt bloc. Trebuie să aștepți. Sub scripturile "Control", există un bloc "wait":
 
-![](../.gitbook/assets/image%20%28133%29.png)
+![](../.gitbook/assets/image%20%28134%29.png)
 
 Adăuga asta la sfârșitul cântecului tău, apoi repetă prima jumătate cu câteva schimbări:
 
@@ -42,11 +42,11 @@ Adăuga asta la sfârșitul cântecului tău, apoi repetă prima jumătate cu c�
 
 Un aspect important al scrierii codului este includerea comentariilor. În timp ce acestea nu afectează modul în care rulează un program, ele sunt un ajutor uriaș pentru persoanele care citesc codul. Aceștia ar putea fi și alți oameni care lucrează în aceeași echipă cu tine, sau chiar tu, după ce ai scris inițial codul \(și ai uitat unele detalii\). Comentariile trebuie incluse în toate programele pentru a ghida persoanele care le citesc ulterior. Pentru a adăuga comentarii, fă clic dreapta pe blocul în care dorești să adaugi comentariul și apoi selectează "add comment":
 
-![](../.gitbook/assets/image%20%28124%29.png)
+![](../.gitbook/assets/image%20%28125%29.png)
 
 Aici adaugă comentarii la melodia ta:
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 Asigură-te că adaugi comentarii la toate programele și actualizezi comentariile acolo unde este necesar dacă faci modificări în programe.
 
@@ -84,7 +84,7 @@ S-ar putea să fie distractiv ca robotul să lumineze ca o mașină de poliție,
 
 După cum poți vedea, forma acestui bloc este diferită de forma celorlalte blocuri pe care le-am văzut până acum. Acest lucru se datorează faptului că acesta este un bloc de control care permite programului să intre într-o buclă. În programare, o buclă este o caracteristică care permite repetarea unei părți a codului. În acest exemplu, buclăa se va repeta pentru totdeauna/infinit, repetând toate blocurile care se află în "forever loop":
 
-![](../.gitbook/assets/image%20%28125%29.png)
+![](../.gitbook/assets/image%20%28126%29.png)
 
 LED-urile vor fi setate pe roșu, apoi pe albastru. Apoi, programul se va întoarce în partea de sus a buclei, iar LED-urile vor fi redate din nou în roșu, apoi albastru, apoi buclă etc. etc pentru totdeauna. Asta-i bine…. Dar luminile își schimbă culoarea mult prea rapidă. Le poți  încetini prin adăugarea unui bloc "Wait":
 
@@ -110,7 +110,7 @@ O altă NOTĂ: Acest tutorial rulează programe din IDE-ul mBlock. Nu actualizea
 
 Roboții sunt făcuți să se miște și în acest tutorial, vom învăța cum. Blocul care controlează mișcarea robotului are 2 meniuri drop-down. Primul meniu controlează direcția în care se mișcă robotul:
 
-![](../.gitbook/assets/image%20%28118%29.png)
+![](../.gitbook/assets/image%20%28119%29.png)
 
 Al doilea meniu controlează alimentarea. Puterea maximă este 255, 0 oprește motoarele, iar numerele negative inversează direcția. \(NOTĂ: Nivelul de putere mai lent poate să nu fie suficient de puternic pentru ca robotul să se miște.\)
 
@@ -134,7 +134,7 @@ Robot rulează programul și apoi termină. Penultima comanda este sa intoarcă 
 
 Ok, robotul sa mutat prea mult. Întrucât vream să testăm cât de departe să-l întorcem, și asta nu are legătură cu partea codului care merge mai departe, vom izola partea de cotitură a codului. Acest lucru va face testul mai ușor și mai rapid:
 
-![](../.gitbook/assets/image%20%28100%29.png)
+![](../.gitbook/assets/image%20%28101%29.png)
 
 După câteva teste, ne-am dat seama că robotul  are nevoie de 0,65 secunde pentru a face o întoarcere de 90 de grade. Timpul necesar pentru a trasa/forma 90 de grade depinde de mai multe lucruri. De exemplu, ce fel de baterie folosim, cum este încărcată bateria, cât de multă frecare există între motor și roată, și viteza  presetare a virajului va afecta de asemenea timpul necesar pentru întoarcerea de 90 de grade.
 
@@ -160,7 +160,7 @@ _Challenge:_
 
 Uneori nu vrem să ne mișcăm într-o linie dreaptă sau să efectuăm o întoarcere într-un anumit punct \(așa cum fac comenzile turn left/ turn right\). În acest caz, putem folosi blocul "set motor":
 
-![](../.gitbook/assets/image%20%28136%29.png)
+![](../.gitbook/assets/image%20%28137%29.png)
 
 Putem alege un motor \(M1 - stânga, M2 - dreapta\) și un nivel de putere \(la puterile negative se deplasează în sens invers\). În acest fel, putem efectua rotire pivotată \(în cazul în care un motor este oprit și celălalt este pornit\):
 
@@ -168,11 +168,11 @@ Putem alege un motor \(M1 - stânga, M2 - dreapta\) și un nivel de putere \(la 
 
 \*Cum arată schematic o rotire pivotată: 
 
-![](../.gitbook/assets/image%20%28122%29.png)
+![](../.gitbook/assets/image%20%28123%29.png)
 
 Sau putem să ne mișcăm în cercuri:
 
-![](../.gitbook/assets/image%20%2893%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 _Challenge:_ 
 
@@ -186,16 +186,23 @@ Construie;te: mBot standard \(poți elimina senzorul de ultrasunete și dispozit
 
 Program: Dacă sunteți la bord, trebuie să folosiți telecomanda pentru a controla robotul. Dacă rulați programul din mBlock, puteți folosi telecomanda sau tastatura pentru a controla robotul. Vom folosi un program simplu și-l vom rulat de la mBlock:
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28104%29.png)
 
 Experimentează: Proiectează un curs pentru ca robotul tău să se deplaseze și să faceți curse.
 
 _Challenge:_  
 Poți modifica codul astfel încât robotul să fie mai ușor de manevrat?
 
+## 2.1.6  Singing and Dancing mBot
 
+Opțiunile sunt fără sfârșit cu acest robot. Scrieți orice cântec doriți sau creați propriul dvs. cântec, apoi obțineți grosimea mBot. Scrie un cod care joacă un cântec. Scrie un cod care devine dansul mBot. Rulați programul din mediul mBlock. Puneți un antet "Când a fost marcat cu steagul verde" în partea de sus a fiecărui bloc:
 
-  
-  
+![](../.gitbook/assets/image%20%2886%29.png)
+
+Apoi, când faceți clic pe Steagul Verde, ambii biți de cod vor rula în același timp. Acesta este modul în care mBot meu dansează la muzică cu programul pe care l-am scris:
+
+{% embed data="{\"url\":\"https://www.youtube.com/watch?v=ayTf9FBMVj4\",\"type\":\"video\",\"title\":\"Singing and Dancing mBot\",\"description\":\"See the lesson to make this happen on the Makeblock website.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.youtube.com/yts/img/favicon\_144-vfliLAfaB.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://i.ytimg.com/vi/ayTf9FBMVj4/maxresdefault.jpg\",\"width\":1280,\"height\":720,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"player\",\"url\":\"https://www.youtube.com/embed/ayTf9FBMVj4?rel=0&showinfo=0\",\"html\":\"<div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"https://www.youtube.com/embed/ayTf9FBMVj4?rel=0&amp;showinfo=0\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"></iframe></div>\",\"aspectRatio\":1.7778}}" %}
+
+Puteți descărca  [program](https://github.com/Matt-Ma/Makeblock-Tutorials/raw/master/Singing%20and%20Dancing%20mBot.sb2) meu și apoi aveți un du-te la scris propriul dvs..  
 
 
