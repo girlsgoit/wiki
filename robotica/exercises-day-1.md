@@ -148,7 +148,7 @@ Robotul trebuie să meargă înainte și să se întorcă de 4 ori pentru a face
 
 _Challenge:_
 
-1. Avem nevoie de ultima comandă de mișcare în bucla repetată? Poți face codul mai raționalizat - **așa că încă mai face ceea ce vrem, dar cu mai puține comenzi emise? \(**so it still does what we want, but with less commands issued?\)
+1. Avem nevoie de ultima comandă de mișcare în bucla repetată? Poți face codul mai rațional - **așa încât face exact același lucru, dar cu mai puține comenzi?**
 
    2. Poți scrie un program care mișcă robotul într-un dreptunghi? 
 
@@ -182,7 +182,7 @@ _Challenge:_
 
 ## 2.1.5 Racing mBot
 
-Construie;te: mBot standard \(poți elimina senzorul de ultrasunete și dispozitivul de urmărire a melodiilor\(track tracking device\)\)\)
+Construiește: mBot standard \(poți elimina senzorul de ultrasunete și dispozitivul de urmărire a melodiilor\(track tracking device\)\)\)
 
 Program: Dacă sunteți la bord, trebuie să folosiți telecomanda pentru a controla robotul. Dacă rulați programul din mBlock, puteți folosi telecomanda sau tastatura pentru a controla robotul. Vom folosi un program simplu și-l vom rulat de la mBlock:
 
@@ -193,16 +193,9 @@ Experimentează: Proiectează un curs pentru ca robotul tău să se deplaseze ș
 _Challenge:_  
 Poți modifica codul astfel încât robotul să fie mai ușor de manevrat?
 
-## 2.1.6  Singing and Dancing mBot
 
-Opțiunile sunt fără sfârșit cu acest robot. Scrieți orice cântec doriți sau creați propriul dvs. cântec, apoi obțineți grosimea mBot. Scrie un cod care joacă un cântec. Scrie un cod care devine dansul mBot. Rulați programul din mediul mBlock. Puneți un antet "Când a fost marcat cu steagul verde" în partea de sus a fiecărui bloc:
 
-![](../.gitbook/assets/image%20%2886%29.png)
-
-Apoi, când faceți clic pe Steagul Verde, ambii biți de cod vor rula în același timp. Acesta este modul în care mBot meu dansează la muzică cu programul pe care l-am scris:
-
-{% embed data="{\"url\":\"https://www.youtube.com/watch?v=ayTf9FBMVj4\",\"type\":\"video\",\"title\":\"Singing and Dancing mBot\",\"description\":\"See the lesson to make this happen on the Makeblock website.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.youtube.com/yts/img/favicon\_144-vfliLAfaB.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://i.ytimg.com/vi/ayTf9FBMVj4/maxresdefault.jpg\",\"width\":1280,\"height\":720,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"player\",\"url\":\"https://www.youtube.com/embed/ayTf9FBMVj4?rel=0&showinfo=0\",\"html\":\"<div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"https://www.youtube.com/embed/ayTf9FBMVj4?rel=0&amp;showinfo=0\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"></iframe></div>\",\"aspectRatio\":1.7778}}" %}
-
-Puteți descărca  [program](https://github.com/Matt-Ma/Makeblock-Tutorials/raw/master/Singing%20and%20Dancing%20mBot.sb2) meu și apoi aveți un du-te la scris propriul dvs..  
+  
+  
 
 
