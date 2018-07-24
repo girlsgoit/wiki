@@ -48,6 +48,7 @@
 ## 3D Printing
 
 * [Intro](3d-printing/intro.md)
+* [Fusion 360 Intro](3d-printing/fusion-360-intro.md)
 
 ## Drone
 
