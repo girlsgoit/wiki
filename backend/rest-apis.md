@@ -55,7 +55,7 @@ Pentru a începe a dezolta un REST API folosing Django REST, e nevoie de instala
 
 Pentru a ușura procesul de învățăre, vom folosi un proiect exemplu care va consta din un API pentru o aplicație de TODO. În imaginea de mai jos sunt reprezentate endpoint-urile pe care noi le vom crea și metodele HTTP care le vom folosi.
 
-![](../.gitbook/assets/image%20%2877%29.png)
+![](../.gitbook/assets/image%20%2878%29.png)
 
 ### Configurare proiect
 
