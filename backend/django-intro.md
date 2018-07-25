@@ -428,7 +428,7 @@ Pentru a folosi Django ORM rulăm următoarea comandă în Command Prompt
 python manage.py shell
 ```
 
-![](../.gitbook/assets/image%20%28137%29.png)
+![](../.gitbook/assets/image%20%28138%29.png)
 
 Vă aflați acum în consola interactivă Django. Ca să putem folosi modelul `Post` acesta trebuie importat folosind următoarea comandă:
 
