@@ -31,10 +31,24 @@ Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajun
 * Tub termic
 * LEDs
 * Hârtie abrazivă, pile abrazive
+* Proiecte și modele 3D exemple:
+  * thingiverse.com
+  * instructables.com
+  * grabcad.com
 
 #### Milestones și taskuri
 
-1. Construcția prototipului pe Arduino și breadboard 
+1. Construcția prototipului pe Arduino și breadboard
+   1. Schița de cod
+   2. Schița componentelor
+   3. Asamblare breadbord și Arduino
+2. Imprimarea 3D
+   1. Schița model 3D \(pe foaie sau fizic din foi\)
+   2. Modelul 3D pentru imprimare
+   3. Slicing
+   4. Imprimare 3D
+3. Asamblare electronică și Arduino
+4. Testare
 
 ## Semafor inteligent
 
@@ -60,17 +74,31 @@ Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajun
 * Tub termic
 * LEDs
 * Hârtie abrazivă, pile abrazive
+* Proiecte și modele 3D exemple:
+  * thingiverse.com
+  * instructables.com
+  * grabcad.com
 
 #### Milestones și taskuri
 
-1. Construcția prototipului pe Arduino și breadboard 
+1. Construcția prototipului pe Arduino și breadboard
+   1. Schița de cod
+   2. Schița componentelor
+   3. Asamblare breadbord și Arduino
+2. Imprimarea 3D
+   1. Schița model 3D \(pe foaie sau fizic din foi\)
+   2. Modelul 3D pentru imprimare
+   3. Slicing
+   4. Imprimare 3D
+3. Asamblare electronică și Arduino
+4. Testare
 
 ## Solar tracker
 
 #### Sarcina Tehnică
 
 * Panouri solare improvizate, instalate pe acoperișul unei case pe modelul pregătit
-* Instalația cu 1-2 panouri solare urmăresc sursa de lumină mai puternică și își schimbă poziția respectiv.
+* Instalația cu 1-2 panouri solare urmăresc sursa de lumină mai puternică și își schimbă poziția respectiv după 2 axe
 * Dimensiunile de gabarit - să intre în  70 x 70 x 100 \(H\) mm 
 
 #### Resurse
@@ -83,13 +111,28 @@ Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajun
 * Culori plastic pentru imprimare: alb, negru, gri, mov, galben, verde, roșu
 * Rezistori
 * Sensor LDR
+* Motorașe sg9
 * Cabluri și conectoare
 * Clei și clei fierbinte
 * Tub termic
 * LEDs
 * Hârtie abrazivă, pile abrazive
+* Proiecte și modele 3D exemple:
+  * thingiverse.com
+  * instructables.com
+  * grabcad.com
 
 #### Milestones și taskuri
 
 1. Construcția prototipului pe Arduino și breadboard
+   1. Schița de cod
+   2. Schița componentelor
+   3. Asamblare breadbord și Arduino
+2. Imprimarea 3D
+   1. Schița model 3D \(pe foaie sau fizic din foi\)
+   2. Modelul 3D pentru imprimare
+   3. Slicing
+   4. Imprimare 3D
+3. Asamblare electronică și Arduino
+4. Testare
 
