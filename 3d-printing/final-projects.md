@@ -4,7 +4,7 @@ description: Descrierea proiectelor finale
 
 # Final Projects
 
-Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajuns până aici, iar mai departe sunt proiectele finale care unes în ele toate lucrurile pe care le-am învățat plus puțină improvizare din partea ta. Spor mai departe!
+Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajuns până aici, iar mai departe sunt proiectele finale care unesc în ele toate lucrurile pe care le-am învățat plus puțină improvizare din partea ta. Spor mai departe!
 
 ## Iluminare stradală
 

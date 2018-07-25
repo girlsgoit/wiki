@@ -1,3 +1,10 @@
+---
+description: >-
+  Schița e elementul de bază a unui model 3D. Aici mai jos sunt mici tutoriale
+  cu tips & tricks pentru un design după bunele practici pe care propun să le
+  urmezi pentru viitoarele proiecte. Spor!
+---
+
 # Sketch
 
 ## Your first design
