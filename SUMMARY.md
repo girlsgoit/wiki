@@ -51,6 +51,7 @@
 * [Fusion 360 Intro](3d-printing/fusion-360-intro.md)
 * [Sketch](3d-printing/sketch.md)
 * [Final Projects](3d-printing/final-projects.md)
+* [Arduino](3d-printing/arduino.md)
 
 ## Drone
 
