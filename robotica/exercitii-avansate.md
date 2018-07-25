@@ -29,11 +29,11 @@ O regulă pentru a numi variabilele este că prima literă trebuie să fie o min
 
 Pentru a face o variabilă în mBlock, trebuie să mergi la scriptul "Data & Blocks" și să alegi "Make a Variable":
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2863%29.png)
 
 Când apeși butonul, îți va cere un nume:
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 Asigură-te că alegeți un nume care descrie informațiile pe care le va conține variabila. Odată ce ai definit o variabilă, va afișa câteva blocuri legate de variabila pe care o poți folosi pentru programare:
 
@@ -41,7 +41,7 @@ Asigură-te că alegeți un nume care descrie informațiile pe care le va conți
 
 Cu excepția cazului în care variabilele vor fi modificate de la începutul unui program, se consideră o bună practică inițializarea variabilelor la începutul unui program. Pentru programul tău,  începe cu albastru pornit, și verde și roșu oprit. Vei transforma LED-urile pe o valoare maximă de 100:
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
 Și acum setează LED-urile la valorile acestor variabile:
 
@@ -49,7 +49,7 @@ Cu excepția cazului în care variabilele vor fi modificate de la începutul unu
 
 Acum scade setarea albastră unul câte unul până când ajung la zero. În același timp, mărește setarea verde până când ajunge la 100. Deci va trebui să repeți acest pas de 100 de ori:
 
-![](../.gitbook/assets/image%20%2892%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 _Challenge_:
 
@@ -66,20 +66,20 @@ _Challenge_:
 
  Butonul de la bord are 2 blocuri de programare asociate în mBlock. Primul este un header bloc:
 
-![](../.gitbook/assets/image%20%28115%29.png)
+![](../.gitbook/assets/image%20%28119%29.png)
 
 Acesta poate fi folosită ca declanșator pentru ca un anumit cod să fie rulat.   
 _NOTĂ: acest bloc poate fi folosit numai când rulează programe mBlock._
 
 Al doilea bloc este un bloc boolean. Un bloc boolean este unul care poate fi folosit într-o condițional \(cum ar fi "if"\) și se va întoarce fie adevărat, fie fals:
 
-![](../.gitbook/assets/image%20%28135%29.png)
+![](../.gitbook/assets/image%20%28141%29.png)
 
 Meniurile drop-down pentru ambele blocuri sunt fie "pressed", fie "released"
 
 Există două timere în mBlock - una rulează în mediul mBlock, iar cealaltă rulează pe tablă. Prin urmare,  ce timer utilizezi ar trebui să depindă de locul în care intenționezi să rulezi programul. Blocurile temporizatorului de mediu mBlock pot fi găsite în scripturile "Sensing":
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 Blocurile cronometrului robot pot fi găsite în scripturile "Robots". Poți folosi blocul "reset timer" pentru a seta temporizatorul la zero:
 
@@ -124,7 +124,7 @@ End Loop
 
 La sfârșitul acestui program, numărul de linii peste care a trecut mBot-ul trebuie să fie salvat în variabila. Poți scrie acest lucru în codul mBlock. Mergi mai departe și să numără linii timp de 10 secunde:
 
-![](../.gitbook/assets/image%20%28119%29.png)
+![](../.gitbook/assets/image%20%28124%29.png)
 
 Există 2 probleme codul în acest moment. Prima este că nu există nicio modalitate de citire a variabilei de numărare. 
 
@@ -145,28 +145,28 @@ Diferitele secțiuni ale unui program fac deseori lucruri diferite. Un program p
 
 În mBlock, faci o funcție \(sau bloc\) făcând clic pe "Make a Block" în script-ul "Data&Blocks":
 
-![](../.gitbook/assets/image%20%2881%29.png)
+![](../.gitbook/assets/image%20%2883%29.png)
 
 Apoi alegeți un nume care reprezintă ceea ce face blocul:
 
-![](../.gitbook/assets/image%20%2873%29.png)
+![](../.gitbook/assets/image%20%2875%29.png)
 
 Apoi, blocul este definit și gata de utilizare.  
 Deci, în acest exercițiu trebuie să se recreeze programul implicit. Va fi o aproximație a programul implicit, deși nu este o replică completă. Mai întâi, robotul inițializează cu beep-uri și lumini:
 
-![](../.gitbook/assets/image%20%28118%29.png)
+![](../.gitbook/assets/image%20%28123%29.png)
 
 Vei pune acest lucru în propriul bloc de inițializare și îl vei chema\(call\) din programul mBot:
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
 Acest lucru rulează exact la fel ca în cazul în care comenzile LED-urilor setate și comenzile tonurilor de redare au fost "chemate/called" direct din programul mBot. Codul este mult mai ușor de citit ca asta. Apoi, scrie codul pentru partea de telecomandă. Din nou, vei scrie acest cod în propriul bloc:
 
-![](../.gitbook/assets/image%20%2877%29.png)
+![](../.gitbook/assets/image%20%2879%29.png)
 
 Apoi scrie blocuri similare pentru line follower și evitarea obiectului. Acum, trebuie să scrii aceste instrucțiuni în programul tău principal. După cum poți vedea, programul final arată foarte simplu:
 
-![](../.gitbook/assets/image%20%28123%29.png)
+![](../.gitbook/assets/image%20%28128%29.png)
 
 _Challenge:_
 
@@ -184,17 +184,17 @@ Acesta este codul original de evitare a obiectului:
 
 Acum, pune codul într-o funcție nouă \(New Block\):
 
-![](../.gitbook/assets/image%20%2848%29.png)
+![](../.gitbook/assets/image%20%2849%29.png)
 
 Pot apela funcția cu blocul ObiectAvoidance din partea de jos a imaginii de mai sus. Acum, dacă ao fi vrut să faci acest cod, dar în loc de o viteză de 100 de motoare, vreao 200? Sau 150? Sau 255? Aici intră parametrii. Un parametru permite transmiterea unei valori la această funcție.
 
 Pentru a transmite un parametru în mBlock, trebuie să le creezi fie când creezi funcția, fie după ce ai creat funcția, faci clic dreapta pe oricare dintre blocurile funcționale și selectezi "editare":
 
-![](../.gitbook/assets/image%20%28121%29.png)
+![](../.gitbook/assets/image%20%28126%29.png)
 
 Apoi în "Opțiuni":
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 Aici poți adăuga parametrii. Când adaugi un parametru, trebuie să specifici tipul de parametru: număr, șir sau Boolean. Un număr este doar o cifră sau mai multe, un șir poate fi numere sau litere și Boolean este fie adevărat, fie fals. În exemplul tau,  funcția ta trebuie să ruleze programul cu viteze diferite ale motorului. Deoarece viteza motorului este un număr, vei alege  "Add number input".
 
@@ -202,19 +202,19 @@ Aici poți adăuga parametrii. Când adaugi un parametru, trebuie să specifici 
 
 După cum vezi, aceasta creează o intrare nouă/ new input \(parameter\) în blocul din partea de sus. Îl numește "number1", dar deoarece aceasta va reprezenta viteza în programul tău, vei schimba numele la "speed":
 
-![](../.gitbook/assets/image%20%2895%29.png)
+![](../.gitbook/assets/image%20%2897%29.png)
 
 Acum, când apeșo ok, funcția are parametrul din blocul de definiție:
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 Și blocul său de apel:
 
-![](../.gitbook/assets/image%20%28131%29.png)
+![](../.gitbook/assets/image%20%28137%29.png)
 
 Singurul lucru care rămâne de făcut este să folosești parametrul de viteză când setezi viteza motoarelor. Poți face acest lucru prin tragerea și plasarea parametrului de viteză din blocul de definire a  Avoidance Object în locurile în care ai setat viteza. Funcția finală arată astfel:
 
-![](../.gitbook/assets/image%20%2875%29.png)
+![](../.gitbook/assets/image%20%2877%29.png)
 
 În partea de jos poți vedea funcția obiectAvoidance și se trece la o viteză de 125.
 
@@ -236,31 +236,31 @@ Cerinţe: 2 sau mai multe boards mCore.
 
 Introducere: Board-ul mCore este echipată cu un receptor IR și un transmițător IR, iar mBlock are 2 blocuri care pot fi utilizate pentru a trimite și primi mesaje:
 
-![](../.gitbook/assets/image%20%2886%29.png)
+![](../.gitbook/assets/image%20%2888%29.png)
 
 Robotul de trimitere:
 
 Un robot trebuie să trimită un mesaj. Ar trebui să introduci mesajul în mesajul "send mBot's message". Nu poți trimite variabile în mesaj și robotul recepționat nu poate folosi mesajul pentru a intra în alte funcții, astfel încât nu există avantajul de a scrie mesaje lungi. 
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 Aceste blocuri trebuie să fie în cicluri astfel încât trimiterea și primirea mesajului să se întâmple în același timp. Cu toate acestea, să fii conștientă de faptul că dacă trimiți în mod continuu mesajul mBot, acesta se va stinge după o perioadă de timp. Pentru a evita acest lucru, este recomandat să introduci o comandă de așteptare scurtă la fiecare 50 de trimiteri. Adăugarea comenzilor cu LED-uri îți permite, de asemenea, să afli când mesajele se declanșează și când nu sunt:
 
-![](../.gitbook/assets/image%20%2849%29.png)
+![](../.gitbook/assets/image%20%2850%29.png)
 
 Robotul primitor:
 
 Celălalt robot trebuie să asculte să o primească. Când primești, utilizează un bloc "wait until" pentru a primi mesajul. Trebuie să incluzi ghilimele " " în acest bloc:
 
-![](../.gitbook/assets/image%20%28113%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
 Dacă nu incluzi ghilimele "", programul nu se va compila cu succes. Odată ce mesajul a fost primit, poți efectua acțiunea declanșată de acest mesaj. În acest exemplu, LED-ul va porni verde și aștepți 0,5 secunde:
 
-![](../.gitbook/assets/image%20%2851%29.png)
+![](../.gitbook/assets/image%20%2852%29.png)
 
 Dacă trimiți mai multe mesaje de la robotul trimis, trebuie să aștepți până când mesajul primit nu este gol și apoi testezi pentru fiecare mesaj posibil trimis. În acest exemplu, aștepți până când mesajul nu este gol, apoi încerci pentru "a" și "b" unde "a" va roti LED-urile verzi și "b" va roti LED-urile albastre:
 
-![](../.gitbook/assets/image%20%2896%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 _Challenge_**:**
 
@@ -279,19 +279,19 @@ _Challenge_**:**
 
 Este posibil să comunici în serie cu mBot odată ce un program a fost actualizat la placă. Comunicarea prin serie poate fi prin USB, 2.4GHz sau Bluetooth. Pentru a comunica în serie, trebuie să selectezi extensia "Communication" din meniul Extensions:
 
-![](../.gitbook/assets/image%20%28100%29.png)
+![](../.gitbook/assets/image%20%28102%29.png)
 
 Odată ce este selectat acest lucru, poți accesa script-urile "Robots", derulezi în jos până  vei găsi blocurile de comunicare. Este probabil să faci clic pe “Show Extension”:
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2868%29.png)
 
 Blocurile de comunicare arată astfel:
 
-![](../.gitbook/assets/image%20%28110%29.png)
+![](../.gitbook/assets/image%20%28113%29.png)
 
 Comunicarea dintre robotul tău și computer se întâmplă în fereastra din partea dreaptă a mediului de programare mBlock:
 
-![](../.gitbook/assets/image%20%28134%29.png)
+![](../.gitbook/assets/image%20%28140%29.png)
 
 Programare:
 
@@ -301,11 +301,11 @@ Valoarea actuală a senzorilor poate fi afișată prin această comunicare. Pent
 
 Înlocuiește input-ul "hello" cu valoarea senzorului ultrasonic și pune-o într-un ciclu infinit:
 
-![](../.gitbook/assets/image%20%28140%29.png)
+![](../.gitbook/assets/image%20%28147%29.png)
 
 Ar trebui să obții acest output:
 
-![](../.gitbook/assets/image%20%2880%29.png)
+![](../.gitbook/assets/image%20%2882%29.png)
 
 Robotul poate fi, de asemenea, controlat prin citirea de la linia de intrare. Verifică mai întâi că datele sunt disponibile:
 
@@ -313,19 +313,19 @@ Robotul poate fi, de asemenea, controlat prin citirea de la linia de intrare. Ve
 
 Dacă este, citește apoi linia cu aceasta:
 
-![](../.gitbook/assets/image%20%28136%29.png)
+![](../.gitbook/assets/image%20%28143%29.png)
 
 Și compară-o cu aceasta:
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 În cele din urmă, programează-ți robotul să se comporte în funcție de dorințele tale. În acest program, un input de "r" va transforma LED-urile roșii și "o" le va dezactiva:
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28105%29.png)
 
 Apoi, în inputarea, lăsă luminile roșii, oprite și din nou pe roșu:
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../.gitbook/assets/image%20%2856%29.png)
 
 _Challenge:_
 
