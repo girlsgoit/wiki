@@ -47,7 +47,7 @@ Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajun
    2. Modelul 3D pentru imprimare
    3. Slicing
    4. Imprimare 3D
-3. Asamblare electronică și Arduino
+3. Asamblare electronică și Arduino, obiectele imprimate 3D.
 4. Testare
 
 ## Semafor inteligent
@@ -90,7 +90,10 @@ Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajun
    2. Modelul 3D pentru imprimare
    3. Slicing
    4. Imprimare 3D
-3. Asamblare electronică și Arduino
+3. Asamblare electronică și Arduino, obiectele imprimate 3D
+
+ 
+
 4. Testare
 
 ## Solar tracker
@@ -133,6 +136,6 @@ Primul lucru pe care trebuie să îl știii e că ești foarte bravo că ai ajun
    2. Modelul 3D pentru imprimare
    3. Slicing
    4. Imprimare 3D
-3. Asamblare electronică și Arduino
+3. Asamblare electronică și Arduino, obiectele imprimate 3D
 4. Testare
 
