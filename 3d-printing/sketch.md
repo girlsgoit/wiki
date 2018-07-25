@@ -22,5 +22,6 @@
 
 ![](../.gitbook/assets/image%20%2825%29.png)
 
-10. From the menu "Create" select "Extrude" command. A dialog will appear on the right which will guide you
+10. From the menu "Create" select "Extrude" command. A dialog will appear on the right which will guide you in the operations of the command. Extrude command "grows" a closed profile into a 3D body.  
+First, you have to select your profile and then you indicate the distance or height for the profile to be extruded. After you decided the dimension, hit ok. Now you have your first 3D body created.
 
