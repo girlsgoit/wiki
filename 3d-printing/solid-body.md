@@ -8,7 +8,7 @@ description: >-
 
 ## Model Felinar
 
-Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucrezi cu mai multe componente într-un design, vei învăța despre comenzile „Sweep” și „Circular Pattern”
+Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucrezi cu mai multe componente într-un design, vei învăța despre comenzile „**Sweep**” și „**Circular Pattern**”
 
 ![](../.gitbook/assets/image%20%2860%29.png)
 
