@@ -17,24 +17,24 @@ Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucr
 3. Create sketch
 4. Select plane
 
-![](../.gitbook/assets/image%20%28142%29.png)
+![](../.gitbook/assets/image%20%28145%29.png)
 
 5. Sketch -&gt; Rectangle from center point -&gt; dimensions 35 x 35 mm  
 6. Create -&gt; Extrude -&gt; Distance 10 mm.
 
-![](../.gitbook/assets/image%20%28120%29.png)
+![](../.gitbook/assets/image%20%28123%29.png)
 
 7. Modify -&gt; Shell \(selectați fața de jos\) -&gt; Inside Thickness - 1.6 mm
 
-![](../.gitbook/assets/image%20%28115%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
 8. Create sketch -&gt; Sketch -&gt; Circle D=5 mm -&gt; Offset D=0.8 mm -&gt; Exit sketch
 
-![](../.gitbook/assets/image%20%28134%29.png)
+![](../.gitbook/assets/image%20%28137%29.png)
 
 9. Selectează cercul interior -&gt; Modify -&gt; Extrude -&gt; Select profile -&gt; Extent \(select "to Object"\) -&gt; selectează fața opusă pentru a avea o „tăiere” până la fața selectată
 
-![](../.gitbook/assets/image%20%28106%29.png)
+![](../.gitbook/assets/image%20%28107%29.png)
 
 ![](../.gitbook/assets/image%20%2830%29.png)
 
@@ -42,6 +42,25 @@ Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucr
 11. Selectați profilul între cercurile create anterior -&gt; Create -&gt; Extrude d=10 mm.
 
 12. În browser fă click dreapta pe componenta principală care are numele fișierului salvat. Selectați „Activate”. Aceasta vă întoarce la lucrul cu componenta principală.  
-13. Creează o componentă nouă cu „New component”  
-14. Create sketch
+13. Creează o componentă nouă cu „New component”. Componenta precedentă a devenit transparentă.  
+14. Create sketch, selectează fața de sus a bazei \( componenta 1\)
+
+![](../.gitbook/assets/image%20%28121%29.png)
+
+15. Pentru a crea o relație parametrică între componente, selectăm Sketch, „Project / Include” -&gt; Project -&gt; Selectăm cercul exterior a barei din prima componentă.   
+16. Sketch -&gt; Offset -&gt; Selectează linia proiectată în pasul 15, d=0.3mm  
+17. Sketch -&gt; Offset -&gt; Selectează linia proiectată în pasul 15, d=1.5mm  
+ 
+
+![](../.gitbook/assets/image%20%2865%29.png)
+
+18. Create -&gt; Extrude, d=120mm  
+19. Creăm următoarea componentă repetând pașii 12-13.
+
+![](../.gitbook/assets/image%20%28109%29.png)
+
+Pentru a începe următoarea componentă vom crea un plan ajutător
+
+20. Construct -&gt; Offset Plane -&gt; Selectăm planul de pe fața de sus  barei create în componenta 2 -&gt; D= -7mm  
+21. Create sketch -&gt; Selectează planul construit la pasul 20.
 
