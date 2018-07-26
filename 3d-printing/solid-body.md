@@ -42,5 +42,6 @@ Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucr
 11. Selectați profilul între cercurile create anterior -&gt; Create -&gt; Extrude d=10 mm.
 
 12. În browser fă click dreapta pe componenta principală care are numele fișierului salvat. Selectați „Activate”. Aceasta vă întoarce la lucrul cu componenta principală.  
-13. Creează o componentă nouă cu „New component”
+13. Creează o componentă nouă cu „New component”  
+14. Create sketch
 
