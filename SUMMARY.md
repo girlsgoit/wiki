@@ -45,6 +45,7 @@
 * [Custom robot](robotica/custom-robot.md)
 * [Noțiuni și explicații](robotica/notiuni-si-explicatii.md)
 * [Delay fara sa opreasca programul](robotica/delay-fara-sa-opreasca-programul.md)
+* [Alte  resurse și exemple](robotica/alte-resurse-si-exemple.md)
 
 ## 3D Printing
 
