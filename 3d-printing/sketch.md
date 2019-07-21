@@ -46,7 +46,7 @@ Hai să o facem pas cu pas.
 3. Create sketch
 4. Select plan
 
-![](../.gitbook/assets/image%20%28148%29.png)
+![](../.gitbook/assets/image%20%28149%29.png)
 
 5. Sketch -&gt;Line -&gt; Creem o schiță ca în modelul de mai sus  cu dimensiunile:
 
@@ -59,7 +59,7 @@ Hai să o facem pas cu pas.
 
 6. Sketch -&gt; Fillet  -  11mm x 12mm x 5mm.
 
-![](../.gitbook/assets/image%20%28170%29.png)
+![](../.gitbook/assets/image%20%28172%29.png)
 
 7. Oglindim modelul  prin : Sketch -&gt; Mirror 
 

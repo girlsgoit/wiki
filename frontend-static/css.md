@@ -238,7 +238,7 @@ Mai multe despre fonturi poți să afli [aici](https://www.w3schools.com/css/css
 Dacă dorești să schimbi modul în care arată textul, poți folosi următoarele proprietăți:
 
 | Proprietatea | Descrierea |
-| --- | --- |
+| :--- | :--- |
 | color | Setează culoarea textului |
 | letter-spacing | Mărește sau micșoreaza spațiul între litere |
 | line-height | Setează înălțimea liniei |
@@ -639,7 +639,7 @@ Specificitatea determină care stiluri trebuie aplicate atunci când au fost apl
 Pentru a calcula specificitatea unui selectore putem folosi tabelul de mai jos.
 
 | Tag | 1 punct |
-| --- | --- | --- | --- |
+| :--- | :--- |
 | Clasă | 10 puncte |
 | ID | 100 puncte |
 | Inline | 1000 puncte |
@@ -647,7 +647,7 @@ Pentru a calcula specificitatea unui selectore putem folosi tabelul de mai jos.
 ### Un exemplu?
 
 | **Selector** | **Specificitate** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- |
 | \* { } | 0 \(selector universal\) |
 | li { } | 1 \(un tag\) |
 | ul li { } | 2 \(două tag-uri\) |

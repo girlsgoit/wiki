@@ -38,11 +38,11 @@ Când doriți să încărcați un program pe placa Arduino, ar trebui să intra�
 
 Sau prin glisarea și plasarea programului "\(Board Name\)" în zona de programare și făcând clic pe acesta \(aici sunt blocurile de antet comune\):
 
-![](../.gitbook/assets/image%20%28168%29.png)
+![](../.gitbook/assets/image%20%28169%29.png)
 
 Când folosești Arduino, stage layout-ul \(în cazul în care panda este în stânga\) este ascuns și codul Arduino este afișat în partea dreaptă. În plus, toate scenariile de programare care au fost relevante doar pentru programarea mediului de mBlock \(cum ar fi "Motion" și "Looks"\) sunt blocate. Pe măsură ce scrieți programul mBlock, codul Arduino va fi generat automat în fereastra de editare Arduino.
 
-![](../.gitbook/assets/image%20%28147%29.png)
+![](../.gitbook/assets/image%20%28148%29.png)
 
   
 După ce ai terminat de scris programul, fă clic pe butonul "Upload to Arduino" și programul va începe să fie difuzat imediat ce a fost încărcat cu succes.

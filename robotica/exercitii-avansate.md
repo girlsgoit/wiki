@@ -73,7 +73,7 @@ _NOTĂ: acest bloc poate fi folosit numai când rulează programe mBlock._
 
 Al doilea bloc este un bloc boolean. Un bloc boolean este unul care poate fi folosit într-o condițional \(cum ar fi "if"\) și se va întoarce fie adevărat, fie fals:
 
-![](../.gitbook/assets/image%20%28160%29.png)
+![](../.gitbook/assets/image%20%28161%29.png)
 
 Meniurile drop-down pentru ambele blocuri sunt fie "pressed", fie "released"
 
@@ -210,7 +210,7 @@ Acum, când apeșo ok, funcția are parametrul din blocul de definiție:
 
 Și blocul său de apel:
 
-![](../.gitbook/assets/image%20%28156%29.png)
+![](../.gitbook/assets/image%20%28157%29.png)
 
 Singurul lucru care rămâne de făcut este să folosești parametrul de viteză când setezi viteza motoarelor. Poți face acest lucru prin tragerea și plasarea parametrului de viteză din blocul de definire a  Avoidance Object în locurile în care ai setat viteza. Funcția finală arată astfel:
 
@@ -291,7 +291,7 @@ Blocurile de comunicare arată astfel:
 
 Comunicarea dintre robotul tău și computer se întâmplă în fereastra din partea dreaptă a mediului de programare mBlock:
 
-![](../.gitbook/assets/image%20%28159%29.png)
+![](../.gitbook/assets/image%20%28160%29.png)
 
 Programare:
 
@@ -301,7 +301,7 @@ Valoarea actuală a senzorilor poate fi afișată prin această comunicare. Pent
 
 Înlocuiește input-ul "hello" cu valoarea senzorului ultrasonic și pune-o într-un ciclu infinit:
 
-![](../.gitbook/assets/image%20%28166%29.png)
+![](../.gitbook/assets/image%20%28167%29.png)
 
 Ar trebui să obții acest output:
 
@@ -313,7 +313,7 @@ Robotul poate fi, de asemenea, controlat prin citirea de la linia de intrare. Ve
 
 Dacă este, citește apoi linia cu aceasta:
 
-![](../.gitbook/assets/image%20%28162%29.png)
+![](../.gitbook/assets/image%20%28163%29.png)
 
 Și compară-o cu aceasta:
 

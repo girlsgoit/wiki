@@ -24,7 +24,7 @@ F360 este un produs CAD \(computer aided design\), pentru începătorii și entu
 8. **Navigation bar and display settings:** The navigation bar contains commands used to zoom, pan, and orbit your design. The display settings control the appearance of the interface and how designs are displayed in canvas.
 9. In preferences check the 
 
-{% embed data="{\"url\":\"http://help.autodesk.com/view/fusion360/ENU/?guid=GUID-E647CA56-7187-406A-ACE4-EAC59914FAE4\",\"type\":\"link\",\"title\":\"Help\",\"icon\":{\"type\":\"icon\",\"url\":\"http://help.autodesk.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"More explanaition on F360 Learn page\"}" %}
+{% embed url="http://help.autodesk.com/view/fusion360/ENU/?guid=GUID-E647CA56-7187-406A-ACE4-EAC59914FAE4" caption="More explanaition on F360 Learn page" %}
 
 ## First steps
 

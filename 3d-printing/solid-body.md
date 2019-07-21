@@ -17,7 +17,7 @@ Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucr
 3. Create sketch
 4. Select plane
 
-![](../.gitbook/assets/image%20%28161%29.png)
+![](../.gitbook/assets/image%20%28162%29.png)
 
 5. Sketch -&gt; Rectangle from center point -&gt; dimensions 35 x 35 mm  
 6. Create -&gt; Extrude -&gt; Distance 10 mm.
@@ -30,7 +30,7 @@ Urmând instrucțiunile din acest acest model, vei învăța despre cum să lucr
 
 8. Create sketch -&gt; Sketch -&gt; Circle D=5 mm -&gt; Offset D=0.8 mm -&gt; Exit sketch
 
-![](../.gitbook/assets/image%20%28151%29.png)
+![](../.gitbook/assets/image%20%28152%29.png)
 
 9. Selectează cercul interior -&gt; Modify -&gt; Extrude -&gt; Select profile -&gt; Extent \(select "to Object"\) -&gt; selectează fața opusă pentru a avea o „tăiere” până la fața selectată
 
@@ -64,7 +64,7 @@ Pentru a începe următoarea componentă vom crea un plan ajutător
 20. Construct -&gt; Offset Plane -&gt; Selectăm planul de pe fața de sus  barei create în componenta 2 -&gt; D= -7mm  
 21. Create sketch -&gt; Selectează planul construit la pasul 20.
 
-![](../.gitbook/assets/image%20%28152%29.png)
+![](../.gitbook/assets/image%20%28153%29.png)
 
 22. Proiectează liniile de bară din componenta 1, din pasul 11.  
 23. Create -&gt; Extrude d=7mm  
