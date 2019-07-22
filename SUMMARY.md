@@ -13,8 +13,6 @@
 ## FRONTEND DINAMIC
 
 * [JavaScript](frontend-dinamic/javascript.md)
-* [JSON](frontend-dinamic/json.md)
-* [AJAX](frontend-dinamic/ajax.md)
 * [Vue.js](frontend-dinamic/vue.js.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 
