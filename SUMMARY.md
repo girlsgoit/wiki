@@ -26,6 +26,15 @@
 * [REST API's](backend/rest-apis.md)
 * [Exerciții](backend/exercitii.md)
 
+## 3D Printing
+
+* [Intro](3d-printing/intro.md)
+* [Fusion 360 Intro](3d-printing/fusion-360-intro.md)
+* [Sketch](3d-printing/sketch.md)
+* [Solid body](3d-printing/solid-body.md)
+* [Arduino](3d-printing/arduino.md)
+* [Final Projects](3d-printing/final-projects.md)
+
 ## ROBOTICĂ
 
 * [1.1 mBlock](robotica/mblock.md)
@@ -47,15 +56,6 @@
 * [Noțiuni și explicații](robotica/notiuni-si-explicatii.md)
 * [Delay fara sa opreasca programul](robotica/delay-fara-sa-opreasca-programul.md)
 * [Alte  resurse și exemple](robotica/alte-resurse-si-exemple.md)
-
-## 3D Printing
-
-* [Intro](3d-printing/intro.md)
-* [Fusion 360 Intro](3d-printing/fusion-360-intro.md)
-* [Sketch](3d-printing/sketch.md)
-* [Solid body](3d-printing/solid-body.md)
-* [Arduino](3d-printing/arduino.md)
-* [Final Projects](3d-printing/final-projects.md)
 
 ## Drone
 
