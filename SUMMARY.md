@@ -17,9 +17,11 @@
 * [Vue.js](frontend-dinamic/vue.js.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 * [Rest API](frontend-dinamic/axios/README.md)
-  * [Untitled](frontend-dinamic/axios/untitled.md)
   * [Rest api GET](frontend-dinamic/axios/axios.md)
+  * [Rest api GET one](frontend-dinamic/axios/untitled.md)
   * [Rest api POST](frontend-dinamic/axios/rest-api-post.md)
+  * [Rest api PUT](frontend-dinamic/axios/untitled-1.md)
+  * [Rest api DELETE](frontend-dinamic/axios/rest-api-delete.md)
 
 ## BACKEND
 

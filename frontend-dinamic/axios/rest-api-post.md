@@ -11,28 +11,6 @@ This endpoint allows you to get free cakes.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=false %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-
 {% api-method-form-data-parameters %}
 {% api-method-parameter name="participanta" type="string" required=true %}
 Numele participantei care a facut postarea
@@ -56,9 +34,9 @@ Cake successfully retrieved.
 
 ```javascript
 {
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
+    "participanta": "Ana Maria",
+    "titlu": "Titlul postarii",
+    "descriere": "Descrierea postarii"
 }
 ```
 {% endapi-method-response-example %}
@@ -69,9 +47,7 @@ Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```javascript
-{
-    "message": "Ain't no cake like that."
-}
+500
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -89,11 +65,19 @@ Could not find a cake matching this query.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="participanta" type="string" required=false %}
+numele participantei
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+
+{% api-method-parameter name="" type="string" required=false %}
+Titlul postarii
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="" type="string" required=false %}
+Descrierea postarii
+{% endapi-method-parameter %}
+{% endapi-method-form-data-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}

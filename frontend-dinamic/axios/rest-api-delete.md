@@ -1,6 +1,6 @@
-# Rest api GET
+# Rest api DELETE
 
-{% api-method method="get" host="https://ggit.mysevidu.com" path="/api/posts" %}
+{% api-method method="delete" host="https://ggit.mysevidu.com" path="/api/posts/:id" %}
 {% api-method-summary %}
 Get Cakes
 {% endapi-method-summary %}
@@ -11,6 +11,12 @@ This endpoint allows you to get free cakes.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+ID of the cake to get, for free of course.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -19,17 +25,7 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```javascript
-[{
-    "participanta": "Ana Maria",
-    "titlu": "Titlul postarii",
-    "descriere": "Descrierea postarii"
-},
-{
-    "participanta": "Ana Maria",
-    "titlu": "Titlul postarii",
-    "descriere": "Descrierea postarii"
-}....
-]
+200
 ```
 {% endapi-method-response-example %}
 
@@ -39,7 +35,7 @@ Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```javascript
-
+404
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
