@@ -8,13 +8,18 @@
 * [HTML](frontend-static/html.md)
 * [CSS](frontend-static/css.md)
 * [Milligram](frontend-static/milligram.md)
-* [Exerciții](frontend-static/exercitii.md)
+* [Exerciții](frontend-static/exercitii/README.md)
+  * [Erontend Static Exercitii](frontend-static/exercitii/erontend-static-exercitii.md)
 
 ## FRONTEND DINAMIC
 
 * [JavaScript](frontend-dinamic/javascript.md)
 * [Vue.js](frontend-dinamic/vue.js.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
+* [Rest API](frontend-dinamic/axios/README.md)
+  * [Untitled](frontend-dinamic/axios/untitled.md)
+  * [Rest api GET](frontend-dinamic/axios/axios.md)
+  * [Rest api POST](frontend-dinamic/axios/rest-api-post.md)
 
 ## BACKEND
 
