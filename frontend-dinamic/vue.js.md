@@ -34,11 +34,11 @@ vue create .
 
 Ți se va propune să selectezi una din configurările presetate. Poți selecta o configurare implicită sau „Manually select features” pentru a funcționalitățile de care ai nevoie.
 
-![](../.gitbook/assets/image%20%28170%29.png)
+![](../.gitbook/assets/image%20%28175%29.png)
 
 Configurația implicită este potrivită pentru o prototipare rapidă, în timp ce configurarea manuală oferă mai multe opțiuni pentru personalizarea proiectului tău. 
 
-![](../.gitbook/assets/image%20%28147%29.png)
+![](../.gitbook/assets/image%20%28151%29.png)
 
 ### 
 
