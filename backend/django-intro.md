@@ -62,13 +62,11 @@ cd \(_aici folosind Ctrl+V , scrieți adresa directoriului copiată anterior_ \)
 
     Pentru a crea proiectul, rulam urmatoarea comanda in Linia de Comanda: 
 
-{% code-tabs %}
-{% code-tabs-item title="Command Prompt" %}
+{% code title="Command Prompt" %}
 ```text
 django-admin.exe startproject mysite .
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
  unde ultimul cuvint **mysite** este denumirea proiectului. Punctul `.`  la sfârșitul comenzii este crucial, deoarece indică ca proiectul Django să fie instalat in directoriul curent.
 
@@ -96,13 +94,11 @@ Gasiti folderul `My Project` care contine proiectul si deschidețil în VSCode
 
     Pentru a crea o bază de date pentru proiectul nostru,  trebuie executată următoarea comandă în consola:
 
-{% code-tabs %}
-{% code-tabs-item title="Command Prompt" %}
+{% code title="Command Prompt" %}
 ```text
 python manage.py migrate
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 \*\(trebuie să fim în directorul **My Project** care conține fișierul **manage.py**\). Dacă merge bine, ar trebui să vedeți ceva de genul:
 
@@ -154,13 +150,11 @@ publish()
 
 \*aveți grijă ca directorul sa fie `my project`
 
-{% code-tabs %}
-{% code-tabs-item title="Command Prompt" %}
+{% code title="Command Prompt" %}
 ```bash
 python manage.py startapp blog
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **blog** este denumirea applicatiei.
 
@@ -170,8 +164,7 @@ In urma executarii acesteti comande , in folderul proiectului trebuie sa apara u
 
     După crearea aplicației, trebuie să-i comunicăm proiectului că ar trebui să o folosească. Facem asta în fișierul `mysite / settings.py`, deschis cu aplicația **VSCode**. Trebuie să găsim INSTALLED\_APPS și să adăugăm o linie care conține "blog".
 
-{% code-tabs %}
-{% code-tabs-item title="mysite/settings.py" %}
+{% code title="mysite/settings.py" %}
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -183,8 +176,7 @@ INSTALLED_APPS = [
     'blog',
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 și salvați fișierul.
 
@@ -192,8 +184,7 @@ INSTALLED_APPS = [
 
    Hai să deschidem `blog / models.py`, să eliminăm totul din el și să scriem următoarele linii:
 
-{% code-tabs %}
-{% code-tabs-item title="blog/models.py" %}
+{% code title="blog/models.py" %}
 ```python
 from django.db import models
 from datetime import datetime
@@ -215,8 +206,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
     Toate liniile care încep cu `from` sau `import` sunt linii care adaugă informații din alte fișiere. Deci, în loc să copiem și să lipim aceleași lucruri în fiecare fișier, putem include unele părți cu `from... import...`
 
@@ -243,13 +233,11 @@ Acum definim proprietățile despre care vorbeam: `title, text, created_date, pu
 
     Următorul pas ar fi să transmitem modificările create și pregătite de django bazei de date prin următoarea comandă:
 
-{% code-tabs %}
-{% code-tabs-item title="Command Prompt" %}
+{% code title="Command Prompt" %}
 ```text
 python manage.py migrate blog
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ![Acesta fiind rezultatul.](../.gitbook/assets/asd.PNG)
 
@@ -281,16 +269,14 @@ _În linia de comandă nu puteți scrie o altă comandă cât timp lucrează ser
 
     Pentru inceput deschidem fișierul `blog/admin.py`  și înlocuim compenentele acestuia cu liniiile de mai jos. 
 
-{% code-tabs %}
-{% code-tabs-item title="blog/admin.py" %}
+{% code title="blog/admin.py" %}
 ```python
 from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
     După cum puteți vedea, vom includem modelul Post definit în precedent. Pentru a face modelul nostru vizibil pe pagina de admin, trebuie să înregistrăm modelul cu `admin.site.register (Post)`. Reporninnd serverul cu comanda `python manage.py runserver`   in consolă și accesând pagina [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) ar trebui să obțineți următoarea fereastră.
 
@@ -304,8 +290,7 @@ python manage.py createsuperuser
 
 Urmați prin a introduce numele de utilizator \(în litere mici, fără spații\), adresa de e-mail și parola. _Nu vă faceți griji că nu puteți vedea parola pe care o introduceți - așa este din motive de securitate_. Doar tastați și apăsați pe Enter pentru a continua. Rezultatul ar trebui să arate astfel:
 
-{% code-tabs %}
-{% code-tabs-item title="Command Prompt" %}
+{% code title="Command Prompt" %}
 ```text
 Username: admin
 Email address: admin@admin.com
@@ -313,8 +298,7 @@ Password:
 Password (again):
 Superuser created successfully
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Reporniți serverul din nou și autentificațivă. Pagina ar trebui să arate cam așa.
 
@@ -328,28 +312,23 @@ Acum puteți explora puțin pagina, adaugând chiar și unele postari.
 
 În fișierul `mysite/urls.py` observăm un URL deja setat care este responsabil de pagina de admin 
 
-{% code-tabs %}
-{% code-tabs-item title="mysite/urls.py" %}
+{% code title="mysite/urls.py" %}
 ```python
 path('admin/', admin.site.urls)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Pentru a păstra fișierul `mysite/urls.py`  cât mai simplu și curat vom importa adresele din aplicația `blog` pentru aceasta vom adauga linia 
 
-{% code-tabs %}
-{% code-tabs-item title="mysite/urls.py" %}
+{% code title="mysite/urls.py" %}
 ```python
 path('', include('blog.urls')),
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
  observați că am folosit funcția `include`  deci ea trebuie importată. Fișierul nostru trebuie să arate așa:
 
-{% code-tabs %}
-{% code-tabs-item title="mysite/urls.py" %}
+{% code title="mysite/urls.py" %}
 ```python
 from django.conf.urls import include
 from django.urls import path
@@ -360,31 +339,26 @@ urlpatterns = [
     path('', include('blog.urls')),
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
     Deoarece în aplicația **blog** nu avem un fișier responsabil de URLs, acesta trebuie creat sub numele `urls.py` in directoriul **blog,**  iar în interiorul acestuia adaugați următoarele linii:
 
-{% code-tabs %}
-{% code-tabs-item title="blog/urls.py" %}
+{% code title="blog/urls.py" %}
 ```python
 from django.urls import path
 from . import views
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Acum este timpul să adăugăm primul URL. Adăugați următoarea linie.
 
-{% code-tabs %}
-{% code-tabs-item title="blog/urls.py" %}
+{% code title="blog/urls.py" %}
 ```python
 urlpatterns = [
     path('', views.post_list, name='post_list'),
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
     După cum puteți vedea, acum atribuim un `view` numit `post_list` la adresa URL.  Acest model îi va spune lui Django că `views.post_list` este locul potrivit pentru a merge dacă cineva intră pe site-ul dvs. web la adresa "[http://127.0.0.1:8000/](http://127.0.0.1:8000/)".
 
@@ -398,8 +372,7 @@ urlpatterns = [
 
 Adăugați următoarele în fișier:
 
-{% code-tabs %}
-{% code-tabs-item title="blog/views.py" %}
+{% code title="blog/views.py" %}
 ```python
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -409,8 +382,7 @@ def post_list(request):
     return HttpResponse("return this string")
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ![](../.gitbook/assets/hdfghdfg.PNG)
 
@@ -432,13 +404,11 @@ python manage.py shell
 
 Vă aflați acum în consola interactivă Django. Ca să putem folosi modelul `Post` acesta trebuie importat folosind următoarea comandă:
 
-{% code-tabs %}
-{% code-tabs-item title="command Prompt" %}
+{% code title="command Prompt" %}
 ```python
 >>> from blog.models import Post
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Folosind comanda următoare vom afișa toate postările create anterior folosind interfața Django admin.
 

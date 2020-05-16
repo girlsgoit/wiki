@@ -8,9 +8,9 @@ Acest limbaj se numeste `JavaScript`. Haideti sa incercam sa vedem cum il putem 
 
 Cel mai simplu mod sa incepeti sa experimentati cu `javascript` este sa deschideti consola browserului vostru si sa incepeti a scrie direct acolo. In Firefox sau Chrome, pentru a porni consola, tastati in orice pagina `F12`, si treceti la tab'ul `Console` in fereastra magica deschisa.
 
-Chrome: ![Chrome console](../.gitbook/assets/chrome-dev.png)
+Chrome: ![Chrome console](../../.gitbook/assets/chrome-dev.png)
 
-Firefox: ![Firefox console](../.gitbook/assets/firefox-dev.png) In firefox instructiunile javascript le puteti scrie jos.
+Firefox: ![Firefox console](../../.gitbook/assets/firefox-dev.png) In firefox instructiunile javascript le puteti scrie jos.
 
 Sa testam cateva operatii matematice. Scrieti urmatoarea linie in consola si tastati \[Enter\]:
 
@@ -18,7 +18,7 @@ Sa testam cateva operatii matematice. Scrieti urmatoarea linie in consola si tas
 (16 + 21*4) / 2 - 8
 ```
 
-Obtinem raspunsul la univers si tot absolut: ![Console run](../.gitbook/assets/console-run.png)
+Obtinem raspunsul la univers si tot absolut: ![Console run](../../.gitbook/assets/console-run.png)
 
 Desigur putem folosi consola din browser si javascript ca un calculator in continuare, dar... e totusi un limbaj intreg, poate mult mai multe!
 

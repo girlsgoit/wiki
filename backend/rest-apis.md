@@ -61,64 +61,53 @@ Pentru a ușura procesul de învățăre, vom folosi un proiect exemplu care va 
 
 Primul pas pentru crearea unei aplicații web folosind Django, e nevoie să creăm un nou proiect Django rulând următoarea comanda:
 
-{% code-tabs %}
-{% code-tabs-item title="cmd.exe" %}
+{% code title="cmd.exe" %}
 ```text
 django-admin.exe startproject todos_api
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 După care, în interiorul folder-ului creat de Django, todos\_api, rulam comanda de creare a unei aplicații Django:
 
-{% code-tabs %}
-{% code-tabs-item title="cmd.exe" %}
+{% code title="cmd.exe" %}
 ```text
 python manage.py startapp todos
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Și nu uităm ca să adăugăm aplicația creată în lista `INSTALLED_APPS`  
 
-{% code-tabs %}
-{% code-tabs-item title="todos\_api/settings.py" %}
+{% code title="todos\_api/settings.py" %}
 ```python
 INSTALLED_APPS = [
     ...
     'todos',
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Iar pentru că vom folosi Django REST, e nevoie de intalat acest pachet Python folosind `pip`
 
-{% code-tabs %}
-{% code-tabs-item title="cmd.exe" %}
+{% code title="cmd.exe" %}
 ```text
 pip install djangorestframework
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Apoi, e nevoie de adăugat `django_rest` in lista `INSTALLED_APPS` în proiect.
 
-{% code-tabs %}
-{% code-tabs-item title="toos\_api/settings.py" %}
+{% code title="toos\_api/settings.py" %}
 ```python
 INSTALLED_APPS = [
     ...
     'rest_framework',
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Urmatorul pas este să configurăm url-urile pentru proiectul nostru, iar pentru asta e nevoie de adăugat url-urile care urmează să le definim în aplicația noastră în proiect. Pentru asta, ne asigurăm că fișierul `urls.py` conține urmatorele informații:
 
-{% code-tabs %}
-{% code-tabs-item title="todos\_api/urls.py" %}
+{% code title="todos\_api/urls.py" %}
 ```python
 from django.contrib import admin
 from django.urls import path, include
@@ -128,46 +117,38 @@ urlpatterns = [
     path('', include('todos.urls')),
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Totodată, nu uităm să creăm fișierul `urls.py` în aplicația noastră cu următoarele linii de cod:
 
-{% code-tabs %}
-{% code-tabs-item title="todos/urls.py" %}
+{% code title="todos/urls.py" %}
 ```python
 from django.urls import path
 
 urlpatterns = [
 ]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Ca ultim pas, rulăm comanda de aplicare a migrărilor în baza de date folosind:
 
-{% code-tabs %}
-{% code-tabs-item title="cmd.exe" %}
+{% code title="cmd.exe" %}
 ```text
 python manage.py migrate
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Felicitări, am finalizat configurarea inițială a proiectului nostru. Pentru a ne asigura că totul funcționează corect, încercăm să pornim un server de test pe calculatorul nostru.
 
-{% code-tabs %}
-{% code-tabs-item title="cmd.exe" %}
+{% code title="cmd.exe" %}
 ```text
 python manage.py runserver
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Iar dacă totul a rulat bine, în terminal ar trebui să vedem:
 
-{% code-tabs %}
-{% code-tabs-item title="cmd.exe" %}
+{% code title="cmd.exe" %}
 ```text
 Performing system checks...
 
@@ -177,8 +158,7 @@ Django version 2.0.7, using settings 'todos_api.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

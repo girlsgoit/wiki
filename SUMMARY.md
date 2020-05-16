@@ -13,7 +13,11 @@
 
 ## FRONTEND DINAMIC
 
-* [JavaScript](frontend-dinamic/javascript.md)
+* [JavaScript](frontend-dinamic/javascript/README.md)
+  * [Introducere](frontend-dinamic/javascript/introducere.md)
+  * [Consola Browser'ului](frontend-dinamic/javascript/consola-browserului.md)
+  * [Variabile si operatori](frontend-dinamic/javascript/variabile-si-operatori.md)
+  * [Tipuri de date](frontend-dinamic/javascript/tipuri-de-date.md)
 * [Vue.js](frontend-dinamic/vue.js.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 * [Rest API](frontend-dinamic/axios/README.md)
