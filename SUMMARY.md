@@ -19,7 +19,6 @@
   * [Variabile](frontend-dinamic/javascript/variabile.md)
   * [Tipuri de date](frontend-dinamic/javascript/tipuri-de-date.md)
   * [Operatori](frontend-dinamic/javascript/operatori.md)
-  * [JSON si Array](frontend-dinamic/javascript/json-si-array.md)
   * [JavaScript & HTML](frontend-dinamic/javascript/javascript-and-html.md)
   * [Funcții](frontend-dinamic/javascript/functii.md)
   * [Condiționale \(if\)](frontend-dinamic/javascript/conditionale-if.md)
