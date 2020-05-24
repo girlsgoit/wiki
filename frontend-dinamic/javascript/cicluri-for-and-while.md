@@ -30,7 +30,7 @@ Condiția se scrie între parantezele de după cuvântul cheie, iar în parantez
 
 ![Ciclul for](https://lh3.googleusercontent.com/8y5xARljx1RaivH7hSwkYgRmVfLCjiJ0vw-HPPcd-JoILsuFPS7wQH21q3ZuCnJ4xRzSwitsPPBAHjyqKVCJ7vU_mCE-NMz9dH5umjdichlqbO0LphnRuxuILgv2a8nBQgu7yeqo-OM)
 
-**For of**
+### **For of**
 
 Elementele unei colecții pot fi iterate cu ajutorul ciclului **for of**.
 
