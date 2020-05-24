@@ -36,7 +36,7 @@ Elementele unei colecții pot fi iterate cu ajutorul ciclului **for of**.
 
 ![Structura ciclului for of](https://lh5.googleusercontent.com/C8pJjR4GsIbGPKlU7JVQj8CSBcHkBhcRQSIPy77tzVuJS1VpDptd_uHBrLelXRTOC3MPZfd8dw8pI2Fey84SgaI4VSerXjMMu4ZvM0bsYnnf3FAd3KBN1v0WaG0qAM_cPRVbczzAYjM)
 
-În paranteze după cuvântul cheie **for**, se indică numele variabilei valoarea căreia la fiecare iterație va corespunde valorii iterate din colecție. În exemplul de mai jos, valoarea variabilei _friendName_ va fi una din valorile din array. Astfel, prima iterație valoarea variabilei este _'Marc'._ Următoarele iterații, fiecare element din array va fi atribuit variabilei _friendName_. Acest proces se repetă până la ultima iterație când valoarea variabilei va fi _'Oleg'_.
+În paranteze după cuvântul cheie **for**, se indică numele variabilei valoarea căreia la fiecare iterație va corespunde valorii iterate din colecție. În exemplul de mai jos, valoarea variabilei _friendName_ va fi una din valorile din array. Astfel, prima iterație valoarea variabilei este _'Marc'._ Următoarele iterații, fiecare element din array va fi atribuit variabilei _friendName_. Acest proces se repetă până când toate elementele array'ului sunt parcurse. Ultima iterație valoarea variabilei _friendName_ este 'Oleg'.
 
 ![Ciclul for of](https://lh3.googleusercontent.com/yhn33aE14fXzUOB--Tnmrp-e0FYXq7oNzQWSNLq2LZSVm6u_YKmkqIsLRxdmcRZbRSuLviT_X7k3p2yhap7geBiziSNrsTW0iUIWTXquHZK7345UgnoYfipSK4-rYulY7mB-U7XxsEA)
 
