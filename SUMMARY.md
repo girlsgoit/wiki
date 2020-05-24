@@ -21,6 +21,7 @@
   * [Operatori](frontend-dinamic/javascript/operatori.md)
   * [JavaScript & HTML](frontend-dinamic/javascript/javascript-and-html.md)
   * [Funcții](frontend-dinamic/javascript/functii.md)
+  * [DOM & Browser API](frontend-dinamic/javascript/dom-and-browser-api.md)
   * [Condiționale \(if\)](frontend-dinamic/javascript/conditionale-if.md)
   * [Cicluri \(for & while\)](frontend-dinamic/javascript/cicluri-for-and-while.md)
 * [Vue.js](frontend-dinamic/vue.js.md)
