@@ -78,13 +78,83 @@ Sunt o serie larga de instructiuni pe care voi cu siguranta le-ati utilizat, far
   
 Sunt cateva alte proprietati si functii importante care adauga dinamicitate si v-ar putea fi de folos cu siguranta in dezvoltarea unei interactiuni mai avansate cu utilizatorul
 
-1. setTimeout\(\) 
-2. setInterval\(\)
-3. clearInterval\(\)
-4. alert\(\)
-5. prompt\(\)
-6. innerWidth
-7. innerHeight
+1. `setTimeout(functionName, x)` - functie care apeleaza functionName peste x milisecunde si returneaza un id.
+2. `setInterval(functionName, x)` - functie care apeleaza functionName in fiecare x milisecunde si returneaza un id.
+3. `clearInterval(x)` - function care opreste si sterge din functiune un setTimeout sau setInterval dupa un id - **x**
+4. `alert(x)` - functie care porneste un alert box cu un mesaj **x** si un buton OK.
+5. `prompt(x, y)` - function care porneste un prompt box care se aseamana cu un alert doar ca are un mesaj \(**x**\) care de regula este o intrebare pentru a introduce un raspuns si un camp pentru input \(care poate avea o valoare prestabilita - **y - optionala**\), pentru a introduce acel raspuns**.**  Aceasta functie returneaza **textul**/respunsul introdus de utilizator.
+6. `innerWidth` - proprietate care reprezinta valoarea latimii paginii.
+7. `innerHeight` - proprietate care reprezinta valoarea inaltimii paginii.
 
 
+
+## Functia setTimeout\(\)
+
+Aceasta functie este utila pentru a amina executarea unei functi pentru o anumite perioada de timp.
+
+```javascript
+function printHello() {
+    console.log('Hello my friend!');
+}
+
+setTimeout(printHello, 3000);  // printHello() va fi apelata peste 3 secunde (3000 milisecunde)
+```
+
+Deci in exemplul de mai sus **Hello my friend!** va aparea in consola dupa ce se executa programul peste **3** secunde \(3000 milisecunde\)
+
+Pentru a clarifica lucrurile - orice functie poate fi apelata de nenumarate ori, respectiv putem apela setTimeout\(printHello, x\), unde x numarul de milisecunde de cate ori vrem.  
+
+
+```javascript
+setTimeout(printHello, 1000); // Hello my friend va aparea peste 1 secunda
+setTimeout(printHello, 2000); // Hello my friend va aparea peste 2 secunda
+setTimeout(printHello, 4000); // Hello my friend va aparea peste 4 secunda
+```
+
+Mai mult ca atit putem apela aceiasi functie cu acelasi numar de milisecunde - in acelasi moment \(ele vor aparea intr-un mod necontrolat de noi, putem spune aleator\).
+
+```javascript
+setTimeout(printHello, 2000); // Hello my friend va aparea peste 2 secunda
+setTimeout(printHello, 2000); // Hello my friend va aparea peste 2 secunda
+```
+
+Ordinea executarii acestor 2 chemari de functii nu este clar, in diferite executari a programului ea poate fi inversata.
+
+## Functia setInterval\(\)
+
+Aceasta functie este utila pentru executa o functie repetitiv, la o anumita perioada de timp \(milisecunde\).
+
+```javascript
+function printHello() {
+    console.log('Hello my friend!');
+}
+
+setInterval(printHello, 3000);  // printHello() va fi apelata din 3 in 3 secunde (3000 milisecunde)
+```
+
+Aceasta functie urmeaza a fi apelata din 3 in 3 secunde, teoretic la inifinit. Toate principiile explicate cu `setTimeout()` se aplica si aici - referitor la apelarea nenumarata si apelarea pentru aceiasi functie si aceiasi perioada de timp.
+
+## Functia clearInterval\(\) si clearTimeout\(\)
+
+Aceasta functie permite oprirea programatica a functiilor `setTimeout()` sau `setInterval()`.
+
+La fiecare apelare a uneia din aceste functii se creaza un identificator unic, pentru a fi posibila oprirea apelarii lor. Acest identificator este returnat odata ce se apeleaza functia.
+
+```javascript
+function printHello() {
+    console.log('Hello my friend!');
+}
+
+const id = setInterval(printHello, 3000); 
+
+clearInterval(id); // opreste executarea intervalului de mai sus cu acest id
+```
+
+Daca functia `clearInterval()` este apelata inainte de 3 secunde in acest care - atunci printHello\(\) nu va fi apelata niciodata.  
+  
+Aceasta functie isi are sensul in anumite conditii \(**if**\) care noi le-am dori.
+
+
+
+#### Functia clearTimeout\(\) este analogica la clearInterval\(\) doar ca se foloseste asupra la setTimeout\(\).
 
