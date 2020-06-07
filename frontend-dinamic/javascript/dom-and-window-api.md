@@ -1,4 +1,4 @@
-# DOM & Browser API
+# DOM & Window API
 
 O utilizare des întâlnită a funcțiilor în JavaScript e apelarea lor la anumite evenimente care se întâmplă în pagina web. Pentru asta mai întâi trebuie să întelegem cum e reprezentată o pagină web în Browser și ce instrumente \(API\) ne oferă el la dispoziție.
 
@@ -69,4 +69,22 @@ Deja ne putem imagina cum am folosi această idee pentru a crea funcționalitate
 Pentru a folosi evenimente și funcționalități mai complexe si avansate, deobicei nu se folosește JavaScript curat, e folosită o librărie care ușurează mult lucrul cu aceste evenimente, dar acum am învățat baza și ce stă în spatele la orice librărie modernă pentru aplicațiile web. 
 
 Exemplu de librării \(Frameworks\) moderne care permit să construim aplicații dinamice sunt: **React, Vue.js, Angular**
+
+## Window API
+
+Interfata **Window** reprezinta o fereastra care contine un `DOM document` despre care ati studiat mai sus. De fiecare data cind ati utilizat obiectul `document` , el reprezinta o referinta anume la DOM document incarcat in acea fereastra in care va aflati.  
+  
+Sunt o serie larga de instructiuni pe care voi cu siguranta le-ati utilizat, fara a sti neaparat ca ele sunt oferite anume de interfata Window -  **`console`**\(`console.log()`\), **`document`**\(`document.getElementById()`, `document.write()`\).  Aceste obiecte ni se ofera in limbajul JavaScript cu usurinta, fara a fi nevoiti sa precizam ca fac parte din interfata **Window**.  
+  
+Sunt cateva alte proprietati si functii importante care adauga dinamicitate si v-ar putea fi de folos cu siguranta in dezvoltarea unei interactiuni mai avansate cu utilizatorul
+
+1. setTimeout\(\) 
+2. setInterval\(\)
+3. clearInterval\(\)
+4. alert\(\)
+5. prompt\(\)
+6. innerWidth
+7. innerHeight
+
+
 
