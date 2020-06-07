@@ -160,6 +160,8 @@ This code will create a counter and increment it each 2 seconds glad to setInter
 
 When clicking the stop button the counter growing will stop because it will trigger the `stopCounter()`function which clears the interval created above.
 
+![How it should look in the browser](../../.gitbook/assets/screen-shot-2020-06-07-at-3.25.59-pm.png)
+
 {% code title="index.html" %}
 ```markup
 <!DOCTYPE html>
@@ -195,5 +197,5 @@ function stopCounter() {
 ```
 {% endcode %}
 
-#### Functia clearTimeout\(\) este analogica la clearInterval\(\) doar ca se foloseste asupra la setTimeout\(\).
+#### Functia clearTimeout\(\) este analogica la `clearInterval()` doar ca se foloseste asupra la `setTimeout()`.
 
