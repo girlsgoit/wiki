@@ -48,6 +48,32 @@ const circleArea = Math.floor(Math.PI * Math.pow(circleRadius, 2)); // 50
 * `floor(x)` - rotunjirea in jos a lui **x** la precedentul numar intreg \(truncare\)
 * `random()` - returneaza un numar aleator de la **0** \(inclusiv\) pina la **1** \(exclusiv\) - \[0, 1\) 
 
+### Exemple de functii
+
+Obtineti un numar intreg aleator de la 1 la 10 si printati-l in consola.
+
+```javascript
+const randomNumberFrom0To1 = Math.random(); // de la 0 la 1 - ex: 0.3221243
+
+const randomNumberFrom1To10 = randomNumberFrom0To1 * 10; // ex: 3.221243
+
+const integerRandomNumberFrom0To9 = Math.floor(randomNumberFrom0To1); // ex: 3
+
+const integerRandomNumberFrom1to10 = integerRandomNumberFrom0To9 + 1; // ex: 4
+```
+
+Daca analizam aceasta solutie observam ca minim Math.random\(\) poate fi 0 si maxim 0.99999999, respectiv daca utilizam la final `ceil()` inloc de `floor()` pentru a evita adunarea de la urma **+1**, erau sanse in caz ca `Math.random()` returneaza **0** programul sa returneze in final **0** inloc de 1 \(cerinta minimala\).  
+  
+**PS**. De asemenea acest program putea fi scris intr-o linie.
+
+```javascript
+const randomNumber = Math.floor(Math.random() * 10) + 1; // mai elegant
+```
+
+#### ATENTIE: Optati pentru varianta cu mai putine linii de cod doar in cazul in care este destul de clara expresia. 
+
+De altfel separarea codului in mai multe variabile usureaza citirea codului - in special celor care nu l-au scris.
+
 ## Proprietatile lui Math
 
 Majoritatea din ele se intrebuinteaza destul de rar, cele mai vestite fiind constantele **PI** si **E**
