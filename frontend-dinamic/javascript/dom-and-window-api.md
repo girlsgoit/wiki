@@ -154,7 +154,7 @@ Daca functia `clearInterval()` este apelata inainte de 3 secunde in acest care -
   
 Aceasta functie isi are sensul in anumite conditii \(**if**\) care noi le-am dori.
 
-### Example when to use clearTimeout\(\)
+### Exemplu cind de folosit clearTimeout\(\)
 
 This code will create a counter and increment it each 2 seconds glad to setInterval from line 9 of `index.js` file.
 
