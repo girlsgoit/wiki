@@ -154,7 +154,46 @@ Daca functia `clearInterval()` este apelata inainte de 3 secunde in acest care -
   
 Aceasta functie isi are sensul in anumite conditii \(**if**\) care noi le-am dori.
 
+### Example when to use clearTimeout\(\)
 
+This code will create a counter and increment it each 2 seconds glad to setInterval from line 9 of `index.js` file.
+
+When clicking the stop button the counter growing will stop because it will trigger the `stopCounter()`function which clears the interval created above.
+
+{% code title="index.html" %}
+```markup
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>My growing counter:</p>
+<p id="counter-text">1</p>
+<button onclick="stopCounter()">Stop counter</button>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
+
+```
+{% endcode %}
+
+{% code title="index.js" %}
+```javascript
+let counter = 1;
+
+function incrementCounter() {
+  counter+=1;
+  document.getElementById("counter-text").innerHTML = counter;
+}
+
+var id = setInterval(incrementCounter, 2000);
+
+function stopCounter() {
+  clearInterval(id);
+}
+```
+{% endcode %}
 
 #### Functia clearTimeout\(\) este analogica la clearInterval\(\) doar ca se foloseste asupra la setTimeout\(\).
 
