@@ -1,7 +1,7 @@
 ---
 description: >-
-  Adunatura de proprietati si functii ajutatoare asupra diferitor operatii
-  matematice a datelor de tip Number
+  Adunatura de proprietati si functii ajutatoare la operatii matematice a
+  datelor de tip Number
 ---
 
 # Math API
