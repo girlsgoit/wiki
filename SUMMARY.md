@@ -2,6 +2,10 @@
 
 * [Introduction](README.md)
 
+## Unelte
+
+* [Slack](unelte/slack.md)
+
 ## FRONTEND STATIC
 
 * [Internet](frontend-static/internet.md)
