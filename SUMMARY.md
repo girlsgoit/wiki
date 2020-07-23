@@ -2,11 +2,11 @@
 
 * [Introduction](README.md)
 
-## Unelte <a id="unelte-1"></a>
+## Unelte
 
-* [CodeSandbox](unelte-1/codesandbox.md)
-* [Slack](unelte-1/slack/README.md)
-  * [Untitled](unelte-1/slack/untitled.md)
+* [CodeSandbox](unelte/codesandbox.md)
+* [Slack](unelte/slack/README.md)
+  * [Untitled](unelte/slack/untitled.md)
 
 ## FRONTEND STATIC
 
