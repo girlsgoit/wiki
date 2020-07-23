@@ -2,11 +2,9 @@
 
 * [Introduction](README.md)
 
-## Unelte Web <a id="unelte"></a>
-
 ## Unelte <a id="unelte-1"></a>
 
-* [CodeSandbox](unelte-1/web.md)
+* [CodeSandbox](unelte-1/codesandbox.md)
 * [Slack](unelte-1/slack/README.md)
   * [Untitled](unelte-1/slack/untitled.md)
 
