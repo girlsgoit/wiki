@@ -1,3 +1,7 @@
+---
+description: Introducere Visual Studio Code
+---
+
 # Visual Studio Code
 
 **VS Code este un source-code editor gratuit făcut de Microsoft pentru Windows, Linux și macOS. Caracteristicile includ suport pentru depanare \(debugging\), evidențierea sintaxelor, completarea inteligentă a codului, fragmente de cod, restructurarea fragmentelor de cod deja existente și Git încorporat. Utilizatorul poate schimba tema, scurtăturile de la tastatură, preferințele și să instaleze extensii pentru a adăuga funcționalități adiționale.**
