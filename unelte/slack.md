@@ -70,3 +70,7 @@ Dacă nu ați avut alegere la etapa anterioară să alegeți **TEKEDU** ca un wo
 1. scrieți `tekedu` în câmpul `your-workspace-url`
 2. Introduceți emailul personal și parola de slack care ați ales-o la pasul **2. Înregistrare**
 
+Dacă vreți să folosiți doar aplicația în browser, o puteți accesa oricand pe link-ul
+
+{% embed url="https://tekedu.slack.com/" %}
+
