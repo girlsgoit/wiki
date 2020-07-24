@@ -4,9 +4,8 @@
 
 ## Unelte
 
+* [Slack](unelte/slack.md)
 * [CodeSandbox](unelte/codesandbox.md)
-* [Slack](unelte/slack/README.md)
-  * [Untitled](unelte/slack/untitled.md)
 
 ## FRONTEND STATIC
 
