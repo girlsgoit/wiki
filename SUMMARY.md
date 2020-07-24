@@ -5,6 +5,7 @@
 ## Unelte
 
 * [Slack](unelte/slack.md)
+* [Visual Studio Code](unelte/visual-studio-code.md)
 * [CodeSandbox](unelte/codesandbox.md)
 
 ## FRONTEND STATIC
