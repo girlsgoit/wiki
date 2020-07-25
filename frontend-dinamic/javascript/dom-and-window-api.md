@@ -48,21 +48,29 @@ Pentru a putea defini acțiuni care să se întâmple când un eveniment apare, 
 
 Pentru a lega o funcție de un eveniment, trebuie sa-i spunem Browser-ului să o execute. Exemplul clasic e o acțiune la click pe un buton:
 
-![Definim ac&#x21B;iunea de a zice salut](https://lh5.googleusercontent.com/Ij269F9T9fX896TfGkCKl9JzVCt73VF_9GefFYVSNA3fcSwoJqYFQDs7tPmwajypTR_YWxYOX1T6QsXlc426M_2gluk8FzhucmwH0uPi2GdcQfAchGp2bR1m8_KaWwnoH7dmY7uvvCc)
 
-![Legam ac&#x21B;iunea sayHi\(\) de evenimentul onclick la buton](https://lh6.googleusercontent.com/UdhWSKmCx8XbrmEldiVFdlyv3uxRZr4MdZfR261PnO28JqlyJu7Eg9UAKjTebHDnqpQ2CBCMhRlXdlWSzRdAI4GeW_QwvSlJgaX3QBowZjPztiNXlStLqeRmj_7iUp89LVNsENl5sWg)
+
+![Ne asigur&#x103;m c&#x103; avem un element cu un ID](../../.gitbook/assets/image%20%28284%29.png)
+
+![&#xCE;l select&#x103;m &#xEE;n JS &#x219;i leg&#x103;m evenimentul click de func&#x21B;ia sayHi](../../.gitbook/assets/image%20%28282%29.png)
 
 Atât! prin aceste câteva linii de cod am creat o acțiune care se va executa doar când utilizatorul va apăsa click pe buton.
 
-### Evenimente și funcții cu parametri
+### Cum selectăm elementele în JS
 
-Deseori e folositor sa creăm funcții generice care acceptă parametri, și vrem să-i transmitem în timpul unui eveniment, asta e la fel de ușor s-o facem:
+Pentru a manipula HTML din JS, adăuga eveniment etc., trebuie să selectăm cumva elmenetele în JS pentru a putea indica cu exacitate, de ce element avem nevoie. Sunt câteva funcții ce ne permit să facem asta.
 
-![Func&#x21B;ie cu parametru](https://lh4.googleusercontent.com/2evPyFMulkUcs03VhyzFbtDOqLFaSvj9cQcba4MN35BaErOg0P9x2otsYMLD__MYqmtRAog9FG_oG92eHWu-WOrxkMrw_b6OgqwfD19FCnZfQCMh8qfsX3674qSGorfDL06itgnI094)
+**document.getElementById\(id\)**  - funcția dată ne permite să selectăm un element după ID-ul său
 
-![Transmitem parametrul la declararea evenimentului](https://lh5.googleusercontent.com/3JaaxYQ-hqnFb3jev8iZUjsCo2-4TRSkT4x3YIUbpUoLQqymN2vx9l5By1-3bbOlz3IhXbN3_Qt7ZEyCr4oszVNvf4qtNkY7WCohB-2q67cwuoxNwvnpzUec8HvAQmrClVI95RXRyVY)
+![Av&#xE2;nd un element cu un ID](../../.gitbook/assets/image%20%28284%29.png)
 
-Deja ne putem imagina cum am folosi această idee pentru a crea funcționalitatea unui calculator simplu ;\)
+![&#xCE;l select&#x103;m cu .getElementById](../../.gitbook/assets/image%20%28286%29.png)
+
+**document.querySelector\(id or class\)** - funcția dată ne permite să selectăm un element HTML după id-ul sau classa acestuia
+
+![Av&#xE2;nd a&#x219;a elemente](../../.gitbook/assets/image%20%28283%29.png)
+
+![Folosind selectore cu \[ \# \] &#x219;i \[ . \] care se folosesc &#x219;i &#xEE;n CSS, putem selecta elementele dorite](../../.gitbook/assets/image%20%28285%29.png)
 
 ### Vreau mai mult!
 
