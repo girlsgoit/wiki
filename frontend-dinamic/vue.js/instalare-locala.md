@@ -70,13 +70,13 @@ npm run build
 
 ### Structura proiectului
 
-```text
-node_modules/ – Dependențele Node.js care se administrează automat.
-public/ – Lista de fișiere publice, Vue va folosi aceste fișiere pentru a injecta codul sursă a aplicației.
-src/ – Aici locuiește codul aplicației tale, toate modificările le faci aici.
-  assets/ – Lista resurselor (de exemplu imagini) de care ai nevoie în proiect.
-  components/ – Toate componentele sunt definite aici.
-  App.vue – Compononenta părinte care conține întreaga aplicație Vue.
-  main.js – Configurarea globală a aplicației Vue.js
-```
+* `node_modules/` – Dependențele Node.js care se administrează automat.
+* `public/` – Lista de fișiere publice, Vue va folosi aceste fișiere pentru a injecta codul sursă a aplicației.
+* `src/` – Aici locuiește codul aplicației tale, toate modificările le faci aici.
+  * `assets`/ – Lista resurselor \(de exemplu imagini\) de care ai nevoie în proiect. 
+  * `components/` –Toate componentele sunt definite aici. 
+  * `App.vue` – Compononenta părinte care conține întreaga aplicație Vue. 
+  * `main.js` – Configurarea globală a aplicației Vue.js
+
+
 
