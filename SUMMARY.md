@@ -58,6 +58,15 @@
 * [Arduino](3d-printing/arduino.md)
 * [Final Projects](3d-printing/final-projects.md)
 
+## Data Science
+
+* [Introducere în Data Science](data-science/introducere-in-data-science.md)
+* [Vizualizarea datelor](data-science/vizualizarea-datelor/README.md)
+  * [Matplotlib](data-science/vizualizarea-datelor/matplotlib.md)
+* [Numpy](data-science/numpy.md)
+* [Pandas](data-science/pandas.md)
+* [Modele](data-science/modele.md)
+
 ## ROBOTICĂ
 
 * [1.1 mBlock](robotica/mblock.md)
@@ -101,13 +110,4 @@
 * [Cum creez un Dialog box](arhiva-nao/cum-creez-un-dialog-box.md)
 * [Flow Control](arhiva-nao/flow-control.md)
 * [Finalizarea proiectelor](arhiva-nao/finalizarea-proiectelor.md)
-
-## Data Science
-
-* [Introducere în Data Science](data-science/introducere-in-data-science.md)
-* [Vizualizarea datelor](data-science/vizualizarea-datelor/README.md)
-  * [Matplotlib](data-science/vizualizarea-datelor/matplotlib.md)
-* [Numpy](data-science/numpy.md)
-* [Pandas](data-science/pandas.md)
-* [Modele](data-science/modele.md)
 
