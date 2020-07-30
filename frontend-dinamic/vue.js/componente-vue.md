@@ -32,7 +32,7 @@ h1 {
 
 ```
 
-Componentele sunt Vue instances reutilizabile cu un nume, în cazul nostru, `<button-counter>.` Putem folosi acest component ca un element personalizat \]n interiorul unei rădăcini Vue instance creată cu `new Vue`:
+Componentele sunt Vue instances reutilizabile cu un nume, în cazul nostru, `<button-counter>.` Putem folosi acest component ca un element personalizat în interiorul unei rădăcini Vue instance creată cu `new Vue`:
 
 ```markup
 <div id="components-demo">
@@ -58,7 +58,7 @@ Componentele pot fi reutilizate de câte ori ne dorim, spre exemplu:
 
  [`data`](https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function)trebuie să fie funcție. 
 
-Atunci când am definit componentul &lt;button-counter&gt;, probabil ai observat că `data` nu a prevăzut direct un obiect, spre exemplu:
+Atunci când am definit componentul `<button-counter>`, probabil ai observat că `data` nu a prevăzut direct un obiect, spre exemplu:
 
 ```javascript
 data: {
@@ -66,7 +66,7 @@ data: {
 }
 ```
 
-În schimb, opțiunea componentului data trebuie să fie o funcție, astfel că fiecare exemplu să își poate menține o copie independentă a informației returnate:
+În schimb, opțiunea componentei date trebuie să fie o funcție, astfel că fiecare exemplu să își poată menține o copie independentă a informației returnate:
 
 ```javascript
 data: function ( ) {
@@ -76,7 +76,7 @@ data: function ( ) {
 }
 ```
 
-În caz contrar, dacă nu am folosi regula dată, în exemplul nostru, de fiecare dată când dăm click pe un button ar fi afectată informația pentru toate celelalte exemple.
+În caz contrar, dacă nu am folosi regula dată, în exemplul nostru, de fiecare dată când dăm click pe button ar fi afectată informația pentru toate celelalte exemple.
 
 ## Organizarea Componentelor
 
@@ -106,7 +106,7 @@ O aplicație Vue constă din o rădăcină Vue instance creată cu new Vue, orga
 
 ## Data și Metode
 
-Atunci când o instanță Vue este creată, aceasta adaugă toate proprietățile găsite în `data` obiectului acesteia la sistemul de reactivitate Vue. Atunci când valorile acestor proprietăți se schimbă, vederea va reacționa, actualizând astfel încât să se potrivească cu noile valori.
+Atunci când o instanță Vue este creată, aceasta adaugă toate proprietățile găsite în `data` obiectului acesteia la sistemul de reactivitate Vue. Atunci când valorile acestor proprietăți se schimbă, perspectiva va reacționa, actualizând astfel încât să se potrivească cu noile valori.
 
 ```javascript
 // Our data object 
@@ -153,7 +153,7 @@ Pe lângă proprietăților date, instanțele Vue expun un număr de proprietă�
 
 ## Interpolare
 
-### `#Text`
+### \#Text
 
 Cea mai de bază formă de legare a datelor este interpolarea textului folosind sintaxa „Mustață”/„Mustache” \(bretele duble - {{ }} \):
 
@@ -169,7 +169,7 @@ De asemenea, poți să execuți interpolări unice care nu actualizează la modi
 <span v-once> This will never change: {{ msg }}</span>
 ```
 
-### `#Raw HTML`
+### \#Raw HTML
 
 Interpolarea {{ }} interpretează datele ca text simplu, nu HTML. Pentru a produce HTML, trebuie să utilizezi directivul `v-html:`
 
@@ -182,7 +182,7 @@ Interpolarea {{ }} interpretează datele ca text simplu, nu HTML. Pentru a produ
 
 Interiorul la `span` va fi înlocuit cu valoarea proprietății `rawHtml`, interpretat ca HTML curat - legăturile datelor fiind neglijate. Observați că nu putem utiliza `v-html` pentru a compune șabloane parțiale, deoarece Vue nu e un motor de șabloane pe bază de șiruri.
 
-### \#`Atribute`
+### \#Atribute
 
 {{ }} nu pot fi utilizate în interiorul atributelor HTML. În schimb, utilizăm directivul `v-bind`:
 
@@ -198,7 +198,7 @@ Interiorul la `span` va fi înlocuit cu valoarea proprietății `rawHtml`, inter
 
 Dacă `isButtonDisabled` are valoarea `null`, `undefined` sau `false`, atributul `disabled` nici nu va fi inclus în interpretarea elementului `<button>`.
 
-### `#Utilizarea expresiilor JavaScript`
+### \#Utilizarea expresiilor JavaScript
 
 Vue.js suportă puterea totală a expresiilor JavaScript în interiorul tuturor legăturilor de date.
 
@@ -213,7 +213,7 @@ Aceste expresii vor fi evaluate ca JavaScript în sfera de date a instanței Vue
 
 ## Proprietăți calculate \(Computed Properties\)
 
-Proprietățile din șablon sunt foarte convinabile, dar sunt predestinate pentru operații simple. Punând prea multă logică în șabloanele noastre le-ar putea umfla și le-ar face dificile de menținut. De exemplu:
+Proprietățile din șablon sunt foarte convinabile, dar sunt predestinate pentru operații simple. Punând prea multă logică în șabloanele noastre le-ar putea supraîncărca și le-ar face dificile de menținut. De exemplu:
 
 ```markup
 <div id="example">
@@ -265,7 +265,7 @@ Valoarea lui `vm.reversedMessage` este dependentă de valoarea lui `vm.message`.
 
 ### v-if
 
-Directivul v-if este utilizat pentru redarea condiționată a unui bloc. Blocul va fi redat doar dacă expresia directivului returnează o valoare adevărată.
+Directiva v-if este utilizată pentru redarea condiționată a unui bloc. Blocul va fi redat doar dacă expresia directivei returnează o valoare adevărată.
 
 ```javascript
 <h1 v-if= "awesome"> You are awesome!</h1>
@@ -280,7 +280,7 @@ Este, de asemenea, posibil de adăugat și „else block” utilizând v-else:
 
 ### Grupuri condiționale cu v-if în &lt;template&gt;
 
-Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se întâmplă dacă noi dorim să comutăm mai mult decât un singur element? În acest caz noi putem utiliza `v-if` într-un element `<template>`, care servește ca un ambalaj invizibil. Redarea finală a rezultatului nu va include elementul `<template>`
+Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se întâmplă dacă noi dorim să comutăm mai mult decât un singur element? În acest caz noi putem utiliza `v-if` într-un element `<template>`, care servește ca un ambalaj invizibil. Redarea finală a rezultatului nu va include elementul `<template>`.
 
 ```javascript
 <template v-if="ok">
@@ -292,7 +292,7 @@ Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se
 
 ### v-else
 
-Se poate utiliza directivul `v-else` pentru a indica un „else block" pentru v-if:
+Se poate utiliza directiva `v-else` pentru a indica un „else block" pentru v-if:
 
 ```javascript
 <div v-if="Math.random( ) > 0.5">
