@@ -11,7 +11,18 @@ Pentru elementele unui formular, putem crea o legătură bidirecțională cu pro
 <p>Message is: {{ message }}</p>
 ```
 
-![](../../.gitbook/assets/image%20%28306%29.png)
+![](../../.gitbook/assets/image%20%28307%29.png)
 
+#### Text cu mai multe linii
 
+Textul cu mai multe linii poate fi adăugat cu ajutorul elementului `<textarea>`. Pentru acest element, interpolarea \(`<textarea>{{ text }}</textarea>`\) nu funcționează, dar poate fi utilizată directiva `v-model`.
+
+```markup
+<span>Multiline message is:</span>
+<p style="white-space: pre-line;">{{ message }}</p>
+<br>
+<textarea v-model="message" placeholder="add multiple lines"></textarea>
+```
+
+![](../../.gitbook/assets/image%20%28305%29.png)
 
