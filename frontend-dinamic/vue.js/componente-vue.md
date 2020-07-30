@@ -326,3 +326,124 @@ Not A, B, or C
 
 Similar la v-else, un element `v-else-if` trebuie numaidecât să urmeze un element `v-if` sau `v-else-if`.
 
+## Evenimente
+
+### Modificatori de evenimente \(Event modifiers\)
+
+Este o necesitate comună să apelăm `event.preventDefault( )` sau `event.stopPropagation( )` în interiorul manipulatorilor de evenimente. Chiar dacă putem face asta în interiorul metodelor, ar fi mai bine dacă metodele ar fi doar despre logica datelor, mai degrabă decât să aibă de-a face cu detaliile evenimentelor DOM.
+
+Pentru a adresa această problemă, Vue furnizează modificatori de evenimente pentru `v-on`. Să ne reamintim că modificatorii sunt sufixe directive notate cu un punct.
+
+`.stop  
+.prevent  
+.capture  
+.self  
+.once  
+.passive`
+
+```javascript
+<!-- the click event's propagation will be stopped -->
+<a v-on:click.stop="doThis"></a>
+
+<!-- the submit event will no longer reload the page -->
+<form v-on:submit.prevent="onSubmit"></form>
+
+<!-- modifiers can be chained -->
+<a v-on:click.stop.prevent="doThat"></a>
+
+<!-- just the modifier -->
+<form v-on:submit.prevent></form>
+
+<!-- use capture mode when adding the event listener -->
+<!-- i.e. an event targeting an inner element is handled here before being handled by that element -->
+<div v-on:click.capture="doThis">...</div>
+
+<!-- only trigger handler if event.target is the element itself -->
+<!-- i.e. not from a child element -->
+<div v-on:click.self="doThat">...</div>
+```
+
+Pentru mai multe detalii, click [aici](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters).
+
+### Modificatori de taste \(Key modifiers\)
+
+Atunci când ascultăm evenimentele de la tastatură, de multe ori trebuie să verificăm anumite taste. Vue permite adăugarea modificatorilor de taste pentru `v-on` atunci când ascultăm evenimentele de la taste.
+
+```markup
+<!-- only call `vm.submit()` when the `key` is `Enter` -->
+<input v-on:keyup.enter="submit">
+```
+
+Se poate folosi direct orice nume de tastă validă neacoperită prin [`KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values)ca modificatori prin transformarea lor în cazul-kebab.
+
+```markup
+<input v-on:keyup.page-down="onPageDown">
+```
+
+În ultimul exemplu, manipulatorul va fi chemat doar dacă `$event.key` e egal cu `'PageDown'`.
+
+#### \#Key Codes
+
+```markup
+<input v-on:keyup.13="submit">
+```
+
+Vue oferă pseudonime pentru cele mai utilizate coduri de taste atunci când este necesar pentru suportul browserului:
+
+`.enter  
+.tab  
+.delete  
+.esc  
+.space  
+.up  
+.down  
+.right  
+.left`
+
+De asemenea, se poate defini o [tastă predefinită](https://vuejs.org/v2/api/#keyCodes) în acest sens prin intermediului obiectului global `config.keyCodes`:
+
+```javascript
+// enable `v-on:keyup.f1`
+Vue.config.keyCodes.f1 = 112
+```
+
+#### Taste modificatoare de sistem
+
+Putem folosi următorii modificatori pentru a declanșa evenimentele de la tastatură sau mouse doar când modificatorii corespunzători sunt apesați:
+
+`ctrl  
+.alt  
+.shift  
+.meta`
+
+Exemplu:
+
+```markup
+<!-- Alt + C -->
+<input v-on:keyup.alt.67="clear">
+
+<!-- Ctrl + Click -->
+<div v-on:click.ctrl="doSomething">Do something</div>
+```
+
+#### Modificatorul .exact
+
+Modificatorul dat permite controlul unor combinații exacte a sistemului pentru a declanșa un eveniment.
+
+```markup
+<!-- this will fire even if Alt or Shift is also pressed -->
+<button v-on:click.ctrl="onClick">A</button>
+
+<!-- this will only fire when Ctrl and no other keys are pressed -->
+<button v-on:click.ctrl.exact="onCtrlClick">A</button>
+
+<!-- this will only fire when no system modifiers are pressed -->
+<button v-on:click.exact="onClick">A</button>
+```
+
+#### Modificatori pentru butoanele mouse-ului
+
+`.left  
+.right  
+.middle`
+
