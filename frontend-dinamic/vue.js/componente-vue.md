@@ -6,20 +6,30 @@ description: >-
 
 # Componente Vue
 
-![Exemplu de cod &#xEE;n vue.js](https://lh5.googleusercontent.com/s9T3Hoe6AUVBTEGMGbJ003iAKOXUdkVq0kpyKWloSPg98aGIaVXWr9a5pTTW3sRyccpfoAlMym7ntWnxW3ajmbelblGd5LK9Usz5BrN9JGVlmW6xw7JFvMn1gWxEqAD1vTN8M6LJyL0)
+Un simplu exemplu de declarare a unei componente Vue:
 
-Un simplu exemplu de declarare a unui component Vue:
+```markup
+<template>
+  <h1>Hello, {{ name }}</h1>
+</template>
 
-```javascript
-//Definim un nou component numit button-counter
-Vue.component{'button-counter' , {
-     data : function ( ) {
-          return {
-              count : 0
-          }
-     } ,
-    template: '<button v-on: click = "count++">You clicked me {{count}} times.</button>'
- })
+<script>
+export default {
+  name: "HelloWorld",
+  data: function() {
+    return {
+      name: "World"
+    };
+  }
+};
+</script>
+
+<style scoped>
+h1 {
+  text-align: center;
+}
+</style>
+
 ```
 
 Componentele sunt Vue instances reutilizabile cu un nume, în cazul nostru, `<button-counter>.` Putem folosi acest component ca un element personalizat \]n interiorul unei rădăcini Vue instance creată cu `new Vue`:
