@@ -15,8 +15,6 @@ Pentru elementele unui formular, putem crea o legătură bidirecțională cu pro
 
 #### Text cu mai multe linii
 
-Textul cu mai multe linii poate fi adăugat cu ajutorul elementului `<textarea>`. Pentru acest element, interpolarea \(`<textarea>{{ text }}</textarea>`\) nu funcționează, dar poate fi utilizată directiva `v-model`.
-
 ```markup
 <span>Multiline message is:</span>
 <p style="white-space: pre-line;">{{ message }}</p>
