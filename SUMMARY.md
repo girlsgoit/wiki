@@ -33,6 +33,7 @@
   * [Cicluri \(for & while\)](frontend-dinamic/javascript/cicluri-for-and-while.md)
 * [Vue.js](frontend-dinamic/vue.js/README.md)
   * [Instalare locală](frontend-dinamic/vue.js/instalare-locala.md)
+  * [Componente Vue](frontend-dinamic/vue.js/componente-vue.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 * [Rest API](frontend-dinamic/axios/README.md)
   * [Rest api GET](frontend-dinamic/axios/axios.md)
