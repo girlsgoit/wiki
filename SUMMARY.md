@@ -35,7 +35,7 @@
   * [Instalare locală](frontend-dinamic/vue.js/instalare-locala.md)
   * [Componente Vue](frontend-dinamic/vue.js/componente-vue.md)
   * [Date în formular](frontend-dinamic/vue.js/date-in-formular.md)
-  * [Lifecycle Hooks](frontend-dinamic/vue.js/lifecycle-hooks.md)
+  * [Lifecycle hooks](frontend-dinamic/vue.js/lifecycle-hooks.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 * [Rest API](frontend-dinamic/axios/README.md)
   * [Rest api GET](frontend-dinamic/axios/axios.md)

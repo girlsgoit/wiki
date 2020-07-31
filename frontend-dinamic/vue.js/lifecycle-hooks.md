@@ -1,4 +1,4 @@
-# Lifecycle Hooks
+# Lifecycle hooks
 
 Fiecare instanță Vue parcurge o serie de pași de inițializare atunci când este creată oferind utilizatorilor posibilitatea de a adăuga propriul cod în etape specifice.
 
