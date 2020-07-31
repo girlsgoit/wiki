@@ -48,3 +48,13 @@ updated: function () {
 }
 ```
 
+#### Destroyed
+
+Acest cârlig este apelat după ce o instanță Vue a fost distrusă.
+
+```javascript
+destroyed: function () {
+  console.log('Instanta Vue a fost distrusa');
+}
+```
+
