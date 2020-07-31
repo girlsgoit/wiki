@@ -5,16 +5,24 @@ Fiecare instanță Vue parcurge o serie de pași de inițializare atunci când e
 De exemplu, cârligul `created` poate fi utilizat pentru a rula cod după crearea unei instanțe:
 
 ```javascript
-new Vue({
-  created: function () {
-    console.log('Created a fost apelata')
-  }
-})
+created: function () {
+    console.log('Created a fost apelata');
+}
 ```
+
+Cârligul created va fi apelat de îndată ce instanța a fost creată. La această etapă, instanța nu este montată în DOM.
 
 Există, de asemenea, alte cârlige care vor fi apelate în diferite etape ale ciclului de viață al instanței, cum ar fi `mounted`, `updated` și `destroyed`.
 
-#### Diagrama ciclului de viață
+#### Mounted
 
-![](../../.gitbook/assets/image%20%28312%29.png)
+Acest cârlig este apelat după ce instanța Vue este montată în DOM.
+
+```javascript
+mounted: function () {
+  console.log('Mounted a fost apelata');
+}
+```
+
+
 
