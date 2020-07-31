@@ -66,7 +66,7 @@
 * [Introducere în Data Science](data-science/introducere-in-data-science.md)
 * [Vizualizarea datelor](data-science/vizualizarea-datelor/README.md)
   * [Matplotlib](data-science/vizualizarea-datelor/matplotlib.md)
-* [index](data-science/numpy.md)
+* [Numpy](data-science/numpy.md)
 * [Pandas](data-science/pandas.md)
 * [Modele](data-science/modele.md)
 
