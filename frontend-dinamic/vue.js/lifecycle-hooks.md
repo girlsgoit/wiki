@@ -24,13 +24,26 @@ mounted: function () {
 }
 ```
 
-Apelarea cârligului `mounted` nu garantează montarea componentelor din interior. Dacă e necesară montarea componentelor din interior, puteți utiliza `$nextTick` în felul următor:
+Apelarea cârligului `mounted` nu garantează montarea componentelor din interior. Dacă e necesară montarea componentelor din interior, putem utiliza `$nextTick` în felul următor:
 
 ```javascript
 mounted: function () {
   this.$nextTick(function () {
     // Codul care va rula după ce toate
-    // componentele au fost montate
+    // componentele au fost actualizate
+  })
+}
+```
+
+#### Updated
+
+Acest cârlig este apelat după ce o componentă a fost modificată. Ca și pentru `mounted`, putem utiliza `$nextTick` pentru a ne asigura că toate celelalte componente au fost actualizate.
+
+```javascript
+updated: function () {
+  this.$nextTick(function () {
+    // Codul care va rula după ce toate
+    // componentele au fost actualizate
   })
 }
 ```
