@@ -66,7 +66,7 @@
 * [Vizualizarea datelor](data-science/vizualizarea-datelor/README.md)
   * [Matplotlib](data-science/vizualizarea-datelor/matplotlib.md)
 * [Numpy](data-science/numpy.md)
-* [Pandas](data-science/pandas.md)
+* [index](data-science/pandas.md)
 * [Modele](data-science/modele.md)
 
 ## ROBOTICĂ

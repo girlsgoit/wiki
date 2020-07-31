@@ -1,4 +1,4 @@
-# Pandas
+# index
 
 ```python
 import matplotlib.pyplot as plt
