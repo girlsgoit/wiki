@@ -1,11 +1,9 @@
-# index
+# Pandas
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 ```
-
-## Pandas
 
 ### De ce Pandas?
 
