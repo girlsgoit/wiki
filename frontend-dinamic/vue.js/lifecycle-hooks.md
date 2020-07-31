@@ -24,5 +24,14 @@ mounted: function () {
 }
 ```
 
+Apelarea cârligului `mounted` nu garantează montarea componentelor din interior. Dacă e necesară montarea componentelor din interior, puteți utiliza `$nextTick` în felul următor:
 
+```javascript
+mounted: function () {
+  this.$nextTick(function () {
+    // Codul care va rula după ce toate
+    // componentele au fost montate
+  })
+}
+```
 
