@@ -46,8 +46,6 @@ Configurația implicită este potrivită pentru o prototipare rapidă, în timp 
 
 ![](../../.gitbook/assets/image%20%28163%29.png)
 
-### 
-
 ### Lansare împachetarea
 
 Pentru a lansa proiectul execută următoarea comandă.
@@ -77,6 +75,4 @@ npm run build
   * `components/` –Toate componentele sunt definite aici. 
   * `App.vue` – Compononenta părinte care conține întreaga aplicație Vue. 
   * `main.js` – Configurarea globală a aplicației Vue.js
-
-
 
