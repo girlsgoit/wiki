@@ -573,8 +573,7 @@ export default {
         },
         {
           id: 2,
-          text:
-            "The second comment long comment that makes more sense in my head",
+          text: "The second comment long comment that makes more sense in my head",
           author: "Dorin",
           likesCount: 2
         }
