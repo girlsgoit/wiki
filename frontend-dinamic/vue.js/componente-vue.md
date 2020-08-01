@@ -6,9 +6,12 @@ description: >-
 
 # Componente Vue
 
-Un simplu exemplu de declarare a unei componente Vue:
+## Structura unei Componente Vue
+
+Un simplu exemplu de declarare a unei componente Vue, care zice "Hello, World"
 
 ```markup
+<!-- HelloWorld.vue -->
 <template>
   <h1>Hello, {{ name }}</h1>
 </template>
@@ -32,184 +35,179 @@ h1 {
 
 ```
 
-Componentele sunt Vue instances reutilizabile cu un nume, în cazul nostru, `<button-counter>.` Putem folosi acest component ca un element personalizat în interiorul unei rădăcini Vue instance creată cu `new Vue`:
+Un component are 3 blocuri principale:
+
+* **`template`** - definim html-ul componentei, cu o serie de directive și constructori care ne ușurează viața și îi urmează să-i învățăm
+* **`script`** - definim logica JavaScript a componentei, e un **obiect** care definește date, acțiuni, și alte elemente folositoare
+* **`style`** - stilurile folosite de componenta noastră, ca să arate bine! Observați atributul scoped, el definește ca stilurile definite în această componentă să fie izolate, și să nu fie vizibile de alte componente, comod!
+
+Componentele sunt instanțe Vue reutilizabile cu un nume, în cazul nostru, `<HelloWorld>.` Putem folosi acest component ca un element personalizat în interiorul aplicației noastre:
 
 ```markup
 <div id="components-demo">
-      <button-counter></button-counter>
+    <HelloWorld></HelloWorld>
 </div>
 ```
 
-```markup
-new Value ({el: '#components-demo' })
-```
-
-## Reutilizarea componentelor
+### Reutilizarea componentelor
 
 Componentele pot fi reutilizate de câte ori ne dorim, spre exemplu:
 
-```javascript
+```markup
 <div id="components-demo">
-     <button-counter></button-counter>
-     <button-counter></button-counter>
-     <button-counter></button-counter>
+    <HelloWorld></HelloWorld>
+    <HelloWorld></HelloWorld>
+    <HelloWorld></HelloWorld>
 </div>
 ```
 
- [`data`](https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function)trebuie să fie funcție. 
+## Data
 
-Atunci când am definit componentul `<button-counter>`, probabil ai observat că `data` nu a prevăzut direct un obiect, spre exemplu:
+ Orice componentă poate defini date, care pot fi folosite în `template` sau în `script`:
+
+```markup
+<script>
+export default {
+  ...
+  data: function() {
+    return {
+      name: "World",
+      age: 4.543
+    };
+  }
+  ...
+};
+</script>
+```
+
+### [`data`](https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function) trebuie să fie funcție
+
+Observăm că definirea datelor e o funcție, și nu un obiect simplu, cum ar fi:
 
 ```javascript
 data: {
-     count: 0
+     name: "World"
 }
 ```
 
-În schimb, opțiunea componentei date trebuie să fie o funcție, astfel că fiecare exemplu să își poată menține o copie independentă a informației returnate:
-
-```javascript
-data: function ( ) {
-     return {
-       count: 0
-    }
-}
-```
+**`data`** trebuie să fie o funcție, astfel că fiecare utilizare a componentei să își poată menține o copie independentă a informației returnate.
 
 În caz contrar, dacă nu am folosi regula dată, în exemplul nostru, de fiecare dată când dăm click pe button ar fi afectată informația pentru toate celelalte exemple.
 
-## Organizarea Componentelor
-
-În general, se obișnuiește organizarea aplicației într-un arbore de componente imbricate:
-
-![](../../.gitbook/assets/image%20%28300%29.png)
-
-Spre exemplu, ai putea avea componente pentru header, sidebar și content area, fiecare conținând, de obicei, alte componente pentru blog posts, link-uri de navigare ș.a.
-
-Pentru a utiliza componentele date în șabloanele noastre, acestea trebuie înregistrate astfel încât Vue să știe de existența acestora. Sunt 2 tipuri de înregistrare a componentelor: **global** și __**local.** Pentru mai multe detalii, [accesează-mă](https://vuejs.org/v2/guide/components-registration.html).
-
-## Instanța Vue
-
-Orice aplicație Vue începe cu crearea unei noi instanțe Vue cu funcția `Vue`:
-
-```javascript
-var vm = new Vue ( {
-       //opțiuni
-})
-```
-
-Deseori folosim variabila `vm` \(prescurtare de la ViewModel\) pentru a face referire la instanța Vue.
-
-O aplicație Vue constă din o rădăcină Vue instance creată cu new Vue, organizată în mod opțional într-un arbore de componente imbricare, componente reutilizabile. Spre exemplu, arborele unei aplicații todo ar putea arăta în felul următor: 
-
-![](../../.gitbook/assets/image%20%28303%29.png)
-
-## Data și Metode
-
-Atunci când o instanță Vue este creată, aceasta adaugă toate proprietățile găsite în `data` obiectului acesteia la sistemul de reactivitate Vue. Atunci când valorile acestor proprietăți se schimbă, perspectiva va reacționa, actualizând astfel încât să se potrivească cu noile valori.
-
-```javascript
-// Our data object 
-var data = { a: 1 }
-// The object is added to a Vue instance 
-var vm = new Vue({ 
-   data: data 
-})
-// Getting the property on the instance 
-// returns the one from the original data 
-vm.a == data.a // => true
-// Setting the property on the instance 
-// also affects the original data 
-vm.a = 2 data.a // => 2
-// ... and vice-versa 
-data.a = 3 vm.a // => 3
-```
-
-Atunci când datele date se schimbă, vizualizarea va fi refăcută. Trebuie de menționat că proprietățile în `data` sunt doar reactive dacă au existat atunci când instanța a fost creată.
-
-Singura excepție fiind utilizarea `Object.freeze( )`, care previne ca proprietățile existente să fie schimbate.
-
-```javascript
-var obj = {
-    foo: 'bar'
-}
-
-Object.freeze(obj)
-
-new Vue ({
-    el: '#app',
-    data: obj
-})
-```
-
-```markup
-<div id="app">
-   <p>{{foo}}</p>
-   <button v-on:click="foo = 'baz'">Change it</button>
-</div>
-```
-
-Pe lângă proprietăților date, instanțele Vue expun un număr de proprietăți și metode ale instanței. Acestea au prefixul `$` pentru a le diferenția de proprietățile definite de utilizator. \(Pentru mai multe detalii, puteți accesa [aici](https://vuejs.org/v2/api/#Instance-Properties)\)
-
 ## Interpolare
 
-### \#Text
+### Text
 
-Cea mai de bază formă de legare a datelor este interpolarea textului folosind sintaxa „Mustață”/„Mustache” \(bretele duble - {{ }} \):
+Cea mai de bază formă de legare a datelor este interpolarea textului folosind sintaxa „Mustață”/„Mustache” \(bretele duble - `{{ }}` \):
 
 ```markup
-<span> Message: {{msg}}</span>
+<template>
+  <span> Message: {{ msg }}</span>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      msg : "I am dynamic!"
+    };
+  }
+};
+</script>
 ```
 
 Acest tag va fi înlocuit cu valoarea proprietății obiectului `msg` corespunzătoare și va fi actualizată oricând valoarea proprietății obiectului `msg` se schimbă.
 
-De asemenea, poți să execuți interpolări unice care nu actualizează la modificarea datelor utilizând directivul [v-once](https://vuejs.org/v2/api/#v-once), dar trebuie să memorați că aceasta va afecta orice alte legături în același nod.
+De asemenea, putem executa interpolări unice care nu actualizează la modificarea datelor utilizând directivul [v-once](https://vuejs.org/v2/api/#v-once), care afectează toate legăturile din elementul în care este definit.
 
 ```markup
 <span v-once> This will never change: {{ msg }}</span>
 ```
 
-### \#Raw HTML
+### Raw HTML
 
-Interpolarea {{ }} interpretează datele ca text simplu, nu HTML. Pentru a produce HTML, trebuie să utilizezi directivul `v-html:`
+Interpolarea `{{ }}` interpretează datele ca text simplu, nu HTML. Asta înseamnă că chiar dacă textul nostru va conține html, el va fi reprezentat ca text direct. Pentru a produce HTML, trebuie să utilizăm directivul `v-html:`
 
 ```markup
-<p> Using mustaches: {{ rawHtml}}</p>
+<p>Using mustaches: {{ rawHtml}}</p>
 <p>Using v-html directive: <span v-html="rawHtml"></span></p>
 ```
 
-![](../../.gitbook/assets/image%20%28301%29.png)
+```javascript
+data: function() {
+  return {
+    rawHtml: '<span style="color: red">This should be red.</span>'
+  };
+}
+```
+
+![Exemplu de reprezentare](../../.gitbook/assets/image%20%28314%29.png)
 
 Interiorul la `span` va fi înlocuit cu valoarea proprietății `rawHtml`, interpretat ca HTML curat - legăturile datelor fiind neglijate. Observați că nu putem utiliza `v-html` pentru a compune șabloane parțiale, deoarece Vue nu e un motor de șabloane pe bază de șiruri.
 
-### \#Atribute
+### Atribute
 
-{{ }} nu pot fi utilizate în interiorul atributelor HTML. În schimb, utilizăm directivul `v-bind`:
+`{{ }}` nu pot fi utilizate în interiorul atributelor HTML. În schimb, utilizăm directivul `v-bind`:
 
 ```markup
-<div v-bind: id="dynamicId"></div>
+<div v-bind:id="dynamicId"></div>
+```
+
+O sintaxă prescurtată e să omitem `v-bind`:
+
+```markup
+<div :id="dynamicId"></div>
 ```
 
 În cazul atributelor de tip boolean, unde simpla lor existență presupune `true`, `v-bind` lucrează într-un mod ușor diferit:
 
 ```markup
-<button v-bind: disabled="isButtonDisabled">Button</button>
+<button :disabled="isButtonDisabled">Button</button>
 ```
 
 Dacă `isButtonDisabled` are valoarea `null`, `undefined` sau `false`, atributul `disabled` nici nu va fi inclus în interpretarea elementului `<button>`.
 
-### \#Utilizarea expresiilor JavaScript
+### Utilizarea expresiilor JavaScript
 
 Vue.js suportă puterea totală a expresiilor JavaScript în interiorul tuturor legăturilor de date.
 
 ```markup
-{{ number +1 }}
+{{ number + 1 }}
 {{ ok ? 'YES': 'NO' }}
 {{ message.split(' ').reverse( ).join(' ') }}
-<div v-bind: id=" 'list-' +id"></div>
+
+<div v-bind:id=" 'list-' +id"></div>
+```
+
+```javascript
+data: function() {
+  return {
+    number: 10,
+    ok: false,
+    message: 'This is a message',
+    id: 'unique-id'
+  };
+}
 ```
 
 Aceste expresii vor fi evaluate ca JavaScript în sfera de date a instanței Vue a proprietarului. O restricție este că fiecare legătură poate conține o singură expresie.
+
+### Reactivitatea datelor
+
+Datele în componente sunt **reactive** - atunci când datele date se schimbă, vizualizarea va fi refăcută automat. Trebuie de menționat că proprietățile în `data` sunt reactive doar dacă au existat atunci când instanța a fost creată.
+
+```markup
+<p> {{ reactiveData }} </p> <!-- va fi updatat -->
+<p> {{ badData }} </p> <!-- nu va fi updatat -->
+```
+
+```javascript
+data: function () {
+  return {
+    reactiveData: 'I am updated'
+  };
+}
+```
 
 ## Proprietăți calculate \(Computed Properties\)
 
@@ -228,38 +226,38 @@ Din acest motiv, pentru logică mai complexă, se utilizează **proprietățile 
 **Exemplu:**
 
 ```markup
-<div id="example">
-<p>Original message: "{{ message }}"</p>
-<p>Computed reversed message: "{{ reversedMessage }}"</p>
+<div>
+    <p>Original message: "{{ message }}"</p>
+    <p>Computed reversed message: "{{ reversedMessage }}"</p>
 </div>
-var vm = new Vue({ 
-    el: '#example', 
+```
+
+```javascript
+export default { 
     data: {
         message: 'Hello' 
     }, 
     computed: { 
-   // a computed getter 
-   reversedMessage: function () { 
-      // 'this' points to the vm instance 
-      return this.message.split(' ').reverse().join(' ') 
-   }
-  }
- })
+        // a computed getter 
+        reversedMessage: function () { 
+            // 'this' points to the vm instance 
+            return this.message.split(' ').reverse().join(' ')ș
+        }
+    }
+}
 ```
 
-Rezultatul obținut:
+![](../../.gitbook/assets/image%20%28316%29.png)
 
-![](../../.gitbook/assets/image%20%28299%29.png)
+{% hint style="info" %}
+Orice metodă \(funcție\) a componentei are aces la cuvîntul cheie **`this`**, care reprezintă **obiectul curent,** respectiv poate accesa toate datele, și alte metode din componentă.
+{% endhint %}
 
-Aici am declarat  o proprietate calculată `reversedMessage`. Funcția pe care am utilizat, va fi folosită ca funcție reproducătoare pentru proprietatea `vm.reversedMessage.`
+Aici am declarat  o funcția `reversedMessage()` sub blocul `coputed`. Ea va fi folosită ca funcție reproducătoare pentru proprietatea `{{ reversedMessage }}`.
 
-```javascript
-console.log(vm.reversedMessage) //=> 'olleH'
-vm.message = 'Goodbye'
-console.log(vm.reversedMessage) //=> 'eybdooG'
-```
-
-Valoarea lui `vm.reversedMessage` este dependentă de valoarea lui `vm.message`.
+{% hint style="info" %}
+Valoarea lui `reversedMessage` este dependentă de valoarea lui `message`. E recalculată de fiecare dată când valoarea originală se schimbă, și păstrează această valoare pentru a mari performanța. Urmărește modificarea datelor în același mod cum ele sunt urmarite de interpolări in template.
+{% endhint %}
 
 ## Condiționalele
 
@@ -267,14 +265,22 @@ Valoarea lui `vm.reversedMessage` este dependentă de valoarea lui `vm.message`.
 
 Directiva v-if este utilizată pentru redarea condiționată a unui bloc. Blocul va fi redat doar dacă expresia directivei returnează o valoare adevărată.
 
+```markup
+<h1 v-if="awesome">You are awesome!</h1>
+```
+
 ```javascript
-<h1 v-if= "awesome"> You are awesome!</h1>
+data: function () {
+  return {
+    awesome: true
+  };
+}
 ```
 
 Este, de asemenea, posibil de adăugat și „else block” utilizând v-else:
 
-```javascript
-<h1 v-if= "awesome"> You are awesome!</h1>
+```markup
+<h1 v-if="awesome">You are awesome!</h1>
 <h1 v-else>Oh no</h1>
 ```
 
@@ -282,7 +288,7 @@ Este, de asemenea, posibil de adăugat și „else block” utilizând v-else:
 
 Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se întâmplă dacă noi dorim să comutăm mai mult decât un singur element? În acest caz noi putem utiliza `v-if` într-un element `<template>`, care servește ca un ambalaj invizibil. Redarea finală a rezultatului nu va include elementul `<template>`.
 
-```javascript
+```markup
 <template v-if="ok">
    <h1>Title</h1>
    <p>Paragraph 1</p>
@@ -294,12 +300,12 @@ Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se
 
 Se poate utiliza directiva `v-else` pentru a indica un „else block" pentru v-if:
 
-```javascript
+```markup
 <div v-if="Math.random( ) > 0.5">
-Now you see me
+    Now you see me
 </div>
 <div v-else>
-Now you don't
+    Now you don't
 </div>
 ```
 
@@ -309,24 +315,152 @@ Un element `v-else` trebuie să urmeze imediat un element `v-if` sau `v-else-if`
 
 V-else-if servește ca un „else if block” pentru v-if. De asemenea, poate fi legat de mai multe ori:
 
-```javascript
+```markup
 <div v-if="type==='A'">
-A
+    A
 </div>
 <div v-else-if="type==='B'">
-B
+    B
 </div>
 <div v-else-if="type==='C'">
-C
+    C
 </div>
 <div v-else>
-Not A, B, or C
+    Not A, B, or C
 </div>
 ```
 
 Similar la v-else, un element `v-else-if` trebuie numaidecât să urmeze un element `v-if` sau `v-else-if`.
 
+## Randarea Listelor
+
+### v-for
+
+Pentru a randa un array de elemente, folosim directiva **`v-for`**. Această directivă necesită o sintaxă specială sub forma **`item in items`**, unde `items` este un array de date, iar `item` va fi variabila locală în template
+
+```markup
+<ul id="example-1">
+  <li v-for="item in items" :key="item.message">
+    {{ item.message }}
+  </li>
+</ul>
+```
+
+```javascript
+data: function () {
+  return {
+    items: [
+      { message: 'Foo' },
+      { message: 'Bar' }
+    ]
+  }
+}
+```
+
+![Rezultat](../../.gitbook/assets/image%20%28315%29.png)
+
+{% hint style="info" %}
+**`v-for`** îl definim peste elementul care vrem să-l repetăm. În acest caz vrem mai multe elemente `<li>`
+{% endhint %}
+
+{% hint style="info" %}
+:**`key`** e important să-l definim pentru a-l ajuta pe Vue să identifice ușor care element din array corespunde elementului din html, și în caz dacă ștergem sau mutăm cu locul elementele, să păstreze valorile din el. Devine foarte util spre exemplu când lucrăm cu forme și inputs.
+
+Recomandarea generală e să-l definim întotdeauna, cu  valoarea care unic poate identifica obiectul, deobicei un **id** sau un **string** unic
+{% endhint %}
+
+### Index
+
+În cazurile când avem nevoie și de index \(poziția curentă\) putem adăuga un element adițional în **`v-for`**:
+
+```markup
+<ul id="example-2">
+  <li v-for="(item, index) in items">
+    {{ parentMessage }} - {{ index }} - {{ item.message }}
+  </li>
+</ul>
+```
+
+![Rezultat](../../.gitbook/assets/image%20%28313%29.png)
+
+## Metode
+
+Când vrem să execută acțiuni la anumite evenimente, avem nevoie să definim logica care le va prelucra - event handlers. De asemenea uneori vrem sa definim funcții ajutatătoare care îndeplnesc o anumite funcționalitate. 
+
+Pentru asta putem defini o serie de metode. O metodă e o funcție obișnuită, care aparține unui obiect \(în cazul nostru componentei\), și are accest obiect \(componentă\) prin cuvântul cheie **`this`**
+
+```javascript
+...
+data: function () {
+  return {
+    counter: 0,
+  };
+},
+methods: {
+  increment: function () {
+    this.counter++;
+  },
+  decrement() { // putem omite cuvantul cheie `function`
+    this.counter--;
+  }
+}
+...
+```
+
+Aceste metode pot fi folosite ca acțiuni la evenimente pentru a adauga interactivitate componentelor noastre. Un exemplu de counter simplu:
+
+```markup
+<template>
+  <div>
+    <p>{{ counter }}</p>
+    <button @click="increment()">Increase</button>
+    <button @click="decrement()">Decrease</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Counter",
+  data: function() {
+    return {
+      counter: 0
+    };
+  },
+  methods: {
+    increment: function() {
+      this.counter++;
+    },
+    decrement() {
+      this.counter--;
+    }
+  }
+};
+</script>
+
+<style scoped>
+...
+</style>
+```
+
 ## Evenimente
+
+Evenimentele în Vue ne permit să executăm diferite metode la acțiunile pe care utilizatorul le face.
+
+Evenimentele în forma desfășurată se definesc prin directivul **`v-on`**, urmat de evenimentul care vrem să-l „prindem” Cel des folosit eveniment este acel de **click:**
+
+```markup
+<button v-on:click="doSomething()">Click Me</button>
+```
+
+{% hint style="info" %}
+În acest exemplu componenta va avea definită o metodă `doSomething()` care va fi apelată când utilizatorul va face click pe acest buton.
+{% endhint %}
+
+Putem defini evenimentul și în formă presucrată, înlocuind directivul `v-on` cu **`@`**
+
+```markup
+<button @click="doSomething()">Click Me</button>
+```
 
 ### Modificatori de evenimente \(Event modifiers\)
 
@@ -341,7 +475,7 @@ Pentru a adresa această problemă, Vue furnizează modificatori de evenimente p
 .once  
 .passive`
 
-```javascript
+```markup
 <!-- the click event's propagation will be stopped -->
 <a v-on:click.stop="doThis"></a>
 
@@ -411,7 +545,7 @@ Vue.config.keyCodes.f1 = 112
 
 Putem folosi următorii modificatori pentru a declanșa evenimentele de la tastatură sau mouse doar când modificatorii corespunzători sunt apesați:
 
-`ctrl  
+`.ctrl  
 .alt  
 .shift  
 .meta`
@@ -446,4 +580,8 @@ Modificatorul dat permite controlul unor combinații exacte a sistemului pentru 
 `.left  
 .right  
 .middle`
+
+## Proprietăți implicite
+
+Pe lângă datele, și metodele definite de noi, componentele Vue expun un număr de proprietăți și metode ale instanței. Acestea au prefixul `$` pentru a le diferenția de proprietățile definite de utilizator. \(Pentru mai multe detalii, puteți accesa [aici](https://vuejs.org/v2/api/#Instance-Properties)\)
 

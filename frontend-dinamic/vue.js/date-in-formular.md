@@ -1,4 +1,15 @@
-# Date în formular
+---
+description: >-
+  Componentele se integrează cu elementele html care permit unui utilizator să
+  introducă valori, și să reflecte modificările în variabile JavaScript direct,
+  cu configurație minimală.
+---
+
+# Componente & Forme
+
+Când folosim interpolarea obișnuită, se crează o relație unidirecțională, care modifică conținutul html de fiecare dată când modificăm variabila in JavaScript. Dar dacă vom încerca să modificăm valoarea dată în html \(prin folosirea folosirea unui `<input>`\), atunci modificările nu vor apărea în JavaScript. 
+
+Decizia asta e din motive de performanță generală. Putem crea legături bidirecționale printr-o directivă specială - `v-model`
 
 ## Directiva v-model
 
