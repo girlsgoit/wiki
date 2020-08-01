@@ -37,20 +37,6 @@ pd.DataFrame([[1,2,3,4],
               [9,10,11,12]])
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | 0 | 1 | 2 | 3 |
 | :--- | :--- | :--- | :--- | :--- |
 | 0 | 1 | 2 | 3 | 4 |
@@ -60,20 +46,6 @@ pd.DataFrame([[1,2,3,4],
 ```python
 pd.DataFrame({'a':[1,2,3,4], 'b':[5,6,7,8], 'c':[9,10,11,12]})
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | a | b | c |
 | :--- | :--- | :--- | :--- |
@@ -89,20 +61,6 @@ df = pd.DataFrame([[1,2,3,4],
 
 df
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | a | b | c | d |
 | :--- | :--- | :--- | :--- | :--- |
@@ -227,20 +185,6 @@ Metoda tail\(\) este opusul metodei head\(\).
 books.tail()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 195 | 17899948 | Rebecca | Daphne du Maurier | 328317 | 4.23 | 430751 | 22157 | 449p | 2013 | Classics |
@@ -339,20 +283,6 @@ memory usage: 15.8+ KB
 ```python
 books.describe()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Score | Rating | Rating Count | Review Count | Year |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -790,20 +720,6 @@ books['Rating'].value_counts().head().hist()
 books.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213p | 1999 | NaN |
@@ -856,20 +772,6 @@ books.loc[:,['Name', 'Score']]
 # books[['Name', 'Score']]
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | Name | Score |
 | :--- | :--- | :--- |
 | 0 | The Perks of Being a Wallflower | 745557 |
@@ -890,20 +792,6 @@ books.loc[:,['Name', 'Score']]
 # selectam un slice de coloane
 books.loc[:,'Id':'Authour']
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour |
 | :--- | :--- | :--- | :--- |
@@ -945,20 +833,6 @@ Name: 0, dtype: object
 books.loc[[2, 4, 6]]
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2 | 35545737 | A Walk to Remember | Nicholas Sparks | 104093 | 4.18 | 658664 | 12918 | 215p | 2000 | Romance |
@@ -972,20 +846,6 @@ books.loc[0:2]
 # prescurtare conventionala:
 # books[0:2]
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1089,20 +949,6 @@ books.iloc[0, 0]
 books.iloc[[2, 4, 6]]
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2 | 35545737 | A Walk to Remember | Nicholas Sparks | 104093 | 4.18 | 658664 | 12918 | 215p | 2000 | Romance |
@@ -1144,20 +990,6 @@ bool_2006 = books['Year'] == 2006
 ```python
 books[bool_2006]
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1286,20 +1118,6 @@ Ce alte expresii boolean mai cunoastem? Putem sa le folosim cand vrem ca și con
 books[(books['Year'] == 2006) & (books['Rating'] >= 4)]
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 64 | 28187 | The Lightning Thief \(Percy Jackson and the Oly... | Rick Riordan | 573399 | 4.25 | 1922316 | 58816 | 375p | 2006 | Fantasy |
@@ -1315,20 +1133,6 @@ books[(books['Year'] == 2006) & (books['Rating'] >= 4)]
 ```python
 books[(books['Year'] == 2006) | (books['Rating'] >= 4)]
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1349,20 +1153,6 @@ books[(books['Year'] == 2006) | (books['Rating'] >= 4)]
 ```python
 books[~(books['Year'] == 2006)]
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1443,20 +1233,6 @@ df = pd.DataFrame([[1,2,3,4],
 df
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | a | b | c | d |
 | :--- | :--- | :--- | :--- | :--- |
 | 0 | 1 | 2 | 3 | 4 |
@@ -1470,20 +1246,6 @@ df['e'] = 1
 ```python
 df
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | a | b | c | d | e |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1500,20 +1262,6 @@ df['de'] = df['d']+df['e']
 ```python
 df
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | a | b | c | d | e | de |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1533,20 +1281,6 @@ df['f'] = df['d']**df['de']
 df
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | a | b | c | d | e | de | f |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 1 | 2 | 3 | 4 | 1 | 5 | 1024 |
@@ -1563,20 +1297,6 @@ df = pd.DataFrame([['a', 'b'],
 df
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | A | B |
 | :--- | :--- | :--- |
 | 0 | a | b |
@@ -1590,20 +1310,6 @@ df['C'] = df['A'] + df['B']
 ```python
 df
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | A | B | C |
 | :--- | :--- | :--- | :--- |
@@ -1647,20 +1353,6 @@ books_copy.rename(columns={
     })
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213p | 1999 | NaN |
@@ -1680,20 +1372,6 @@ books_copy.rename(columns={
 ```python
 books_copy
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1742,20 +1420,6 @@ books_copy.rename(columns={
 ```python
 books.head()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1821,20 +1485,6 @@ books.columns = new_columns
 books.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213p | 1999 | NaN |
@@ -1848,20 +1498,6 @@ books.head()
 ```python
 books.isnull()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1938,20 +1574,6 @@ sns.heatmap(books.isnull(), cbar=False)
 books.dropna(axis='columns')
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating\_count | review\_count | page\_count | year |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 1219410 | 56409 | 213p | 1999 |
@@ -1971,20 +1593,6 @@ books.dropna(axis='columns')
 ```python
 books.dropna(subset=['rating'])
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2126,20 +1734,6 @@ books['genres'].fillna('Unknown', inplace = True)
 books.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213p | 1999 | Unknown |
@@ -2270,20 +1864,6 @@ grouped = books.groupby('genres')
 grouped.get_group('Classics')
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654 | 2003 | Classics |
@@ -2305,20 +1885,6 @@ grouped.get_group('Classics')
 ```python
 grouped.sum()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | score | rating | rating\_count | review\_count | page\_count | year |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2370,20 +1936,6 @@ grouped_df = pd.DataFrame(grouped.size(), columns=['size'])
 grouped_df.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | size |
 | :--- | :--- |
 | genres |  |
@@ -2426,20 +1978,6 @@ grouped_df['reviews_max'] =  grouped['review_count'].max()
 grouped_df.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | size | reviews\_max |
 | :--- | :--- | :--- |
 | genres |  |  |
@@ -2452,20 +1990,6 @@ grouped_df.head()
 ```python
 books.groupby(['genres', 'year']).mean()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  |  | id | score | rating | rating\_count | review\_count | page\_count |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2494,20 +2018,6 @@ books.groupby(['genres', 'year']).mean()
 grouped.agg(np.sum)
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | score | rating | rating\_count | review\_count | page\_count | year |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | genres |  |  |  |  |  |  |  |
@@ -2531,20 +2041,6 @@ grouped.agg(np.sum)
 ```python
 grouped['score'].agg([np.sum, np.mean, np.max])
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | sum | mean | amax |
 | :--- | :--- | :--- | :--- |
@@ -2576,20 +2072,6 @@ def diff_min_max(x):
 grouped['rating'].agg([diff_min_max])
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | diff\_min\_max |
 | :--- | :--- |
 | genres |  |
@@ -2615,20 +2097,6 @@ grouped['rating'].agg([diff_min_max])
 ```python
 books.head()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2659,20 +2127,6 @@ books['book_size'] = books['page_count'].map(eticheta)
 ```python
 books.head()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres | book\_size |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2716,20 +2170,6 @@ books['review_number'] = books['review_count'].apply(eticheta_2, x=10632, y=3500
 books.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres | book\_size | review\_number |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213 | 1999 | Unknown | Medium | Large |
@@ -2752,20 +2192,6 @@ books['score%'] = books['score'].apply(scaling, col='score')
 books.head()
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres | book\_size | review\_number | score% |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213 | 1999 | Unknown | Medium | Large | 25.190562 |
@@ -2785,20 +2211,6 @@ col = ['score%', 'rating_number%']
 
 books[col].describe()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | score% | rating\_number% |
 | :--- | :--- | :--- |
@@ -2826,20 +2238,6 @@ transformed_col = books[col].applymap(eticheta_3)
 transformed_col
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | score% | rating\_number% |
 | :--- | :--- | :--- |
 | 0 | Large | Medium |
@@ -2860,20 +2258,6 @@ transformed_col
 transformed_col.apply(pd.value_counts)
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | score% | rating\_number% |
 | :--- | :--- | :--- |
 | Large | 40 | 43 |
@@ -2891,20 +2275,6 @@ df1 = pd.DataFrame([[1, 'Marc', 9],[2, 'Mioara', 10],[3, 'Maxim', 7]], columns =
 df1
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | elev | nota |
 | :--- | :--- | :--- | :--- |
 | 0 | 1 | Marc | 9 |
@@ -2916,20 +2286,6 @@ df2 = pd.DataFrame([[4, 'Monica', 7],[5, 'Maxim', 9],[6, 'Maia', 8]], columns = 
 df2
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | elev | nota |
 | :--- | :--- | :--- | :--- |
 | 0 | 4 | Monica | 7 |
@@ -2940,20 +2296,6 @@ df2
 elevi = pd.concat([df1, df2],  ignore_index=True)
 elevi
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | elev | nota |
 | :--- | :--- | :--- | :--- |
@@ -2973,20 +2315,6 @@ materii = pd.DataFrame([['Matematica', 5], ['L.Romana', 7], ['Informatica', 6], 
 materii
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | materie | clasa |
 | :--- | :--- | :--- |
 | 0 | Matematica | 5 |
@@ -3000,20 +2328,6 @@ materii
 situatia_scolara = pd.concat([elevi, materii], axis=1)
 situatia_scolara
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | elev | nota | materie | clasa |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -3038,20 +2352,6 @@ absente = pd.DataFrame([[3, 'Maxim', 30], [6, 'Maia', 0], [2, 'Mioara', 57], [1,
 absente
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id | nume | absente |
 | :--- | :--- | :--- | :--- |
 | 0 | 3 | Maxim | 30 |
@@ -3068,20 +2368,6 @@ pd.merge(left = situatia_scolara, right = absente, left_on = 'elev', right_on = 
 # de ce sunt mai multe randuri?
 ```
 
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
-
 |  | id\_x | elev | nota | materie | clasa | id\_y | nume | absente |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 1 | Marc | 9 | Matematica | 5 | 1.0 | Marc | 124.0 |
@@ -3096,20 +2382,6 @@ pd.merge(left = situatia_scolara, right = absente, left_on = 'elev', right_on = 
 ```python
 pd.merge(left = situatia_scolara, right = absente, on = 'id', how = 'left')
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | id | elev | nota | materie | clasa | nume | absente |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
