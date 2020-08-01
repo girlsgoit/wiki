@@ -247,7 +247,7 @@ export default {
 }
 ```
 
-![](../../.gitbook/assets/image%20%28316%29.png)
+![](../../.gitbook/assets/image%20%28317%29.png)
 
 {% hint style="info" %}
 Orice metodă \(funcție\) a componentei are aces la cuvîntul cheie **`this`**, care reprezintă **obiectul curent,** respectiv poate accesa toate datele, și alte metode din componentă.

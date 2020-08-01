@@ -1,4 +1,13 @@
+---
+description: >-
+  Lifecycle hooks sunt o serie de metode cu nume specific în componente, care ne
+  permite sa „ne legăm” de anumite evenimente din viața componentei și să
+  executăm acțiuni.
+---
+
 # Lifecycle hooks
+
+## Lifecycle hooks
 
 Fiecare instanță Vue parcurge o serie de pași de inițializare atunci când este creată oferind utilizatorilor posibilitatea de a adăuga propriul cod în etape specifice.
 
@@ -14,7 +23,7 @@ Cârligul created va fi apelat de îndată ce instanța a fost creată. La aceas
 
 Există, de asemenea, alte cârlige care vor fi apelate în diferite etape ale ciclului de viață al instanței, cum ar fi `mounted`, `updated` și `destroyed`.
 
-#### Mounted
+### Mounted
 
 Acest cârlig este apelat după ce instanța Vue este montată în DOM.
 
@@ -35,7 +44,7 @@ mounted: function () {
 }
 ```
 
-#### Updated
+### Updated
 
 Acest cârlig este apelat după ce o componentă a fost modificată. Ca și pentru `mounted`, putem utiliza `$nextTick` pentru a ne asigura că toate celelalte componente au fost actualizate.
 
@@ -48,7 +57,7 @@ updated: function () {
 }
 ```
 
-#### Destroyed
+### Destroyed
 
 Acest cârlig este apelat după ce o instanță Vue a fost distrusă.
 
@@ -57,4 +66,12 @@ destroyed: function () {
   console.log('Instanta Vue a fost distrusa');
 }
 ```
+
+## Schema de viață a unei componente
+
+Pentru mai multe detalii și o idee reprezentativă cum arată viața unei componente puteți vedea schema de mai jos. 
+
+În ea veți găsi punctele unde sunt definite funcțiile, inclusiv cele care au fost descrise mai sus - ele sunt cele care ne interesează deobicei cel mai tare.
+
+![Referint&#x103; - ghidul oficial Vue.js](../../.gitbook/assets/image%20%28316%29.png)
 
