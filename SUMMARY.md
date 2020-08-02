@@ -36,6 +36,7 @@
   * [Componente & Forme](frontend-dinamic/vue.js/date-in-formular.md)
   * [Lifecycle hooks](frontend-dinamic/vue.js/lifecycle-hooks.md)
   * [Comunicare între componente](frontend-dinamic/vue.js/comunicare-intre-componente.md)
+  * [Vue Router](frontend-dinamic/vue.js/vue-router.md)
   * [Instalare locală](frontend-dinamic/vue.js/instalare-locala.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 * [Rest API](frontend-dinamic/axios/README.md)
