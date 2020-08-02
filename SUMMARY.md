@@ -37,6 +37,7 @@
   * [Lifecycle hooks](frontend-dinamic/vue.js/lifecycle-hooks.md)
   * [Comunicare între componente](frontend-dinamic/vue.js/comunicare-intre-componente.md)
   * [Vue Router](frontend-dinamic/vue.js/vue-router.md)
+  * [Axios](frontend-dinamic/vue.js/axios.md)
   * [Instalare locală](frontend-dinamic/vue.js/instalare-locala.md)
 * [Exercitii](frontend-dinamic/exercitii.md)
 * [Rest API](frontend-dinamic/axios/README.md)
