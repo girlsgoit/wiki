@@ -28,7 +28,18 @@ async function getFilms() {
 }
 ```
 
+Dacă dorim să obținem un film cu un ID specific vom face în felul următor:
 
+```javascript
+async function getFilms() {
+  try {
+    const response = await axios.get('https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe');
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
 
 
 
