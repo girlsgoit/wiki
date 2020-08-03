@@ -8,20 +8,25 @@ Sunt mai multe modalități cum pot fi obținute date de la un API, dar mai înt
 mounted () {
   try {
     const response = await axios.get('https://ghibliapi.herokuapp.com/swagger.yaml');
-    this.info = response;
+    console.log(response);
   } catch (error) {
     console.error(error);
   }
 }
 ```
 
-```markup
-<div id="app">
-  {{ info }}
-</div>
-```
+Răspunsul va conține informații despre cum pot fi accesate datele din API. De exemplu, putem obține toate filmele studioului Ghibli în felul următor:
 
-Răspunsul va conține informații despre cum pot fi accesate datele din API.
+```javascript
+async function getFilms() {
+  try {
+    const response = await axios.get('https://ghibliapi.herokuapp.com/films');
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
 
 
 
