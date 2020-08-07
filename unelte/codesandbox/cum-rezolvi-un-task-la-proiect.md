@@ -28,6 +28,14 @@
 
    ![](../../.gitbook/assets/image%20%28338%29.png)
 
+7. Dacă între timp cineva a terminat un task, și ia fost făcut merge în master, în tab-ul **GitHub Repository** vei vedea butonul de **Update sandbox from master**  
+
+
+   ![](../../.gitbook/assets/image%20%28342%29.png)
+
+   La click pe el, schimbările de pe master vor ajunge și în branch-ul tău.  
+   ****
+
   
    ****
 
