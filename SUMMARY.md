@@ -6,7 +6,9 @@
 
 * [Slack](unelte/slack.md)
 * [Visual Studio Code](unelte/visual-studio-code.md)
-* [CodeSandbox](unelte/codesandbox.md)
+* [CodeSandbox](unelte/codesandbox/README.md)
+  * [Cum rezolvi un task la proiect](unelte/codesandbox/cum-rezolvi-un-task-la-proiect.md)
+  * [Cum rezolvi un exercițiu](unelte/codesandbox/cum-rezolvi-un-exercitiu.md)
 
 ## FRONTEND STATIC
 
