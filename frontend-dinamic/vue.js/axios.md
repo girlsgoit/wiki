@@ -41,5 +41,28 @@ async function getFilms() {
 }
 ```
 
+Apelurile au următoarea formă generală: 
+
+```javascript
+axios.metoda-http('url');
+```
+
+#### Post request
+
+Putem adăuga parametri prin definirea unui obiect cu nume și valori. Acest obiect se indică după URL către resursă.
+
+```javascript
+axios.post('/user', {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
 
 
