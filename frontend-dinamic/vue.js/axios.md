@@ -47,9 +47,9 @@ Apelurile au următoarea formă generală:
 axios.metoda-http('url');
 ```
 
-#### Post request
+#### Parametri
 
-Putem adăuga parametri prin definirea unui obiect cu nume și valori. Acest obiect se indică după URL către resursă.
+Putem adăuga parametri prin definirea unui obiect cu nume și valori. Acest obiect se indică după URL-ul către resursă.
 
 ```javascript
 axios.post('/user', {
