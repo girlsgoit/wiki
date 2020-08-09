@@ -10,30 +10,22 @@ Apoi pe **Link Sandbox**
 
 ![](../../.gitbook/assets/image%20%28340%29.png)
 
-3. Deschizi tab-ul Sandbox Info și dai un titlu omenesc sandbox-ului
-
-![](../../.gitbook/assets/image%20%28340%29.png)
-
-De exemplu:
-
-![](../../.gitbook/assets/image%20%28335%29.png)
 
 
-
-4. După careva schimbări, la primul commit se va crea un branch nou.  
+3. După careva schimbări, la primul commit se va crea un branch nou.  
 În tab-ul **Github Repository**, scrii mesajul comitului și dai click pe **Commit changes** cu optiunea **Create branch ...** selectată
 
 ![](../../.gitbook/assets/image%20%28339%29.png)
 
-5. După schimbări noi, vei avea iarăși opțiunea de a face un commit în branch-ul creat
+4. După schimbări noi, vei avea iarăși opțiunea de a face un commit în branch-ul creat
 
 ![](../../.gitbook/assets/image%20%28337%29.png)
 
-6. Dacă vrei ca Sandbox-ul creat să fie visibil și de ceilalți membri din Workspace, găsești Sandbox-ul după numele creat în drafts și cu drag & drop îl muți în mapa ta publică
+5. Dacă vrei ca Sandbox-ul creat să fie visibil și de ceilalți membri din Workspace, găsești Sandbox-ul după numele creat în drafts și cu drag & drop îl muți în mapa ta publică
 
 ![](../../.gitbook/assets/image%20%28338%29.png)
 
-7. Dacă între timp cineva a terminat un task, și ia fost făcut merge în master, în tab-ul **GitHub Repository** vei vedea butonul de **Update sandbox from master**  
+6. Dacă între timp cineva a terminat un task, și ia fost făcut merge în master, în tab-ul **GitHub Repository** vei vedea butonul de **Update sandbox from master**  
 
 
 ![](../../.gitbook/assets/image%20%28342%29.png)
