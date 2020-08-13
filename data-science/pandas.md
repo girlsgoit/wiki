@@ -1,23 +1,34 @@
 # Pandas
 
+## Obiective
+
+* Să înțelegeți care e diferența dintre Numpy și Pandas.
+* Să știți cum să utilizați funcțiile din Pandas și metodele claselor pandas.Series, și pandas.DataFrame.
+* Să înțelegeți conceptele statistice - std, Q1,Q2,Q3.
+* Să știți cum să utilizați metodele de selectare din Pandas.
+* Să fiți capabile să curățiți o bază de date.
+* Să știți cum să modelați datele.
+
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
 ```
 
+## Pandas  🐼
+
 ### De ce Pandas?
 
-Am vazut mai devreme ca libraria Numpy ne ofera libertatea de a lucra mai ușor cu mai multe dimensiuni decât listele de liste. Cu ajutorul oparțiilor vectorizate putem mai rapid și mai ușor să transformăm datele decât folosind loop-ul `for`.
+Am văzut mai devreme că librăria Numpy ne oferă libertatea de a lucra mai ușor cu mai multe dimensiuni decât listele de liste. Cu ajutorul oparțiilor vectorizate putem mai rapid și mai ușor să transformăm datele decât folosind loop-ul `for`.
 
 ![alt text](https://lh3.google.com/u/0/d/1ZdBEaPjKjixBzesAU433SdJF6Zo5sMr6=w1920-h888-iv1)
 
 Totuși Numpy are câteva limitări:
 
 * Numpy nu oferă posibilitatea de a avea denumirile de coloane
-* Numpy permite de a avea doar un singur tip de date intr-un tensor și doar date de tip numerice\(nu putem avea string-uri\)
+* Numpy permite de a avea doar un singur tip de date într-un array
 * Nu conține metode gata facute\(pre-built\) care să faciliteze procesul de analiză a datelor.
 
-Limitările de mai sus sunt rezolvate de Pandas. Pandas nu este o ”înlocuire” a librăriei Numpy, ci mai degraba e o extensie a lui Numpy. Codul din spatele funcțiilor și metodelor din Pandas se bazează pe libraria Numpy astfel multe din conceptele anterior învățate le vom regăsi și aici.
+Limitările de mai sus sunt rezolvate de Pandas. Pandas nu este o ”înlocuire” a librăriei Numpy, ci mai degrabă e o extensie a lui Numpy. Codul din spatele funcțiilor și metodelor din Pandas se bazează pe libraria Numpy astfel multe din conceptele anterior învățate le vom regăsi și aici.
 
 ## Import pandas
 
@@ -31,10 +42,14 @@ Care este diferența dintre aceste două clase?
 
 ## Pandas.DataFrame
 
+DataFrame-ul e o structură primară a librăriei Pandas, bi-dimensională și heterogenă.
+
+Putem să construim un DataFrame utilizând o listă de liste sau un array.
+
 ```python
-pd.DataFrame([[1,2,3,4],
+pd.DataFrame(np.array([[1,2,3,4],
               [5,6,7,8],
-              [9,10,11,12]])
+              [9,10,11,12]]))
 ```
 
 |  | 0 | 1 | 2 | 3 |
@@ -42,6 +57,8 @@ pd.DataFrame([[1,2,3,4],
 | 0 | 1 | 2 | 3 | 4 |
 | 1 | 5 | 6 | 7 | 8 |
 | 2 | 9 | 10 | 11 | 12 |
+
+Putem să utilizăm un dicționar în crearea unui DataFrame.
 
 ```python
 pd.DataFrame({'a':[1,2,3,4], 'b':[5,6,7,8], 'c':[9,10,11,12]})
@@ -53,6 +70,8 @@ pd.DataFrame({'a':[1,2,3,4], 'b':[5,6,7,8], 'c':[9,10,11,12]})
 | 1 | 2 | 6 | 10 |
 | 2 | 3 | 7 | 11 |
 | 3 | 4 | 8 | 12 |
+
+Clasa DataFrame are și un parametru cu care putem să specificăm numele coloanelor într-o listă. De data asta atribuim DataFrame-ul unei variabile.
 
 ```python
 df = pd.DataFrame([[1,2,3,4],
@@ -68,9 +87,25 @@ df
 | 1 | 5 | 6 | 7 | 8 |
 | 2 | 9 | 10 | 11 | 12 |
 
-Ce diferență este între primul, al doilea si al treilea tabel?
+Ce diferență este între primul, al doilea și al treilea tabel?
+
+```python
+# Creați un DataFrame cu 3 coloane și 2 rânduri, iar coloanele să aibă nume
+
+df1 = pd.DataFrame({'a' : [1, 2], 'b': [3, 4], 'c':[5,6]})
+df1
+```
+
+|  | a | b | c |
+| :--- | :--- | :--- | :--- |
+| 0 | 1 | 3 | 5 |
+| 1 | 2 | 4 | 6 |
 
 ## Pandas.Series
+
+Obiectul Series este un ndarray cu o singură dimensiune.
+
+Ca să instanțiem un obiect Series putem folosi o listă de valori.
 
 ```python
 pd.Series([1, 2, 3, 4])
@@ -84,6 +119,8 @@ pd.Series([1, 2, 3, 4])
 dtype: int64
 ```
 
+Obiectul Series poate avea și un nume.
+
 ```python
 pd.Series([1, 2, 3, 4], name = 'numbers')
 ```
@@ -96,6 +133,8 @@ pd.Series([1, 2, 3, 4], name = 'numbers')
 Name: numbers, dtype: int64
 ```
 
+Un obiect Series poate fi și sintaxa de mai jos. Ce reprezintă sintaxa de mai jos?
+
 ```python
 df['a']
 ```
@@ -105,6 +144,20 @@ df['a']
 1    5
 2    9
 Name: a, dtype: int64
+```
+
+Sintaxa de mai sus reprezintă cea mai simplă modalitate de a selecta o coloană dintr-un DataFrame.
+
+```python
+# selectează coloana 'd' din tabelul df
+df['d']
+```
+
+```text
+0     4
+1     8
+2    12
+Name: d, dtype: int64
 ```
 
 Documentație:
@@ -122,7 +175,16 @@ Documentație:
 df = pd.DataFrame([[1,2,3,4],
               [5,6,7,8],
               [9,10,11,12]], columns = ['a', 'b', 'c', 'd'])
+df
 ```
+
+|  | a | b | c | d |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | 1 | 2 | 3 | 4 |
+| 1 | 5 | 6 | 7 | 8 |
+| 2 | 9 | 10 | 11 | 12 |
+
+Metoda `to_numpy()` a clasei DataFrame convertește un obiect DataFrame într-un array.
 
 ```python
 df.to_numpy()
@@ -134,7 +196,7 @@ array([[ 1,  2,  3,  4],
        [ 9, 10, 11, 12]])
 ```
 
-## Read a CSV with Pandas
+## Citirea unui fișier CSV cu Pandas
 
 Pentru a accesa un set de date, putem să folosim funcția read\_csv\(\) care primește ca argument path-ul, sau ”calea” spre fișierul CSV.
 
@@ -151,25 +213,11 @@ Metoda head\(\), aparține clasei DataFrame. Această metodă ne permite să viz
 Însă putem să vizualizăm și mai multe rânduri dacă specificăm acest parametru.
 
 ```python
-# indica argumentul 10 in functia head() si executa programul
+# indică argumentul 10 in funcția head() și execută programul
 # ce observi? dar daca scrii -5?
 
 books.head()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -193,15 +241,19 @@ books.tail()
 | 198 | 17245 | Dracula | Bram Stoker | 636610 | 4.00 | 907768 | 24683 | 488p | 1986 | Classics |
 | 199 | 662 | Atlas Shrugged | Ayn Rand | 247445 | 3.69 | 348149 | 17053 | 1168p | 1999 | Classics |
 
-## Save a CSV file
+## Cum salvăm un DataFrame într-un fișier CSV?
+
+Metoda `to_csv()` returnează un fișier CSV. Această metodă primește ca parametri numele fișierului. De asemenea specificăm parametrul `index` cu valoarea `False` ca să nu anuleze indexul exitent din DataFrame transformându-l într-o coloană și să indexeseze din nou rândurile.
 
 ```python
-df.to_csv('saved_books.csv', index=False)
+df.to_csv('df.csv', index=False)
 ```
 
 ## Atribute
 
-Atribute care ne ajuta sa investigam DataFrame-ului.
+Aceste atribute ne ajută să investigăm DataFrame-ului.
+
+Atributul `columns` ne returnează o listă cu numele coloanelor din tabel.
 
 ```python
 books.columns
@@ -212,6 +264,8 @@ Index(['Id', 'Name', 'Authour', 'Score', 'Rating', 'Rating Count',
        'Review Count', 'Page Count', 'Year', 'Genres'],
       dtype='object')
 ```
+
+Atributul `dtypes` ne ajută să investigăm ce tipuri de date avem în tabel.
 
 ```python
 books.dtypes
@@ -231,6 +285,8 @@ Genres           object
 dtype: object
 ```
 
+Atributul `index` ne returnează intervalul de indecși conținut de DataFrame-ul `books`.
+
 ```python
 books.index
 ```
@@ -239,12 +295,23 @@ books.index
 RangeIndex(start=0, stop=200, step=1)
 ```
 
+Atributul shape ne returnează un tuplu care conține numărul de rânduri și numărul de coloane.
+
 ```python
 books.shape
 ```
 
 ```text
 (200, 10)
+```
+
+```python
+# selecteaza numărul de rânduri din tabelul books cu ajutorul atributului shape
+books.shape[0]
+```
+
+```text
+200
 ```
 
 ## Metode
@@ -276,9 +343,10 @@ memory usage: 15.8+ KB
 ```
 
 ```python
-# Ce informație ne oferă această metodă?
-# Ce lucruri observați care trebuie să fie corectate?
+# Ce informație ne oferă metoda info()?
 ```
+
+Metoda `describe()` ne oferă informații statistice despre toate coloanele numerice.
 
 ```python
 books.describe()
@@ -297,7 +365,7 @@ books.describe()
 
 #### Abaterea standarda
 
-Ce este **std** sau **abaterea standarda** \(**standard deviation**\)?
+Ce este **std** sau **abaterea standardă** \(**standard deviation**\)?
 
 Deja sunteți familiare cu histograma, știți ce înseamnă distribuția valorilor într-o histogramă. Un aspect interesant al distribuției este variabilitatea \(variability\) valorilor.
 
@@ -310,11 +378,11 @@ c = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 19]
 # Cat de mult variaza?
 ```
 
-Ca sa ne dam seama cat de mult variaza valorile intr-o distributie trebuie sa investigam distanta valorilor de la media distributiei.
+Ca sa ne dăm seama cât de mult variază valorile într-o distribuție trebuie să investigăm distanța valorilor de la media distribuției.
 
 ![alt text](https://lh3.google.com/u/0/d/1Mhr4YS-I5uluxcUXIgsyyseFarATTAZQ=w1920-h888-iv1)
 
-Ulterior insumand aceste distante, si impartind totalul la numarul de valori din distributie vom obtine o medie aritmetica a distantelor care ne va indica cat de mult variaza valorile intr-o distributie.
+Ulterior însumând aceste distanțe, și împărțind totalul la numărul de valori din distribuție vom obține o medie aritmetică a distanțelor care ne va indica cât de mult variază valorile într-o distribuție.
 
 ```python
 c = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 19]
@@ -340,14 +408,14 @@ sum(distances)
 0.0
 ```
 
-De ce am obtinut suma = 0?
+De ce am obținut suma = 0?
 
-Din cate observam suma totala a volorilor sub medie este egala cu suma totala a valorilor deasupra mediei.
+Din câte observăm suma totală a volorilor sub medie este egală cu suma totală a valorilor deasupra mediei.
 
-Ce trebuie sa facem ca sa nu obtinem suma = 0?
+Ce trebuie să facem ca să nu obținem suma = 0?
 
 ```python
-# transformam distantele in valori absolute, astfel ne asiguram ca toate vor fi valori pozitive
+# transformăm distanțele în valori absolute, astfel ne asigurăm că toate vor fi valori pozitive
 distances = []
 for num in c:
     distance = abs(num - c_mean)
@@ -369,7 +437,7 @@ sum(distances)
 ```
 
 ```python
-# Impartim suma distantelor absolute la numarul de valori din distributie
+# Împărțim suma distanțelor absolute la numărul de valori din distribuție
 sum(distances)/len(c)
 ```
 
@@ -377,9 +445,9 @@ sum(distances)/len(c)
 2.75
 ```
 
-Valoarea de mai sus, 2.75, reprezinta **distanta medie absoluta** \(**mean absolute distance**\), sau in statistica se mai numeste **abaterea medie absoluta** \(**mean absolute deviation**\).
+Valoarea de mai sus, 2.75, reprezintă **distanța medie absolută** \(**mean absolute distance**\), sau în statistică se mai numește **abaterea medie absolută** \(**mean absolute deviation**\).
 
-O alta solutie de a evita suma = 0, e sa ridicam la puterea a doua toate distantele.
+O altă soluție de a evita suma = 0, e să ridicăm la puterea a doua toate distanțele.
 
 ```python
 distances = []
@@ -394,10 +462,10 @@ distances
 [2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 272.25]
 ```
 
-Care este avantajul de a folosi valori patratice fata de valori absolute?
+Care este avantajul de a folosi valori pătratice față de valori absolute?
 
 ```python
-# Impartim suma distantelor patratice la numarul de valori din distributie
+# Împărțim suma distanțelor pătratice la numărul de valori din distribuție
 sum(distances)/len(c)
 ```
 
@@ -405,9 +473,9 @@ sum(distances)/len(c)
 24.75
 ```
 
-Valoarea 24.75 reprezinta **distanta medie patratica** \(**mean squared distance**\) sau **variatia** \(**variance**\) valorilor intr-o distributie.
+Valoarea 24.75 reprezintă **distanța medie patratică** \(**mean squared distance**\) sau **variația** \(**variance**\) valorilor într-o distribuție.
 
-Acum aceasta valoare trebuie sa fie standardizata sau adusa la o "starea normala", si vom face asta prin extragerea radacinii patratice.
+Acum această valoare trebuie să fie standardizată sau adusă la "starea normală" și vom face asta prin extragerea rădăcinii pătrate.
 
 ```python
 import math
@@ -418,11 +486,11 @@ math.sqrt(sum(distances)/len(c))
 4.9749371855331
 ```
 
-Valoarea ~4.97 am obtinut-o extragand radacina patrata din distanta medie patratica, aceasta valoare reprezinta **abaterea standarda** \(**standard deviation**\).
+Valoarea ~4.97 am obținut-o extragând rădăcina pătrată din distanța medie pătratică, această valoare reprezintă **abaterea standardă** \(**standard deviation**\).
 
-La ce ne ajuta **abaterea standarda**?
+La ce ne ajută **abaterea standardă**?
 
-Imaginati-va ca vreti sa cumparati o casa. Si pretul acestei case este de 60000 de euro. Va intrebati daca aceasta casa este scumpa, sau nu, fata de restul caselor de pe strada. Sa presupunem ca avem aceasta lista de preturi ale caselor de pe aceasta strada.
+Imaginați-vă că vreți să cumpărați o casă. Și prețul acestei case este de 60000 de euro. Vă întrebați dacă această casă este scumpă, sau nu, față de restul caselor de pe stradă. Să presupunem că avem această listă de prețuri ale caselor de pe această stradă.
 
 ```python
 preturi = [10700, 120000, 20000, 35000, 78000, 45500, 90000, 100000, 19000, 60000, 40000, 51000, 55000, 72000,
@@ -450,26 +518,28 @@ plt.legend()
 
 
 
-<matplotlib.legend.Legend at 0x7f3c1d312c88>
+<matplotlib.legend.Legend at 0x7f0f8fe4dba8>
 ```
 
-Unde se plaseaza 60000 de euro? Intre axa verde si rosie, sau intre axa rosie si galbena? Observam ca 60000 de euro este un pret usor mai mic decat media preturilor caselor de pe strada dar totusi nu e un pret foarte mic pentru ca nu trece peste limita unei **abateri standarde** sub medie.
+![png](../.gitbook/assets/output_80_2.png)
+
+Unde se plasează 60000 de euro? Între axa verde și roșie, sau între axa roșie și galbenă? Observăm că 60000 de euro este un preț ușor mai mic decât media prețurilor caselor de pe stradă dar totuși nu e un preț foarte mic pentru că nu trece peste limita unei **abateri standarde** sub medie.
 
 ![alt text](https://lh3.google.com/u/0/d/1rYaOvCdqKBTKxErPwQgA1tTc5hTBcQmw=w1365-h888-iv1)
 
-Surse aditionale:
+Surse adiționale:
 
-* [Abatere standard](https://ro.wikipedia.org/wiki/Abatere_standard)
+* [Abatere standardă](https://ro.wikipedia.org/wiki/Abatere_standard)
 
 #### Percentile
 
 Ce sunt **percentilele**?
 
-Percentila este o mărime care se folosește în statistică și indică câte procente din populație distribuită crescător după o anumită valoare se află până la aceasta.
+Percentila este o mărime care se folosește în statistică și indică câte procente din populația distribuită crescător după o anumită valoare se află până la aceasta.
 
 De exemplu până la a 10 percentilă se află 10 procente din populație. După a 10-a percentilă se află 90% din populație.
 
-A 25-a, 50-a, 75-a percentila se mai numesc cuartile \(quartiles\): Q1, Q2, Q3.
+A 25-a, 50-a, 75-a percentilă se mai numesc cuartile \(quartiles\): Q1, Q2, Q3.
 
 ```python
 # Admitem că avem o populație de 10 persoane care au înălțimile de mai jos:
@@ -495,6 +565,8 @@ inaltimi_sortate
 # Ce puteți să spuneți despre 75% din cărți si anul lor de editare?
 ```
 
+Resurse utile: [Video varianta, standard deviation](https://www.youtube.com/watch?v=wDAd_QHKoOg)
+
 ### Metode: Series
 
 ```python
@@ -514,7 +586,7 @@ books['Rating'].min()
 ```
 
 ```python
-# Aflati minimul si maximul coloanei care indica numarul de pagini
+# Aflați minimul și maximul coloanei care indică numărul de pagini
 # .....
 ```
 
@@ -527,7 +599,7 @@ books['Rating'].sum()
 ```
 
 ```python
-# Aflati cate persoane in total au scris review-uri pentru carti?
+# Aflați câte persoane în total au scris review-uri pentru cârți?
 # ....
 ```
 
@@ -556,9 +628,11 @@ books['Rating'].mode()
 dtype: float64
 ```
 
+Metoda value\_counts\(\) returnează frecvența valorilor dintr-o coloană.
+
 ```python
 books['Rating'].value_counts()
-# ce observati referitor la functia model si valorile de mai jos?
+# ce observați referitor la funcția mode() și valorile de mai jos?
 
 # Parametri:
 # normalize=True * 100
@@ -586,8 +660,8 @@ Name: Rating, Length: 80, dtype: int64
 Documentație: [Series.value\_counts\(\)](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html)
 
 ```python
-# Aflati cate carti avem reprezentative pentru fiecare gen? 
-# Depistati daca sunt date lipsa si aratati valorile in procente
+# Aflați câte cărți avem reprezentative pentru fiecare gen? 
+# Depistați dacă sunt date lipsă și arătați valorile în procente
 # ...
 ```
 
@@ -674,6 +748,8 @@ books['Authour'].nunique()
 
 ### Metode înlănțuite
 
+Conceptul de metode înlănțuite permite aplicarea mai multor metode una peste rezultatul alteia într-o linie de cod.
+
 ```python
 books['Rating'].value_counts()
 
@@ -712,9 +788,15 @@ Name: Rating, dtype: int64
 books['Rating'].value_counts().head().hist()
 ```
 
+![png](../.gitbook/assets/output_109_1.png)
+
+Pandas are încorporate metode de plotare bazate pe metodele din matplotlib.
+
 ## Selectarea cu loc\[\] și iloc\[\]
 
 ### loc\[\]
+
+Loc este o proprietate prezentă și la clasa DataFrame, și la clasa Series. Această proprietate permite selectarea elementelor din DataFrame sau Series prin indexare.
 
 ```python
 books.head()
@@ -729,9 +811,9 @@ books.head()
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654p | 2003 | Classics |
 
 ```python
-#sintaxa pentru selectare unui item din DataFrame: 
+#sintaxa pentru selectarea unui item din DataFrame: 
 
-# df.loc[row_label,column_label]
+# books.loc[row_label,column_label]
 
 books.loc[0,'Id']
 ```
@@ -743,10 +825,10 @@ books.loc[0,'Id']
 ```python
 # Selectăm o coloană
 
-books.loc[:,'Id']
+# books.loc[:,'Id']
 
 # prescurtare convențională:
-# books['Id']
+books['Id']
 ```
 
 ```text
@@ -765,11 +847,11 @@ Name: Id, Length: 200, dtype: int64
 ```
 
 ```python
-# selectam o lista de coloane
-books.loc[:,['Name', 'Score']]
+# selectăm o listă de coloane
+# books.loc[:,['Name', 'Score']]
 
-# prescurtare conventionala:
-# books[['Name', 'Score']]
+# prescurtare convențională:
+books[['Name', 'Score']]
 ```
 
 |  | Name | Score |
@@ -789,7 +871,7 @@ books.loc[:,['Name', 'Score']]
 200 rows × 2 columns
 
 ```python
-# selectam un slice de coloane
+# selectăm un slice de coloane
 books.loc[:,'Id':'Authour']
 ```
 
@@ -810,7 +892,7 @@ books.loc[:,'Id':'Authour']
 200 rows × 3 columns
 
 ```python
-# selecteaza un rand
+# selectează un rând
 books.loc[0]
 ```
 
@@ -829,7 +911,7 @@ Name: 0, dtype: object
 ```
 
 ```python
-# selecteaza mai multe randuri
+# selectează mai multe rânduri
 books.loc[[2, 4, 6]]
 ```
 
@@ -840,30 +922,36 @@ books.loc[[2, 4, 6]]
 | 6 | 35031085 | Frankenstein: The 1818 Text | Mary Wollstonecraft Shelley | 430783 | 3.80 | 1132408 | 31805 | 288p | 2018 | Classics |
 
 ```python
-# selecteaza un slice de randuri dintr-un DataFrame
-books.loc[0:2]
+# selectează un slice de rânduri dintr-un DataFrame
+books.loc[0:2, 'Id':'Score']
 
-# prescurtare conventionala:
+# prescurtare convențională:
 # books[0:2]
 ```
 
-|  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213p | 1999 | NaN |
-| 1 | 77203 | The Kite Runner | Khaled Hosseini | 427631 | 4.30 | 2365531 | 72036 | 371p | 2004 | Fiction |
-| 2 | 35545737 | A Walk to Remember | Nicholas Sparks | 104093 | 4.18 | 658664 | 12918 | 215p | 2000 | Romance |
+|  | Id | Name | Authour | Score |
+| :--- | :--- | :--- | :--- | :--- |
+| 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 |
+| 1 | 77203 | The Kite Runner | Khaled Hosseini | 427631 |
+| 2 | 35545737 | A Walk to Remember | Nicholas Sparks | 104093 |
 
 ```python
-# exercitiu: vrem sa selectăm de la rândul 2 până la 4 și de la coloana 'name' la coloana 'score'
-# .....
+# exercițiu: vrem să selectăm de la rândul 2 până la 4 și de la coloana 'name' la coloana 'score'
+books.loc[2:4, 'Name':'Score']
 ```
+
+|  | Name | Authour | Score |
+| :--- | :--- | :--- | :--- |
+| 2 | A Walk to Remember | Nicholas Sparks | 104093 |
+| 3 | Goodnight Moon | Margaret Wise Brown | 93488 |
+| 4 | Moby-Dick or, the Whale | Herman Melville | 200963 |
 
 ```python
 # selectează un item din Series
-books['Name'].loc[4]
+# books['Name'].loc[4]
 
 # prescurtare convențională:
-# books['Name'][4]
+books['Name'][4]
 ```
 
 ```text
@@ -872,10 +960,10 @@ books['Name'].loc[4]
 
 ```python
 # selectează o listă de itemi din Series
-books['Name'].loc[[2, 5, 8]]
+# books['Name'].loc[[2, 5, 8]]
 
 # prescurtare convențională:
-# books['Name'][[2, 5, 8]]
+books['Name'][[2, 5, 8]]
 ```
 
 ```text
@@ -887,10 +975,10 @@ Name: Name, dtype: object
 
 ```python
 # selectează un slice de itemi din Series
-books['Name'].loc[3:4]
+# books['Name'].loc[3:4]
 
 # prescurtare convențională:
-# books['Name'][3:5]
+books['Name'][3:5]
 ```
 
 ```text
@@ -899,33 +987,48 @@ books['Name'].loc[3:4]
 Name: Name, dtype: object
 ```
 
+```python
+# selectează din coloana 'Score' itemii 3, 7, 2
+books['Score'].loc[[3, 7, 2]]
+
+# selectează din coloana 'Genres' de la al 9-lea pâna la al 15-lea item.
+```
+
+```text
+3     93488
+7     78563
+2    104093
+Name: Score, dtype: int64
+```
+
+```python
+books['Genres'][9:16]
+```
+
+```text
+9        Classics
+10    Young Adult
+11       Classics
+12     Historical
+13    Young Adult
+14    Young Adult
+15        Fantasy
+Name: Genres, dtype: object
+```
+
 ![alt text](https://lh3.google.com/u/0/d/1ITLNj2WgmSJmI7pBesq9L2vckQgwxlux=w1920-h888-iv1)
 
 ```python
-# sarcini.....
 
-# .......
 ```
 
 ### iloc\[\]
 
+Iloc este la fel o proprietate a claselor DataFrame și Series. Cu iloc putem să selectăm coloanele sau rândurile doar după indecșii numerici.
+
 ```python
 books.head()
 ```
-
-  
-    .dataframe tbody tr th:only-of-type {  
-        vertical-align: middle;  
-    }  
-  
-    .dataframe tbody tr th {  
-        vertical-align: top;  
-    }  
-  
-    .dataframe thead th {  
-        text-align: right;  
-    }  
-
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -936,7 +1039,7 @@ books.head()
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654p | 2003 | Classics |
 
 ```python
-# sintaxă pentru iloc[]: df.iloc[row_index, column_index]
+# sintaxa pentru iloc[]: df.iloc[row_index, column_index]
 
 books.iloc[0, 0]
 ```
@@ -955,15 +1058,30 @@ books.iloc[[2, 4, 6]]
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654p | 2003 | Classics |
 | 6 | 35031085 | Frankenstein: The 1818 Text | Mary Wollstonecraft Shelley | 430783 | 3.80 | 1132408 | 31805 | 288p | 2018 | Classics |
 
+![alt text](https://lh3.google.com/u/0/d/1OhyemVWKvHdf1OyQFBjh5inbxqAS-ioU=w1920-h888-iv1)
+
 ```python
-# sarcini..........
-# ...........
+# Selectează din tabelul books de la rândul 2 la rândul 9 și de la coloana 1 la coloana 4
+books.iloc[2:10, 1:5]
 ```
+
+|  | Name | Authour | Score | Rating |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | A Walk to Remember | Nicholas Sparks | 104093 | 4.18 |
+| 3 | Goodnight Moon | Margaret Wise Brown | 93488 | 4.28 |
+| 4 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 |
+| 5 | City of Bones \(The Mortal Instruments, \#1\) | Cassandra Clare | 713154 | 4.10 |
+| 6 | Frankenstein: The 1818 Text | Mary Wollstonecraft Shelley | 430783 | 3.80 |
+| 7 | Oh, the Places You'll Go! | Dr. Seuss | 78563 | 4.36 |
+| 8 | One Hundred Years of Solitude | Gabriel García Márquez | 613129 | 4.08 |
+| 9 | The Complete Stories and Poems | Edgar Allan Poe | 213957 | 4.38 |
 
 ## Selectearea prin indexarea cu boolean
 
+O metodă pentru a selecta condiționat este folosirea indexării cu valori boolean.
+
 ```python
-books['Year']==2006
+books['Year'] == 2006
 ```
 
 ```text
@@ -983,7 +1101,25 @@ Name: Year, Length: 200, dtype: bool
 
 ```python
 bool_2006 = books['Year'] == 2006
+bool_2006
 ```
+
+```text
+0      False
+1      False
+2      False
+3      False
+4      False
+       ...  
+195    False
+196    False
+197    False
+198    False
+199    False
+Name: Year, Length: 200, dtype: bool
+```
+
+Cu ajutorul Seriei vom indexa în DataFrame doar rândurile cu valoarea True.
 
 ![alt text](https://lh3.google.com/u/0/d/1SFcbyt9IqkgkRCq4qF31g3a1kjwCBeLS=w1920-h888-iv1)
 
@@ -1019,7 +1155,7 @@ books[bool_2006]
 Indexarea boolean de fapt e selectarea unui slice de rânduri.
 
 ```python
-# sa ne amintim cum selectăm un slice într-un DataFrame 
+# să ne amintim cum selectăm un slice într-un DataFrame 
 books.loc[2:3, 'Name']
 ```
 
@@ -1032,7 +1168,7 @@ Name: Name, dtype: object
 ![alt text](https://lh3.google.com/u/0/d/1_qRyOSpKmex2Bx6JrRxXlvzAECcAAhh_=w1920-h888-iv1)
 
 ```python
-# acelasi principiu il folosim cand vrem sa selectam doar numele cartilor din anul 2006
+# același principiu îl folosim când vrem să selectăm doar numele cărților din anul 2006
 books.loc[bool_2006, 'Name']
 ```
 
@@ -1062,14 +1198,14 @@ Name: Name, dtype: object
 
 ```python
 # exercițiu: 
-# 1. selectati toate cartile din genul "Historical" si afisati doar numele acestora
+# 1. selectați toate cărțile din genul "Historical" și afișați doar numele acestora
 
-# 2. selectati toate cartile din genul 'Romance' si afisati numele si scorul acestora
+# 2. selectați toate cărțile din genul 'Romance' și afișati numele și scorul acestora
 
-# 3. selectati toate cartile din genul 'Horror' care sa contina coloanele de la 'rating' pana la 'page_count'
+# 3. selectați toate cărțile din genul 'Horror' care să conțină coloanele de la 'rating' până la 'page_count'
 ```
 
-Variabila bool\_2006 e doar o variabila. Putem sa scriem expresia boolean direct in sintaxa de selectare.
+Variabila bool\_2006 e doar o variabilă. Putem să scriem expresia boolean direct în sintaxa de selectare.
 
 `bool_2006 = books['Year'] == 2006`
 
@@ -1103,16 +1239,17 @@ books.loc[books['Year']==2006, 'Name']
 Name: Name, dtype: object
 ```
 
-Ce alte expresii boolean mai cunoastem? Putem sa le folosim cand vrem ca și condiții de selectare?
+Ce alte expresii boolean mai cunoaștem? Putem să le folosim ca și condiții de selectare?
 
 ```python
-# Enumerați exemple de expresii boolean și executati 3 selecții din tabel
-# ....
+# Enumerați exemple de expresii boolean și executați 3 selecții din tabel
 ```
 
 ## Selectarea cu operatorii boolean
 
 ![alt text](https://lh3.google.com/u/0/d/1oslJ4JTELZ2E_E8uMZ7n4cAL-gHuh1Wt=w1920-h888-iv1)
+
+Putem să indexăm și cu o expresii logice. Vom selecta toate cărțile din 2006 care au ratingul mai mare decât 4.
 
 ```python
 books[(books['Year'] == 2006) & (books['Rating'] >= 4)]
@@ -1129,6 +1266,8 @@ books[(books['Year'] == 2006) & (books['Rating'] >= 4)]
 | 175 | 6514 | The Bell Jar | Sylvia Plath | 345502 | 4.01 | 573995 | 22336 | 294p | 2006 | Classics |
 | 177 | 3636 | The Giver \(The Giver, \#1\) | Lois Lowry | 407467 | 4.13 | 1729590 | 64308 | 208p | 2006 | Young Adult |
 | 190 | 2657 | To Kill a Mockingbird | Harper Lee | 2235010 | 4.28 | 4377280 | 89241 | 324p | 2006 | Classics |
+
+Vom selecta cărțile care sunt din anul 2006 sau care au ratingul mai mare decât 4.
 
 ```python
 books[(books['Year'] == 2006) | (books['Rating'] >= 4)]
@@ -1149,6 +1288,8 @@ books[(books['Year'] == 2006) | (books['Rating'] >= 4)]
 | 198 | 17245 | Dracula | Bram Stoker | 636610 | 4.00 | 907768 | 24683 | 488p | 1986 | Classics |
 
 144 rows × 10 columns
+
+Vom selecta toate cărțile care nu au fost editate în anul 2006.
 
 ```python
 books[~(books['Year'] == 2006)]
@@ -1171,10 +1312,12 @@ books[~(books['Year'] == 2006)]
 180 rows × 10 columns
 
 ```python
-# Exercitii
+# selectează toate cărțile din genul Fiction care au Ratingul mai mic sau egal 3
 ```
 
 ## Înlocuirea datelor din coloană
+
+Mai jos avem toată lista de genuri de cărți pe care le avem în setul de date books.
 
 ```python
 books['Genres'].value_counts()
@@ -1188,16 +1331,18 @@ Young Adult        17
 Childrens          11
 Horror              4
 Science Fiction     4
-Nonfiction          3
 Romance             3
 Historical          3
-Poetry              1
-Plays               1
+Nonfiction          3
 Cultural            1
-Sequential Art      1
+Plays               1
 Mystery             1
+Poetry              1
+Sequential Art      1
 Name: Genres, dtype: int64
 ```
+
+Vrem să schimbăm valoarea 'Science Fiction' în 'SciFi'.
 
 ```python
 books.loc[books['Genres']=='Science Fiction', 'Genres'] = 'SciFi'
@@ -1211,20 +1356,22 @@ Fiction           34
 Fantasy           30
 Young Adult       17
 Childrens         11
-Horror             4
 SciFi              4
-Nonfiction         3
+Horror             4
 Romance            3
 Historical         3
-Poetry             1
-Plays              1
+Nonfiction         3
 Cultural           1
-Sequential Art     1
+Plays              1
 Mystery            1
+Poetry             1
+Sequential Art     1
 Name: Genres, dtype: int64
 ```
 
 ## Crearea coloanelor noi
+
+Avem DataFrame-ul df.
 
 ```python
 df = pd.DataFrame([[1,2,3,4],
@@ -1239,6 +1386,8 @@ df
 | 1 | 5 | 6 | 7 | 8 |
 | 2 | 9 | 10 | 11 | 12 |
 
+Creăm o coloană în DataFrame-ul df care să conțină valori doar de 1.
+
 ```python
 df['e'] = 1
 ```
@@ -1252,6 +1401,11 @@ df
 | 0 | 1 | 2 | 3 | 4 | 1 |
 | 1 | 5 | 6 | 7 | 8 | 1 |
 | 2 | 9 | 10 | 11 | 12 | 1 |
+
+```python
+# creați o coloană în DataFrame-ul df care va conține numere de la 1 la 3. Folosiți range().
+# ....
+```
 
 ## Operațiuni vectorizate
 
@@ -1269,12 +1423,14 @@ df
 | 1 | 5 | 6 | 7 | 8 | 1 | 9 |
 | 2 | 9 | 10 | 11 | 12 | 1 | 13 |
 
-Operatii:
+Operații:
 
 * `series_a + series_b` - **Adunare**
-* `series_a - series_b` - **Scadere**
+* `series_a - series_b` - **Scădere**
 * `series_a * series_b` - **înmulțire**
 * `series_a / series_b` - **Împărțire**
+
+Putem să folosim și alte operațiuni matematice.
 
 ```python
 df['f'] = df['d']**df['de']
@@ -1287,13 +1443,12 @@ df
 | 1 | 5 | 6 | 7 | 8 | 1 | 9 | 134217728 |
 | 2 | 9 | 10 | 11 | 12 | 1 | 13 | 106993205379072 |
 
+Concatenare.
+
 ```python
 df = pd.DataFrame([['a', 'b'],
               ['c', 'd'],
               ['e', 'f']], columns = ['A', 'B'])
-```
-
-```python
 df
 ```
 
@@ -1305,9 +1460,6 @@ df
 
 ```python
 df['C'] = df['A'] + df['B']
-```
-
-```python
 df
 ```
 
@@ -1318,7 +1470,8 @@ df
 | 2 | e | f | ef |
 
 ```python
-# exercitiu: Aflati diferenta dintre numarul de persoane care dau review si numarul de peroane care pun note. Creati o coloana noua pentru rezultat.
+# exercițiu: Aflati diferența dintre numărul de persoane care dau review și numărul de peroane care pun note. Creați o coloană nouă pentru rezultat.
+# ....
 ```
 
 ## Curățirea datelor
@@ -1337,7 +1490,10 @@ Index(['Id', 'Name', 'Authour', 'Score', 'Rating', 'Rating Count',
 
 Convențional numele coloanelor din Pandas trebuie sa fie în formatul `snake_case`.
 
+Pentru a modifica numele coloanelor folosim metoda `rename()` în care specificăm la parametrul `columns` un dicționar în care cheile sunt numele coloanelor existente, iar valorile sunt numele coloanelor propuse.
+
 ```python
+# Mai întâi creăm o copie a DataFrame-ului books.
 books_copy = books.copy()
 books_copy.rename(columns={
     'Id':'id',
@@ -1371,6 +1527,9 @@ books_copy.rename(columns={
 
 ```python
 books_copy
+
+# ce observăm?
+# modificările nu s-au salvat
 ```
 
 |  | Id | Name | Authour | Score | Rating | Rating Count | Review Count | Page Count | Year | Genres |
@@ -1390,19 +1549,19 @@ books_copy
 200 rows × 10 columns
 
 ```python
-# ce trebuie sa facem ca sa salvam modificarea?
+# ce trebuie sa facem ca să salvăm modificările?
 # .....
 ```
 
 ```python
-# salvam modificarile:
-# solutia 1
+# salvăm modificările:
+# soluția 1
 books_copy_renamed_col =  ...
 ```
 
 ```python
-# salvam modificarile:
-# solutia 2
+# salvăm modificările:
+# soluția 2
 books_copy.rename(columns={
     'Id':'id',
     'Name':'name',
@@ -1417,6 +1576,8 @@ books_copy.rename(columns={
     }, inplace = True)
 ```
 
+Dar atunci când avem un tabel cu vreo 80 de coloane cărora trebuie să le modificăm numele. Ar trebui să creăm un dicționar manual prea mare.
+
 ```python
 books.head()
 ```
@@ -1429,6 +1590,8 @@ books.head()
 | 3 | 32929 | Goodnight Moon | Margaret Wise Brown | 93488 | 4.28 | 296501 | 5729 | 32p | 2007 | Childrens |
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654p | 2003 | Classics |
 
+Sau o alternativă ar putea fi să utilizăm metodele Clasei `String`. De exemplu metoda `lower()`, transformă toate literele din string în litere mici.
+
 ```python
 'Name'.lower()
 ```
@@ -1437,11 +1600,13 @@ books.head()
 'name'
 ```
 
+Iar cu ajutorul metodei replace\(\) putem să identificăm un caracter din string pe care vrem să-l înlocuim, îl menționăm ca prim parametru, iar al doilea parametru va fi caracterul cu care vrem să-l înlocuim. În cazul dat vom înlocui spațiul gol dintre 2 caractere cu `”_”`.
+
 ```python
 'Rating Count'.replace(' ', '_')
 
 
-# folosește conceptul de metode inlanțuite
+# folosește conceptul de metode înlănțuite
 # .lower()
 ```
 
@@ -1449,10 +1614,19 @@ books.head()
 'Rating_Count'
 ```
 
+Acum să scriem o funcție care utilizează cele 2 metode string de mai sus.
+
 ```python
 def clean_col(col):
     col = col.replace(' ', '_').lower()
     return col
+```
+
+Ca să schimbăm numele coloanelor vom folosi un loop for ca să iterăm prin `books.columns` și vom apela funcția `*clean_col*` pentru fiecare string `books.columns`.
+
+```python
+# amintiți-vă ce returnează books.columns
+# .....
 ```
 
 ```python
@@ -1477,6 +1651,8 @@ new_columns
  'genres']
 ```
 
+Iar acum atribuim lui books.columns lista creată cu numele noi de coloane.
+
 ```python
 books.columns = new_columns
 ```
@@ -1494,6 +1670,8 @@ books.head()
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654p | 2003 | Classics |
 
 ### Datele lipsă
+
+Metoda `isnull()` ne returnează tabelul `books` cu valori boolean.
 
 ```python
 books.isnull()
@@ -1516,6 +1694,7 @@ books.isnull()
 200 rows × 10 columns
 
 ```python
+# folosim conceptul de metode inlanțuite. Ce observați?
 books.isnull().sum()
 ```
 
@@ -1537,11 +1716,13 @@ dtype: int64
 
 **Ștergerea datelor**
 
-Cea mai ușoară abordare e să ștergem aceste date.
+Cea mai ușoară abordare e să ștergem datele lipsă. Putem să ștergem datele lipsă utilizând metoda dropna\(\).
 
 ```python
 books_notnull = books.dropna()
 books_notnull.info()
+
+# observați ce s-a întâmplat cu datele? Câte date au fost șterse? Ce au fost șterse, rânduri, sau coloane?
 ```
 
 ```text
@@ -1564,11 +1745,28 @@ dtypes: float64(1), int64(5), object(4)
 memory usage: 15.2+ KB
 ```
 
+Folosim librăria Seaborn ca să plotăm un grafic de tip heatmap, în care vedem cu culori deschise datele lipsă în dependență de coloane. Astfel putem să observăm anumite pattern-uri, de exemplu dacă datele lipsă din diferite coloane coincid după rânduri.
+
 ```python
 import seaborn as sns
 
 sns.heatmap(books.isnull(), cbar=False)
 ```
+
+```text
+/usr/local/lib/python3.6/dist-packages/statsmodels/tools/_testing.py:19: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
+  import pandas.util.testing as tm
+
+
+
+
+
+<matplotlib.axes._subplots.AxesSubplot at 0x7f0f81c11be0>
+```
+
+![png](../.gitbook/assets/output_215_2.png)
+
+Atunci când vrem să ștergem coloanele cu date lipsă, trebuie să specificăm în metoda `dropna()` parametrul `axis` cu valoarea `”columns”`.
 
 ```python
 books.dropna(axis='columns')
@@ -1590,6 +1788,8 @@ books.dropna(axis='columns')
 
 200 rows × 8 columns
 
+Dacă vrem să ștergem rândurile cu datele lipsă care aparțin doar unei coloane anumite, menționăm în metoda `dropna()` parametrul `subset` care ia o listă de valori cu numele coloanelor care ne interesează.
+
 ```python
 books.dropna(subset=['rating'])
 ```
@@ -1609,6 +1809,11 @@ books.dropna(subset=['rating'])
 | 199 | 662 | Atlas Shrugged | Ayn Rand | 247445 | 3.69 | 348149 | 17053 | 1168p | 1999 | Classics |
 
 191 rows × 10 columns
+
+```python
+# Cum credeți care ar fi o abordare mai corectă? Să ștergem rânduri sau coloane? 
+# În ce cazuri ați folosi o abordare sau alta?
+```
 
 O altă abordare este înlocuirea datelor lipsă cu valori.
 
@@ -1634,6 +1839,8 @@ rating_mean
 ```text
 4.111151832460733
 ```
+
+Metoda fillna\(\) înlocuiește toate valorile NaN cu valoarea care ne-o dorim noi. În cazul dat va fi media aritmetică a valorilor din coloana `”rating”`.
 
 ```python
 books_miss_val1['rating'].fillna(rating_mean, inplace=True)
@@ -1675,8 +1882,10 @@ plt.legend()
 
 
 
-<matplotlib.legend.Legend at 0x7f8ddc0785c0>
+<matplotlib.legend.Legend at 0x7f0f81318978>
 ```
+
+![png](../.gitbook/assets/output_235_2.png)
 
 Ce abordare să folosiți?
 
@@ -1688,14 +1897,38 @@ Dacă aceste date trebuie sa le folosiți pentru a antrena un model în Machine 
 
 Înlocuiți cu media aritmetică atunci când distribuția este aproximativ normală, pentru că media și mediana se află la mijloc și aproape coincid, respectiv valorile lor nu se vor schimba foarte mult.
 
-Atunci cand aveți o distribuție asimetrică, cu multe valori extreme, este indicat să folosiți mediana, pentru că în cazul dat media aritmetică este deplasată față de zona unde se concentrează cele mai multe valori și va influența distribuția.
+Atunci cand aveți o distribuție asimetrică, cu multe valori extreme, este indicat să folosiți mediana, pentru că în cazul dat mediana se va afla în zona unde se concentrează cele mai multe valori, iar media aritmetică este mai deplasată spre valorile extreme, astfel dacă înlocuim datele lipsa cu media aritmetică, aceasta va influența distribuția.
 
 Dacă datele poti fi estimate pe baza dependențelor față de alți parametri din setul de date, atunci asta ar fi o soluție care ne garantează valori cât de cât apropiate de realitate.
 
-În cazul dat, vom opta pentru ștergerea datelor.
+În cazul nostru, vom opta pentru ștergerea datelor.
 
 ```python
 books.dropna(subset=['rating'], inplace = True)
+```
+
+```python
+books.info()
+```
+
+```text
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 191 entries, 0 to 199
+Data columns (total 10 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   id            191 non-null    int64  
+ 1   name          191 non-null    object 
+ 2   authour       191 non-null    object 
+ 3   score         191 non-null    int64  
+ 4   rating        191 non-null    float64
+ 5   rating_count  191 non-null    int64  
+ 6   review_count  191 non-null    int64  
+ 7   page_count    191 non-null    object 
+ 8   year          191 non-null    int64  
+ 9   genres        177 non-null    object 
+dtypes: float64(1), int64(5), object(4)
+memory usage: 16.4+ KB
 ```
 
 #### Date categoriale
@@ -1713,18 +1946,20 @@ Fantasy           27
 Young Adult       16
 NaN               14
 Childrens         11
-Horror             4
 SciFi              4
-Nonfiction         3
+Horror             4
 Historical         3
+Nonfiction         3
 Romance            2
-Poetry             1
-Plays              1
 Cultural           1
-Sequential Art     1
+Plays              1
 Mystery            1
+Poetry             1
+Sequential Art     1
 Name: genres, dtype: int64
 ```
+
+Observăm ca avem 14 valori NaN în coloana Genres. Când avem valori lipsă de tip categoriale este indicat ca ele să fie transformate într-o categorie a datelor lipsă. În cazul dat această categorie se va numi `”Unknown”` \(Necunoscute\).
 
 ```python
 books['genres'].fillna('Unknown', inplace = True)
@@ -1764,6 +1999,8 @@ dtype: int64
 
 ```python
 books.info()
+
+# ce observăm la tipurile de date?
 ```
 
 ```text
@@ -1788,6 +2025,8 @@ memory usage: 16.4+ KB
 
 ```python
 books['page_count'].head()
+
+# ce date din tabel ar trebui modificate?
 ```
 
 ```text
@@ -1799,25 +2038,45 @@ books['page_count'].head()
 Name: page_count, dtype: object
 ```
 
-```python
-books["page_count"] = books["page_count"].str.replace('p','')
-```
+Librăria Pandas conține o mulțime de **metode string vectorizate** pe care noi le putem folosi ca să manipulăm datele de tip `string`. Multe din ele îs similare cu metodele clasei String din Python.
+
+Majoritatea metodelor string vectorizate sunt disponibile folosind accesorul `Series.str` ceea ce înseamnă că noi le putem accesa adaugând `str` între numele Seriei și numele metodei, conform sinatxei de mai jos:
+
+![alt text](https://lh3.google.com/u/0/d/1sH1oM2-3ayvL6IHzIGnOWBY7v9zerBsX=w1920-h888-iv1)
+
+Documentație: [Metode string vectorizate](https://pandas.pydata.org/pandas-docs/stable/user_guide/text.html#method-summary)
+
+În cazul valorilor din coloana `'page_count'`, noi vrem să selectăm caracterul `'p'` și să-l înlocuim cu nimic, astfel încât să ne rămână în această coloană doar valori de tip integer. Acest lucru putem sa-l realizăm folosind metoda string `str.replace()`.
 
 ```python
-books['page_count'].head()
+books["page_count"].str.replace('p','')
 ```
 
 ```text
-0    213
-1    371
-2    215
-3     32
-4    654
-Name: page_count, dtype: object
+0       213
+1       371
+2       215
+3        32
+4       654
+       ... 
+195     449
+196     518
+197    1276
+198     488
+199    1168
+Name: page_count, Length: 191, dtype: object
+```
+
+Următorul pas e să transformăm aceste valori în valori de tip integer cu ajutorul metodei astype\(\).
+
+```python
+books['page_count'] = books['page_count'].str.replace('p', '').astype('int')
+
+# vom obține o eroare. de ce?
 ```
 
 ```python
-books['page_count'] = books['page_count'].astype('int')
+# hai sa folosim aceste 2 metode "înlănțuit"
 ```
 
 ```python
@@ -1846,19 +2105,53 @@ memory usage: 16.4+ KB
 
 ### Verficarea existenței rândurilor duplicate
 
+În dependeță de metoda de colectare a datelor variază consistența datelor în set. Deseori în set se pot găsi date care se repetă, acestea se numesc duplicate.
+
+O metodă care ne ajută să le identificăm este `duplicated()`. Această metodă are parametrul `keep` care are valorile `'first'`, `'last'` sau `False`.
+
+Folosim valoarea `'first'` atunci cand vrem să selectăm toate duplicatele în afară de primul.
+
+Folosim valoarea `'last'` atunci când vrem să selectăm toate duplicatele în afară de ultimul.
+
+Folosim valoarea `False` ca să selectăm toate duplicatele din setul de date.
+
 ```python
-books.duplicated(keep=False).sum()
+# books.duplicated(keep=False)
+
+# utilizăm indexarea boolean ca să afișăm rândurile duplicate
+# cum selectăm toate rândurile care nu sunt duplicate?
+books[books.duplicated(keep=False)]
 ```
 
-```text
-0
+|  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+
+Documentaie: [drop\_duplicates](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop_duplicates.html)
+
+```python
+books.drop_duplicates(subset='name', inplace = True)
 ```
 
 ## DataFrame.groupby\(\)
 
+1. Separarea în grupuri
+2. Aplicarea unei funcții asupra fiecărui grup
+3. Combinarea rezultatelor într-o structură de date
+
+Pandas are o operație built-in pentru aceste 3 procese de mai sus. Operația `groupby` aplică procesul de _**”separare-aplicare-combinare”**_ asupra unui DataFrame și condensează acest proces în 2 pași: 1. Crează un obiect GroupBy 2. Aplică o funcție asupra obiectului GroupBy.
+
+Obiectul GroupBy ne permite să separăm DataFrame-ul în grupuri, dar într-un mod abstract. Nu se produce nici o operațiune până când asupra obiectului nu se aplică o funcțe.
+
+![alt text](https://lh3.google.com/u/0/d/156xqvj1RfyPEx2JDWqnnvMbI5SXeZw7G=w1920-h888-iv1)
+
 ```python
+# Creăm obiectul GroupBy.
 grouped = books.groupby('genres')
+grouped
 ```
+
+Înainte de agregare\(=unire\), o să folosim metoda `get_group()` care aparține clasei DataFrameGroupBy. Această metodă ne permite să selectăm datele pentru un grup anumit.
 
 ```python
 grouped.get_group('Classics')
@@ -1880,7 +2173,7 @@ grouped.get_group('Classics')
 
 68 rows × 10 columns
 
-![alt text](https://lh3.google.com/u/0/d/156xqvj1RfyPEx2JDWqnnvMbI5SXeZw7G=w1920-h888-iv1)
+Acum să grupăm aceste grupuri folosind metoda `sum()`.
 
 ```python
 grouped.sum()
@@ -1905,6 +2198,8 @@ grouped.sum()
 | Sequential Art | 472331 | 114982 | 4.36 | 479760 | 13770 | 416 | 2005 |
 | Unknown | 115383431 | 4698484 | 57.26 | 8797566 | 390736 | 6117 | 28052 |
 | Young Adult | 142467241 | 7889683 | 65.97 | 25512111 | 881068 | 6718 | 32141 |
+
+Folosim metoda `size()` când vrem să aflăm dimensiunea fiecărui grup.
 
 ```python
 grouped.size()
@@ -1932,8 +2227,11 @@ dtype: int64
 ```
 
 ```python
+# transformăm în DataFrame
 grouped_df = pd.DataFrame(grouped.size(), columns=['size'])
-grouped_df.head()
+grouped_df
+
+# observați ce fel de index avem
 ```
 
 |  | size |
@@ -1944,8 +2242,20 @@ grouped_df.head()
 | Cultural | 1 |
 | Fantasy | 27 |
 | Fiction | 34 |
+| Historical | 3 |
+| Horror | 4 |
+| Mystery | 1 |
+| Nonfiction | 3 |
+| Plays | 1 |
+| Poetry | 1 |
+| Romance | 2 |
+| SciFi | 4 |
+| Sequential Art | 1 |
+| Unknown | 14 |
+| Young Adult | 16 |
 
 ```python
+# putem să agregăm datele doar pentru o sigură coloană
 grouped['review_count'].max()
 ```
 
@@ -1971,6 +2281,7 @@ Name: review_count, dtype: int64
 ```
 
 ```python
+# creăm o coloană nouă
 grouped_df['reviews_max'] =  grouped['review_count'].max()
 ```
 
@@ -1987,35 +2298,46 @@ grouped_df.head()
 | Fantasy | 27 | 108606 |
 | Fiction | 34 | 84112 |
 
+Putem să grupăm datele după mai multe coloane.
+
 ```python
-books.groupby(['genres', 'year']).mean()
+books.groupby(['genres', 'year']).mean().head(20)
 ```
 
 |  |  | id | score | rating | rating\_count | review\_count | page\_count |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | genres | year |  |  |  |  |  |  |
-| Childrens | 1964 | 3.704930e+05 | 1.012345e+06 | 4.380000 | 8.821950e+05 | 17375.0 | 64.000000 |
-| 1985 | 2.330930e+05 | 1.188860e+05 | 4.170000 | 4.111130e+05 | 5702.0 | 61.000000 |  |
-| 1988 | 2.377200e+04 | 4.941850e+05 | 4.300000 | 5.957690e+05 | 9208.0 | 62.000000 |  |
-| 1990 | 1.911390e+05 | 7.856300e+04 | 4.360000 | 3.186370e+05 | 5158.0 | 44.000000 |  |
-| 1994 | 4.948000e+03 | 1.360590e+05 | 4.300000 | 3.843860e+05 | 7754.0 | 26.000000 |  |
-| ... | ... | ... | ... | ... | ... | ... | ... |
-| Young Adult | 2008 | 2.617167e+06 | 1.052897e+06 | 4.323333 | 2.281277e+06 | 64110.0 | 381.333333 |
-| 2009 | 1.486557e+07 | 9.250550e+04 | 4.085000 | 5.686180e+05 | 25399.0 | 367.000000 |  |
-| 2010 | 7.938275e+06 | 7.803000e+04 | 4.480000 | 1.853180e+05 | 6824.0 | 1155.000000 |  |
-| 2012 | 1.231370e+07 | 6.528380e+05 | 4.146667 | 2.467991e+06 | 106683.0 | 441.666667 |  |
-| 2016 | 2.984423e+07 | 7.125500e+04 | 3.930000 | 7.544910e+05 | 51512.0 | 352.000000 |  |
-
-104 rows × 6 columns
-
-```python
-
-```
+| Childrens | 1964 | 370493.0 | 1.012345e+06 | 4.380 | 882195.000000 | 17375.0 | 64.000000 |
+| 1985 | 233093.0 | 1.188860e+05 | 4.170 | 411113.000000 | 5702.0 | 61.000000 |  |
+| 1988 | 23772.0 | 4.941850e+05 | 4.300 | 595769.000000 | 9208.0 | 62.000000 |  |
+| 1990 | 191139.0 | 7.856300e+04 | 4.360 | 318637.000000 | 5158.0 | 44.000000 |  |
+| 1994 | 4948.0 | 1.360590e+05 | 4.300 | 384386.000000 | 7754.0 | 26.000000 |  |
+| 1998 | 23886.0 | 2.120750e+05 | 4.335 | 445791.000000 | 9979.5 | 156.000000 |  |
+| 2000 | 19543.0 | 4.998120e+05 | 4.220 | 794735.000000 | 11579.0 | 37.000000 |  |
+| 2004 | 113946.0 | 9.734000e+04 | 4.370 | 320590.000000 | 3146.0 | 64.000000 |  |
+| 2005 | 6310.0 | 1.425350e+05 | 4.140 | 642587.000000 | 11592.0 | 176.000000 |  |
+| 2007 | 32929.0 | 9.348800e+04 | 4.280 | 296501.000000 | 5729.0 | 32.000000 |  |
+| Classics | 1963 | 332613.0 | 3.467220e+05 | 4.190 | 618823.000000 | 10614.0 | 325.000000 |
+| 1972 | 485894.0 | 1.381860e+05 | 3.820 | 613496.000000 | 16702.0 | 201.000000 |  |
+| 1976 | 70401.0 | 1.399490e+05 | 3.620 | 340371.000000 | 14644.0 | 307.000000 |  |
+| 1981 | 52036.0 | 2.697250e+05 | 4.030 | 563652.000000 | 16851.0 | 152.000000 |  |
+| 1984 | 23919.0 | 2.139570e+05 | 4.380 | 213034.000000 | 2166.0 | 821.000000 |  |
+| 1986 | 17245.0 | 6.366100e+05 | 4.000 | 907768.000000 | 24683.0 | 488.000000 |  |
+| 1987 | 24280.0 | 8.039670e+05 | 4.170 | 670386.000000 | 17090.0 | 1463.000000 |  |
+| 1989 | 49552.0 | 1.540520e+05 | 3.980 | 681177.000000 | 22324.0 | 123.000000 |  |
+| 1990 | 338798.0 | 7.695700e+04 | 3.730 | 107514.000000 | 6603.0 | 783.000000 |  |
+| 1995 | 83451.0 | 2.219493e+05 | 3.980 | 372193.666667 | 13313.0 | 427.666667 |  |
 
 ## GroupBy.agg\(\)
 
+Atunci când vrem să aplicăm mai multe metode asupra grupurilor putem folosi metoda `agg()`.
+
+![alt text](https://lh3.google.com/u/0/d/1iXreZUUopgMZ4tfLZJ4Xz4y5iW15XxfG=w958-h862-iv1)
+
 ```python
 grouped.agg(np.sum)
+
+# observați că atunci când o metodă este utilizată ca parametru nu mai folosim "()".
 ```
 
 |  | id | score | rating | rating\_count | review\_count | page\_count | year |
@@ -2062,6 +2384,8 @@ grouped['score'].agg([np.sum, np.mean, np.max])
 | Unknown | 4698484 | 335606.000000 | 1343484 |
 | Young Adult | 7889683 | 493105.187500 | 2959668 |
 
+Putem să creăm propria noastră funcție și s-o aplicăm asupra grupurilor.
+
 ```python
 def diff_min_max(x):
     diff = x.max() - x.min()
@@ -2092,6 +2416,8 @@ grouped['rating'].agg([diff_min_max])
 | Unknown | 0.53 |
 | Young Adult | 0.89 |
 
+Documentație: [Group by](https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html)
+
 ## Series, Dataframe: map\(\), apply\(\), applymap\(\)
 
 ```python
@@ -2110,6 +2436,10 @@ books.head()
 books['page_count'].hist()
 ```
 
+![png](../.gitbook/assets/output_292_1.png)
+
+Vrem să categorizăm cărțile din setul nostru de date în cărți mici, medii și mari în dependență de numărul lor de pagini.
+
 ```python
 def eticheta(book):
     if book <= 100:
@@ -2120,7 +2450,10 @@ def eticheta(book):
         return 'Large'
 ```
 
+Putem să aplicăm asupra datelor o instrucțiune foarte specifică cu ajutorul metodei `map()`, care aparține clasei Series.
+
 ```python
+# creăm o nouă coloană în setul de date books
 books['book_size'] = books['page_count'].map(eticheta)
 ```
 
@@ -2135,6 +2468,8 @@ books.head()
 | 2 | 35545737 | A Walk to Remember | Nicholas Sparks | 104093 | 4.18 | 658664 | 12918 | 215 | 2000 | Romance | Medium |
 | 3 | 32929 | Goodnight Moon | Margaret Wise Brown | 93488 | 4.28 | 296501 | 5729 | 32 | 2007 | Childrens | Small |
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654 | 2003 | Classics | Large |
+
+În cazul în care vrem să avem mai mulți parametri în funcția noastră vom utiliza metoda `apply()` a clasei Series. Face același lucru ca și metoda `map()`, doar că acceptă mai mulți parametri.
 
 ```python
 def eticheta_2(book, x, y):
@@ -2163,6 +2498,7 @@ Name: review_count, dtype: float64
 ```
 
 ```python
+# creăm o coloană nouă în DataFrame-ul books.
 books['review_number'] = books['review_count'].apply(eticheta_2, x=10632, y=35001)
 ```
 
@@ -2178,6 +2514,8 @@ books.head()
 | 3 | 32929 | Goodnight Moon | Margaret Wise Brown | 93488 | 4.28 | 296501 | 5729 | 32 | 2007 | Childrens | Small | Small |
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654 | 2003 | Classics | Large | Medium |
 
+Mai jos avem o funcție care va transforma toate datele din coloană în procentaje față de valoarea maximă din aceeași coloană.
+
 ```python
 def scaling(valoare, col):
     scaled_val = valoare/books[col].max()*100
@@ -2185,6 +2523,7 @@ def scaling(valoare, col):
 ```
 
 ```python
+# creăm o coloană nouă în DataFrame-ul books
 books['score%'] = books['score'].apply(scaling, col='score')
 ```
 
@@ -2201,18 +2540,30 @@ books.head()
 | 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654 | 2003 | Classics | Large | Medium | 6.790052 |
 
 ```python
-# creati o coloana care arata procentajul valorilor din rating_count din cea valoarea maxima de rating_count
-# ....
-books['rating_number%'] = books['rating_count'].apply(scaling, col='rating_count')
+# creați o coloana care arată procentajul valorilor din rating_count față de valoarea maxima din rating_count
+books['rating_count%'] = books['rating_count'].apply(scaling, col = 'rating_count')
 ```
 
 ```python
-col = ['score%', 'rating_number%']
-
-books[col].describe()
+books.head()
 ```
 
-|  | score% | rating\_number% |
+|  | id | name | authour | score | rating | rating\_count | review\_count | page\_count | year | genres | book\_size | review\_number | score% | rating\_count% |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 0 | 22628 | The Perks of Being a Wallflower | Stephen Chbosky | 745557 | 4.20 | 1219410 | 56409 | 213 | 1999 | Unknown | Medium | Large | 25.190562 | 17.908802 |
+| 1 | 77203 | The Kite Runner | Khaled Hosseini | 427631 | 4.30 | 2365531 | 72036 | 371 | 2004 | Fiction | Medium | Large | 14.448614 | 34.741250 |
+| 2 | 35545737 | A Walk to Remember | Nicholas Sparks | 104093 | 4.18 | 658664 | 12918 | 215 | 2000 | Romance | Medium | Medium | 3.517050 | 9.673435 |
+| 3 | 32929 | Goodnight Moon | Margaret Wise Brown | 93488 | 4.28 | 296501 | 5729 | 32 | 2007 | Childrens | Small | Small | 3.158733 | 4.354547 |
+| 4 | 153747 | Moby-Dick or, the Whale | Herman Melville | 200963 | 3.50 | 470744 | 15149 | 654 | 2003 | Classics | Large | Medium | 6.790052 | 6.913558 |
+
+```python
+col = ['score%', 'rating_count%']
+
+books[col].describe()
+# observați cum selectăm doar 2 coloane din DataFrame-ul books
+```
+
+|  | score% | rating\_count% |
 | :--- | :--- | :--- |
 | count | 191.000000 | 191.000000 |
 | mean | 12.524109 | 14.546617 |
@@ -2233,12 +2584,14 @@ def eticheta_3(book):
         return 'Large'
 ```
 
+Pentru a putea aplica o funcție specifică asupra mai multor coloane vom folosi metoda `applymap()` care aparține clasei Dataframe.
+
 ```python
-transformed_col = books[col].applymap(eticheta_3)
+transformed_col = books[['score%', 'rating_count%']].applymap(eticheta_3)
 transformed_col
 ```
 
-|  | score% | rating\_number% |
+|  | score% | rating\_count% |
 | :--- | :--- | :--- |
 | 0 | Large | Medium |
 | 1 | Medium | Large |
@@ -2254,11 +2607,14 @@ transformed_col
 
 191 rows × 2 columns
 
+Clasa DataFrame la fel are o metodă `apply()` care transformă datele pe o axă fie că e Axa 1 sau Axa 0\(_column-wise, row-wise_\) a unui DataFrame, spre deosebire de celelalte metode: `Series.map()`, `Series.apply()` și `DataFrame.applymap()` care transformă element cu element\(_elemnt-wise_\).
+
 ```python
+# Acum vom calcula câte valori de Small, Medium și Large avem în transformed_col
 transformed_col.apply(pd.value_counts)
 ```
 
-|  | score% | rating\_number% |
+|  | score% | rating\_count% |
 | :--- | :--- | :--- |
 | Large | 40 | 43 |
 | Medium | 67 | 99 |
@@ -2266,7 +2622,9 @@ transformed_col.apply(pd.value_counts)
 
 ## pandas.concat\(\)
 
-### Axa 0 - verticala. \(implicit\)
+Funcția concat\(\) concatenează 2 tabele pe axa 0 sau pe axa 1.
+
+### Axis 0 - verticală. \(implicit\)
 
 ![alt text](https://lh3.google.com/u/0/d/1xJwYaW1uRXTFZwabeRYFH_H3oGaxRHQd=w1365-h888-iv1)
 
@@ -2306,7 +2664,7 @@ elevi
 | 4 | 5 | Maxim | 9 |
 | 5 | 6 | Maia | 8 |
 
-### Axa 1 - orizontala
+### Axis 1 - orizontală
 
 ```python
 materii = pd.DataFrame([['Matematica', 5], ['L.Romana', 7], ['Informatica', 6], ['Desen', 9], ['Fizica', 7], ['Istorie', 10]], 
@@ -2338,11 +2696,41 @@ situatia_scolara
 | 4 | 5 | Maxim | 9 | Fizica | 7 |
 | 5 | 6 | Maia | 8 | Istorie | 10 |
 
-Ce s-ar fi intamplat daca in tabelul `materii` ar mai fi existat un rand?
+Ce s-ar fi întâmplat dacă în tabelul `materii` ar mai fi existat un rând?
 
 ```python
-# Concatenati tabelul books cu tabelul transformed_col
-# ....
+# Concatenați tabelul books cu tabelul transformed_col
+new_tabel = pd.concat([books, transformed_col], axis=1)
+```
+
+```python
+new_tabel.info()
+```
+
+```text
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 191 entries, 0 to 199
+Data columns (total 16 columns):
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   id             191 non-null    int64  
+ 1   name           191 non-null    object 
+ 2   authour        191 non-null    object 
+ 3   score          191 non-null    int64  
+ 4   rating         191 non-null    float64
+ 5   rating_count   191 non-null    int64  
+ 6   review_count   191 non-null    int64  
+ 7   page_count     191 non-null    int64  
+ 8   year           191 non-null    int64  
+ 9   genres         191 non-null    object 
+ 10  book_size      191 non-null    object 
+ 11  review_number  191 non-null    object 
+ 12  score%         191 non-null    float64
+ 13  rating_count%  191 non-null    float64
+ 14  score%         191 non-null    object 
+ 15  rating_count%  191 non-null    object 
+dtypes: float64(3), int64(6), object(7)
+memory usage: 30.4+ KB
 ```
 
 ## pandas.merge\(\)
@@ -2364,8 +2752,8 @@ absente
 ```python
 pd.merge(left = situatia_scolara, right = absente, left_on = 'elev', right_on = 'nume', how = 'left')
 
-# ce s-a intamplat in tabelul de mai jos?
-# de ce sunt mai multe randuri?
+# ce s-a întâmplat în tabelul de mai jos?
+# de ce sunt mai multe rânduri?
 ```
 
 |  | id\_x | elev | nota | materie | clasa | id\_y | nume | absente |
@@ -2395,18 +2783,36 @@ pd.merge(left = situatia_scolara, right = absente, on = 'id', how = 'left')
 ![alt text](https://lh3.google.com/u/0/d/1HZ5vjTSQPGiPnDjqEF72G1jvitA0aJtw=w1920-h888-iv1)
 
 ```python
-# Uniti cele doua tabele: situatia_scolara si absente folosind intersectia 'right'
+# Uniți cele doua tabele: situatia_scolara și absențe folosind intersecția 'right'
 ```
 
 ```python
-# Uniti cele doua tabele: situatia_scolara si absente folosind intersectia 'inner'
+# Uniți cele două tabele: situatia_scolara și absențe folosind intersecția 'inner'
 ```
 
 ```python
-# Uniti cele doua tabele: situatia_scolara si absente folosind intersectia 'outer'
+# Uniți cele două tabele: situatia_scolara și absențe folosind intersecția 'outer'
 ```
 
-Ce observati?
+Ce observați?
+
+## Seaborn
+
+Seaborn este o librărie a lui Python, de vizualizare bazată pe Matplotlib. Această librărie oferă grafice cu stiluri predefinite.
+
+```python
+import seaborn as sns
+```
+
+```python
+sns.set(style="ticks")
+
+sns.pairplot(books, hue="book_size")
+```
+
+![png](../.gitbook/assets/output_340_1.png)
+
+Accesând acest link puteți găsi galeria de grafice Seaborn și codul lor de implementare: [Seaborn](https://seaborn.pydata.org/examples/index.html)
 
 ```python
 
