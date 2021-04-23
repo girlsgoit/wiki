@@ -34,6 +34,69 @@ Un alt exemplu de elemente în HTML sunt **`<input>`**, care ne permit sa citim 
 Observați că putem atât citi cât și seta valori pentru un input accesând atributul `value`
 {% endhint %}
 
+### Creare și manipulare DOM
+
+Este foarte bine cunoscută metoda prin care afișăm careva elemente HTML în pagină. Dacă dorim să avem o imagine, deschidem un fișier HTML și scriem în el tag-ul **&lt;img /&gt;** cu toate atributele necesare. Destul de simplu dar, în același timp static.
+
+Dacă avem un aplicație care în urma unei interacțiuni a utilizatorului ar trebui să afișăm elemente noi, nu mai putem folosi metoda static de scriere a HTML-ului. Ca la oricare alt eveniment, trebuie să reacționăm și dinamic să creăm, și includem în pagină elemente HTML noi, care nu există inițial în acel document.
+
+Să luăm ca exemplu Crunchyroll. 
+
+![](../../.gitbook/assets/image%20%28355%29.png)
+
+Fiecare show din listă este o informație dinamică. Nu putem ști la momentul creării documentului HTML ce este folosit pentru această pagină, cât și ce show-uri anume trebuie să-i prezentăm utilizatorului. Ea poate fi diferită în dependență de utilizator, timp, țară și mulți alți factori.
+
+Pagina este încărcată inițial goală, este cerută lista de show-uri și când sunt primite, în JavaScript se creează elemente noi HTML și se includ în DOM.
+
+Crearea unui element se face prin funcția **document.createElement**.
+
+![](../../.gitbook/assets/image%20%28356%29.png)
+
+**"div"** - poate fi înlocuit cu orice alt nume de tag. După executare, un element este creat și păstrat în variabilă și memoria. La acest pas nimic încă nu sa schimbat în DOM.
+
+Având un element creat, avem acces la toate proprietățile unui element HTML ce ne permite să-l creăm în tocmai cum avem nevoie. De exemplu:
+
+* **newDiv.classList** - citim lista de clase de pe element
+* **newDiv.classList.remove\("foo"\)** - ștergem de pe element o clasă
+* **newDiv.classList.add\("anotherclass"\)** - adăugăm pe element clasa nouă
+* **newDiv.style.color = 'red'** - dăm elementului o culoare roșie. **color** poate fi înlocuit cu orice altă proprietate CSS
+* **newDiv.innerText = 'Hello World'** - introducem un text în element
+* etc...
+
+După ce creăm și modelăm elementul, ca să fie văzut de utilizator trebuie să-l introducem în DOM. Pentru asta avem nevoie de un element ca să îl folosim ca ancoră, în baza căruia vom decide unde în DOM va apărea elementul.
+
+Avem la dispoziție câteva variante:  
+
+![](../../.gitbook/assets/image%20%28343%29.png)
+
+Având inițial un element în DOM, îl selectăm și folosim ca ancoră pentru a introduce în pagină elementul creat dinamic.
+
+#### Element.append\(\)
+
+![](../../.gitbook/assets/image%20%28351%29.png)
+
+Apelând funcția **append** pe elementul ancoră, trimitem ca parametru elementul creat dinamic. Acesta va fi adăugat în DOM la sfârșitul elementului. Deci, după executarea codului de mai sus am avea în final structura dată HTML: 
+
+![](../../.gitbook/assets/image%20%28344%29.png)
+
+#### Element.prepend\(\)
+
+![](../../.gitbook/assets/image%20%28346%29.png)
+
+Apelând funcția **prepend** pe elementul ancoră, trimitem ca parametru elementul crea dinamic. Acesta va fi adăugat în DOM la începutul elementului. Deci, după executarea codului de mai sus am avea în final structura dată HTML:
+
+![](../../.gitbook/assets/image%20%28345%29.png)
+
+
+
+Metodele date deasemenea pot fi apelate pe un element nou creat. Asta ne permite să creăm dinamic un element mai complex înainte de al introduce în dom.
+
+![](../../.gitbook/assets/image%20%28352%29.png)
+
+Executând codul de mai sus, am avea în final structura dată HTML:
+
+![](../../.gitbook/assets/image%20%28354%29.png)
+
 ## Evenimente DOM
 
 În general avem 3 tipuri principale de evenimente în browser:
@@ -60,7 +123,7 @@ Atât! prin aceste câteva linii de cod am creat o acțiune care se va executa d
 
 Funcțiile care sunt apelate ca rezultat a unui event, vor primi automat un paramter, deserori numit **event,** **evt** sau **e**. Acesta poate fi folosit pentru a accesa informații adiționale și de a adăuga posibilități noi. De [exemplu](https://mdn.github.io/learning-area/javascript/building-blocks/events/random-color-eventobject.html):
 
-![La click pe buton, gener&#x103;m o culoare nou&#x103; &#x219;i, folosind event object o set&#x103;m pe buton](../../.gitbook/assets/image%20%28346%29.png)
+![La click pe buton, gener&#x103;m o culoare nou&#x103; &#x219;i, folosind event object o set&#x103;m pe buton](../../.gitbook/assets/image%20%28350%29.png)
 
 În funcția _bgChange_, folosim event object\(**e**\) pentru a seta o culoare de background nouă, la fiecare click pe **e.target** - acesta fiind butonul care a fost apăsat. Proprietatea **target** de pe event object întotdeauna este o referință către elementul care s-a produs evenimentul.
 
@@ -70,9 +133,9 @@ Exemple informații foarte utile ce sunt disponibile folosind event object ar fi
 * **e.\[ctrlKey, altKey, shiftKey\]** - ne oferă posibilitatea să aflăm dacă atunci când sa produs evenimentul, era apăsat una din tastele din listă, reprezentat printr-o valoare de tip boolean
 * **e.clientX** și **e.clientY** - indică poziția cursorului în pagină pe axa **X** și **Y**
 
-Pentru a explora mai multe proprietăți disponibile, crează un event listener și afișează la consolă event object.
+Pentru a explora mai multe proprietăți disponibile, creează un event listener și afișează la consolă event object.
 
-![](../../.gitbook/assets/image%20%28345%29.png)
+![](../../.gitbook/assets/image%20%28349%29.png)
 
 ### Cum selectăm elementele în JS
 
@@ -164,7 +227,7 @@ Aceasta functie urmeaza a fi apelata din 3 in 3 secunde, teoretic la inifinit. T
 
 Aceasta functie permite oprirea programatica a functiilor `setTimeout()` sau `setInterval()`.
 
-La fiecare apelare a uneia din aceste functii se creaza un identificator unic, pentru a fi posibila oprirea apelarii lor. Acest identificator este returnat odata ce se apeleaza functia.
+La fiecare apelare a uneia din aceste functii se creeaza un identificator unic, pentru a fi posibila oprirea apelarii lor. Acest identificator este returnat odata ce se apeleaza functia.
 
 ```javascript
 function printHello() {
