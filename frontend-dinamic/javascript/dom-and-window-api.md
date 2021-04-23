@@ -56,6 +56,24 @@ Pentru a lega o funcție de un eveniment, trebuie sa-i spunem Browser-ului să o
 
 Atât! prin aceste câteva linii de cod am creat o acțiune care se va executa doar când utilizatorul va apăsa click pe buton.
 
+### Event objects
+
+Funcțiile care sunt apelate ca rezultat a unui event, vor primi automat un paramter, deserori numit **event,** **evt** sau **e**. Acesta poate fi folosit pentru a accesa informații adiționale și de a adăuga posibilități noi. De [exemplu](https://mdn.github.io/learning-area/javascript/building-blocks/events/random-color-eventobject.html):
+
+![La click pe buton, gener&#x103;m o culoare nou&#x103; &#x219;i, folosind event object o set&#x103;m pe buton](../../.gitbook/assets/image%20%28346%29.png)
+
+În funcția _bgChange_, folosim event object\(**e**\) pentru a seta o culoare de background nouă, la fiecare click pe **e.target** - acesta fiind butonul care a fost apăsat. Proprietatea **target** de pe event object întotdeauna este o referință către elementul care s-a produs evenimentul.
+
+Exemple informații foarte utile ce sunt disponibile folosind event object ar fi:
+
+* **e.target** - foarte folositor atunci când folosim un event handler pe mai multe elemente și dorim să reacționăm diferit în dependență de cine a produs evenimentul. 
+* **e.\[ctrlKey, altKey, shiftKey\]** - ne oferă posibilitatea să aflăm dacă atunci când sa produs evenimentul, era apăsat una din tastele din listă, reprezentat printr-o valoare de tip boolean
+* **e.clientX** și **e.clientY** - indică poziția cursorului în pagină pe axa **X** și **Y**
+
+Pentru a explora mai multe proprietăți disponibile, crează un event listener și afișează la consolă event object.
+
+![](../../.gitbook/assets/image%20%28345%29.png)
+
 ### Cum selectăm elementele în JS
 
 Pentru a manipula HTML din JS, adăuga eveniment etc., trebuie să selectăm cumva elmenetele în JS pentru a putea indica cu exacitate, de ce element avem nevoie. Sunt câteva funcții ce ne permit să facem asta.
