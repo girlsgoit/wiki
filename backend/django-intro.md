@@ -14,9 +14,9 @@
 
     **Python** este un limbaj de programare foarte popular care poate fi folosit pentru crearea de site-uri web, jocurilor, aplicațiilor software științifice, grafică și multe altele.
 
-    Este un limbaj de programare la baza căruia stau principiile ca codul scris sa fie unul lizibil și ușor de învatat.
+    Este un limbaj de programare la baza căruia stau principiile ca codul scris sa fie unul lizibil și ușor de învățat.
 
-    Pentru instalare accesam linkul: [https://www.python.org/downloads/](https://www.python.org/downloads/) si alegem versiunea **3.9.6** \(cea mai actuala\). După descărcare deschidem fișierul și îl instalăm, dar, înainte de a apăsa **Install Now**, pe prima pagină a instalării trebuie să fim siguri ca bifăm **Add Python to Path**
+    Pentru instalare accesam linkul: [https://www.python.org/downloads/](https://www.python.org/downloads/) și alegem versiunea **3.9.6** \(cea mai actuala\). După descărcare deschidem fișierul și îl instalăm, dar, înainte de a apăsa **Install Now**, pe prima pagină a instalării trebuie să fim siguri ca bifăm **Add Python to Path**
 
 ![](../.gitbook/assets/tempsnip.png)
 
@@ -34,7 +34,7 @@
 
     Există framework-uri pentru a vă scuti de necesitatea de a reinventa roata și de a vă ajuta la micșorarea necesităților atunci când construiți un site nou.
 
-    Pentru a instala **Django**, apăsam Start și in search scriem “**cmd**”, pentru a deschide Linia de Comanda.
+    Pentru a instala **Django**, apăsam Start și în search scriem “**cmd**”, pentru a deschide Linia de Comanda.
 
 ![](../.gitbook/assets/cmd.png)
 
@@ -42,13 +42,13 @@
 
 ![](../.gitbook/assets/capture.PNG)
 
-    In linia de comandă scriem **`pip install django`** si asteptăm ca instalarea să se termine , ultima linie afișând : "**`Successfully Installed Django`**"
+    În linia de comandă scriem **`pip install django`** și așteptăm ca instalarea să se termine , ultima linie afișând : "**`Successfully Installed Django`**"
 
 ## Crearea Proiectului Django
 
     Pe Desktop sau în orice alt directoriu creați un folder cu denumirea dorită a proiectului. În cazul nostru va fi **my project.**
 
-    Tinind butonul **shift** apasati **click dreapta** pe folderul creat. Veti vedea o optiune **Copy as Path**, selectați.
+    Ținând butonul **shift** apăsați **click dreapta** pe folderul creat. Veți vedea o opțiune **Copy as Path**, selectați.
 
 ![](../.gitbook/assets/untitled.png)
 
@@ -74,13 +74,13 @@ django-admin.exe startproject mysite .
 ```
 {% endcode %}
 
- unde ultimul cuvânt **mysite** este denumirea proiectului. Punctul `.`  la sfârșitul comenzii este crucial, deoarece indică ca proiectul Django să fie instalat in directoriul curent.
+ unde ultimul cuvânt **mysite** este denumirea proiectului. Punctul `.`  la sfârșitul comenzii este crucial, deoarece indică ca proiectul Django să fie instalat în directoriul curent.
 
     Aceasta comanda automat va genera toate fișierele necesare noua ca să lucrăm în continuare la proiectul nostru.
 
 ![](../.gitbook/assets/captudsdre%20%281%29.PNG)
 
-    După rularea acestei comenzi, deschideți directoriul in care lucrați, dacă totul a decurs bine, folderul trebuie să conțină următoarele fișiere.
+    După rularea acestei comenzi, deschideți directoriul în care lucrați, dacă totul a decurs bine, folderul trebuie să conțină următoarele fișiere.
 
 ![](../.gitbook/assets/captu.PNG)
 
