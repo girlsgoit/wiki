@@ -15,6 +15,7 @@ Dacă există atât de multe limbaje de programare, de ce noi am ales să studie
 * **modern** \(mai modern decât _Pascal_\);
 * **renumit**, fiind utilizat la ora actuală la o scară largă de către programatorii din toată lumea, crescându-și popularitatea tot mai mult;
 * **ușor de învățat**, deoarece există foarte multe comunități _Python_ online cu membri activi, dispuși să vă ajute dacă aveți vreo problemă, comunități unde puteți accesa ghiduri, manuale, exerciții, proiecte, etc.
+* **Sintaxă user-friendly,** asemănându-se cu engleza
 
 Cu ajutorul _Python_, puteți crea site-uri, aplicații web, jocuri și chiar motoare de căutare.
 
@@ -24,20 +25,20 @@ Cu ajutorul _Python_, puteți crea site-uri, aplicații web, jocuri și chiar mo
 
 Pentru a instala Python \(vorbim de ultima versiune - 3.6 la moment\) pe Windows, este nevoie de a efectua următorii pași:
 
-1. Descarcă Python de aici: [https://www.python.org/ftp/python/3.6.3/python-3.6.3.exe](https://www.python.org/ftp/python/3.6.3/python-3.6.3.exe)
-2. Pornește fișierul cu un dublu-clik pe fișierul descărcat.
-3. În fereastra apărută asigură-te că opțiunea **Add Python 3.6 to PATH** este selectată și alege **Customize installation**
-4. La pasul doi, ai grijă ca toate checkbox-urile sa fie selectate și apasă **Next**
+1. Descarcă Python de aici: [https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe](https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe)
+2. Pornește fișierul cu un dublu-click pe fișierul descărcat.
+3. În fereastra apărută asigură-te că opțiunea **Add Python 3.9.6 to PATH** este selectată și alege **Customize installation**
+4. La pasul doi, ai grijă ca toate boxele sa fie selectate și apasă **Next**
 5. La pasul trei selectează o directorie unde ai permisiuni de scriere \(dacă vorbim de bibliotecile Novateca - trebuie să fie pe **E:\** \)
-6. Ți se va cere să întroduci datele administratorului după ce vei apăsa **Next**. Fă asta și așteaptă să termine de lucrat installer-ul.
+6. Ți se va cere să introduci datele administratorului după ce vei apăsa **Next**. Fă asta și așteaptă să termine de lucrat installer-ul.
 7. Apasă **Win + R** , tastează `cmd.exe` pentru a lansa linia de comandă.
-8. În terminalul apărut tastează `python`, ce va lansa interpretatorul limbajului în regim interactiv. Felicitări, acum poți utiliza Python pe windows!
+8. În terminalul apărut tastează `python`, ce va lansa interpretatorul limbajului în regim interactiv. Felicitări, acum poți utiliza Python pe Windows!
 
 #### Django
 
 1. Asigură-te că ai instalat `python` conform pașilor de mai sus.
-2. Apasă **Win + R** , tastează `cmd.exe` pentru a lansa linia de comandă \(o fereastră de terminal windows\).
-3. Pentru a installa Django, rulează următoarea comandă
+2. Apasă **Win + R** , tastează `cmd.exe` pentru a lansa linia de comandă \(o fereastră de terminal Windows\).
+3. Pentru a instala Django, rulează următoarea comandă
 
    ```text
    pip install django
@@ -45,7 +46,7 @@ Pentru a instala Python \(vorbim de ultima versiune - 3.6 la moment\) pe Windows
 
    în terminal.
 
-4. Nu închide fereastra pînă cînd nu va termina de lucrat instalatorul \(îți va scrie 'Successfully installed Django-1.9.5'\).
+4. Nu închide fereastra până când nu va termina de lucrat instalatorul \(îți va scrie 'Successfully installed Django-3.2.5'\).
 5. Pentru a verifica că totul s-a instalat corect, rulează această comandă în terminal - ea va afișa versiunea pachetului Django:
 
    ```text
@@ -56,9 +57,9 @@ Acum ai totul pentru a dezvolta o aplicație Django.
 
 ### **Sintaxa Python**
 
-Pentru a scrie și executa toate exercițiile propuse mai jos, veți folosi editorul de text _Sublime Text_.
+Pentru a scrie și executa toate exercițiile propuse mai jos, veți folosi editorul de text Visual Studio Code.
 
-Deschideți _Sublime Text_ și mergeți la bara de meniuri de sus. Selectați `File -> New File`. După ce vi s-a deschis un fișier nou, apăsați `Ctrl + s` pe tastatură. Salvați fișierul sub orice denumire doriți, dar neapărat cu extensia `.py`. Vă amintiți ce va povestit postetit Sergiu despre extensiile fișierelor? Eu o să-mi numesc fișierul `test.py`. Puteți face și voi la fel. Selectați mapa în care veți salva fișierul și apăsați `Save`. Acuma, sunteți gata să efectuați exercițiile propuse la această sesiune.
+Deschideți Visual Code Studio și mergeți la bara de meniuri de sus. Selectați `File -> New File`. După ce vi s-a deschis un fișier nou, apăsați `Ctrl + s` pe tastatură. Salvați fișierul sub orice denumire doriți, dar neapărat cu extensia `.py`. Eu o să-mi numesc fișierul `test.py`. Puteți face și voi la fel. Selectați mapa în care veți salva fișierul și apăsați `Save`.  Acum, sunteți gata să efectuați exercițiile propuse la această sesiune.
 
 Pentru început, executați următoarea instrucțiune:
 
@@ -66,7 +67,7 @@ Pentru început, executați următoarea instrucțiune:
 print("Diana Jalba")
 ```
 
-Pentru a face acest lucru, copiați textul de mai sus \(dar cu numele vostru între ghilimele\) și apăsați `Ctrl + b` pe tastatură. În partea de jos a editorului de text, trebuie să vă apară consola, unde vă veți vedea numele afișat.
+Pentru a face acest lucru, copiați textul de mai sus \(dar cu numele vostru între ghilimele\) și apăsați `Ctrl + F5` pe tastatură. În partea de jos a editorului de text, trebuie să vă apară consola, unde vă veți vedea numele afișat.
 
 Instrucțiunea `print` este simplă și foarte des utilizată, practic în orice program. Ea nu face altceva, decât să afișeze la ecran informația pe care i-o transmiteți \(în cazul nostru, numele vostru\).
 
@@ -210,7 +211,7 @@ opt = 2 ** 3
 print(opt)
 ```
 
-În acest exemplu, am creat o variabilă nouă pe care am numit-o `opt` și am setat-o ca fiind egală cu rezultatul a 2 la puterea 3 \(2^3\). Observați că am folosit două semne asteriks `**`.
+În acest exemplu, am creat o variabilă nouă pe care am numit-o `opt` și am setat-o ca fiind egală cu rezultatul a 2 la puterea 3 \(2^3\). Observați că am folosit două semne asterics `**`.
 
 ### _Exercițiu:_
 
@@ -253,7 +254,7 @@ Minunat! Acum, că v-ați reamintit ce înseamnă `string`-urile, haideți să l
 
 ![](../.gitbook/assets/diagrama.png)
 
-`String`-ul `"Hello World"` are 12 caractere, enumerate de la 0 la 11. Observați că și caracterului space \(de după virgulă\) îi este atribuit un index \(indicele 5\).
+`String`-ul `"Hello World"` are 12 caractere, enumerate de la 0 la 11. Observați că și caracterului spațiu \(de după virgulă\) îi este atribuit un index \(indicele 5\).
 
 Prin urmare, dacă doriți să accesați caracterul `"w"`din `string`-ul `"Hello World"`, trebuie pur și simplu să scrieți `"Hello World"[7]` \(pentru că enumerarea începe tot timpul de la 0!\).
 
@@ -385,7 +386,7 @@ Pentru a intra în esența conceptului de Control Flow, trebuie să definim cât
 * mai mare \(`>`\)
 * mai mare sau egal \(`>=`\)
 
-Atrageți atenția că `==` compară dacă două lucruri sunt egale, pe când `=` atribuie o valoare unei variabile.
+**Atrageți atenția că `==` compară dacă două lucruri sunt egale, pe când `=` atribuie o valoare unei variabile.**
 
 ### **Operațiile Boolean**
 
@@ -434,7 +435,7 @@ De exemplu, `True or not False and False` returnează `True`. De ce?
 
 ### **Sintaxa condiționalelor**
 
-If `if` \(dacă\) este cea mai simplă instrucțiune condițională. `if`-ul execută o anumită bucată de cod dacă expresia pe care o verifică este `True`.
+`if` \(dacă\) este cea mai simplă instrucțiune condițională. `if`-ul execută o anumită bucată de cod dacă expresia pe care o verifică este `True`.
 
 Aici avem un exemplu de sintaxă:
 
@@ -454,7 +455,7 @@ if 8 > 9:
     print("Opt este mai mic decat noua!")
 ```
 
-În acest caz, consola din _Sublime Text_ nu ne va afișa nimic.
+În acest caz, consola Visual Code Studio nu ne va afișa nimic.
 
 Să ne întoarcem la exemplul nostru _corect_. Luați în considerare și faptul că a doua linie de cod, cea de după `if`, este scrisă cu câteva spații mai la dreapta, și mai exact cu 4 spații \(sau cu un tab\). Această linie de cod este **indentată**.
 
@@ -466,22 +467,22 @@ Dacă scriem expresia if încă o dată, dar cu a doua linie neindentată, adic�
 
 ```python
 if 8 < 9:
-    print("Opt este mai mic decat noua!")
+print("Opt este mai mic decat noua!")
 ```
 
-atunci vom primi un mesaj de eroare. În genere, un _mesaj de eroare_ pe care-l primim este un indiciu a ceea ce noi n-am făcut corect în program.
+atunci vom primi un mesaj de eroare. În genere, un _mesaj de eroare_ pe care-l primim este un indiciu a ceea ce noi nu am făcut corect în program.
 
 Dar haideți să examinăm eroarea: `"IndentationError: expected an indented block"`. Veți primi această eroare ori de câte ori veți uita de indentare sau indentarea va fi greșită.
 
-Else Instrucțiunea condițională `else` completează instrucțiunea condițională `if`. O pereche `if/else` spune: _"Hey Python, dacă această expresie este adevărată, execută blocul de cod indentat de după if; în caz contrar, execută cealaltă bucată de cod indentat de după instrucțiunea else."_
+Else Instrucțiunea condițională `else` completează instrucțiunea condițională `if`. O pereche `if/else` spune: _"Hey, Python, dacă această expresie este adevărată, execută blocul de cod indentat de după if; în caz contrar, execută cealaltă bucată de cod indentat de după instrucțiunea else."_
 
 Spre deosebire de `if`, `else` nu depinde de o expresie \(pe care ar trebui să o verifice\). De exemplu:
 
 ```python
 if 8 > 9:
-    print("Opt nu este mai mare decat noua!")
-else:
     print("Opt este mai mare decat noua!")
+else:
+    print("Opt nu este mai mare decat noua!")
 ```
 
 Luați în vedere **indentarea**!
@@ -490,9 +491,9 @@ Elif `elif` este prescurtarea lui "else if". `elif`-ul spune: _"În caz contrar,
 
 ```python
 if 8 > 9:
-    print("Opt nu este mai mare decat noua!")
-elif 8 < 9:
     print("Opt este mai mare decat noua!")
+elif 8 < 9:
+    print("Opt nu este mai mare decat noua!")
 else:
     print("Opt este mereu mai mic decat noua!")
 ```
@@ -549,7 +550,7 @@ Prima linie de cod importă librăria `datetime`, astfel încât s-o putem utili
 
 #### **Extragerea informației**
 
-Observați cum arată output-ul: `2015-08-25 23:45:14.317454`. Cum veți proceda în cazul în care nu doriți să se afișeze întreaga dată și oră?
+Observați cum outputul arată data și timpul exact? Cum veți proceda în cazul în care nu doriți să se afișeze întreaga dată și oră?
 
 Simplu!
 
@@ -574,7 +575,7 @@ from datetime import datetime
 new = datetime.now()
 
 print('%s-%s-%s' % (new.year, new.month, new.day))
-# se va afisa: 2017-8-17 (data de astăzi)
+# se va afisa data de astăzi
 ```
 
 Amintiți-vă că operatorul `%` va găsi toate scrierile `%s` din `string` și toate argumentele din paranteze. El le va afișa în ordinea corespunzătoare. Vi s-a afișat data corect?
@@ -776,7 +777,7 @@ _Python_ ne-a spus: `"NameError: name 'sqrt' is not defined."` _Python_ nu știe
 În _Python_ există un modul, numit `math` \(de la matematică\), care include un număr mare de variabile și funcții utile, iar `sqrt()` este una dintre aceste funcții. Pentru a accesa `math`, tot de ce avem nevoie este cuvântul-cheie `import`.
 
 ```python
-import modul
+import #modul
 ```
 
 Acest fel de import de modul \(ca cel de mai sus\) se numește **import generic**.
@@ -803,7 +804,7 @@ Totuși, noi am avut nevoie, de fapt, doar de funcția `sqrt`, iar să scrii mer
 În _Python_, este posibil de importat doar unele din multiplele variabile sau funcții dintr-un anumit modul. Pentru asta, avem nevoie de cuvântul-cheie `from`:
 
 ```python
-from modul import functie
+from #modul import #functie
 ```
 
 În acest fel, puteți scrie doar `sqrt()` pentru a obține rădăcina pătrată a unui număr. Nu mai aveți nevoie de `math.sqrt()`!
@@ -887,7 +888,7 @@ Puteți atribui itemi unei liste printr-o expresie de forma:
 nume_lista = [item_1, item_2]
 ```
 
-Observați că itemii sunt scriși între paranteze patrate. O listă poate fi și goală:
+Observați că itemii sunt scriși între paranteze pătrate. O listă poate fi și goală:
 
 ```python
 lista_goala = []
@@ -907,7 +908,7 @@ zoo_animale = ["urs", "vulpe", "tigru", "elefant"]
 
 #### **Accesarea după index**
 
-Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze patrate, cam așa: `nume_lista[index]`.
+Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze pă+trate, cam așa: `nume_lista[index]`.
 
 Indecșii listei încep cu 0, nu cu 1! \(Da, da, la fel ca și la `string`-uri\). Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
 
@@ -920,7 +921,7 @@ numere = [5, 6, 7, 8]
 print(numere[1] + numere[3])
 ```
 
-#### **New Neighbors**
+#### **New Neighbours**
 
 Știți deja cum se accesează un item al listei. \(După index\).
 
@@ -1354,7 +1355,7 @@ for i in range(10):
 
 Această sintaxă ne spune următoarele: _"pentru fiecare număr_ `i` _din range de la_ `0` _la_ `10`_, afișează_ `i`_"_.
 
-Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` \(sau `elif`, `else`\), necesită două puncte la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie identat.
+Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` \(sau `elif`, `else`\), necesită două puncte la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie indentat.
 
 Mai observați că, deși argumentul transmis funcției `range()` este `10`, consola ne-a afișat numerele de la 0 până la 9. Dacă doriți să se afișeze la consolă inclusiv numărul `10`, atunci trebuie să transmiteți argumentul `11` funcției `range()`.
 
@@ -1388,7 +1389,7 @@ for num in numbers:
 
 ### _Exercițiu:_
 
-Tot pentru lista `numbers`, scrieți un alt loop, care va itera prin ea și va afișa fiecare element al listei ridicat la patrat, fiecare din rând nou.
+Tot pentru lista `numbers`, scrieți un alt loop, care va itera prin ea și va afișa fiecare element al listei ridicat la pătrat, fiecare din rând nou.
 
 ```python
 numbers  = [7, 9, 12, 54, 99]
