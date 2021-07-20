@@ -6,7 +6,7 @@
 
 ![VS Code](../.gitbook/assets/webp.net-resizeimage-1.png)
 
-    **Visual Studio Code** este un editor de text dezvoltat de Microsoft pentru Windows, Linux și MacOS. Acesta include suport pentru depanare, sintaxă evidențiată, completare inteligentă a codului. De asemenea, este personalizabil, astfel încât utilizatorii pot schimba tema editorului, comenzile rapide de la tastatură și preferințele. Pentru descărcarea acestuia urmați link-ul :[https://code.visualstudio.com/](https://code.visualstudio.com/) ,descarcațil și instalațil ca și pe oricare alt program.
+    **Visual Studio Code** este un editor de text dezvoltat de Microsoft pentru Windows, Linux și MacOS. Acesta include suport pentru depanare, sintaxă evidențiată, completare inteligentă a codului. De asemenea, poate individualizat, astfel încât utilizatorii pot schimba tema editorului, comenzile rapide de la tastatură și preferințele. Pentru descărcarea acestuia urmați link-ul :[https://code.visualstudio.com/](https://code.visualstudio.com/) ,descărcați-l și instalați-l ca și pe oricare alt program.
 
 ### 2. Instalarea Python
 
@@ -14,19 +14,19 @@
 
     **Python** este un limbaj de programare foarte popular care poate fi folosit pentru crearea de site-uri web, jocurilor, aplicațiilor software științifice, grafică și multe altele.
 
-    Este un limbaj de programare la baza căruia stau principiile ca codul scris sa fie unul lizibil si ușor de invatat.
+    Este un limbaj de programare la baza căruia stau principiile ca codul scris sa fie unul lizibil și ușor de învatat.
 
-    Pentru instalare accesam linkul: [https://www.python.org/downloads/](https://www.python.org/downloads/) si alegem versiunea **3.7.0**\(cea mai actuala\). Dupa descarcare deschidem fisierul si al instalăm, dar, înainte de a apăsa **Install Now**, pe prima pagină a instalării trebuie să fim siguri ca bifăm **Add Python to Path**
+    Pentru instalare accesam linkul: [https://www.python.org/downloads/](https://www.python.org/downloads/) si alegem versiunea **3.9.6** \(cea mai actuala\). După descărcare deschidem fișierul și îl instalăm, dar, înainte de a apăsa **Install Now**, pe prima pagină a instalării trebuie să fim siguri ca bifăm **Add Python to Path**
 
 ![](../.gitbook/assets/tempsnip.png)
 
-    Apoi aștemptăm să se finiseze instalarea.
+    Apoi așteptăm să se finiseze instalarea.
 
 ### 3. Instalarea Django
 
 ![](../.gitbook/assets/webp.net-resizeimage.png)
 
-    **Django** \(/ dʒæŋɡoʊ / jang-goh\) este _framework_ web gratuit și open source, scris în Python. Un **framework** este un set de componente care vă ajută să dezvoltați site-urile web mai repede și mai ușor.
+    **Django** \(/ dʒæŋɡoʊ / jang-goh\) este un _framework_ web gratuit și open source, scris în Python. Un **framework** este un set de componente care vă ajută să dezvoltați site-urile web mai repede și mai ușor.
 
     Când creați un site web, aveți întotdeauna nevoie de un set similar de componente: o modalitate de a gestiona autentificarea utilizatorilor \(înscrierea, conectarea, deconectarea\), o modalitate de a încărca fișiere,  formulare, etc. .
 
@@ -34,7 +34,7 @@
 
     Există framework-uri pentru a vă scuti de necesitatea de a reinventa roata și de a vă ajuta la micșorarea necesităților atunci când construiți un site nou.
 
-    Pentru a instala **Django**, apasam Start si in search scriem “**cmd**”, pentru a deschide Linia de Comanda.
+    Pentru a instala **Django**, apăsam Start și in search scriem “**cmd**”, pentru a deschide Linia de Comanda.
 
 ![](../.gitbook/assets/cmd.png)
 
@@ -52,7 +52,13 @@
 
 ![](../.gitbook/assets/untitled.png)
 
-    Deschideți din nou **Linia de comanda ,** și scrieți următoarea comanda:
+ Sau în cazul când nu puteți accesa această opțiune, deschideți folderul creat și duceți cursorul peste secțiunea dată:
+
+![](../.gitbook/assets/picture%20%281%29.png) 
+
+și apasă **Alt + D.** Acest shortcut va copia automat locația folderului.
+
+Deschideți din nou **Linia de comanda ,** și scrieți următoarea comanda:
 
 cd \(_aici folosind Ctrl+V , scrieți adresa directoriului copiată anterior_ \), 
 
@@ -68,25 +74,25 @@ django-admin.exe startproject mysite .
 ```
 {% endcode %}
 
- unde ultimul cuvint **mysite** este denumirea proiectului. Punctul `.`  la sfârșitul comenzii este crucial, deoarece indică ca proiectul Django să fie instalat in directoriul curent.
+ unde ultimul cuvânt **mysite** este denumirea proiectului. Punctul `.`  la sfârșitul comenzii este crucial, deoarece indică ca proiectul Django să fie instalat in directoriul curent.
 
     Aceasta comanda automat va genera toate fișierele necesare noua ca să lucrăm în continuare la proiectul nostru.
 
 ![](../.gitbook/assets/captudsdre%20%281%29.PNG)
 
-    Dupa rularea acestei comenzi, deschideți directoriul in care lucrați, dacă totul a decurs bine, folderul trebuie să conțină urmatoarele fisiere.
+    După rularea acestei comenzi, deschideți directoriul in care lucrați, dacă totul a decurs bine, folderul trebuie să conțină următoarele fișiere.
 
 ![](../.gitbook/assets/captu.PNG)
 
 `manage.py` ne va ajuta la gestionarea site-ului. Cu aceasta vom putea \(printre multe altele\) să pornim un server web pe calculatorul nostru fără a instala altceva.
 
-Pentru moment deschideti editorul **VSCode**. Folosind opțiunea `Open folder...` 
+Pentru moment deschideți editorul **Visual Studio Code**. Folosind opțiunea `Open folder...` 
 
 ![](../.gitbook/assets/sdfg.PNG)
 
-Gasiti folderul `My Project` care contine proiectul si deschidețil în VSCode
+Găsiți folderul `My Project` care conține proiectul și deschideți-l în Visual Studio Code.
 
-    Dupa cum observati in stinga editorului sa deschis un tab unde este afișat conținutul folderului care a fost selectat. Acesta ne ajuta mai ușor să ne orientăm în fișierele noastre fără ca să părăsim editorul.
+    După cum observați în stânga editorului s-a deschis un tab unde este afișat conținutul folderului care a fost selectat. Acesta ne ajuta mai ușor să ne orientăm în fișierele noastre fără ca să părăsim editorul.
 
 ![](../.gitbook/assets/captfhure.PNG)
 
@@ -142,7 +148,7 @@ publish()
 
     Un **model** în Django este un tip special de obiect - este salvat în `database`\(baza de date\). O bază de date este o colecție de date. Acesta este un loc în care veți stoca informații despre utilizatori, postările de pe blog etc. Puteți să vă gândiți la un model din baza de date ca o foaie de calcul cu coloane \(câmpuri\) și rânduri \(date\).
 
-## Partea de applicatie
+## Partea de aplicație
 
 
 
@@ -156,13 +162,13 @@ python manage.py startapp blog
 ```
 {% endcode %}
 
-**blog** este denumirea applicatiei.
+**blog** este denumirea aplicației.
 
-   Acesta commanda va crea o applicație in proiectul dorit, aici se vor contine toate fișierele care vor fi direct responsabile de site-ul care il creăm\(URL’uri, imagini, text etc\)
+   Acesta comandă va crea o applicație în proiectul dorit, aici se vor conține toate fișierele care vor fi direct responsabile de site-ul care il creăm\(URL-uri, imagini, text etc\)
 
-In urma executarii acesteti comande , in folderul proiectului trebuie sa apara un nou folder `blog` . 
+În urma executării acestei comande, în folderul proiectului trebuie sa apara un nou folder `blog` . 
 
-    După crearea aplicației, trebuie să-i comunicăm proiectului că ar trebui să o folosească. Facem asta în fișierul `mysite / settings.py`, deschis cu aplicația **VSCode**. Trebuie să găsim INSTALLED\_APPS și să adăugăm o linie care conține "blog".
+    După crearea aplicației, trebuie să-i comunicăm proiectului că ar trebui să o folosească. Facem asta în fișierul `mysite / settings.py`, deschis cu aplicația **Visual Studio Code**. Trebuie să găsim INSTALLED\_APPS și să adăugăm o linie care conține "blog".
 
 {% code title="mysite/settings.py" %}
 ```python
@@ -223,15 +229,15 @@ Acum definim proprietățile despre care vorbeam: `title, text, created_date, pu
 * `models.CharField` –așa definim un text cu număr limitat de caractere.
 * `models.TextField` – acesta este pentru un text lung, fără limită.
 * `models.DateTimeField` – așa definim o dată calendaristică
-* `models.ForeignKey` –  ForeighKey face legătura cu alt obiect.
+* `models.ForeignKey` –  ForeignKey face legătura cu alt obiect.
 
     Ultimul pas aici este să adăugăm noul nostru model la baza noastră de date. Mai întâi trebuie să-l facem pe Django să știe că avem unele modificări în modelul nostru.  Mergeți la fereastra consolei și tastați `python manage.py makemigrations blog`. Acesta va arata astfel:
 
 ![](../.gitbook/assets/sdfghjkls.PNG)
 
-* _Aveți grijă să salvați mereu fișierele în care faceți modificări pentru a nu opține erori ulterior._
+* _Aveți grijă să salvați mereu fișierele în care faceți modificări pentru a nu obține erori ulterior._
 
-    Următorul pas ar fi să transmitem modificările create și pregătite de django bazei de date prin următoarea comandă:
+    Următorul pas ar fi să transmitem modificările create și pregătite de Django bazei de date prin următoarea comandă:
 
 {% code title="Command Prompt" %}
 ```text
@@ -245,19 +251,19 @@ Astfel Modelul nostru `Post` este transmis bazei de date.
 
 ### Pornirea unui webserver
 
-In linia de comandă scrieți următoarea comandă:
+În linia de comandă scrieți următoarea comandă:
 
 ```bash
 python manage.py runserver
 ```
 
-Asigurativa ca linia de comanda este deschis din folderul proiectului.
+Asigurați-vă ca linia de comanda este deschis din folderul proiectului.
 
 ![Rezultatul ar trebui s&#x103; arate a&#x219;a.](../.gitbook/assets/hgdf.PNG)
 
 Deschideți pagina [http://127.0.0.1:8000/](http://127.0.0.1:8000/) unde ulteriorul nostru proiect ar trebui să opereze. 
 
-[http://127.0.0.1:8000/](http://127.0.0.1:8000/) este cunoscut ca _localhost_ ceea ce înseamna că proiectul nostru ruleaza doar pe calculatorul nostru și nu este încă online.
+[http://127.0.0.1:8000/](http://127.0.0.1:8000/) este cunoscut ca _localhost_ ceea ce înseamna că proiectul nostru rulează doar pe calculatorul nostru și nu este încă online.
 
 ![](../.gitbook/assets/fff.PNG)
 
@@ -267,7 +273,7 @@ _În linia de comandă nu puteți scrie o altă comandă cât timp lucrează ser
 
     Fiecare pagina web are nevoie de cel puțin un administrator care să editeze postări, să șteargă sau să publice elemente pe pagina. Pentru aceasta vom folosi _**Django admin.**_
 
-    Pentru inceput deschidem fișierul `blog/admin.py`  și înlocuim compenentele acestuia cu liniiile de mai jos. 
+    Pentru început deschidem fișierul `blog/admin.py` și înlocuim componentele acestuia cu liniile de mai jos. 
 
 {% code title="blog/admin.py" %}
 ```python
@@ -278,11 +284,11 @@ admin.site.register(Post)
 ```
 {% endcode %}
 
-    După cum puteți vedea, vom includem modelul Post definit în precedent. Pentru a face modelul nostru vizibil pe pagina de admin, trebuie să înregistrăm modelul cu `admin.site.register (Post)`. Reporninnd serverul cu comanda `python manage.py runserver`   in consolă și accesând pagina [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) ar trebui să obțineți următoarea fereastră.
+    După cum puteți vedea, vom includem modelul Post definit în precedent. Pentru a face modelul nostru vizibil pe pagina de admin, trebuie să înregistrăm modelul cu `admin.site.register (Post)`. Repornind serverul cu comanda `python manage.py runserver`   în consolă și accesând pagina [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) ar trebui să obțineți următoarea fereastră.
 
 ![](../.gitbook/assets/hdsfg.PNG)
 
-    Pentru a ne autentifica avem nevoie de un _superuser  ,_ utilizatorul ce va avea acces la toata pagina. Pentru aceasta ne reântoarcem la Linia de comanda, și scrim următoarea comanda  
+    Pentru a ne autentifica avem nevoie de un _superuser  ,_ utilizatorul ce va avea acces la toată pagina. Pentru aceasta ne reântoarcem la Linia de comanda, și scrim următoarea comanda  
 
 ```text
 python manage.py createsuperuser
@@ -300,15 +306,15 @@ Superuser created successfully
 ```
 {% endcode %}
 
-Reporniți serverul din nou și autentificațivă. Pagina ar trebui să arate cam așa.
+Reporniți serverul din nou și autentificați-vă. Pagina ar trebui să arate cam așa.
 
 ![](../.gitbook/assets/django_admin3.png)
 
-Acum puteți explora puțin pagina, adaugând chiar și unele postari.
+Acum puteți explora puțin pagina, adăugând chiar și unele postari.
 
-### Django url's
+### Django URL's
 
-    O adresă URL este pur și simplu o adresă web. Puteți vedea o adresă URL de fiecare dată când vizitați un site web - este vizibil în bara de adrese a browserului dvs.Fiecare pagină de pe Internet are nevoie de o adresă URL proprie. În acest fel, aplicația dvs. știe ce ar trebui să arate unui utilizator care deschide acea adresă URL. În Django, folosim ceva numit URLconf \(configurație URL\). URLconf este un set de modele pe care Django va încerca să le corespundă adresei URL solicitate pentru a găsi vizualizarea corectă.
+    O adresă URL este pur și simplu o adresă web. Puteți vedea o adresă URL de fiecare dată când vizitați un site web - este vizibil în bara de adrese a browserului dvs. Fiecare pagină de pe Internet are nevoie de o adresă URL proprie. În acest fel, aplicația dvs. știe ce ar trebui să arate unui utilizator care deschide acea adresă URL. În Django, folosim ceva numit URLconf \(configurație URL\). URLconf este un set de modele pe care Django va încerca să le corespundă adresei URL solicitate pentru a găsi vizualizarea corectă.
 
 În fișierul `mysite/urls.py` observăm un URL deja setat care este responsabil de pagina de admin 
 
@@ -318,7 +324,7 @@ path('admin/', admin.site.urls)
 ```
 {% endcode %}
 
-Pentru a păstra fișierul `mysite/urls.py`  cât mai simplu și curat vom importa adresele din aplicația `blog` pentru aceasta vom adauga linia 
+Pentru a păstra fișierul `mysite/urls.py`  cât mai simplu și curat vom importa adresele din aplicația `blog` pentru aceasta vom adăuga linia 
 
 {% code title="mysite/urls.py" %}
 ```python
