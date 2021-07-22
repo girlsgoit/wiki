@@ -21,7 +21,7 @@ Splendid! Te provoc să mai experimentezi cu aceste structuri de date, în timpu
 
 ## Programare orientată pe obiecte \(OOP\)
 
-Programarea orientată pe obiecte este o paradigmă de programare bazată pe "obiecte" ce înglobează structuri ce conțin date sub formă de câmpuri, numite _atribute_ și careva funcțional reprezentat prin _metode_. Metodele de obicei operează cu datele interioare ale obiectului, care, la dorință pot fi făcute inaccesibile direct utilizatorului. Mai multă teorie găsești pe [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming). Eu însă vreau să îți explic conceptele OOP prin exemple practice.
+Programarea orientată pe obiecte este o paradigmă de programare care folosește concepte abstracte \(sub forma de clase și obiecte\) pentru a crea modele bazate pe elemente din lumea reală. Obiectele sunt definite cu propriele lor variabile , numite _atribute_ și careva funcțional reprezentat prin _metode_.Metodele de obicei operează cu datele interioare ale obiectului, care, la dorință pot fi făcute inaccesibile direct utilizatorului. Mai multă teorie găsești pe [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming). Toate aceste noțiuni pot părea la prima vedere foarte complicate pentru un programator care nu a mai lucrat cu conceptele OOP, doar cu programarea procedurală\(Pascal,C\) . Totuși cu ajutorul exemplelor practice pe care urmează să le prezint sper ca aceste concepte să devină mult mai simplu de înțeles.
 
 ### NB: Mini-ghid de utilizare
 
@@ -35,7 +35,7 @@ python -i <nume_fișier.py>
 
 ### Clase, obiecte, instanțe
 
-Clasa este definiția parametrilor și comportamentului unui obiect al acestei clase. În alți termeni, clasa este schița obiectului. Clasele poartă nume generice, pe când obiectele se numesc specific de obicei. Spre exemplu clasa se numește `Cat` iar un obiect al acestei clase e denumit `eddy`, probabil numele pisicii date.
+O **clasă** este o **colecție de obiecte** care au proprietăți, operații și comportamente comune. O clasă este o combinație de caracteristici \(atribute\) și de comportamente \(metode\).Se poate spune că o clasă este schița care descrie natura unui lucru. De exemplu, clasa `Câine` va conține caracteristicile tuturor câinilor, precum rasă sau culoarea părului \(caracteristici\), precum și capacitatea de a lătra și de a sta \(comportament\).Clasele poartă nume generice, pe când obiectele se numesc specific de obicei. Spre exemplu clasa se numește `Cat` iar un obiect al acestei clase e denumit `eddy`, probabil numele pisicii date.
 
 Hai să scrim împreună prima noastră clasă:
 
@@ -44,7 +44,7 @@ class Animal:
     pass
 ```
 
-Asta e tot! Avem o clasă "goală" cu numele `Animal`.
+Asta e tot! Avem o clasă "goală" cu numele `Animal`.Cuvântul pass este adesea folosit ca substituent care indică unde va merge în cele din urmă codul. Acest lucru vă permite să rulați acest cod fără ca Python să arunce o eroare.
 
 Ok, totul e destul de simplu și evident, însă, probabil te întrebi de ce sintactic avem secvența `Animal(object)`. Partea din paranteză denotă superclasa, adică clasa sau obiectul de la care se moștenește. Aceasta e o chestie istorică și în Python 3 nu mai e necesară. În Python 3 poți scrie `class Animal:` pentru a obține același rezultat, de aia nu voi intra în detalii tehnice, iar despre moștenire, vorbim mai târziu. :wink:
 
@@ -62,7 +62,7 @@ Având definiția clasei, putem instanția primele obiecte:
 
 Felicitări! Ai creat prima ta clasă și ai mai și creat obiecte cu acea clasă. Bravo! Acum hai să îmbunătățim această clasă.
 
-După cum am zis mai sus, obiectele au atribute și metode. Metodele sunt de fapt funcții care își au sub formă de context obiectul sau clasa sa. Hai să adăugăm niște date și niște metode clasei noastre.
+După cum am zis mai sus, clasele au atribute și metode. Metodele sunt funcții definite în corpul unei clase. Sunt folosite pentru a defini comportamentele unui obiect. Hai să adăugăm niște date și niște metode clasei noastre.
 
 ```python
 class Animal:
@@ -72,7 +72,7 @@ class Animal:
 
 NB: Ca să executăm metoda `say()` a unui obiect `a`, vom scrie `a.say()`.
 
-Acum putem crea un obiect nou cu din această clasă și putem invoca metoda `say()`. Ai observat probabil că funcția `say` are un parametru numit `self`. Încă nu-ți explic ce înseamnă, însă tu scrie-l, ca totul să funcționeze.
+Acum putem crea un obiect nou a acestei clase și putem invoca metoda `say()`. Ai observat probabil că funcția `say` are un parametru numit `self`. Încă nu-ți explic ce înseamnă, însă tu scrie-l, ca totul să funcționeze.
 
 NB: Dacă nu punem parametrul `self` în declarația metodei, vom avea așa o eroare la încercarea de a invoca această metodă:
 
@@ -104,7 +104,7 @@ Convenția de a plasa `self` ca parametru formal al metodei este una istorică �
 
 Eu însă nu am să intru în detalii prea mult, dar am să-ți explic în ce constă convenția dată, pentru ce se folosește și cum am putea beneficia de ea.
 
-Aici am creat din nou clasa `Animal` și i-am dat definit atributul `name`. Metoda `info()` va prezenta obiectul dat utilizând atributul `name`
+Aici am creat din nou clasa `Animal` și i-am definit atributul `name`. Metoda `info()` va prezenta obiectul dat utilizând atributul `name`
 
 ```python
 class Animal:
@@ -201,9 +201,9 @@ Superb! Ca să concluzionez, `self` este doar o convenție, chiar dacă editorul
 
 ### Constructor. `__init__()`
 
-Dacă deja cunoști careva limbaj de programare orientat pe obiecte, probabil știi ce-i aia un constructor. Spre exemplu limbaje ca Java sau C++ au constructori impliciți. În Python, metoda `__init__()` își are ca scop același lucru.
+Dacă deja cunoști careva limbaj de programare orientat pe obiecte, probabil știi ce-i aia un constructor. Spre exemplu limbaje ca Java sau C++ au constructori impliciți\(main\). În Python, metoda `__init__()` își are ca scop același lucru.
 
-Totuși, nu ți-am povestit încă ce-i aia un constructor. Numele însă, vorbește pentru sine. Un constructor este o subrutină executată la crearea \(construirea\) unui obiect. Chiar dacă în Python, metoda `__init__()` nu este numită constructor, ea se comportă exact ca un constructor tradițional, adică se execută la crearea unui obiect nou. Ceea ce face această metodă să nu fie numită constructor, e faptul că la momentul execuției ei, scheletul obiectului e deja construit în interiorul interpretatorului Python. Din perspectiva programatorului, acest fapt nu are niciun efect advers. Hai să scriem primul nostru constructor:
+Totuși, nu ți-am povestit încă ce-i aia un constructor. Numele însă, vorbește pentru sine. **Constructorul** unei clase este o funcție internă, specială a acelei clase care este **apelată în momentul în care se creeaza** un obiect al acelei clase. Chiar dacă în Python, metoda `__init__()` nu este numită constructor, ea se comportă exact ca un constructor tradițional, adică se execută la crearea unui obiect nou. Ceea ce face această metodă să nu fie numită constructor, e faptul că la momentul execuției ei, scheletul obiectului e deja construit în interiorul interpretatorului Python. Din perspectiva programatorului, acest fapt nu are niciun efect advers. Hai să scriem primul nostru constructor:
 
 ```python
 class Animal:
@@ -244,7 +244,7 @@ Perfect! Acum poți crea "constructori" utilizând `__init__`. Și mai știi cum
 
 ### Destructor. `__del__()`
 
-Întrebarea firească care-ți vine în minte probabil e: "Dacă există un construcor, este pe partea cealaltă și un destructor?". Răspunsul e simplu - da. Și din nou, aceleași principii ca și la constructor se aplică și aici. Deci, hai să trecem la treabă și să scriem primul nostru destructor:
+Întrebarea firească care-ți vine în minte probabil e: "Dacă există un constructor, este pe partea cealaltă și un destructor?". Răspunsul e simplu - da. Și din nou, aceleași principii ca și la constructor se aplică și aici. Deci, hai să trecem la treabă și să scriem primul nostru destructor:
 
 ```python
     def __del__(self):
@@ -301,7 +301,9 @@ Fiecare lecție de programare orientată pe obiecte descrie cele mai importante 
 
 Chiar dacă limbajul de programare Python urmează cele mai bune practici OOP, encapsularea nu este în totalitate suportată. Acest fapt nu trebuie considerat neapărat un dezavantaj, ci din contra, e o simplificare justă. Argumentul principal stă în sloganul "We're all responsible users here".
 
-Encapsularea clasică ține de restricționarea accesului la membrii unui obiect sau clase. În Java sau C++ fiecare atribut sau metodă a clasei sunt definite ca `public`, `private` și `protected`. În Python există posibilitatea de mimat comportamentul `private`. Deci, un atribut al clasei care va fi denotat ca privat, nu va fi accesibil din exterior, însă vom putea să-l accesăm din metodele clasei. Ca să facem un atribut privat, trebuie să-i punem prefixul `__`. Hai să vedem cum lucrează asta:
+Encapsularea clasică ține de restricționarea accesului la membrii unui obiect sau clase. Pentru a înțelege mai bine encapsularea propun să luăm în considerare un exemplu real de encapsulare.Într-o companie, există diferite secțiuni, cum ar fi contabilitatea, secțiunea financiară, secțiunea vânzări etc.Secțiunea finanțe gestionează toate tranzacțiile financiare și ține evidența tuturor datelor legate de finanțare. În mod similar, secțiunea de vânzări gestionează toate activitățile legate de vânzări și ține evidența tuturor vânzărilor. Acum poate apărea o situație în care, dintr-un anumit motiv, un funcționar din secțiunea financiară are nevoie de toate datele despre vânzări dintr-o anumită lună. În acest caz, nu i se permite accesul direct la datele secțiunii de vânzări. Mai întâi va trebui să contacteze un alt ofițer din secțiunea de vânzări și apoi să-i ceară să furnizeze datele specifice. Aceasta este encapsularea.În Java sau C++ fiecare atribut sau metodă a clasei sunt definite ca `public`, `private` și `protected.`
+
+ În Python există posibilitatea de mimat comportamentul `private`. Deci, un atribut al clasei care va fi denotat ca privat, nu va fi accesibil din exterior, însă vom putea să-l accesăm din metodele clasei. Ca să facem un atribut privat, trebuie să-i punem prefixul `__`. Hai să vedem cum lucrează asta:
 
 ```python
 class Animal:
@@ -346,7 +348,7 @@ Magnific! Acum știi lucruri din interiorul interpretatorului. Însă ai grijă 
 
 ### Moștenire \(Inheritance\)
 
-Moștenirea e proprietatea de unei clase că moștenească caracteristicile altei clase sau obiect. Această facilitate ne ajută să abstractizăm logica structurilor de date într-un mod optim ce ne va ușura dezvoltarea ulterioară a proiectului.
+Moștenirea este proprietatea unei clase de a moșteni caracteristicile altei clase sau altui obiect. Această facilitate ne ajută să abstractizăm logica structurilor de date într-un mod optim ce ne va ușura dezvoltarea ulterioară a proiectului.
 
 În imaginea ce urmează este prezentat un model de moștenire. Acest model va fi utilizat în exemplele ulterioare.
 
@@ -452,7 +454,7 @@ Perfect, lucrează! Acum că am ajuns să rescriem metode, o să trecem la urmă
 
 ### Polimorfism
 
-Conform DEX, în lumea chimiei, polimorfismul e proprietatea unor substanțe de a se putea prezenta în două sau mai multe forme cristaline distincte. Situația este similară și în domeniul programării orientate pe obiecte. Pentru a ilustra acest principiu vom oferi comportament diferit metodey `say()` pentru diferite animăluțe. Hai să creăm clasele `Cat` și `Dog`, ambele subclase de la `Animal`. Hai să încercăm lucrul practic:
+Conform DEX, în lumea chimiei, polimorfismul e proprietatea unor substanțe de a se putea prezenta în două sau mai multe forme cristaline distincte. Situația este similară și în domeniul programării orientate pe obiecte. Pentru a ilustra acest principiu vom oferi comportament diferit metodei `say()` pentru diferite animăluțe. Hai să creăm clasele `Cat` și `Dog`, ambele subclase de la `Animal`. Hai să încercăm lucrul practic:
 
 ```python
 class Cat(Animal):
