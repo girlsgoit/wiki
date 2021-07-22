@@ -199,6 +199,14 @@ My name is Dean.
 
 Superb! Ca să concluzionez, `self` este doar o convenție, chiar dacă editorul sau IDE-ul tău îl colorează într-un mod specific. Totuși, te rog să folosești mereu anume `self` pentru a denota referința către instanța curentă a obiectului.
 
+### Exercițiu
+
+Pentru a verifica dacă ai înțeles conceptul de self îți propun următorul exercițiu: Crează o clasă Vehicul cu atributele brand , max\_speed și kilometraj și printează la ecran cu ajutorul unei metode carinfo informația despre  o mașină Mercedes care are viteza maximă de 256 km/h ,  și kilometrajul de 1024 km. La ecran ar trebui să ai afișat aproximativ acest text.
+
+```python
+Mașina Mercedes are viteza maximă de 256 km/h ,  și kilometrajul de 1024 km. 
+```
+
 ### Constructor. `__init__()`
 
 Dacă deja cunoști careva limbaj de programare orientat pe obiecte, probabil știi ce-i aia un constructor. Spre exemplu limbaje ca Java sau C++ au constructori impliciți\(main\). În Python, metoda `__init__()` își are ca scop același lucru.
@@ -293,7 +301,20 @@ Hello!
 >>>
 ```
 
-Perfect! Ne vom baza pe clasa dată în exemplele ce urmează.
+### Exercițiu
+
+Acum putem testa decă ai înțeles conceptele de constructor.
+
+Crează o clasă denumită dreptunghi în limbajul Python,care o să îți permită să construești un dreptunghi cu atribute de lungime și lățime. Crează o metodă Perimetru \(\) pentru a calcula perimetrul dreptunghiului și o metodă Arie\(\) pentru a calcula aria dreptunghiului. Crează o metodă afișare\(\) care afișează lungimea, lățimea, perimetrul și aria unui obiect creat folosind o instanțiere a clasei dreptunghiului\(folosește constructorul `__init__())` Programul ar trebui să afișeze la ecran ceva asemănător cu:
+
+```python
+Lungimea dreptunghiului este: 7
+Lățimea dreptunghiului este: 5
+Perimetrul dreptunghiului este: 24
+Aria dreptunghiului este: 35
+```
+
+NB! Păstrează această clasă, o să continuăm să  lucrăm cu ea în următorul exercițiu după ce o să asimilezi conceptul de moștenire.
 
 ### "Aproape" encapsulare
 
@@ -452,6 +473,16 @@ I am 36 months old.
 
 Perfect, lucrează! Acum că am ajuns să rescriem metode, o să trecem la următorul subiect strâns legat cu acest principiu. :relieved:
 
+### Exercițiu
+
+Continuăm exemplu din exercițiul anterior.Crează  o clasă Paralelipiped care moștenește metodele și atributele clasei Dreptunghi însă are un atribut înălțime și o altă metodă Volum\(\) pentru a calcula volumul Paralelepipedului.Printează la ecran volumul paralelipipedului.
+
+Rezultatul după ce creăm obiectul myParalelepiped = Paralelepiped\(7 , 5 , 2\) ar trebui să fie:
+
+```python
+Volumul paralelipipedului este de 70
+```
+
 ### Polimorfism
 
 Conform DEX, în lumea chimiei, polimorfismul e proprietatea unor substanțe de a se putea prezenta în două sau mai multe forme cristaline distincte. Situația este similară și în domeniul programării orientate pe obiecte. Pentru a ilustra acest principiu vom oferi comportament diferit metodei `say()` pentru diferite animăluțe. Hai să creăm clasele `Cat` și `Dog`, ambele subclase de la `Animal`. Hai să încercăm lucrul practic:
@@ -533,5 +564,13 @@ NotImplementedError: Clasa derivata trebuie sa implementeze aceasta metoda!
 
 Nu te speria de excepții, chiar dacă nu vei avea nevoie de așa funcțional în viitorul apropiat, am vrut să știi că există posibilitatea să generezi și tu erori când e cazul.
 
-Cam atât din cursul introductiv despre programarea orientată pe obiecte în python. Sper că ți-a fost interesant! Acum e timpul să experimentezi independent și, dacă ai întrebări - **întreabă**. Curiozitatea, motivația și entuziasmul vor contribui la crearea cunoștințelor noi. Iar eu sper că ți-am trezit curiozitatea, te-am motivat și entuziasmat măcar un pic. Succese vă doresc! :rose:
+Cam atât din cursul introductiv despre programarea orientată pe obiecte în python. Sper că ți-a fost interesant! Acum e timpul să experimentezi independent și, dacă ai întrebări - **întreabă**. Curiozitatea, motivația și entuziasmul vor contribui la crearea cunoștințelor noi. Iar eu sper că ți-am trezit curiozitatea, te-am motivat și entuziasmat măcar un pic. 
+
+Succese vă doresc și pe final vă propun un exercițiu care totalizează cunoștințele pe care le-ai acumulat până aici  :rose:
+
+### Exercițiu
+
+Creați o clasă deck care reprezintă un pachet de cărți. Pe plan intern, pachetul de cărți trebuie să utilizeze o altă clasă, Card. Cerințele exercițiului sunt:
+
+Clasa Deck ar trebui să aibă o metodă de împărțire: deal , pentru a împărți o singură carte din pachet .După ce o carte este împărțită, aceasta este scoasă din pachet. Ar trebui să existe o metodă de amestecare care să se asigure că pachetul de cărți are toate cele 52 de cărți și apoi le rearanjează aleatoriu cu ajutorul metodei shuffle\(care se foloseste de metoda shuffle random.shuffle.Importa modulul random pentru a putea folosi această metodă\) . Clasa Card trebuie să aibă un simbol \(Inimă,Romb,Treflă,Pică\) și o valoare \(A, 2,3,4,5,6,7,8,9,10, J, Q, K\)
 
