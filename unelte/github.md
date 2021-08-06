@@ -73,11 +73,21 @@ sau dacă am modificat mai multe fişiere şi vrem să le salvăm pe toate:
 git add .
 ```
 
+Atunci când lucrăm cu VSCode, comanda _**add**_ pentru un singur fişier se face accesând butonul "+" de lângă numele fişierelor apărute în Changes, ca în imaginea de mai jos.
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-19-32-33.png)
+
 #### 2. git commit
+
+prima modalitate de a face commit este din terminal, scriind comanda:
 
 ```text
 git commit -m "un mesaj scurt cu descrierea modificărilor"
 ```
+
+SAU, pentru a face commit din VSCode, in partea stanga vom vedea o caseta de text si mai jos la "Changes" fisierele care au fost modificatet. E necesar să scriem mesajul pentru commit în caseta respectivă, şi apoi să apăsăm butonul bifă-
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-19-21-45.png)
 
 #### 3. git push
 
@@ -93,6 +103,10 @@ git push origin main
 Dacă lucrăm pe alt branch decât main, vom scrie numele branch-ului pe care lucrăm în loc de main
 {% endhint %}
 
+Alternativ, din VSCode:
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-19-26-40.png)
+
 ### Comenzi pentru a descărca ultimele modificări pe calculatorul personal
 
 ```text
@@ -102,6 +116,10 @@ git pull origin main
 {% hint style="warning" %}
 Dacă lucrăm pe alt branch decât main, vom scrie numele branch-ului pe care lucrăm în loc de main
 {% endhint %}
+
+Alternativ, din VSCode:
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-19-26-42.png)
 
 ### Github Cheatsheets
 
