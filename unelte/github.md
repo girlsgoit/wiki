@@ -77,6 +77,10 @@ Atunci când lucrăm cu VSCode, comanda _**add**_ pentru un singur fişier se fa
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-19-32-33.png)
 
+pentru a adăuga toate fişierele în versiunea ce va fi trimisă pe Github, vom accesa meniul _**... &gt; Changes &gt; Stage all changes**_, ca în imaginea de mai jos:
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-19-36-31.png)
+
 #### 2. git commit
 
 prima modalitate de a face commit este din terminal, scriind comanda:
