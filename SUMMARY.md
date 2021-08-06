@@ -55,6 +55,7 @@
 * [Python OOP](backend/python-oop.md)
 * [Django](backend/django-intro.md)
 * [REST API's](backend/rest-apis.md)
+* [Github](backend/github.md)
 * [Exerciții](backend/exercitii.md)
 
 ## 3D Printing
