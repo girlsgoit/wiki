@@ -31,7 +31,14 @@ după care vom completa toate câmpurile necesare:
 ### Cum iniţializăm un proiect de pe calculatorul personal cu Github
 
 ```
-$ git init .
+echo "#Nume proiect" >> README.md
+git init .
+git add README.md
+git commit -m "first commit"
+
+git branch -M main
+git remote add origin git@github.com:mdiannna/NumeRepo.git
+git push -u origin main
 ```
 
 ### Comenzi pentru a salva codul online pe Github
