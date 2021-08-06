@@ -84,7 +84,7 @@ Dacă lucrăm pe alt branch decât main, vom scrie numele branch-ului pe care lu
 
 ### Github Cheatsheets
 
-TODO!
+![](../.gitbook/assets/git_cheatsheet3.jpg)
 
 {% hint style="success" %}
  Github de fapt oferă mai multe posibilităţi şi are mai multe comenzi, însă în acest tutorial am prezentat doar funcţionalităţile de bază, cu care vom lucra la proiecte. Dacă vrei să afli mai multe, google it! :\)
