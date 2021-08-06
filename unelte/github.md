@@ -28,6 +28,10 @@ după care vom completa toate câmpurile necesare:
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-10-47-15.png)
 
+### Giithub+VSCode
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00_3.png)
+
 ### Cum iniţializăm un proiect de pe calculatorul personal cu Github
 
 ```
@@ -40,6 +44,16 @@ git branch -M main
 git remote add origin git@github.com:mdiannna/NumeRepo.git
 git push -u origin main
 ```
+
+#### DIn VSCode:
+
+... &gt; Remote &gt; Add remote...
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-18-51-13.png)
+
+După care vom scrie în căsuţa de search numele repozitoriului creat pe Github \(de pe site-u github.com\)
+
+![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00.png)
 
 ### Comenzi pentru a salva codul online pe Github
 
