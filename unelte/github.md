@@ -34,6 +34,12 @@ după care vom completa toate câmpurile necesare:
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00_3.png)
 
+{% hint style="info" %}
+Dacă nu aveţi git instalat deja pe calculator, este nevoie de instalat Git separat de pe link-ul [https://git-scm.com/](https://git-scm.com/). În unele cazuri, Visual Studio Code vă poate recomanda un link către website-ul git-scm.
+{% endhint %}
+
+### 
+
 ### Cum iniţializăm un proiect de pe calculatorul personal cu Github
 
 ```
