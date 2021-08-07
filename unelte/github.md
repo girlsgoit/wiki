@@ -135,6 +135,10 @@ Alternativ, din VSCode:
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-19-26-42.png)
 
+{% hint style="warning" %}
+Dacă nu merge opţiunea _**Pull**,_ încercaţi opţiunea _**Pull, Push &gt; Pull from ...**_ şi selectaţi link-ul către repozitoriul github din meniu
+{% endhint %}
+
 ### Github Cheatsheets
 
 ![](../.gitbook/assets/git_cheatsheet3.jpg)
