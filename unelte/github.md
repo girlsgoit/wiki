@@ -106,7 +106,7 @@ git push origin main
 ```
 
 {% hint style="info" %}
-În unele cazuri, pentru versiuni mai vechi de Github, vom scrie _**master**_ în loc de _**main**_
+În unele cazuri vom scrie _**master**_ în loc de _**main**_
 {% endhint %}
 
 {% hint style="warning" %}
