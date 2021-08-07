@@ -30,6 +30,8 @@ după care vom completa toate câmpurile necesare:
 
 ### Giithub+VSCode
 
+În Visual Studio Code avem un tab special pentru Github, încercuit cu roşu în imaginea de mai jos:
+
 ![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00_3.png)
 
 ### Cum iniţializăm un proiect de pe calculatorul personal cu Github
@@ -47,11 +49,15 @@ git push -u origin main
 
 #### DIn VSCode:
 
-... &gt; Remote &gt; Add remote...
+Pentru a iniţializa Github din VSCode, vom deschide folderul proiectului, şi în tabul pentru Github vom apăsa butonul _**Initialize Repository:**_
+
+![](../.gitbook/assets/screenshot-from-2021-08-07-10-42-42.png)
+
+După aceasta, vom selecta din meniu opţiunea _**... &gt; Remote &gt; Add remote...:**_
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-18-51-13.png)
 
-După care vom scrie în căsuţa de search numele repozitoriului creat pe Github \(de pe site-u github.com\)
+După care vom scrie în căsuţa de search numele repozitoriului creat pe Github \(de pe site-ul github.com\)
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00.png)
 
