@@ -117,6 +117,10 @@ Alternativ, din VSCode:
 
 ![](../.gitbook/assets/screenshot-from-2021-08-06-19-26-40.png)
 
+{% hint style="warning" %}
+Atenţie! Dacă nu merge opţiunea Push, atunci încercaţi opţiunea de mai jos _**Pull, Push &gt; Push to...**_ după care selectaţi linkul respectiv
+{% endhint %}
+
 ### Comenzi pentru a descărca ultimele modificări pe calculatorul personal
 
 ```text
