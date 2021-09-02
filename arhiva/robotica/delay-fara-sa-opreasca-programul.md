@@ -43,7 +43,7 @@ void loop() {
 }
 ```
 
-{% file src="../.gitbook/assets/mydelay.ino" caption="Descarca acest cod aici \(sa nu iti apara greseli de la copiere\)" %}
+{% file src="../../.gitbook/assets/mydelay.ino" caption="Descarca acest cod aici \(sa nu iti apara greseli de la copiere\)" %}
 
 ## Buzzer code - neterminat!
 
@@ -147,5 +147,5 @@ int   buzzer_pin = 8;
 
 ```
 
-{% file src="../.gitbook/assets/testbuzzer.ino" caption="Acelasi cod poate fi descarcat" %}
+{% file src="../../.gitbook/assets/testbuzzer.ino" caption="Acelasi cod poate fi descarcat" %}
 

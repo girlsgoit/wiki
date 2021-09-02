@@ -8,5 +8,5 @@ description: >-
 
 **port** - un punct de conexiune între un computer și un alt dispozitiv sau între 2 dispozitive
 
-![](../.gitbook/assets/port.png)
+![](../../.gitbook/assets/port.png)
 

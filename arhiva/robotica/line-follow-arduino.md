@@ -2,15 +2,15 @@
 
 ### Sensorul de line follow
 
-![](../.gitbook/assets/p8-1.png)
+![](../../.gitbook/assets/p8-1.png)
 
 ### 4 cazuri posibile
 
-![cele 4 cazuri](../.gitbook/assets/p9-768x432.png)
+![cele 4 cazuri](../../.gitbook/assets/p9-768x432.png)
 
 ### Schema logică a programului
 
-![Schema logic&#x103; a programului](../.gitbook/assets/line-follower-arduino-1.png)
+![Schema logic&#x103; a programului](../../.gitbook/assets/line-follower-arduino-1.png)
 
 ## O versiune a codului final \(linia albă\)
 

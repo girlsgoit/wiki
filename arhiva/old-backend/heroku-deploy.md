@@ -29,7 +29,7 @@ Deasemenea, este nevoie de instalat un program care sa ruleze la noi in calculat
 
 Dupa ce am descarcat fisierul executabil de pe website, il rulam si instalam ca pe un program obisnuit pe windows. Un exemplu de cum ar trebui sa arate este in imaginea urmatoare:
 
-![Install Heroku Toolbelt](../.gitbook/assets/install_toolbelt_heroku.png)
+![Install Heroku Toolbelt](../../.gitbook/assets/install_toolbelt_heroku.png)
 
 Dupa ce am instalat Heroku Toolbelt, cautam cmd in comanda start de la windows si alegem pe cea care spune "Command Line with Ruby" Inainte de toate trebuie de instalat cateva pachete care ne vor ajuta sa facem deployment la aplicatie. In proiectul nostru scrim comenzile pe rand:
 
@@ -104,13 +104,13 @@ application = DjangoWhiteNoise(application)
 
 Si mai este nevoie de a crea o directorie pentru a asigura utilizarea fisierelor statice asa ca imaginile, fisierele .css si .javascript. Asadar, dupa exemplul de mai jos creati fisierele ca in imaginea urmatoare:
 
-![Directoriu static in directoriu principal al proiectului](../.gitbook/assets/static_creation_deploy.png)
+![Directoriu static in directoriu principal al proiectului](../../.gitbook/assets/static_creation_deploy.png)
 
 Pentru a face posibil deployment-ul a mai multe versiuni, iterativ a websiteului este nevoie de utilizat un sistem care sa aiba grija de versionarea codului in mod corect. Cel mai raspandit sistem de versiune in prezent este GIT. De aceea deployment-ul pe platforma heroku este utilizat GIT ca forma de actualizare a aplicatiei web.
 
 Structura aplicatie voastre trebuie sa arate in felul urmator:
 
-![Structura aplicatiei](../.gitbook/assets/project_deploy.png)
+![Structura aplicatiei](../../.gitbook/assets/project_deploy.png)
 
 Astfel pentru a initia repositoria scrim in linia de comanda:
 

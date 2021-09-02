@@ -107,7 +107,7 @@ $ python hello.py
 Acum să mergem și să vedem ce site frumos și interesant am creat. În browser accesează adresa respectivă:   
  `127.0.0.1:5000` sau `localhost:5000`
 
-![](../.gitbook/assets/hello_world.png)
+![](../../.gitbook/assets/hello_world.png)
 
 Felicitări, ai creat un site!
 
@@ -171,7 +171,7 @@ def show_date():
 Salvează modificările şi mergi la `localhost:5000/date`.   
  Rezultatul ar trebuie să fie următorul:
 
-![](../.gitbook/assets/first_error.png)
+![](../../.gitbook/assets/first_error.png)
 
 Ce palpitant! Prima eroare! Dar să nu-ţi fie frică, `debugger`-ul te va ajuta să soluționezi eroarea. Aminteşte-ţi ce ţi-a zis Diana despre convertirea `string`-urilor. Bravo, Python nu poate concatena \(uni\) un `string` cu un non-string. Din această cauză trebuie să transformi `20` într-un `string`.   
  Cum faci asta? Corect! Aplică metoda `str()` asupra numărului.  
@@ -183,7 +183,7 @@ return 'Azi este ' + str(20) + ' august.'
 
 Accesează acum `localhost:5000/date` şi totul trebuie să ruleze bine:
 
-![](../.gitbook/assets/fixed_error.png)
+![](../../.gitbook/assets/fixed_error.png)
 
 Probabil o să te întrebi: _"De ce nu am scris de la început_ `'Azi e 20 august.'`_? Fără ca să-mi mai bat capul de_ `string`_-uri,_ `int`_-uri, concatenare..."_  
  Răspunsul e simplu: **flexibilitate**. Efectuând câteva modificări mici, poţi face ca pagina ta să afişeze data corect în fiecare zi a anului şi nu doar pe `20 august`. Importă modulul `datetime` despre care ţi s-a vorbit la **Basic Python Statements**, care îţi va permite să manipulezi timpul ca ora sau data \(dar nu; nu vei putea să călătoreşti în timp\). Scrie următorul cod chiar sub `from flask import Flask`:
@@ -216,7 +216,7 @@ Porțiunea dintre `< >` este partea dinamică, așa că orice URL care coincide 
 Salvează fișierul, mergi în browser și accesează adresa:   
  `localhost:5000/user/numele-vostru`
 
-![](../.gitbook/assets/hello_user.png)
+![](../../.gitbook/assets/hello_user.png)
 
 Acum, fişierul tău `hello.py` ar trebuie să arate cam aşa:
 
@@ -248,7 +248,7 @@ if __name__ == '__main__':
 Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul să vorbim despre structura recomandată a unui proiect Flask, altfel fişierul va continua să crească şi codul va deveni dificil de menţinut.   
 
 
-![](../.gitbook/assets/project_structure.png)
+![](../../.gitbook/assets/project_structure.png)
 
 ```text
 savanna-tweet
@@ -316,7 +316,7 @@ Hello from the static page!
 
 După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
 
-![](../.gitbook/assets/static_page.png)
+![](../../.gitbook/assets/static_page.png)
 
 ## Bonus
 

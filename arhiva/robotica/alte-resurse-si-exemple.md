@@ -37,7 +37,7 @@ void setup() {
 }
 ```
 
-{% file src="../.gitbook/assets/lumini\_sunet.ino" caption="Descarca cod aici" %}
+{% file src="../../.gitbook/assets/lumini\_sunet.ino" caption="Descarca cod aici" %}
 
 ## Line follow pe alb
 
@@ -162,7 +162,7 @@ void loop()
 }
 ```
 
-{% file src="../.gitbook/assets/linefollowwiki.ino" caption="Descarca cod aici" %}
+{% file src="../../.gitbook/assets/linefollowwiki.ino" caption="Descarca cod aici" %}
 
 ## Lumini + sunet politie care nu lucreaza bine \(dar pe aceeasi placuta\)
 
@@ -212,5 +212,5 @@ void loop() {
 }
 ```
 
-{% file src="../.gitbook/assets/police.ino" caption="Descarca cod" %}
+{% file src="../../.gitbook/assets/police.ino" caption="Descarca cod" %}
 

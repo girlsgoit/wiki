@@ -34,7 +34,7 @@ Adaugă o salutare în `body`, inserează acest text:
 
 Vezi rezultatul în navigatorul web preferat:
 
-![](../.gitbook/assets/1.png)
+![](../../.gitbook/assets/1.png)
 
 Implicit, navigatorul tău stilizează elementele HTML fundamentale. Hai să-i dăm o aromă de bootstrap!
 
@@ -55,7 +55,7 @@ Adăugăm și librăria JavaScript pentru bootstrap. Nu ne trebuie la moment, da
 
 Surprinzător! Ceva s-a schimbat. Poți observa că textul a căpătat automat altă nuanță de culoare, altă dimensiune și alt font.
 
-![](../.gitbook/assets/2.png)
+![](../../.gitbook/assets/2.png)
 
 Te întrebi probabil de ce s-a întâmplat asta. bootstrap.css a făcut-o. Ca prim scop, acele stil-uri au resetat toate stilurile predefinite de navigatorul tău și și-a impus standardele asupra elementelor de bază. Totuși, Bootstrap nu-și impune stilizarea asupra butoanelor, tabelelor, input-urilor \(căsuțe de introducere a textului\) și altele. Stilizarea se face explicit, specificând clasele necesare pentru elementele alese. Știm că explicit e mai bine decât implicit pentru că ni se oferă mai mult control.
 
@@ -90,7 +90,7 @@ Navbar-ul este componentul cel mai des întâlnit pe paginile web. De obicei nav
 
 Rezultatul e un Navbar simpatic care l-am obținut în mai puțin de un minut. Isn't that fantastic?
 
-![](../.gitbook/assets/3.png)
+![](../../.gitbook/assets/3.png)
 
 ### Slider
 
@@ -129,13 +129,13 @@ Nimic nu face mai sexy un site de cât niște imagini mari și frumoase într-un
 
 Să vedem rezultatul:
 
-![](../.gitbook/assets/4.png)
+![](../../.gitbook/assets/4.png)
 
 ### Responsive Layout
 
 Pentru a defini o listă de știri pe pagină avem nevoie de câteva coloane. Paginile web au moștenit această tehnică de la ziare. Implicit Bootstrap folosește sistemul de 12 coloane. O reprezentare grafică vedeți mai jos.
 
-![](../.gitbook/assets/5.png)
+![](../../.gitbook/assets/5.png)
 
 Următorul pas ar fi calcularea dimensiunilor coloanelor. Le calculăm folosind formula 12/x, unde x este numărul de coloane care dorim să-l obținem. De exemplu dacă dorim să afișăm conținutul în 3 coloane împărțim 12/3 și obținem dimensiunea coloanelor egală cu 4. Folosind rezultatele obținute și markup-ul de mai jos afișăm noutățile.
 

@@ -4,7 +4,7 @@ description: (robotelul construit de cei de la Matrix)
 
 # Custom robot
 
-![](../.gitbook/assets/img_20180716_1058269842.jpg)
+![](../../.gitbook/assets/img_20180716_1058269842.jpg)
 
 ### Setări și configurări
 
