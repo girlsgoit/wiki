@@ -19,7 +19,7 @@ După ce selectezi unul, de exemplu **Vanilla**, vei întâlni o interfață sim
 
 ![](../../.gitbook/assets/image%20%28252%29.png)
 
-Ai aceiași interfață familiară, un sidebar ce reflectă structura proiectului, editorul în sine pe centru și un mini browser pe dreapta în care se reflectă versiunea curentă a proiectului fără a deschide o fereastră sau un tab nou.
+Ai aceeași familiară, un sidebar ce reflectă structura proiectului, editorul în sine pe centru și un mini browser pe dreapta în care se reflectă versiunea curentă a proiectului fără a deschide o fereastră sau un tab nou.
 
 ![](../../.gitbook/assets/image%20%28216%29.png)
 
@@ -37,7 +37,7 @@ Al doilea tab, Explorer, revii la sidebar-ul cu două secționi. În Files ai st
 
 ![](../../.gitbook/assets/image%20%28218%29.png)
 
-În al treilea tab, Configuration, ai posibilitatea de a conecta alte instrumente ce ar valida codul, corectitudea și stilul, infomrație despre proiect etc. Iar restul trei tab-uri necesită deja un cont, și permit syncronizarea cu github-ul, lucru în echipă, live coding etc.
+În al treilea tab, Configuration, ai posibilitatea de a conecta alte instrumente ce ar valida codul, corectitudinea și stilul, informație despre proiect etc. Iar restul trei tab-uri necesită deja un cont, și permit sincronizarea cu github-ul, lucru în echipă, live coding etc.
 
 ![](../../.gitbook/assets/image%20%28225%29.png)
 
@@ -47,7 +47,7 @@ Pentru a utiliza la maximum posibilitățile ce le oferă CodeSandbox, va trebui
 
 ![](../../.gitbook/assets/image%20%28215%29.png)
 
-Fiind logat, vei primi access la un dashboard unde vei poate vedea toate Sandbox-urile salvate, template-uri create, repozitorii conectate etc.
+Fiind logat, vei primi acces la un dashboard unde vei poate vedea toate Sandbox-urile salvate, template-uri create, repozitorii conectate etc.
 
 ![](../../.gitbook/assets/image%20%28224%29.png)
 
@@ -79,7 +79,7 @@ Din tab-ul GitHub, ai posibilitatea să creezi un repositoriu nou, care, automat
 
 ![](../../.gitbook/assets/image%20%28217%29.png)
 
-La fel, ai posibilitatea vizualiza conținutul unui repositoriu GitHub în CodeSandbox prin mai multe metode.
+La fel, ai posibilitatea vizualiza conținutul unui repozitoriu GitHub în CodeSandbox prin mai multe metode.
 
 Prin tabul **Import Project** din fereastra ce apare de fiecare dată când vrei să creezi un sandbox nou
 
@@ -93,7 +93,7 @@ Unele din metode pentru a ajunge la ea este
 
 
 
-Odată ce sa creat un Sandbox dintr-un GitHub repository care nu există în contul personal, în tab-ul GitHub, ai posibilitatea de a face o legătură între Sandbox și repository pentru a putea contribui.
+Odată ce s-a creat un Sandbox dintr-un GitHub repository care nu există în contul personal, în tab-ul GitHub, ai posibilitatea de a face o legătură între Sandbox și repository pentru a putea contribui.
 
 ![](../../.gitbook/assets/image%20%28250%29.png)
 
@@ -119,7 +119,7 @@ Acolo vei găsi numele de repository/proiect în formă de folder, iar când des
 
 ## Drafts & All Sandboxes
 
-Toate Sandbox-urile create, indiferet că au fost create printr-un template oficial, personal sau dintr-un GitHub repository, vor ajunge în **Drafts.**
+Toate Sandbox-urile create, indiferent că au fost create printr-un template oficial, personal sau dintr-un GitHub repository, vor ajunge în **Drafts.**
 
 ![](../../.gitbook/assets/image%20%28240%29.png)
 
