@@ -12,9 +12,9 @@ Veti primi un email cu invitatia pe slack:
 
 ![invitatia pe email](../.gitbook/assets/01-slack-invite.png)
 
-### 2. Inregistrare
+### 2. Înregistrare
 
-Dati click pe butonul `Join Now` , care vă va duce pe pagina de inregistrare, unde numele si alegeți o parolă. Țineți minte această parolă :\) 
+Dați click pe butonul `Join Now`, care vă va duce pe pagina de înregistrare, unde numele si alegeți o parolă. Țineți minte această parolă :\) 
 
 ![](../.gitbook/assets/02-accept-slack-invite.png)
 
@@ -31,7 +31,7 @@ După acest pas, veți vedea așa numitul workspace:
 
 Ca regulă generală - **Channels** vor fi create de mentori, iar mesajele directe deja le veți crea oricând aveți nevoie să comunicați cu cineva direct sau într-un mic grup. 
 
-Pentru a porni un mesaj direct nou, apasați pe `+` la **Direct Messages** și alegeți cu cine vreți să porniți un mesaj direct:
+Pentru a porni un mesaj direct nou, apăsați pe `+` la **Direct Messages** și alegeți cu cine vreți să porniți un mesaj direct:
 
 ![](../.gitbook/assets/04-slack-direct-messages.png)
 
@@ -41,7 +41,7 @@ Până acum am văzut cum arata **Slack** în browser, dar el e mult mai comod d
 
 ### **1. Descărcarea aplicației**
 
-Pentru a instala apliacția desktop, mergei pe link-ul de mai jos, după care descărcați și instalați aplicația. La acest pas nu are nimic deosebit ce ar trebui să faceți, doar o instalați ca și orice altă aplicație.
+Pentru a instala aplicația desktop, mergeți pe link-ul de mai jos, după care descărcați și instalați aplicația. La acest pas nu are nimic deosebit ce ar trebui să faceți, doar o instalați ca și orice altă aplicație.
 
 {% embed url="https://slack.com/intl/en-gb/downloads" %}
 
@@ -55,7 +55,7 @@ Dați click pe **Sign In -** următoarea fereastră o să vă întrebe să alege
 
 ![](../.gitbook/assets/image%20%28255%29.png)
 
-Observați jos că deja apare **TEKEDU**, ca unul care e deja autenficat, dați click pe el.
+Observați jos că deja apare **TEKEDU**, ca unul care e deja autentificat, dați click pe el.
 
 ![Alege&#x21B;i s&#x103; deschide&#x21B;i link-ul &#xEE;n aplica&#x21B;ia slack](../.gitbook/assets/image%20%28254%29.png)
 
@@ -70,7 +70,7 @@ Dacă nu ați avut alegere la etapa anterioară să alegeți **TEKEDU** ca un wo
 1. scrieți `tekedu` în câmpul `your-workspace-url`
 2. Introduceți emailul personal și parola de slack care ați ales-o la pasul **2. Înregistrare**
 
-Dacă vreți să folosiți doar aplicația în browser, o puteți accesa oricand pe link-ul
+Dacă vreți să folosiți doar aplicația în browser, o puteți accesa oricând pe link-ul
 
 {% embed url="https://tekedu.slack.com/" %}
 
