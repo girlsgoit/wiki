@@ -8,7 +8,7 @@ description: Slack va fi chat-ul primar de comunicare în timpul taberei de vara
 
 ### 1. Email
 
-Veti primi un email cu invitatia pe slack:
+Veți primi un email cu invitația pe slack:
 
 ![invitatia pe email](../.gitbook/assets/01-slack-invite.png)
 
