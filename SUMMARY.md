@@ -52,7 +52,19 @@
 ## PYTHON
 
 * [Introducere](python/introducere.md)
+* [Tipuri de Date](python/tipuri-de-date.md)
+* [Operatori](python/operatori.md)
+* [Flow control](python/flow-control.md)
+* [Liste](python/liste.md)
+* [Cicluri for, while](python/cicluri-for-while.md)
+* [Funcții](python/functii.md)
+* [Dictionare](python/dictionare.md)
+* [Seturi](python/seturi.md)
+* [Fișiere](python/fisiere.md)
+* [Librarii, module](python/librarii-module.md)
 * [Python](python/python.md)
+* [Exercitii](python/exercitii/README.md)
+  * [Tipuri de Date](python/exercitii/tipuri-de-date.md)
 
 ## BACKEND
 

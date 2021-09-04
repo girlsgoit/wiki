@@ -127,7 +127,7 @@ my_string = "pix"
 your_sring = "Tu ai 24 pixuri!"
 ```
 
-### _Exercițiu:_
+#### _Exercițiu:_
 
 * Creați o variabilă `my_int` și atribuiți-i o valoare de tip `int`.
 * Creați o variabilă `my_float` și atribuiți-i o valoare de tip `float`.
@@ -176,6 +176,7 @@ Creați o variabilă și atribuiți-i o valoare de tip `string`. Înainte de ast
 ```python
 # acesta este un comentariu
 oras = "Madrid"
+
 ```
 
 ### **Matematică**
