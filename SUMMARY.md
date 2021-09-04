@@ -16,7 +16,6 @@
 * [Internet](frontend-static/internet.md)
 * [HTML](frontend-static/html.md)
 * [CSS](frontend-static/css.md)
-* [Milligram](frontend-static/milligram.md)
 * [Exerciții](frontend-static/exercitii/README.md)
   * [Erontend Static Exercitii](frontend-static/exercitii/erontend-static-exercitii.md)
 
@@ -78,6 +77,7 @@
 
 ## ARHIVA
 
+* [Milligram](arhiva/milligram.md)
 * [Drone](arhiva/drone/README.md)
   * [Intro](arhiva/drone/intro.md)
 * [Old Backend](arhiva/old-backend/README.md)
