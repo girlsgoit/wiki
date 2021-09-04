@@ -1,7 +1,7 @@
 ---
 description: >-
   Lifecycle hooks sunt o serie de metode cu nume specific în componente, care ne
-  permite sa „ne legăm” de anumite evenimente din viața componentei și să
+  permit sa „ne legăm” de anumite evenimente din viața componentei și să
   executăm acțiuni.
 ---
 
