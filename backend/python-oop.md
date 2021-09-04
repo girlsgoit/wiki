@@ -1,10 +1,10 @@
 # Python OOP
 
-După o abatere de la Python, am revenit la această temă. Sper că lucrurile pe care le-ați învățat până acum au fost interesante și practice. Mai sper că vi s-a făcut dor de Python-el. :heart:
+După o abatere de la Python, am revenit la această temă. Sper că lucrurile pe care le-ați învățat până acum au fost interesante și practice. Mai sper că vi s-a făcut dor de Python-el. ❤️
 
 ## Warmup \(Mai ții minte?\)
 
-Iubești listele din Python așa cum le iubesc eu? :heart\_eyes: Atunci te rog să-mi răspunzi ce va afișa fiecare linie:
+Iubești listele din Python așa cum le iubesc eu? Atunci te rog să-mi răspunzi ce va afișa fiecare linie:
 
 ```python
 numbers = [42, 21, 1, 13, 1, 34, 2, 3, 5, 8]
@@ -21,9 +21,9 @@ Splendid! Te provoc să mai experimentezi cu aceste structuri de date, în timpu
 
 ## Programare orientată pe obiecte \(OOP\)
 
-Programarea orientată pe obiecte este o paradigmă de programare care folosește concepte abstracte \(sub forma de clase și obiecte\) pentru a crea modele bazate pe elemente din lumea reală. Obiectele sunt definite cu propriele lor variabile , numite _atribute_ și careva funcțional reprezentat prin _metode_.Metodele de obicei operează cu datele interioare ale obiectului, care, la dorință pot fi făcute inaccesibile direct utilizatorului. Mai multă teorie găsești pe [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming). Toate aceste noțiuni pot părea la prima vedere foarte complicate pentru un programator care nu a mai lucrat cu conceptele OOP, doar cu programarea procedurală\(Pascal,C\) . Totuși cu ajutorul exemplelor practice pe care urmează să le prezint sper ca aceste concepte să devină mult mai simplu de înțeles.
+Programarea orientată pe obiecte este o paradigmă de programare care folosește concepte abstracte \(sub forma de clase și obiecte\) pentru a crea modele bazate pe elemente din lumea reală. Obiectele sunt definite cu propriele lor variabile, numite _atribute_ și careva funcțional reprezentat prin _metode_. Metodele de obicei operează cu datele interioare ale obiectului, care, la dorință pot fi făcute inaccesibile direct utilizatorului. Mai multă teorie găsești pe [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming). Toate aceste noțiuni pot părea la prima vedere foarte complicate pentru un programator care nu a mai lucrat cu conceptele OOP, doar cu programarea procedurală\(Pascal, C\) . Totuși cu ajutorul exemplelor practice pe care urmează să le prezint sper ca aceste concepte să devină mult mai simplu de înțeles.
 
-### NB: Mini-ghid de utilizare
+#### NB: Mini-ghid de utilizare
 
 În această lecție voi scrie codul de bază în fișiere, însă voi experimenta în python shell. Un fișier `.py` poate fi încărcat în shell, la deschidere în felul următor:
 
@@ -35,7 +35,7 @@ python -i <nume_fișier.py>
 
 ### Clase, obiecte, instanțe
 
-O **clasă** este o **colecție de obiecte** care au proprietăți, operații și comportamente comune. O clasă este o combinație de caracteristici \(atribute\) și de comportamente \(metode\).Se poate spune că o clasă este schița care descrie natura unui lucru. De exemplu, clasa `Câine` va conține caracteristicile tuturor câinilor, precum rasă sau culoarea părului \(caracteristici\), precum și capacitatea de a lătra și de a sta \(comportament\).Clasele poartă nume generice, pe când obiectele se numesc specific de obicei. Spre exemplu clasa se numește `Cat` iar un obiect al acestei clase e denumit `eddy`, probabil numele pisicii date.
+O **clasă** este o **colecție de obiecte** care au proprietăți, operații și comportamente comune. O clasă este o combinație de caracteristici \(atribute\) și de comportamente \(metode\). Se poate spune că o clasă este schița care descrie natura unui lucru. De exemplu, clasa `Câine` va conține caracteristicile tuturor câinilor, precum rasă sau culoarea părului \(caracteristici\), precum și capacitatea de a lătra și de a sta \(comportament\).Clasele poartă nume generice, pe când obiectele se numesc specific de obicei. Spre exemplu clasa se numește `Cat` iar un obiect al acestei clase e denumit `eddy`, probabil numele pisicii date.
 
 Hai să scrim împreună prima noastră clasă:
 
@@ -44,9 +44,7 @@ class Animal:
     pass
 ```
 
-Asta e tot! Avem o clasă "goală" cu numele `Animal`.Cuvântul pass este adesea folosit ca substituent care indică unde va merge în cele din urmă codul. Acest lucru vă permite să rulați acest cod fără ca Python să arunce o eroare.
-
-Ok, totul e destul de simplu și evident, însă, probabil te întrebi de ce sintactic avem secvența `Animal(object)`. Partea din paranteză denotă superclasa, adică clasa sau obiectul de la care se moștenește. Aceasta e o chestie istorică și în Python 3 nu mai e necesară. În Python 3 poți scrie `class Animal:` pentru a obține același rezultat, de aia nu voi intra în detalii tehnice, iar despre moștenire, vorbim mai târziu. :wink:
+Asta e tot! Avem o clasă "goală" cu numele `Animal`. Cuvântul pass este adesea folosit ca substituent care indică unde va merge în cele din urmă codul. Acest lucru vă permite să rulați acest cod fără ca Python să arunce o eroare.
 
 Având definiția clasei, putem instanția primele obiecte:
 
@@ -128,7 +126,7 @@ NameError: global name 'name' is not defined # Eroare
 'Tobby'
 ```
 
-Nu lucrează cum ne-am fi așteptat! :disappointed\_relieved:
+Nu lucrează cum ne-am fi așteptat! 😞
 
 Totuși, vezi că suntem apți să accesăm atributul `name` al obiectului nostru. Hai să beneficiem de această facilitate și să rescriem metoda noastră:
 
@@ -157,7 +155,7 @@ My name is Tobby.  # Greșit! Totul e din cauza că în info() facem referire la
 >>>
 ```
 
-Aparent lucrurile au luat o întorsătură neașteptată. :confused: Însă, nu te întrista! Totul e mai simplu decât te așteptai!
+Aparent lucrurile au luat o întorsătură neașteptată.😕 Însă, nu te întrista! Totul e mai simplu decât te așteptai!
 
 Probabil ți-ai dat seama unde vreau să ajung. Exact, înapoi la `self`. Acest parametru formal al metodelor ține în interiorul său referința spre obiectul curent. Utilizând-ul vom scăpa de ambiguitatea în care am intrat în exemplele precedente. Hai să vedem ce ne-a ieșit:
 
@@ -180,9 +178,9 @@ My name is Bob. # Din nou, lucrează perfect!
 >>>
 ```
 
-Acum totul lucrează exact așa cum doream. Mă bucur că ai înțeles semnificația convenției de a utiliza `self`! :rose:
+Acum totul lucrează exact așa cum doream. Mă bucur că ai înțeles semnificația convenției de a utiliza `self`
 
-NB: În repetate rânduri am pomenit că `self` este doar o convenție. În alte limbaje de programare, cum ar fi Java sau C++ poți întâlni o situație similară, doar că pentru acele limbaje cuvântul cheie este `this`. Comportamental este cât de cât similar, însă, în Python el este declarat explicit. În concluzie, ține minte, self, nu este un cuvând magic, nici un cuvânt cheie al limbajului Python. Ca să-ți demonstrez asta, am să redenumesc `self` în `my_custom_loved_self`, să vedem ce iese din asta:
+NB: În repetate rânduri am pomenit că `self` este doar o convenție. În alte limbaje de programare, cum ar fi Java sau C++ poți întâlni o situație similară, doar că pentru acele limbaje cuvântul cheie este `this`. Comportamental este cât de cât similar, însă, în Python el este declarat explicit. În concluzie, ține minte, `self`, nu este un cuvând magic, nici un cuvânt cheie al limbajului Python. Ca să-ți demonstrez asta, am să redenumesc `self` în `my_custom_loved_self`, să vedem ce iese din asta:
 
 ```python
     def info(my_custom_loved_self):
@@ -198,14 +196,6 @@ My name is Dean.
 ```
 
 Superb! Ca să concluzionez, `self` este doar o convenție, chiar dacă editorul sau IDE-ul tău îl colorează într-un mod specific. Totuși, te rog să folosești mereu anume `self` pentru a denota referința către instanța curentă a obiectului.
-
-### Exercițiu
-
-Pentru a verifica dacă ai înțeles conceptul de self îți propun următorul exercițiu: Crează o clasă Vehicul cu atributele brand , max\_speed și kilometraj și printează la ecran cu ajutorul unei metode carinfo informația despre  o mașină Mercedes care are viteza maximă de 256 km/h ,  și kilometrajul de 1024 km. La ecran ar trebui să ai afișat aproximativ acest text.
-
-```python
-Mașina Mercedes are viteza maximă de 256 km/h ,  și kilometrajul de 1024 km. 
-```
 
 ### Constructor. `__init__()`
 
@@ -250,28 +240,7 @@ A new baby animal was born!
 
 Perfect! Acum poți crea "constructori" utilizând `__init__`. Și mai știi cum să adaugi parametri acestei metode.
 
-### Destructor. `__del__()`
-
-Întrebarea firească care-ți vine în minte probabil e: "Dacă există un constructor, este pe partea cealaltă și un destructor?". Răspunsul e simplu - da. Și din nou, aceleași principii ca și la constructor se aplică și aici. Deci, hai să trecem la treabă și să scriem primul nostru destructor:
-
-```python
-    def __del__(self):
-        print("An animal has left :(")
-```
-
-Exact ca și în cazul constructorului, vom afișa un mesaj descriptiv la ștergerea obiectului. Să vedem rezultatul:
-
-```python
->>> tobby = Animal("Tobby")
-A new baby animal was born!
->>> del(tobby)
-An animal has left :(
->>>
-```
-
-Te-ai descurcat foarte bine până acum! Hai să explorăm mai departe aspectele programării orientate pe obiecte în Python!
-
-### O clasă generică
+#### O clasă generică
 
 Haideți să creăm o clasă ceva mai completă, din nou cu numele `Animal` și cu atributele `name` și `age`.
 
@@ -300,21 +269,6 @@ I am 8 months old.
 Hello!
 >>>
 ```
-
-### Exercițiu
-
-Acum putem testa decă ai înțeles conceptele de constructor.
-
-Crează o clasă denumită dreptunghi în limbajul Python,care o să îți permită să construești un dreptunghi cu atribute de lungime și lățime. Crează o metodă Perimetru \(\) pentru a calcula perimetrul dreptunghiului și o metodă Arie\(\) pentru a calcula aria dreptunghiului. Crează o metodă afișare\(\) care afișează lungimea, lățimea, perimetrul și aria unui obiect creat folosind o instanțiere a clasei dreptunghiului\(folosește constructorul `__init__())` Programul ar trebui să afișeze la ecran ceva asemănător cu:
-
-```python
-Lungimea dreptunghiului este: 7
-Lățimea dreptunghiului este: 5
-Perimetrul dreptunghiului este: 24
-Aria dreptunghiului este: 35
-```
-
-NB! Păstrează această clasă, o să continuăm să  lucrăm cu ea în următorul exercițiu după ce o să asimilezi conceptul de moștenire.
 
 ### "Aproape" encapsulare
 
@@ -473,16 +427,6 @@ I am 36 months old.
 
 Perfect, lucrează! Acum că am ajuns să rescriem metode, o să trecem la următorul subiect strâns legat cu acest principiu. :relieved:
 
-### Exercițiu
-
-Continuăm exemplu din exercițiul anterior.Crează  o clasă Paralelipiped care moștenește metodele și atributele clasei Dreptunghi însă are un atribut înălțime și o altă metodă Volum\(\) pentru a calcula volumul Paralelepipedului.Printează la ecran volumul paralelipipedului.
-
-Rezultatul după ce creăm obiectul myParalelepiped = Paralelepiped\(7 , 5 , 2\) ar trebui să fie:
-
-```python
-Volumul paralelipipedului este de 70
-```
-
 ### Polimorfism
 
 Conform DEX, în lumea chimiei, polimorfismul e proprietatea unor substanțe de a se putea prezenta în două sau mai multe forme cristaline distincte. Situația este similară și în domeniul programării orientate pe obiecte. Pentru a ilustra acest principiu vom oferi comportament diferit metodei `say()` pentru diferite animăluțe. Hai să creăm clasele `Cat` și `Dog`, ambele subclase de la `Animal`. Hai să încercăm lucrul practic:
@@ -566,11 +510,5 @@ Nu te speria de excepții, chiar dacă nu vei avea nevoie de așa funcțional î
 
 Cam atât din cursul introductiv despre programarea orientată pe obiecte în python. Sper că ți-a fost interesant! Acum e timpul să experimentezi independent și, dacă ai întrebări - **întreabă**. Curiozitatea, motivația și entuziasmul vor contribui la crearea cunoștințelor noi. Iar eu sper că ți-am trezit curiozitatea, te-am motivat și entuziasmat măcar un pic. 
 
-Succese vă doresc și pe final vă propun un exercițiu care totalizează cunoștințele pe care le-ai acumulat până aici  :rose:
-
-### Exercițiu
-
-Creați o clasă deck care reprezintă un pachet de cărți. Pe plan intern, pachetul de cărți trebuie să utilizeze o altă clasă, Card. Cerințele exercițiului sunt:
-
-Clasa Deck ar trebui să aibă o metodă de împărțire: deal , pentru a împărți o singură carte din pachet .După ce o carte este împărțită, aceasta este scoasă din pachet. Ar trebui să existe o metodă de amestecare care să se asigure că pachetul de cărți are toate cele 52 de cărți și apoi le rearanjează aleatoriu cu ajutorul metodei shuffle\(care se foloseste de metoda shuffle random.shuffle.Importa modulul random pentru a putea folosi această metodă\) . Clasa Card trebuie să aibă un simbol \(Inimă,Romb,Treflă,Pică\) și o valoare \(A, 2,3,4,5,6,7,8,9,10, J, Q, K\)
+Succese vă doresc și pe final vă propun un exercițiu care totalizează cunoștințele pe care le-ai acumulat până aici  🌹
 

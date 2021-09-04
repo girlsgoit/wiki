@@ -58,6 +58,7 @@
 
 * [Instalare Python](backend/instalare-python.md)
 * [Python OOP](backend/python-oop.md)
+* [Baze de date](backend/baze-de-date.md)
 * [Django](backend/django-intro.md)
 * [REST API's](backend/rest-apis.md)
 * [Django REST Framework](backend/django-rest-framework.md)
