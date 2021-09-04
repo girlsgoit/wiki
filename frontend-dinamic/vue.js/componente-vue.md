@@ -1,7 +1,7 @@
 ---
 description: >-
-  Vue Component = un set de unelte și/sau resurse pre-pregătit, care permite
-  dezvoltarea mai rapidă.
+  Vue Component = un set de unelte și/sau resurse  care permite dezvoltarea mai
+  rapidă.
 ---
 
 # Componente Vue
@@ -37,7 +37,7 @@ h1 {
 
 Un component are 3 blocuri principale:
 
-* **`template`** - definim html-ul componentei, cu o serie de directive și constructori care ne ușurează viața și îi urmează să-i învățăm
+* **`template`** - definim html-ul componentei, cu o serie de directive și constructori care ne ușurează viața \(urmează să-i învățăm\)
 * **`script`** - definim logica JavaScript a componentei, e un **obiect** care definește date, acțiuni, și alte elemente folositoare
 * **`style`** - stilurile folosite de componenta noastră, ca să arate bine! Observați atributul scoped, el definește ca stilurile definite în această componentă să fie izolate, și să nu fie vizibile de alte componente, comod!
 
@@ -90,7 +90,7 @@ data: {
 }
 ```
 
-**`data`** trebuie să fie o funcție, astfel că fiecare utilizare a componentei să își poată menține o copie independentă a informației returnate.
+**`data`** trebuie să fie o funcție. Astfel, pentru fiecare utilizare a componentei se menține o copie independentă cu informația returnată.
 
 În caz contrar, dacă nu am folosi regula dată, în exemplul nostru, de fiecare dată când dăm click pe button ar fi afectată informația pentru toate celelalte exemple.
 
@@ -116,7 +116,7 @@ export default {
 </script>
 ```
 
-Acest tag va fi înlocuit cu valoarea proprietății obiectului `msg` corespunzătoare și va fi actualizată oricând valoarea proprietății obiectului `msg` se schimbă.
+Acest tag va fi înlocuit cu valoarea proprietății obiectului `msg` corespunzătoare și va fi actualizat oricând valoarea proprietății obiectului `msg` se schimbă.
 
 De asemenea, putem executa interpolări unice care nu actualizează la modificarea datelor utilizând directivul [v-once](https://vuejs.org/v2/api/#v-once), care afectează toate legăturile din elementul în care este definit.
 
@@ -194,7 +194,7 @@ Aceste expresii vor fi evaluate ca JavaScript în sfera de date a instanței Vue
 
 ### Reactivitatea datelor
 
-Datele în componente sunt **reactive** - atunci când datele date se schimbă, vizualizarea va fi refăcută automat. Trebuie de menționat că proprietățile în `data` sunt reactive doar dacă au existat atunci când instanța a fost creată.
+Datele în componente sunt **reactive** - atunci când datele se schimbă, vizualizarea va fi refăcută automat. Trebuie de menționat că proprietățile în `data` sunt reactive doar dacă au existat atunci când instanța a fost creată.
 
 ```markup
 <p> {{ reactiveData }} </p> <!-- va fi updatat -->
@@ -211,7 +211,7 @@ data: function () {
 
 ## Proprietăți calculate \(Computed Properties\)
 
-Proprietățile din șablon sunt foarte convinabile, dar sunt predestinate pentru operații simple. Punând prea multă logică în șabloanele noastre le-ar putea supraîncărca și le-ar face dificile de menținut. De exemplu:
+Proprietățile din șablon sunt foarte convenabile, dar sunt predestinate pentru operații simple. Prea multă logică în șabloanele noastre le-ar putea supraîncărca și le-ar face dificile de menținut. De exemplu:
 
 ```markup
 <div id="example">
@@ -250,13 +250,13 @@ export default {
 ![](../../.gitbook/assets/image%20%28317%29.png)
 
 {% hint style="info" %}
-Orice metodă \(funcție\) a componentei are aces la cuvîntul cheie **`this`**, care reprezintă **obiectul curent,** respectiv poate accesa toate datele, și alte metode din componentă.
+Orice metodă \(funcție\) a componentei are acces la cuvîntul cheie **`this`**, care reprezintă **obiectul curent,** respectiv poate accesa toate datele, și alte metode din componentă.
 {% endhint %}
 
-Aici am declarat  o funcția `reversedMessage()` sub blocul `coputed`. Ea va fi folosită ca funcție reproducătoare pentru proprietatea `{{ reversedMessage }}`.
+Aici am declarat funcția `reversedMessage()` sub blocul `computed`. Ea va fi folosită ca funcție reproducătoare pentru proprietatea `{{ reversedMessage }}`.
 
 {% hint style="info" %}
-Valoarea lui `reversedMessage` este dependentă de valoarea lui `message`. E recalculată de fiecare dată când valoarea originală se schimbă, și păstrează această valoare pentru a mari performanța. Urmărește modificarea datelor în același mod cum ele sunt urmarite de interpolări in template.
+Valoarea lui `reversedMessage` este dependentă de valoarea lui `message`. E recalculată de fiecare dată când valoarea originală se schimbă, și păstrează această valoare pentru a mări performanța. Urmărește modificarea datelor în același mod cum sunt urmărite modificările pentru interpolări în template.
 {% endhint %}
 
 ## Condiționalele
@@ -277,7 +277,7 @@ data: function () {
 }
 ```
 
-Este, de asemenea, posibil de adăugat și „else block” utilizând v-else:
+Este, de asemenea, posibil de adăugat și blocul „else” utilizând v-else:
 
 ```markup
 <h1 v-if="awesome">You are awesome!</h1>
@@ -286,7 +286,7 @@ Este, de asemenea, posibil de adăugat și „else block” utilizând v-else:
 
 ### Grupuri condiționale cu v-if în &lt;template&gt;
 
-Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se întâmplă dacă noi dorim să comutăm mai mult decât un singur element? În acest caz noi putem utiliza `v-if` într-un element `<template>`, care servește ca un ambalaj invizibil. Redarea finală a rezultatului nu va include elementul `<template>`.
+Deoarece `v-if` este o directivă, a fost atașat unui singur element, dar cum putem afișa mai multe elemente? În acest caz putem utiliza `v-if` într-un element `<template>`, care servește ca un ambalaj invizibil. Redarea finală a rezultatului nu va include elementul `<template>`.
 
 ```markup
 <template v-if="ok">
@@ -298,7 +298,7 @@ Deoarece `v-if` este o directivă, a fost atașat unui singur element. Dar ce se
 
 ### v-else
 
-Se poate utiliza directiva `v-else` pentru a indica un „else block" pentru v-if:
+Se poate utiliza directiva `v-else` pentru a indica un bloc „else" pentru v-if:
 
 ```markup
 <div v-if="Math.random( ) > 0.5">
@@ -360,13 +360,13 @@ data: function () {
 ![Rezultat](../../.gitbook/assets/image%20%28315%29.png)
 
 {% hint style="info" %}
-**`v-for`** îl definim peste elementul care vrem să-l repetăm. În acest caz vrem mai multe elemente `<li>`
+**`v-for`**îl definim peste elementul care vrem să-l repetăm. În acest caz vrem mai multe elemente `<li>`
 {% endhint %}
 
 {% hint style="info" %}
-:**`key`** e important să-l definim pentru a-l ajuta pe Vue să identifice ușor care element din array corespunde elementului din html, și în caz dacă ștergem sau mutăm cu locul elementele, să păstreze valorile din el. Devine foarte util spre exemplu când lucrăm cu forme și inputs.
+:**`key`**e important să-l definim pentru a-l ajuta pe Vue să identifice ușor care element din array corespunde elementului din html, și în caz dacă ștergem sau mutăm cu locul elementele, să păstreze valorile din el. Devine foarte util spre exemplu când lucrăm cu forme și inputs.
 
-Recomandarea generală e să-l definim întotdeauna, cu  valoarea care unic poate identifica obiectul, deobicei un **id** sau un **string** unic
+Recomandarea generală e să-l definim întotdeauna, cu valoarea care unic poate identifica obiectul, deobicei un **id** sau un **string** unic
 {% endhint %}
 
 ### Index
@@ -385,9 +385,9 @@ Recomandarea generală e să-l definim întotdeauna, cu  valoarea care unic poat
 
 ## Metode
 
-Când vrem să execută acțiuni la anumite evenimente, avem nevoie să definim logica care le va prelucra - event handlers. De asemenea uneori vrem sa definim funcții ajutatătoare care îndeplnesc o anumite funcționalitate. 
+Când vrem să executăm acțiuni la anumite evenimente, trebuie să definim logica care le va prelucra - event handlers. De asemenea, uneori vrem să definim funcții ajutatătoare care îndeplinesc o anumită funcționalitate. 
 
-Pentru asta putem defini o serie de metode. O metodă e o funcție obișnuită, care aparține unui obiect \(în cazul nostru componentei\), și are accest obiect \(componentă\) prin cuvântul cheie **`this`**
+Pentru asta putem defini o serie de metode. O metodă e o funcție obișnuită, care aparține unui obiect \(în cazul nostru componentei\), și are acces la acest obiect \(componentă\) prin cuvântul cheie **`this`**
 
 ```javascript
 ...
@@ -407,7 +407,7 @@ methods: {
 ...
 ```
 
-Aceste metode pot fi folosite ca acțiuni la evenimente pentru a adauga interactivitate componentelor noastre. Un exemplu de counter simplu:
+Aceste metode pot fi folosite ca acțiuni la evenimente pentru a adăuga interactivitate componentelor noastre. Un exemplu de counter simplu:
 
 ```markup
 <template>
@@ -446,7 +446,7 @@ export default {
 
 Evenimentele în Vue ne permit să executăm diferite metode la acțiunile pe care utilizatorul le face.
 
-Evenimentele în forma desfășurată se definesc prin directivul **`v-on`**, urmat de evenimentul care vrem să-l „prindem” Cel des folosit eveniment este acel de **click:**
+Evenimentele în forma desfășurată se definesc prin directivul **`v-on`**, urmat de evenimentul care vrem să-l „prindem”. Unul din cele mai des folosite evenimente este **click:**
 
 ```markup
 <button v-on:click="doSomething()">Click Me</button>
@@ -508,7 +508,7 @@ Atunci când ascultăm evenimentele de la tastatură, de multe ori trebuie să v
 <input v-on:keyup.enter="submit">
 ```
 
-Se poate folosi direct orice nume de tastă validă neacoperită prin [`KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values)ca modificatori prin transformarea lor în cazul-kebab.
+Se poate folosi direct orice nume de tastă validă [`KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values) neacoperită utilizând cazul-kebab.
 
 ```markup
 <input v-on:keyup.page-down="onPageDown">
@@ -522,7 +522,7 @@ Se poate folosi direct orice nume de tastă validă neacoperită prin [`Keyboard
 <input v-on:keyup.13="submit">
 ```
 
-Vue oferă pseudonime pentru cele mai utilizate coduri de taste atunci când este necesar pentru suportul browserului:
+Vue oferă pseudonime pentru cele mai utilizate coduri de taste:
 
 `.enter  
 .tab  
@@ -534,7 +534,7 @@ Vue oferă pseudonime pentru cele mai utilizate coduri de taste atunci când est
 .right  
 .left`
 
-De asemenea, se poate defini o [tastă predefinită](https://vuejs.org/v2/api/#keyCodes) în acest sens prin intermediului obiectului global `config.keyCodes`:
+De asemenea, se poate defini o [tastă predefinită](https://vuejs.org/v2/api/#keyCodes) prin intermediului obiectului global `config.keyCodes`:
 
 ```javascript
 // enable `v-on:keyup.f1`
@@ -543,7 +543,7 @@ Vue.config.keyCodes.f1 = 112
 
 #### Taste modificatoare de sistem
 
-Putem folosi următorii modificatori pentru a declanșa evenimentele de la tastatură sau mouse doar când modificatorii corespunzători sunt apesați:
+Putem folosi următorii modificatori pentru a declanșa evenimentele de la tastatură sau mouse doar când modificatorii corespunzători sunt apăsați:
 
 `.ctrl  
 .alt  
