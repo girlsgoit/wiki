@@ -168,6 +168,33 @@ Pe lângă toate aceste tag-uri care definesc secțiuni specifice ale paginii ma
 </header>
 ```
 
+Tabelele pot aparea dificile la început, dar cu puțină răbdare și practică vei vedea că nu sunt așa cum par. Tagul `<table>` este folosit pentru a deschide un tabel, iar tagul `</table>` închide tabelul. Pentru tabele sunt două taguri tipice `<tr>` \(liniile tabelului\) și `<td>` \(coloanele tabelului\).  Conținutul va fi plasat în interiorul celulelor tabelului. O căsuță este ceea ce se află între `<td>` și `</td>`. Atributul _**border**_ stabilește lățimea marginii tabelului. Iată un exemplu:
+
+```markup
+<table border="1">
+  <tr>
+    <th>Firstname</th> - 
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td> 
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+```
+
 Mă bucur că ai ajuns la sfârșitul acestui articol. Acestea sunt cele 20% din limbajul de marcare HTML, care-ți permit să realizezi 80% din posibilitățile acestui, tot de ce ai nevoie este doar răbdare și curiozitate.
 
 Te invit să vizitezi următoarea secțiune pentru a afla ce-i aia CSS și cum să dai viață paginii tale aplicând noi culori și forme.
