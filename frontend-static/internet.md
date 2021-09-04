@@ -12,7 +12,7 @@ Ceea ce este, în principiu, adevărat dar, deasemenea, o mare parte a internetu
 În mijlocul acestor cabluri se află niște fibre de sticlă extrem de mici, aproximativ de dimensiunea unui fir de păr. Acele fire minuscule sunt internetul. Modul în care lucrează este prin transmiterea fotografiilor, videoclipurilor, paginilor web ca impulsuri de lumină.  
 Deci **lumină + sticlă = internet**.
 
-La moment sunt mai mult de 250 de astfel de cabluri active și chiar au și o [hartă](http://submarine-cable-map-2015.telegeography.com/) intercativă.
+La moment sunt mai mult de 250 de astfel de cabluri active și chiar au și o [hartă](http://submarine-cable-map-2015.telegeography.com/) interactivă.
 
 ## Deci cum accesez o pagină web?
 
@@ -34,7 +34,7 @@ Aceste cereri și răspunsuri au un format foarte asemănător cu cele studiate 
 
 * **User-Agent**: cine cere
 * **Request URL/Remote Address**: de la cine cere / cui i se adresează
-* **Reuest Method**: tipul cererii
+* **Request Method**: tipul cererii
 
 **Răspuns**  
 ![response](../.gitbook/assets/response.jpg)
