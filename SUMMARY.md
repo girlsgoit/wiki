@@ -49,22 +49,22 @@
   * [Rest api PUT](frontend-dinamic/axios/untitled-1.md)
   * [Rest api DELETE](frontend-dinamic/axios/rest-api-delete.md)
 
+## PYTHON
+
+* [Introducere](python/introducere.md)
+* [Python](python/python.md)
+
 ## BACKEND
 
-* [Python](backend/python.md)
+* [Instalare Python](backend/instalare-python.md)
 * [Python OOP](backend/python-oop.md)
 * [Django](backend/django-intro.md)
 * [REST API's](backend/rest-apis.md)
-* [Exerciții](backend/exercitii.md)
-
-## 3D Printing
-
-* [Intro](3d-printing/intro.md)
-* [Fusion 360 Intro](3d-printing/fusion-360-intro.md)
-* [Sketch](3d-printing/sketch.md)
-* [Solid body](3d-printing/solid-body.md)
-* [Arduino](3d-printing/arduino.md)
-* [Final Projects](3d-printing/final-projects.md)
+* [Django REST Framework](backend/django-rest-framework.md)
+* [Exerciții](backend/exercitii/README.md)
+  * [Python OOP](backend/exercitii/python-oop.md)
+  * [Django](backend/exercitii/django.md)
+  * [Django Rest Framework](backend/exercitii/django-rest-framework.md)
 
 ## Data Science
 
@@ -74,6 +74,15 @@
 * [Numpy](data-science/numpy.md)
 * [Pandas](data-science/pandas.md)
 * [DecisionTrees](data-science/modele.md)
+
+## 3D Printing
+
+* [Intro](3d-printing/intro.md)
+* [Fusion 360 Intro](3d-printing/fusion-360-intro.md)
+* [Sketch](3d-printing/sketch.md)
+* [Solid body](3d-printing/solid-body.md)
+* [Arduino](3d-printing/arduino.md)
+* [Final Projects](3d-printing/final-projects.md)
 
 ## ARHIVA
 
