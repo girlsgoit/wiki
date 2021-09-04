@@ -27,7 +27,5 @@ Creează o clasă `Paralelipiped` care moștenește metodele și atributele clas
 Volumul paralelipipedului este de 70
 ```
 
-### Exercițiul 4
-
 
 
