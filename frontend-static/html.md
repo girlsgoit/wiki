@@ -6,7 +6,7 @@ Hai să începem tutorialul prin a arăta paşii simpli pe care îi facem pentru
 
 1. Deschid browser-ul \(ex. FireFox, Chrome, etc.\) 
 2. Scriu în căsuţa de căutare www.meteo.md 
-3. Vizualizez rezultatul căutării mele \(nişte text, imagini etc.\)
+3. Vizualizez rezultatul căutării mele \(text, imagini etc.\)
 
 Pentru a clarifica lucrurile trebuie să înţelegem cât mai simplu ce stă în spatele acestor 3 simpli paşi pe care i-am făcut.
 
