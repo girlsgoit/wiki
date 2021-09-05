@@ -27,5 +27,11 @@ Creează o clasă `Paralelipiped` care moștenește metodele și atributele clas
 Volumul paralelipipedului este de 70
 ```
 
+### Execrații 4
 
+Creează o clasa `Numbers`, care are un singur atribut prestabilit `MULTIPLIER`. Constructorul clasei primește parametrii `x` si `y`, acestea fiind numere.
+
+1. Scrie o metodă `add` care o sa returneze suma atributelor `x` si `y`.
+2. Scrie o metodă `multiply` care primește ca parametru un număr `a` si returnează produsul dintre `a` si `MULTIPLIER`.
+3. Definește o metodă `subtract` care primește ca parametri doua numere `b` si `c` si returnează `b - c`.
 
