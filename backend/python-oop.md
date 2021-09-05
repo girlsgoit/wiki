@@ -512,3 +512,11 @@ Cam atât din cursul introductiv despre programarea orientată pe obiecte în py
 
 Succese vă doresc și pe final vă propun un exercițiu care totalizează cunoștințele pe care le-ai acumulat până aici  🌹
 
+## **Mai departe** 🚀
+
+Pentru a exersa cele învățate, îți recomand să aplici în practică rezolvând exercițiile de mai jos.
+
+{% page-ref page="exercitii/python-oop.md" %}
+
+
+
