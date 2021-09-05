@@ -8,15 +8,17 @@ description: Ce tipuri de date suportă Python?
 
 Variabilele pot stoca diferite tipuri de date.
 
+{% hint style="info" %}
 Python are următoarele tipuri de date încorporate în mod implicit, în aceste categorii:
 
 * Text Type: **`str`**
 * Numeric Types: **`int`, `float`,** `complex`
-* Sequence Types: **`list`**, `tuple`, `range`
+* Sequence Types: `list`, `tuple`, `range`
 * Mapping Type: `dict`
 * Set Types: `set`, `frozenset`
 * Boolean Type: **`bool`**
 * Binary Types: `bytes`, `bytearray`, `memoryview`
+{% endhint %}
 
 ###  S**tring**
 
