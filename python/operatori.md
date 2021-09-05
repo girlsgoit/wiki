@@ -40,7 +40,9 @@ De matematică nu scăpați nici în programare. Partea bună este că programar
 40 % 15
 ```
 
+{% hint style="info" %}
 Semne de comparație vor avea rezultat de tip `bool`
+{% endhint %}
 
 ```python
 # semnul mai mare
