@@ -54,3 +54,8 @@ După ce am efectuat integrarea, urmează sa clonam repozitoriul pe care îl vom
 
 In imaginea de mai sus, apăsăm butonul "Source Control" **\(1\)**, apoi pe butonul "Clone Repository" **\(2\)**. In secțiunea **\(3\)**, e nevoie de introduceți link către repozitoriu pe care îl vom folosi pentru a colabora la proiect. Link-ul dat îl puteți lua din GitHub.
 
+## Resurse
+
+* [Crearea, clonarea si arhivarea repozitoriilor](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories)
+* [Commite modificările tale în proiect](https://docs.github.com/en/github/committing-changes-to-your-project)
+
