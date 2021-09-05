@@ -1,5 +1,5 @@
 ---
-description: Sintaxa Python
+description: Cum scriem în Python?
 ---
 
 # Variabile
@@ -81,7 +81,7 @@ print(name, name)
 # ce s-a intamplat cu numele 'Ilinca'? De ce?
 ```
 
-O variabilă poate avea un nume scurt \(precum x și y\) sau un nume mai descriptiv \(age, name, total\_volume\).
+O variabilă poate avea un nume scurt \(precum `x` și `y`\) sau un nume mai descriptiv \(`age`, `name`, `total_volume`\).
 
 {% hint style="success" %}
  Reguli pentru variabilele Python:
@@ -103,4 +103,12 @@ myvar2 = "John"
 ```
 
 > **Nota bene**: Pentru ca să înțelegeți mai bine conceptul de variabilă, gândiți-vă la constante, adică la opusul variabilelor. O constantă este pur și simplu o valoare care este... constantă, cu alte cuvinte o valoare care nu se modifică, în acest sens, constantele sunt antonimul variabilelor, deoarece valoarea unei variabile se poate modifica pe durata execuției unui program. Constantele au o valoare fixă pe tot parcursul rulării. O constantă arhi-cunoscută este _PI_ care are o valoare fixă și nu și-o poate schimba deloc în timpul execuției.
+
+## Comentarii
+
+Ați observat că am utilizat semnul `#` înaintea unei linii de cod. În această linie de cod eu am dat niște explicații a ceea ce fac eu în program. Semnul `#` semnifică începutul unui comentariu. Un **comentariu** este o linie de cod pe care _Python_ o ignoră. Comentariile sunt utile doar pentru oameni pentru ca să înțeleagă ce fac unele bucăți mai mari și mai complicate de cod.
+
+{% hint style="info" %}
+La ce bun s-au inventat comentariile? Comentariile fac programul vostru mai ușor de înțeles. Când vă uitați la codul pe care l-ați scris cu ceva timp în urmă sau alții doresc să colaboreze cu voi, ei pot citi comentariile și astfel percep foarte repede ce anume face programul vostru.
+{% endhint %}
 
