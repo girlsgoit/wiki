@@ -10,9 +10,18 @@ Termenul de **API** este acronimul de la Application Programing Interface care i
 
 **REST** este un stil de arhitectură pentru sistemele informatice aflate într-o rețea.
 
-
-
 ## RESTful API
+
+Un API REST \(cunoscută și sub numele de RESTful API\) este o interfață de programare a aplicației \(API sau API web\) care se conformează constrângerilor stilului arhitectural REST și permite interacțiunea cu serviciile web RESTful. REST reprezintă transferul reprezentativ al statului și a fost creat de informaticianul Roy Fielding.
+
+Atunci când se executa o cerere de client printr-un API RESTful, acesta transferă o reprezentare a stării resursei către solicitant sau punct final. Aceste informații sau reprezentări sunt livrate într-unul din mai multe formate prin HTTP: JSON \(Javascript Object Notation\), HTML, sau text simplu. **JSON** este formatul de fișier cel mai popular în general, deoarece, în ciuda numelui său, este limbaj-agnostic, precum și lizibil atât de oameni, cât și de mașini.
+
+Altceva de reținut: anteturile\(headers\) și parametrii sunt, de asemenea, importanți în metodele HTTP ale unei cereri HTTP RESTful API, deoarece conțin informații importante de identificare referitoare la metadatele cererii, autorizarea, identificatorul uniform al resurselor \(URI\), cache, cookie-uri și altele. Există anteturi de solicitare și anteturi de răspuns, fiecare cu propriile informații de conexiune HTTP și coduri de stare.Pentru ca un API să fie considerat RESTful, acesta trebuie să respecte aceste criterii:
+
+Pentru ca un API să fie considerat RESTful, acesta trebuie să respecte aceste criterii:
+
+* O arhitectură client-server formată din clienți, servere și resurse, cu cereri gestionate prin HTTP.
+* Comunicare client-server fără păstrarea stării, ceea ce înseamnă că nu sunt stocate informații despre client între solicitări de obținere și fiecare cerere este separată și neconectată.
 
 ## HTTP - Hypertext Transfer Protocol
 
@@ -20,145 +29,36 @@ Termenul de **API** este acronimul de la Application Programing Interface care i
 
 ### Cum funcționează HTTP
 
-HTTP oferă o tehnică de comunicare prin care paginile web se pot transmite de la un computer aflat la distanță spre propriul computer. Dacă se apelează un link sau o adresă de web cum ar fi [http://girlsgoit.org/](http://girlsgoit.org), atunci se cere calculatorului host să afișeze o pagină web \(index.html sau altele\). În prima fază, adresa  www.girlsgoit.org este convertit de protocolul DNS într-o adresă IP. Urmează transferul prin protocolul TCP pe portul standard 80 al serverului HTTP, ca răspuns la cererea HTTP-GET. Informații suplimentare ca de ex. indicații pentru browser, limba dorită ș.a. se pot adăuga în header-ul pachetului HTTP. În urma cererii HTTP-GET urmează din partea serverului răspunsul cu datele cerute, ca de ex.: pagini în HTML, cu fișiere atașate ca imagini, fișiere de stil \(CSS\), scripturi \(Javascript\), dar pot fi și pagini generate dinamic. Dacă dintr-un anumit motiv informațiile nu pot fi transmise, atunci serverul trimite înapoi un mesaj de eroare. Modul exact de desfășurare a acestei acțiuni \(cerere și răspuns\) este stabilit în specificațiile HTTP.
+HTTP oferă o tehnică de comunicare prin care paginile web se pot transmite de la un computer aflat la distanță spre propriul computer. Dacă se apelează un link sau o adresă de web cum ar fi [http://girlsgoit.org/](http://girlsgoit.org), atunci se cere calculatorului host să afișeze o pagină web \(index.html sau altele\). În prima fază, adresa  www.girlsgoit.org este convertit de protocolul DNS într-o adresă IP. Urmează transferul prin protocolul TCP pe portul standard 80 al serverului HTTP, ca răspuns la cererea HTTP-GET. Informații suplimentare ca de ex. indicații pentru browser, limba dorită ș.a. se pot adăuga în header-ul pachetului HTTP. În urma cererii HTTP-GET urmează din partea serverului răspunsul cu datele cerute, ca de ex.: pagini în HTML, cu fișiere atașate ca imagini, fișiere de stil \(CSS\), scripturi \(JavaScript\), dar pot fi și pagini generate dinamic. Dacă dintr-un anumit motiv informațiile nu pot fi transmise, atunci serverul trimite înapoi un mesaj de eroare. Modul exact de desfășurare a acestei acțiuni \(cerere și răspuns\) este stabilit în specificațiile HTTP.
 
 ### Metodele HTTP
 
-Metodele HTTP furnizează operaţiile, cum ar fi crearea citirea, actualizarea şi ştergerea unei resurse din baza de date. În tablelul de mai jos găsiți cele mai utilizate metode folosite:
+Metodele HTTP furnizează operațiile, cum ar fi crearea citirea, actualizarea și ștergerea unei resurse din baza de date. În tabelul de mai jos găsiți cele mai utilizate metode folosite:
 
-|  **Metodă HTTP** | **Descrierea** |
-| :--- | :--- |
-| GET | Extrage o resursă. |
-| POST |  Creează o nouă resursă. |
-| PUT | Actualizează o resursă existentă. |
-| DELETE | Șterge o resursă. |
+|  **Metodă HTTP** | **Descrierea** | Status code |
+| :--- | :--- | :--- |
+| GET | Extrage o resursă. | `200` |
+| POST | Creează o nouă resursă. | `200, 201` |
+| PUT | Actualizează o resursă existentă. | `200, 201` |
+| DELETE | Șterge o resursă. | `200, 204` |
 
 Pentru o listă mai detaliată a metodelor disponibile puteți accesa acest [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
-### Mesaje de eroare HTTP
+### Codurile de răspuns HTTP
 
 Codurile de stare a răspunsului HTTP indică dacă o anumită solicitare HTTP a fost finalizată cu succes. Răspunsurile sunt grupate în cinci clase: 
 
-* 1xx - răspunsuri informaționale
-* 2xx - răspunsuri reușite
-* 3xx - redirecționări
-* 4xx - erori de client
-* 5xx - erori de server
+* 1xx - [răspunsuri informaționale](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses)
+* 2xx - [răspunsuri reușite](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)
+* 3xx - [redirecționări](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#redirection_messages)
+* 4xx - [erori de client](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses)
+* 5xx - [erori de server](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses)
 
 Codurile de stare sunt definite în secțiunea [10 din RFC 2616](https://tools.ietf.org/html/rfc2616#section-10). Adițional, pentru o descriere mai detaliată, puteți accesa următorul [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
-## Django REST
-
-Django REST framework este un set de instrumente puternic și flexibil pentru crearea API-urilor Web.
-
-Pentru a începe a dezolta un REST API folosing Django REST, e nevoie de instalat Django și de configurat proiectul Django astfel încât șa folosim instrumentele oferite de Django REST pentru a crea un API. 
-
-Pentru a ușura procesul de învățăre, vom folosi un proiect exemplu care va consta din un API pentru o aplicație de TODO. În imaginea de mai jos sunt reprezentate endpoint-urile pe care noi le vom crea și metodele HTTP care le vom folosi.
-
-![](../.gitbook/assets/image%20%2899%29.png)
-
-### Configurare proiect
-
-Primul pas pentru crearea unei aplicații web folosind Django, e nevoie să creăm un nou proiect Django rulând următoarea comanda:
-
-{% code title="cmd.exe" %}
-```text
-django-admin.exe startproject todos_api
-```
-{% endcode %}
-
-După care, în interiorul folder-ului creat de Django, todos\_api, rulam comanda de creare a unei aplicații Django:
-
-{% code title="cmd.exe" %}
-```text
-python manage.py startapp todos
-```
-{% endcode %}
-
-Și nu uităm ca să adăugăm aplicația creată în lista `INSTALLED_APPS`  
-
-{% code title="todos\_api/settings.py" %}
-```python
-INSTALLED_APPS = [
-    ...
-    'todos',
-]
-```
-{% endcode %}
-
-Iar pentru că vom folosi Django REST, e nevoie de intalat acest pachet Python folosind `pip`
-
-{% code title="cmd.exe" %}
-```text
-pip install djangorestframework
-```
-{% endcode %}
-
-Apoi, e nevoie de adăugat `django_rest` in lista `INSTALLED_APPS` în proiect.
-
-{% code title="toos\_api/settings.py" %}
-```python
-INSTALLED_APPS = [
-    ...
-    'rest_framework',
-]
-```
-{% endcode %}
-
-Urmatorul pas este să configurăm url-urile pentru proiectul nostru, iar pentru asta e nevoie de adăugat url-urile care urmează să le definim în aplicația noastră în proiect. Pentru asta, ne asigurăm că fișierul `urls.py` conține urmatorele informații:
-
-{% code title="todos\_api/urls.py" %}
-```python
-from django.contrib import admin
-from django.urls import path, include
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('todos.urls')),
-]
-```
-{% endcode %}
-
-Totodată, nu uităm să creăm fișierul `urls.py` în aplicația noastră cu următoarele linii de cod:
-
-{% code title="todos/urls.py" %}
-```python
-from django.urls import path
-
-urlpatterns = [
-]
-```
-{% endcode %}
-
-Ca ultim pas, rulăm comanda de aplicare a migrărilor în baza de date folosind:
-
-{% code title="cmd.exe" %}
-```text
-python manage.py migrate
-```
-{% endcode %}
-
-Felicitări, am finalizat configurarea inițială a proiectului nostru. Pentru a ne asigura că totul funcționează corect, încercăm să pornim un server de test pe calculatorul nostru.
-
-{% code title="cmd.exe" %}
-```text
-python manage.py runserver
-```
-{% endcode %}
-
-Iar dacă totul a rulat bine, în terminal ar trebui să vedem:
-
-{% code title="cmd.exe" %}
-```text
-Performing system checks...
-
-System check identified no issues (0 silenced).
-July 17, 2018 - 13:50:38
-Django version 2.0.7, using settings 'todos_api.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-```
-{% endcode %}
 
 
+## Resurse
+
+* [What is a REST API?](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
 
