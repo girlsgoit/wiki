@@ -2,156 +2,39 @@
 description: introducere despre Github şi comenzile de bază
 ---
 
-# Github
+# GitHub
 
-## Ce este Github și pentru ce se utilizează
+## Ce este GitHub și pentru ce se utilizează?
 
 Ți s-a întâmplat vreodată să vrei să te întorci la o versiune anterioară a codului? Poate ai vrut să repari ceva și de fapt ai stricat mai tare proiectul, sau poate ai lucrat cu cineva în echipă și a șters codul tău?
 
-Imaginează-ți că există un așa sistem, care îți permite să salvezi diferite versiuni ale codului și să revii la versiuni anterioare, simplificând în același timp și procesul de programare în echipă. Fiecare persoană lucrează separat pe calculatorul personal, iar codul se salvează online, și vă permite să vedeți modificările făcute de fiecare, să reveniți la versiunile anterioare și să aveți asigurarea că proiectul vostru va fi salvat online, chiar dacă se strică calculatoarele personale. Ar fi super, așa-i?
+Imaginează-ți că există un așa sistem, care îți permite să salvezi diferite versiuni ale codului și să revii la versiuni anterioare, simplificând în același timp și procesul de programare în echipă. Fiecare persoană lucrează separat pe calculatorul personal, iar codul se salvează online, și vă permite să vedeți modificările făcute de fiecare, să reveniți la versiunile anterioare și să aveți asigurarea că proiectul vostru va fi salvat online, chiar dacă se defectează calculatoarele personale. Ar fi super, așa-i?
 
-Ei bine, așa sisteme există, iar unul dintre ele este _**Github**_.
+Ei bine, așa sisteme există, iar unul dintre ele este GitHub.
 
-### Cum facem un cont pe Github
+## Cum facem un cont pe GitHub?
 
-Foarte simplu, intrăm pe [https://github.com/](https://github.com/) și apăsăm butonul verde _**Sign up for Github**_, după care completăm toate câmpurile necesare.
+Foarte simplu, intrăm pe [https://github.com/](https://github.com/) și apăsăm butonul verde "**Sign up for GitHub".**
 
-![](../.gitbook/assets/screenshot-from-2021-08-06-10-23-32.png)
+![](../.gitbook/assets/screenshot-2021-09-05-at-12.31.28.png)
 
-### Cum creăm un repozitoriu online pe Github
+Completam toate câmpurile necesare pentru a ne înregistra.
 
-Vom intra pe github.com, ne vom loga cu utilizatorul creat, și în partea dreaptă a paginii vom găsi butonul + \(plus\), după care vom selecta prima opțiune - _**New repository**_
+![](../.gitbook/assets/screenshot-2021-09-05-at-12.32.54.png)
 
-![](../.gitbook/assets/screenshot-from-2021-08-06-10-44-07.png)
+În final, verificăm adresa de email pentru a confirma crearea contului GitHub.
 
-după care vom completa toate câmpurile necesare:
+Felicitări 🎉, acum faci parte din cea mai mare rețea de socializare pentru programatori 🤓
 
-![](../.gitbook/assets/screenshot-from-2021-08-06-10-47-15.png)
+## Terminologie 
 
-### Giithub+VSCode
+Înainte de a începe aș vrea să definim câteva concepte ce vor apărea destul de frecvent în această serie:
 
-În Visual Studio Code avem un tab special pentru Github, încercuit cu roșu în imaginea de mai jos:
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00_3.png)
-
-{% hint style="info" %}
-Dacă nu aveţi git instalat deja pe calculator, este nevoie de instalat Git separat de pe link-ul [https://git-scm.com/](https://git-scm.com/). În unele cazuri, Visual Studio Code vă poate recomanda un link către website-ul git-scm.
-{% endhint %}
-
-### 
-
-### Cum iniţializăm un proiect de pe calculatorul personal cu Github
-
-```
-echo "#Nume proiect" >> README.md
-git init .
-git add README.md
-git commit -m "first commit"
-
-git branch -M main
-git remote add origin git@github.com:mdiannna/NumeRepo.git
-git push -u origin main
-```
-
-#### DIn VSCode:
-
-Pentru a iniţializa Github din VSCode, vom deschide folderul proiectului, şi în tabul pentru Github vom apăsa butonul _**Initialize Repository:**_
-
-![](../.gitbook/assets/screenshot-from-2021-08-07-10-42-42.png)
-
-După aceasta, vom selecta din meniu opțiunea _**... &gt; Remote &gt; Add remote...:**_
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-18-51-13.png)
-
-După care vom scrie în căsuța de search numele repozitoriului creat pe Github \(de pe site-ul github.com\)
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-18-45-00.png)
-
-### Comenzi pentru a salva codul online pe Github
-
-#### 1. git add
-
-Prima comandă o vom folosi ca să selectăm ce fișiere vrem să fie trimise pe Github online în versiunea curentă.
-
-Dacă am modificat un singur fișier:
-
-```text
-git add <numefisier>
-```
-
-sau dacă am modificat mai multe fișiere și vrem să le salvăm pe toate:
-
-```text
-git add .
-```
-
-Atunci când lucrăm cu VSCode, comanda _**add**_ pentru un singur fișier se face accesând butonul "+" de lângă numele fișierelor apărute în Changes, ca în imaginea de mai jos.
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-19-32-33.png)
-
-Pentru a adăuga toate fișierele în versiunea ce va fi trimisă pe Github, vom accesa meniul _**... &gt; Changes &gt; Stage all changes**_, ca în imaginea de mai jos:
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-19-36-31.png)
-
-#### 2. git commit
-
-prima modalitate de a face commit este din terminal, scriind comanda:
-
-```text
-git commit -m "un mesaj scurt cu descrierea modificărilor"
-```
-
-SAU, pentru a face commit din VSCode, in partea stângă vom vedea o casetă de text si mai jos la "Changes" fișierele care au fost modificate. E necesar să scriem mesajul pentru commit în caseta respectivă, și apoi să apăsăm butonul bifă-
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-19-21-45.png)
-
-#### 3. git push
-
-```text
-git push origin main
-```
-
-{% hint style="info" %}
-În unele cazuri vom scrie _**master**_ în loc de _**main**_
-{% endhint %}
-
-{% hint style="warning" %}
-Dacă lucrăm pe alt branch decât main, vom scrie numele branch-ului pe care lucrăm în loc de main
-{% endhint %}
-
-Alternativ, din VSCode:
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-19-26-40.png)
-
-{% hint style="warning" %}
-Atenţie! Dacă nu merge opţiunea Push, atunci încercaţi opţiunea de mai jos _**Pull, Push &gt; Push to...**_ după care selectaţi linkul respectiv
-{% endhint %}
-
-### Comenzi pentru a descărca ultimele modificări pe calculatorul personal
-
-```text
-git pull origin main
-```
-
-{% hint style="warning" %}
-Dacă lucrăm pe alt branch decât main, vom scrie numele branch-ului pe care lucrăm în loc de main
-{% endhint %}
-
-Alternativ, din VSCode:
-
-![](../.gitbook/assets/screenshot-from-2021-08-06-19-26-42.png)
-
-{% hint style="warning" %}
-Dacă nu merge opţiunea _**Pull**,_ încercaţi opţiunea _**Pull, Push &gt; Pull from ...**_ şi selectaţi link-ul către repozitoriul github din meniu
-{% endhint %}
-
-### Github Cheatsheets
-
-![](../.gitbook/assets/git_cheatsheet3.jpg)
-
-{% hint style="success" %}
- Github de fapt oferă mai multe posibilităţi şi are mai multe comenzi, însă în acest tutorial am prezentat doar funcţionalităţile de bază, cu care vom lucra la proiecte. Dacă vrei să afli mai multe, google it! :\)
-{% endhint %}
+* **Repository**: este un spațiu de stocare pentru proiectul vostru care conține atât codul în sine cât și istoricul modificărilor și ramificațiile acestuia \(branch-uri\).
+* **Branch**: versiunile de cod pot fi împărțite pe ramuri. Fiecare ramură va avea o copie a codului din momentul creării acesteia, iar toate modificările vor fi făcute asupra acestei copii până considerăm că este pregătită să fie inclusă din nou în ramura principală. Orice repository va avea cel puțin un branch \(o ramură\) numit prin convenție `main`.
+* **Commit**: odată ce considerăm că modificările noastre sunt finale, putem crea un commit care să le conțină. Un commit va conține codul modificat și va putea fi accesat printr-un identificator unic \(_hash_\). Un repository va avea o înlănțuire de astfel de commituri care împreună vor forma un _istoric al modificărilor_.
+* **Push**: în Git, un commit odată creat este păstrat local. Pentru ca restul echipei să vadă modificările aduse de commitul nostru, trebuie să _împingem_ \(push\) acele modificări către sistemul central.
+* **Pull**: dacă un membru al echipei a efectuat o modificare asupra codului printr-un commit împins în sistemul central, noi nu vom avea acea modificare în copia noastră locală. Astfel, înainte de a ne împinge propriile modificări către serverul central, trebuie ca mai întâi să _tragem_ \(_pull_\) toate commit-urile apărute cât timp lucram la funcționalitatea noastră. În acest mod ne asigurăm că atunci când împingem propriul commit, vom include în acesta atât modificările noastre cât și ale echipei.
 
 
 

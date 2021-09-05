@@ -9,7 +9,7 @@
 * [CodeSandbox](unelte/codesandbox/README.md)
   * [Cum rezolvi un task la proiect](unelte/codesandbox/cum-rezolvi-un-task-la-proiect.md)
   * [Cum rezolvi un exercițiu](unelte/codesandbox/cum-rezolvi-un-exercitiu.md)
-* [Github](unelte/github.md)
+* [GitHub](unelte/github.md)
 
 ## FRONTEND STATIC
 
