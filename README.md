@@ -1,8 +1,8 @@
-# Introduction
+# Introducere
 
-## Welcome to GirlsGoIT Wiki 🌷
+## Bun venit pe GirlsGoIT Wiki 🌷
 
-![](.gitbook/assets/index.png)
+![](.gitbook/assets/logo.png)
 
 
 
