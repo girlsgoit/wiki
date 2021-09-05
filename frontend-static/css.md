@@ -507,6 +507,22 @@ p:nth-child(even) {
 
 Pentru demo click [**aici**](https://jsfiddle.net/kkr0vu9r/)
 
+## FlexBox
+
+Are scopul de a oferi un **mod mai eficient** pentru realizarea layout-urilor web, **de a alinia și distribui spațiul între elemente înăuntrul unui container** chiar și atunci când dimensiunea nu este cunoscută sau este dinamică. Flexbox ne simplifică foarte mult munca pentru că gestionează în mod automat float-urile și înălțimea elementelor.
+
+Container-ul setat pe **display: flex** face ca elementele child să aibă aceeași înălțime ca și valoare predefinită.
+
+Nu este nevoie să specificăm altceva pentru a obține elemente child de aceeași înălțime. Asta pentru că de default proprietatea **align-items** este setată pe valoarea **baseline**, ceea ce înseamnă că elementele child iau înălțimea maximă în interiorul părintelui.
+
+În flexbox ajunge să setăm container-ului **direcția de coloană** și sî **centrăm elementele pe axa principală și transversală**:  
+_`display: flex;  
+flex-direction: column;  
+justify-content: center;  
+align-items: center;`_
+
+
+
 ## Tranzițtii CSS
 
 Tranzițiile CSS oferă programatorului un mod de a controla viteza de animare atunci cînd sunt schimbate proprietățile CSS ale elementelor HTML. Pentru a utiliza tranzițiile, este nevoie de a specifica două lucruri:
