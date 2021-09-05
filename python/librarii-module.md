@@ -1,4 +1,4 @@
-# Librarii, module
+# Librării, module
 
 ## Ce este un modul?
 
