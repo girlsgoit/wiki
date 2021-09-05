@@ -97,3 +97,29 @@ print('Aceasta ' + 'este' + ' o' + ' propozitie')
 print('b ' * 5)
 ```
 
+### **Formatarea `string`-urilor**
+
+Dacă vreți să afișați o variabilă cu un `string`, să știți că există o metodă mai bună decât concatenarea.
+
+```python
+nume = "Mihai"
+print("Salut, %s" % (nume))
+```
+
+Operatorul `%` scris după un `string` este folosit pentru a combina `string`-urile cu variabilele. Operatorul `%` înlocuiește toate `%s` din `string` cu variabilele scrise după acesta.
+
+Ce credeți că se va afișa în urma executării acestui program?
+
+```python
+str_1 = "Norvegia"
+str_2 = "tara"
+print("Haidem in %s. Este o %s frumoasa." % (str_1, str_2))
+```
+
+Cred că deja ați intuit că numărul operatorilor `%` dintr-un `string` trebuie să fie egal cu numărul variabilelor dintre paranteze.
+
+```python
+print("%s viitoare se va %s %s!" % ("Luna", "numi", "septembrie"))
+# se va afisa "Luna viitoare se va numi septembrie".
+```
+

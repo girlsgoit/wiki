@@ -44,6 +44,19 @@ print(type(x))
 print(type(y))
 ```
 
+ Un `string` poate conține litere, numere, simboluri și spații. Ele trebuie să fie scrise între ghilimele.
+
+```python
+nume = "Mihai"
+hobby = 'iubeste limbajul Python'
+```
+
+Observați că în ultimul exemplu, `'iubeste limbajul Python'` nu este scris între ghilimele duble. Aceasta nu este o problemă.
+
+{% hint style="info" %}
+_Python_ acceptă și _ghilimele duble_, și _ghilimele unice_ ca fel de scriere a `string`-urilor.
+{% endhint %}
+
 ###  **Integer**
 
 `Int`, sau un număr întreg, este un număr întreg, pozitiv sau negativ, fără zecimale, de lungime nelimitată.
