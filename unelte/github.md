@@ -54,6 +54,72 @@ După ce am efectuat integrarea, urmează sa clonam repozitoriul pe care îl vom
 
 In imaginea de mai sus, apăsăm butonul "Source Control" **\(1\)**, apoi pe butonul "Clone Repository" **\(2\)**. In secțiunea **\(3\)**, e nevoie de introduceți link către repozitoriu pe care îl vom folosi pentru a colabora la proiect. Link-ul dat îl puteți lua din GitHub.
 
+## Cum cream un repozitoriu pe GitHub?
+
+În colțul din dreapta sus al oricărei pagini, utilizați meniul derulant și selectați **New repository**.
+
+![](../.gitbook/assets/image%20%28360%29.png)
+
+Definiți un nume pentru depozitul dvs. și o descriere opțională.
+
+![](../.gitbook/assets/image%20%28361%29.png)
+
+Alegeți o vizibilitate a repozitoriului. Pentru mai multe informații, consultați [„](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility)[About repository visibility](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility)[”](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility).
+
+![](../.gitbook/assets/image%20%28358%29.png)
+
+Click **Create repository**.
+
+![](../.gitbook/assets/image%20%28359%29.png)
+
+##  Cum clonam un repozitoriu?
+
+O dată ce am creat un repozitoriu pe GitHub, numit `hello-world` urmează sa îl clonam pe calculatorul personal folosind VSCode.
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.00.26%20%281%29.png)
+
+In imaginea de mai sus, apăsăm butonul "Source Control" **\(1\)**, apoi pe butonul "Clone Repository" **\(2\)**. In secțiunea **\(3\)**, e nevoie de introduceți link către repozitoriu pe care l-ai creat mai devreme. Link-ul dat îl puteți lua din GitHub.
+
+O dată ce VSCode a clonat repozitoriul, apăsam butonul "Open" pentru a deschide repozitoriul. Momentan, repozitoriul nostru este gol.
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.50.23.png)
+
+## Cum facem commit la modificările personale?
+
+Haide sa adaugăm un fișier in repozitoriul nostru, care, momentan este gol.
+
+Cream un fișier nou **\(1\)** si ii setam numele "README.md" **\(2\)**, apoi apăsam tasta "Enter".
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.50.42.png)
+
+Deschidem fișierul nou creat si adaugăm ceva text in el. 
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.50.53.png)
+
+Nu uitam sa salvam fișierul nou creat folosind meniul `File -> Save`, sau, shortcut-ul `Ctrl + S`
+
+O dată ce am creat fișierul, hai sa facem un commit si sa îl facem public pe GitHub.
+
+Mergem in secțiunea "Source Control" **\(1\)**, iar apoi, facem "stage" **\(2\)** la modificările făcute. „Stage" înseamna ca urmează sa facem un commit.
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.51.03.png)
+
+Pentru ca dorim sa facem un commit, e nevoie sa definim ce modificări conține acel commit. Hai sa facem asta. 
+
+In caseta de text **\(1\)** introducem mesajul dorit. Iar apoi, apăsam butonul bifa **\(2\)**.
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.51.13.png)
+
+O dată ce am făcut acest commit, hai sa facem si "Push" pe GitHub. Apăsam "···" **\(1\)** iar apoi selectam "Push" **\(2\)**.
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.53.14.png)
+
+Hai sa verificam daca modificările noastre sunt publice pe GitHub. Mergem in browser, accesam [http://github.com/ ](http://github.com/%20)si verificam in contul personal, repozitoriul creat de noi "hello-world". Ar trebui sa vezi aproximativ așa:
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-14.14.22.png)
+
+Felicitări 🎉, acum cunoști cum sa colaborezi cu alți programatori folosind `git` si GitHub.
+
 ## Resurse
 
 * [Crearea, clonarea si arhivarea repozitoriilor](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories)
