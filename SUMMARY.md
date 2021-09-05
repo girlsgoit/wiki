@@ -52,6 +52,7 @@
 ## PYTHON
 
 * [Introducere](python/introducere.md)
+* [Variabile](python/variabile.md)
 * [Tipuri de Date](python/tipuri-de-date.md)
 * [Operatori](python/operatori.md)
 * [Flow control](python/flow-control.md)
