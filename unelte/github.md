@@ -36,5 +36,21 @@ Felicitări 🎉, acum faci parte din cea mai mare rețea de socializare pentru 
 * **Push**: în Git, un commit odată creat este păstrat local. Pentru ca restul echipei să vadă modificările aduse de commitul nostru, trebuie să _împingem_ \(push\) acele modificări către sistemul central.
 * **Pull**: dacă un membru al echipei a efectuat o modificare asupra codului printr-un commit împins în sistemul central, noi nu vom avea acea modificare în copia noastră locală. Astfel, înainte de a ne împinge propriile modificări către serverul central, trebuie ca mai întâi să _tragem_ \(_pull_\) toate commit-urile apărute cât timp lucram la funcționalitatea noastră. În acest mod ne asigurăm că atunci când împingem propriul commit, vom include în acesta atât modificările noastre cât și ale echipei.
 
+## GitHub + Visual Studio Code
 
+Următorul pas este sa deschidem editorul nostru de cod, Visual Studio Code. In cazul in care nu îl ai instalat, vezi tutorialul de [aici](visual-studio-code.md).
+
+Deschidem Visual Studio Code\(VSCode\) si folosim contul nostru de GitHub pentru a integra VSCode cu GitHub.
+
+Apăsăm pe butonul "omuleț" si selectam "**Sign in to Sync Settings**"
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.19.46.png)
+
+O sa fim redirecționați in browser, pentru a integra contul GitHub cu VSCode. 
+
+Dupa ce am efectuat integrarea, urmeaza sa clonam repozitoriul pe care il vom folosi pe tot parcursul evenimentului.
+
+![](../.gitbook/assets/screenshot-2021-09-05-at-13.00.26.png)
+
+In imaginea de mai sus, apăsăm butonul "Source Control" **\(1\)**, apoi pe butonul "Clone Repository" **\(2\)**. In secțiunea **\(3\)**, e nevoie de introduceți link către repozitoriu pe care îl vom folosi pentru a colabora la proiect. Link-ul dat îl puteți lua din GitHub.
 
