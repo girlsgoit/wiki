@@ -521,7 +521,52 @@ flex-direction: column;
 justify-content: center;  
 align-items: center;`_
 
+`flex-direction` proprietate specifică direcția elementelor flexibile din interiorul containerului flexibil. Valoarea implicită a `flex-direction` este `row` \( de la stânga la dreapta, de sus în jos\).
 
+Celelalte valori sunt după cum urmează:
+
+* `row-reverse` - În cazul în scris-mode \(direction\) este la stânga la dreapta, elementele flex vor fi dispuse la dreapta la stânga
+* `column` - În cazul în care sistemul de scriere este orizontală, elementele flex vor fi dispuse vertical
+* `column-reverse` - La fel ca și coloană, dar inversat
+
+`justify-content` de proprietate aliniază orizontal elemente containerul flexibil atunci când elementele nu folosesc tot spațiul disponibil pe principala axa.
+
+Valorile posibile sunt după cum urmează:
+
+* `flex-start` - valoarea implicită. Elementele sunt poziționate la începutul containerului
+* `flex-end` - Elementele sunt poziționate la capătul containerului
+* `center` - Elementele sunt poziționate în centrul containerului
+* `space-between` - Elementele sunt poziționate cu spațiul dintre liniile
+* `space-around` în `space-around` de - Elementele sunt poziționate cu spațiu înainte, între și după liniile
+
+`align-items` proprietatea aliniază vertical elemente containerul flexibil atunci când elementele nu folosesc tot spațiul disponibil pe axa transversală.
+
+Valorile posibile sunt după cum urmează:
+
+* `stretch` - valoarea implicită. Elementele sunt întinse pentru a se potrivi containerului
+* `flex-start` - Elementele sunt poziționate în partea superioară a containerului
+* `flex-end` - Elementele sunt poziționate în partea inferioară a recipientului
+* `center` - Elementele sunt poziționate în centrul containerului \(vertically\)
+* de `baseline` - Elementele sunt poziționate la linia de bază a containerului
+
+`flex-wrap` proprietate specifică dacă elementele flex ar trebui să înveliți sau nu, în cazul în care nu există spațiu suficient pentru ei pe o singură linie flex.
+
+Valorile posibile sunt după cum urmează:
+
+* `nowrap` - Valoare implicită. Elementele flexibile nu vor încheia
+* `wrap` - Elementele flexibile vor încheia , dacă este necesar
+* `wrap-reverse` - Elementele flexibile se vor încheia, dacă este necesar, în ordine inversă
+
+`align-content` de proprietate modifică comportamentul `flex-wrap` proprietate. Este similar cu `align-items` , dar în loc de aliniere elemente flex, se aliniază liniile de flex.
+
+Valorile posibile sunt după cum urmează:
+
+* `stretch` - valoarea implicită. Liniile se întind pentru a prelua spațiul rămas
+* `flex-start` - Liniile sunt ambalate spre începutul containerului flexibil
+* `flex-end` - Liniile sunt ambalate spre capătul containerului flexibil
+* `center` - Liniile sunt ambalate spre centrul containerului flexibil
+* `space-between` - Liniile sunt distribuite uniform în container flexibil
+* `space-around` în `space-around` - Liniile sunt distribuite uniform în container flexibil, cu spații de jumătate de dimensiune la fiecare capăt
 
 ## Tranzițtii CSS
 
