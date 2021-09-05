@@ -568,6 +568,8 @@ Valorile posibile sunt după cum urmează:
 * `space-between` - Liniile sunt distribuite uniform în container flexibil
 * `space-around` în `space-around` - Liniile sunt distribuite uniform în container flexibil, cu spații de jumătate de dimensiune la fiecare capăt
 
+Pentru a exersa, click pe acest [link](https://flexboxfroggy.com/).
+
 ## Tranzițtii CSS
 
 Tranzițiile CSS oferă programatorului un mod de a controla viteza de animare atunci cînd sunt schimbate proprietățile CSS ale elementelor HTML. Pentru a utiliza tranzițiile, este nevoie de a specifica două lucruri:
