@@ -48,7 +48,7 @@ Apăsăm pe butonul "omuleț" si selectam "**Sign in to Sync Settings**"
 
 O sa fim redirecționați in browser, pentru a integra contul GitHub cu VSCode. 
 
-Dupa ce am efectuat integrarea, urmeaza sa clonam repozitoriul pe care il vom folosi pe tot parcursul evenimentului.
+După ce am efectuat integrarea, urmează sa clonam repozitoriul pe care îl vom folosi pe tot parcursul evenimentului.
 
 ![](../.gitbook/assets/screenshot-2021-09-05-at-13.00.26.png)
 
