@@ -134,3 +134,46 @@ Pentru a deplasa o linie de cod spre dreapta la distanța cerută de Python, uti
 
  Sa vedem care e structura **condiționalului if**
 
+![](../.gitbook/assets/c1_3.png)
+
+{% hint style="success" %}
+Când folosim `else`?
+
+Când avem doar 2 opțiuni.
+{% endhint %}
+
+De exemplu vrem să ne logăm pe pagina noastră de Facebook și trebuie să ne introducem numele. În spatele acestei funcționalități se află un `if` care verifică dacă numele pe care l-am introdus se află în sistemul Facebook-ului sau nu.
+
+```python
+# Hai sa improvizam aici un astfel de algoritm
+in_facebook_system_name = 'Anna'
+my_name = 'Ana'
+
+if my_name == in_facebook_system_name:
+    print('Numele este corect')
+else:
+    print('Numele este gresit')
+```
+
+{% hint style="success" %}
+Dar dacă avem mai mult de 2 opțiuni?
+
+Atunci folosim `elif` care e defapt e `else + if`.
+{% endhint %}
+
+```python
+# vrem sa stim cat de accesibil este pretul unei inghetate pentru bugetul nostru
+ice_cream_price = 50
+accessibility = ''
+
+if ice_cream_price == 0:
+    accessibility = 'Gratuit'
+elif ice_cream_price <= 10:
+    accessibility = 'Mediu'
+else:
+    accessibility = 'Scump'
+ 
+
+print(accessibility) # observati ca print() se afla in afara if-ului
+```
+
