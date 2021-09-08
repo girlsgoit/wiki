@@ -95,7 +95,7 @@ De exemplu, `True or not False and False` returnează `True`. De ce?
 
 `not` este evaluat primul, astfel noi avem `True or True and False`. Deoarece `and`-ul e următorul evaluat, avem `True or False`. Așa după cum am văzut mai sus, `True or False` este `True`, astfel valoarea finală este `True`!
 
-### **Sintaxa condiționalelor**
+## **Sintaxa condiționalelor**
 
 Dacă tot am învățat mai devreme cum să comparăm datele între ele, acum putem să punem și condiții.
 
