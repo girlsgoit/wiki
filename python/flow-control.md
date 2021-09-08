@@ -86,16 +86,51 @@ Dar care vor fi rezultatele următoarelor expresii? `1 < 2 and 2 > 3` \(_False_\
 {% hint style="warning" %}
 Operațiile `boolean` nu sunt pur și simplu evaluate de la stânga la dreapta. La fel ca operațiile aritmetice, operațiile `boolean` au o ordine de execuție:
 
-* `and`, care verifică dacă _ambele_ afirmații sunt `True`;
-* `or`, care verifică dacă _cel puțin_ o afirmație este `True`;
-* `not`, care este _opusul_ afirmației.
+1. `not` este evaluat primul;
+2. `and` este evaluat al doilea;
+3. `or` este evaluat ultimul.
 {% endhint %}
 
 De exemplu, `True or not False and False` returnează `True`. De ce?
 
 `not` este evaluat primul, astfel noi avem `True or True and False`. Deoarece `and`-ul e următorul evaluat, avem `True or False`. Așa după cum am văzut mai sus, `True or False` este `True`, astfel valoarea finală este `True`!
 
-### 
+### **Sintaxa condiționalelor**
 
+Dacă tot am învățat mai devreme cum să comparăm datele între ele, acum putem să punem și condiții.
 
+Condiția `if` este considerată cea mai simplă dintre cele trei și ia o decizie în funcție dacă condiția e adevărată sau nu. Dacă condiția este adevărată, imprimă expresia indentată. Dacă condiția este falsă, omite imprimarea expresiei indentate. 
+
+```python
+if 100 == 100:          # specificam conditia, si ne amintim sa punem ':'
+    print("I'm happy!")   # toate instructiunile care urmeaza dupa ':'  
+                        # trebuie sa fie indentate!!!
+                        # daca conditia este adevarata, executam instructiunea
+```
+
+❗ Este foarte important să **indentăm** corect codul când folosim conditionalul if.
+
+In caz contrar vom obține eroarea de mai jos.
+
+```python
+# de ce avem eroare?
+if 100 == 150:         
+print("I'm happy!")
+```
+
+Dar ce înseamnă indentare?
+
+{% hint style="info" %}
+**Indentarea** se referă la spațiile de la începutul unei linii de cod.
+{% endhint %}
+
+În cazul în care în alte limbaje de programare indentarea în cod este doar pentru lizibilitate, indentarea în Python este foarte importantă.
+
+Python folosește indentare pentru a indica un bloc de cod.
+
+Pentru a deplasa o linie de cod spre dreapta la distanța cerută de Python, utilizăm tasta `tab`
+
+![](../.gitbook/assets/c1_2.png)
+
+ Sa vedem care e structura **condiționalului if**
 
