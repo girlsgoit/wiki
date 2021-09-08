@@ -20,9 +20,41 @@ Pentru a intra în esența conceptului de Control Flow, trebuie să definim cât
 
 Operațiile `boolean` compară careva afirmații, rezultatul acestei comparații fiind o valoare `boolean`. Există trei operații `boolean`:
 
-* `and`, care verifică dacă _ambele_ afirmații sunt `True`;
-* `or`, care verifică dacă _cel puțin_ o afirmație este `True`;
-* `not`, care este _opusul_ afirmației.
+### `and`
+
+And verifică dacă _ambele_ afirmații sunt `True`. 
+
+{% hint style="info" %}
+_De exemplu:_ 
+
+Eu voi cumpăra pâine: 
+
+1. Dacă voi avea bani  **ȘI \(AND\)**  2. Dacă va fi pâine la magazin
+{% endhint %}
+
+### `or`
+
+Or verifică dacă _cel puțin_ o afirmație este `True`.
+
+{% hint style="info" %}
+_De exemplu:_ 
+
+Eu voi fi fericit/fericită:
+
+1. Dacă se termina pandemia    **SAU \(OR\)**  2. Dacă mă vaccinez
+{% endhint %}
+
+### `not`
+
+Not este _opusul_ afirmației.
+
+{% hint style="info" %}
+_De exemplu:_ 
+
+Eu voi sta acasă dacă:
+
+ **NU \(NOT\)**  se deschide școala
+{% endhint %}
 
 În acest context, aflați că:
 
@@ -62,4 +94,8 @@ Operațiile `boolean` nu sunt pur și simplu evaluate de la stânga la dreapta. 
 De exemplu, `True or not False and False` returnează `True`. De ce?
 
 `not` este evaluat primul, astfel noi avem `True or True and False`. Deoarece `and`-ul e următorul evaluat, avem `True or False`. Așa după cum am văzut mai sus, `True or False` este `True`, astfel valoarea finală este `True`!
+
+### 
+
+
 

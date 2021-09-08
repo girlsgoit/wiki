@@ -22,7 +22,9 @@ Python are următoarele tipuri de date încorporate în mod implicit, în aceste
 
 ###  S**tring**
 
-`Str` este un șir de caractere \(un text\)
+`Str` este un șir de caractere \(un text\).
+
+ Un `string` poate conține litere, numere, simboluri și spații. Ele trebuie să fie scrise între ghilimele.
 
 ```python
 #poate fi orice caracter in " "
@@ -34,7 +36,7 @@ Deși înca nu am învățat ce sunt funcțiile, noi deja le folosim.
 
 > `type()` - funcție care ne spune ce tip de date conține variabila data.
 
-`print()` la fel e o funcție
+`print()` la fel e o funcție.
 
 ```python
 # haideti sa ne convingem 
@@ -42,13 +44,6 @@ Deși înca nu am învățat ce sunt funcțiile, noi deja le folosim.
 
 print(type(x))
 print(type(y))
-```
-
- Un `string` poate conține litere, numere, simboluri și spații. Ele trebuie să fie scrise între ghilimele.
-
-```python
-nume = "Mihai"
-hobby = 'iubeste limbajul Python'
 ```
 
 Observați că în ultimul exemplu, `'iubeste limbajul Python'` nu este scris între ghilimele duble. Aceasta nu este o problemă.
