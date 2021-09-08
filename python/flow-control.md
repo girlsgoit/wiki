@@ -16,7 +16,7 @@ Pentru a intra în esența conceptului de Control Flow, trebuie să definim cât
 [Operatori de comparatie](operatori.md#comparatoarele) au un rol major in conceptul de Control Flow.
 {% endhint %}
 
-### **Operațiile Boolean**
+## **Operațiile Boolean**
 
 Operațiile `boolean` compară careva afirmații, rezultatul acestei comparații fiind o valoare `boolean`. Există trei operații `boolean`:
 
