@@ -40,6 +40,8 @@ De matematică nu scăpați nici în programare. Partea bună este că programar
 40 % 15
 ```
 
+### Comparatoarele
+
 {% hint style="info" %}
 Semne de comparație vor avea rezultat de tip `bool`
 {% endhint %}
@@ -54,6 +56,10 @@ print(25 <= 25)
 # semnul mai mare sau egal
 print(10 >= 5)
 ```
+
+{% hint style="success" %}
+**Atrageți atenția că `==` compară dacă două lucruri sunt egale, pe când `=` atribuie o valoare unei variabile.**
+{% endhint %}
 
 ```python
 # check la egalitate
