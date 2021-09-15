@@ -191,7 +191,7 @@ Clasa datetime.datetime\(\) este cea mai utilizată din modulul datetime. Mai jo
 
 `datetime.datetime(year, month, day, hour = 0, minute = 0, second = 0)`
 
-Argumentele obligatorii sunt year, month, day, iar argumentele hour, minute, second sunt opționale.
+Argumentele **obligatorii** sunt _year, month, day_, iar argumentele _hour, minute, second_ sunt **opționale**.
 
 ```text
 # instanțiem un obiect al clasei datetime 
