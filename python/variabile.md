@@ -112,3 +112,5 @@ Ați observat că am utilizat semnul `#` înaintea unei linii de cod. În aceast
 La ce bun s-au inventat comentariile? Comentariile fac programul vostru mai ușor de înțeles. Când vă uitați la codul pe care l-ați scris cu ceva timp în urmă sau alții doresc să colaboreze cu voi, ei pot citi comentariile și astfel percep foarte repede ce anume face programul vostru.
 {% endhint %}
 
+> **Învățarea despre variabile e un timp fabulos, dar mai fabulos e timpul petrecut cu numere si cifre**☝ -_Tania the motivator™_
+

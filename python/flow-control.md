@@ -108,7 +108,9 @@ if 100 == 100:          # specificam conditia, si ne amintim sa punem ':'
                         # daca conditia este adevarata, executam instructiunea
 ```
 
-❗ Este foarte important să **indentăm** corect codul când folosim conditionalul if.
+{% hint style="success" %}
+ Este foarte important să **indentăm** corect codul când folosim conditionalul if.
+{% endhint %}
 
 In caz contrar vom obține eroarea de mai jos.
 
