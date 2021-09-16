@@ -154,3 +154,5 @@ print(type(x))
 print(x)
 ```
 
+> Datele sunt tipice, informția e evidentă,
+
