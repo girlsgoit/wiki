@@ -1,5 +1,5 @@
 ---
-description: Cum scriem în Python?
+description: Cum scriem în Python? Ușor!
 ---
 
 # Variabile

@@ -1,7 +1,7 @@
 ---
 description: >-
   Ce vei face, dacă ai castiga un million dolari? Dar dacă zece lei? Introducem
-  construția if...else! Și multe alte!
+  construcția if...else! Și multe alte!
 ---
 
 # Flow control

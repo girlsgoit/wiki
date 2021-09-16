@@ -1,5 +1,7 @@
 ---
-description: Ce tipuri de date suportă Python?
+description: >-
+  Putem stoca numere în Python? Dar litere? Cuvinte? Da! Chiar și versuri
+  "Dragostea Din Tei" de Dan Bălan)
 ---
 
 # Tipuri de Date

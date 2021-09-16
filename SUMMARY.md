@@ -57,7 +57,7 @@
 * [Operatori](python/operatori.md)
 * [Flow control](python/flow-control.md)
 * [Liste](python/liste.md)
-* [Cicluri for, while](python/cicluri-for-while.md)
+* [Cicluri for](python/cicluri-for.md)
 * [Funcții](python/functii.md)
 * [Dictionare](python/dictionare.md)
 * [Seturi](python/seturi.md)

@@ -1,5 +1,5 @@
 ---
-description: Liste! Liste! Liste!
+description: Liste! Liste! Liste!     *o glumă despre liste coming up soon*
 ---
 
 # Liste
