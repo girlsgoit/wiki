@@ -179,3 +179,5 @@ else:
 print(accessibility) # observati ca print() se afla in afara if-ului
 ```
 
+> **Some day, someone will construct a** [**list** ](liste.md)**of 500 Great Programming Quotes, and this will be one of them.**
+

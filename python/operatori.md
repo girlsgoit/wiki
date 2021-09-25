@@ -129,3 +129,5 @@ print("%s viitoare se va %s %s!" % ("Luna", "numi", "septembrie"))
 # se va afisa "Luna viitoare se va numi septembrie".
 ```
 
+> **“Computers are good at following** [**instructions** ](flow-control.md)**but not at reading your mind.”**
+

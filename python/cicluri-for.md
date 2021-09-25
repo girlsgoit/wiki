@@ -4,7 +4,11 @@ description: Să repetăm informația incă o dată! Și încă o dată! Pînă 
 
 # Cicluri for
 
-#### **`For` your health**  **✌️**  
+#### **`For` your health**  **✌️  While you are happy** 💖
+
+{% hint style="success" %}
+ Există două scenarii de iterare a unui cod: [**definit** ](cicluri-for.md#for-loop)și [**indefinit**](cicluri-for.md#while-loop).
+{% endhint %}
 
 ## For loop 
 
@@ -14,7 +18,7 @@ Cea mai bună metodă de a _itera_ în _Python_ este `for loop`. Dar ce înseamn
 Când un proces sau o secvență de program este executată multiplu, adică repetată, atunci această secvență se numește **iterată**.
 {% endhint %}
 
-`For loop` reprezintă o metodă de iterare, care repetă aceeași bucată de cod pentru a determina mai multe valori ale acelorași variabile.
+`For loop` reprezintă o metodă de iterare, care repetă aceeași bucată de cod pentru a determina mai multe valori ale acelorași variabile.  Ciclul `for` produce o iterare definită.
 
  **Structura buclei for:**
 
@@ -56,7 +60,7 @@ for x in fructe:
     print("Hi", name, "Please come to my party on Saturday!")
 ```
 
-AVANSĂM! 
+✨AVANSĂM!✨ 
 
 ```python
 votes = [8575855, 5555, 54433, 1001, 14000]
@@ -101,5 +105,86 @@ for i in range(10, 0, -1):
 Mai mult despre for loop poti citi [aici](https://pynative.com/python-for-loop/)
 {% endhint %}
 
+## While loop
 
+{% hint style="success" %}
+Bucla `while` este folosită pentru a itera o secțiune de cod atât timp cât condiția este adevărată.
+{% endhint %}
+
+ Bucla `while` este o buclă indefinită.  Această buclă ține cont de indentarea codului.
+
+ **Structura buclei While:**
+
+![](../.gitbook/assets/2_7.png)
+
+```python
+# exemplu cu while
+total = 0
+while total < 100:         #False
+    total = total + 1
+
+print(total)
+```
+
+```python
+# cu for !!!!!!!!!!!!!!не знаю, если нужно и поможет понять!!!!!!!!!
+total = 0
+for total in range(100):
+    total = total + 1
+    
+print(total)    
+```
+
+_Ciclul infinit_
+
+```python
+a = 1
+
+while True:
+    a = a + 1
+    print(a)
+```
+
+### Declarație de control `break`
+
+Declarația `break` este folosită pentru a ieși din o structură repetitivă. 
+
+{% hint style="info" %}
+O instrucțiune dată într-o buclă termină imediat bucla.
+{% endhint %}
+
+```python
+n = 5
+while n > 0:
+    n = n - 1
+    if n == 2:
+        break
+    print(n)
+```
+
+### Declarație de control `continue`
+
+```python
+n = 5
+while n > 0:
+    n = n - 1 #sau n-=1
+    if n == 2: 
+        continue
+    print(n)
+```
+
+ **Folosirea condiției `else`**
+
+Condiția _else_ poate fi folosită și în cadrul buclei While.
+
+```python
+n = 5
+while n > 0: 
+    n = n - 1
+    print(n)
+else:
+    print('Bucla s-a terminat')
+```
+
+> **The** [**function** ](functii.md)**name should define everything the function does.**
 

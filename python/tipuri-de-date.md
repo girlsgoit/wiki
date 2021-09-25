@@ -151,8 +151,10 @@ print(type(x))
 
 x = int(x)
 print(type(x))
-print(x)
+print
 ```
 
-> Datele sunt tipice, informația e evidentă,
+
+
+> **Every language has an optimization** [**operator**](operatori.md)**. In C++ that operator is ‘//’. \(In Python - \#\)**
 

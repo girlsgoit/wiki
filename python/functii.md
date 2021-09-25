@@ -82,6 +82,22 @@ def functie_de_salut(studenti):
 functie_de_salut(['Ion', 'Maria', 'Alex','Eva', 'Dana'])
 ```
 
+{% hint style="danger" %}
+Dacă avem mai multe argumente pe care dorim să le folosim, _adăugăm un asterisc în fața argumentului din paranteze_
+{% endhint %}
+
+```python
+# argumentele cu asterisc(var args) se indica tot timpul dupa argumentele obisnuite
+
+def say_hello_to(greeting, *names):
+    for name in names:
+        print(greeting + name)
+
+
+say_hello_to("Salut ", "Tetris", "Larnaca", "Abu", "Candi", "Loki")
+say_hello_to("hi, ", "tudor", "anton")
+```
+
 {% hint style="success" %}
 În python deosebim câteva tipuri de argumente:
 
@@ -89,6 +105,8 @@ functie_de_salut(['Ion', 'Maria', 'Alex','Eva', 'Dana'])
 * Keyword Arguments
 * Default Arguments
 {% endhint %}
+
+### Positional Arguments
 
 Cele mai frecvente sunt argumentele de poziție\(Positional Arguments\), ale căror valori sunt într-o anumită ordine.
 
@@ -99,6 +117,8 @@ def func(name, rol):
 func('Ion', 'trainer')  
 ```
 
+### Keyword Arguments
+
 Pentru a evita confuzia argumentelor poziționale, putem folosi numele parametrilor \(Keyword Arguments\)
 
 ```python
@@ -107,6 +127,8 @@ def func(name, rol):
 
 func (rol='studenta', name = 'Maria')
 ```
+
+### Default Arguments
 
 Putem specifica valori default pentru argumente atunci când definim o funcție.
 
@@ -117,5 +139,44 @@ def func(name, rol='student'):
 func('Irina', 'trainer')
 
 func('Dan')
+```
+
+### Returnarea unei valori
+
+ Pentru a returna o valoare întro funcție, utilizam pur declarația `return`. 
+
+
+
+Dacă vrem să returnăm mai multe valori, 
+
+{% hint style="success" %}
+Odată executată o declarația `return`, nimic altceva în corpul funcției nu este executat.
+{% endhint %}
+
+```python
+# Suma a 2-a valori
+def sum(a, b):
+    return a + b
+
+x = sum(5, 4)
+print(x)
+```
+
+```python
+def imparte(x, y):
+    partea_intreaga = x / y
+    partea_intreaga = int(partea_intreaga)
+
+    restul = x % y
+
+    return partea_intreaga, restul
+
+first_number = 9
+second_number = 10
+
+intreg, rest = imparte(first_number, second_number)
+print("partea intreagta " + str(intreg))
+print("restul " + str(rest))
+i, r = imparte(88, 66)
 ```
 
