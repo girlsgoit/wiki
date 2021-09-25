@@ -178,3 +178,5 @@ print("restul " + str(rest))
 i, r = imparte(88, 66)
 ```
 
+Mai multe despre funcții \([documentație](https://docs.python.org/3/tutorial/controlflow.html#defining-functions), [site](https://www.geeksforgeeks.org/python-functions/)\)
+

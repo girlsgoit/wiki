@@ -186,5 +186,7 @@ else:
     print('Bucla s-a terminat')
 ```
 
+Mai multe despre cicluri: [while ](https://www.w3schools.com/python/python_while_loops.asp), [for](https://www.w3schools.com/python/python_for_loops.asp), si mai multe resurse \([while](https://realpython.com/python-while-loop/), [for](https://www.programiz.com/python-programming/for-loop)\)
+
 > **The** [**function** ](functii.md)**name should define everything the function does.**
 

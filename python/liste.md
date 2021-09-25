@@ -30,6 +30,12 @@ movies = ['Avengers: Age of Ultron', 'Cinderella', 'Ant-Man',
           'Do You Believe?', 'Hot Tub Time Machine 2']
 ```
 
+Observați că itemii sunt scriși între paranteze pătrate. O listă poate fi și goală
+
+```python
+lista_goala = []
+```
+
 ## Intro
 
 {% hint style="info" %}
@@ -41,8 +47,10 @@ movies = ['Avengers: Age of Ultron', 'Cinderella', 'Ant-Man',
 ```python
 lista_mea = [ False, 56.4, 4, 'Ford', 1j]
 print(type(lista_mea))
-len(lista_mea)
+len(lista_mea) # funcția care ne permite să vedem lingimea listei
 ```
+
+Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze pă+trate, cam așa: `nume_lista[index]`. Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
 
 ![](../.gitbook/assets/2_4%20%281%29.png)
 
@@ -173,7 +181,7 @@ print(lista_mea)
 Observăm că în acest caz primim o eroare, deoarece încercăm să afișăm o listă ștearsă.
 {% endhint %}
 
-### Lungimea listei
+### Lungimea listei 
 
  Cum aflăm câte elemente se află într-o listă?
 
@@ -181,6 +189,19 @@ Observăm că în acest caz primim o eroare, deoarece încercăm să afișăm o 
 lista_mea = [1,2,3,4,5]
 print(len(lista_mea))
 ```
+
+### Sortarea listei
+
+Mai jos aveți o listă, numită `culori`, care conține 4 itemi. Această listă fi sortată în ordine alfabetică. Asta nu e complicat! Priviți aici:
+
+```python
+culori = [ 'negru', 'rosu', 'albastru', 'verde' ]
+culori.sort()
+
+# se va afisa ['albastru', 'galben', 'negru', 'rosu', 'verde']
+```
+
+#### Mai multe [aici](https://developers.google.com/edu/python/lists), si [aici](https://www.w3schools.com/python/python_lists.asp)
 
 ## Listă de liste
 
