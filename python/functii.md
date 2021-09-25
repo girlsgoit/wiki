@@ -145,10 +145,6 @@ func('Dan')
 
  Pentru a returna o valoare întro funcție, utilizam pur declarația `return`. 
 
-
-
-Dacă vrem să returnăm mai multe valori, 
-
 {% hint style="success" %}
 Odată executată o declarația `return`, nimic altceva în corpul funcției nu este executat.
 {% endhint %}
@@ -161,6 +157,8 @@ def sum(a, b):
 x = sum(5, 4)
 print(x)
 ```
+
+Dacă vrem să returnăm mai multe valori, !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \(Дописать\)
 
 ```python
 def imparte(x, y):
