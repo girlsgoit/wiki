@@ -137,3 +137,91 @@ else:
   print('Fișierul nu există')
 ```
 
+## Accesarea fișierului
+
+### De pe calculator
+
+```python
+# accesam un fisier de pe calculatorul nostru
+import csv
+f = open("myfile.csv", newline='')
+```
+
+### De pe Google Drive
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+### Citirea cu și fără CSV
+
+```python
+import csv  # importăm pachetul csv
+
+opened_file = open('/content/protagonist.csv', 'r') # deschidem fișierul csv în mod citire
+
+raw_lines = opened_file.readlines()
+print("Reading without CSV")
+for line in raw_lines:
+    
+    print(line)
+
+
+print("Reafing with CSV")
+opened_file = open('/content/protagonist.csv', 'r')
+read_file = csv.reader(opened_file) 
+
+rows = list(read_file) 
+for row in rows:
+    print(row)
+```
+
+## Introducerea datelor in fișier
+
+{% hint style="info" %}
+`.writerow(info)` - Scrie o linie de informație
+{% endhint %}
+
+```python
+import csv
+
+f = open('protagonist.csv', 'w')
+# procesare fisier
+f.close()
+
+fruit = {'Nume':'Banana', 
+         'Greutate(g)': 1000, 
+         'Pret': 20}
+
+with open('protagonist.csv', 'w') as f:
+
+    writer = csv.writer(f)
+
+    writer.writerow(["Nr", "Film", "Protagonist"])
+    writer.writerow([1, "Lord of the Rings", "Frodo Baggins"])
+    writer.writerow([2, "Harry Potter", "Harry Potter"])
+```
+
+### Fișier și dicționare
+
+1️⃣ Creăm coloane 
+
+```python
+details = ['Nume', 'Greutate(g)', 'Pret']
+```
+
+[2️⃣](https://emojipedia.org/keycap-digit-two/) Adăugăm date
+
+```python
+fruit = {'Nume':'Banana', 
+         'Greutate(g)': 1000, 
+         'Pret': 20}
+
+with open('/content/drive/MyDrive/CSV/my_file.csv', mode='a') as csv_file:  #context manager
+    writer = csv.DictWriter(csv_file, fieldnames=details)
+    writer.writerow(fruit)
+```
+
+Mai multă informație : \([site](https://www.programiz.com/python-programming/file-operation), [more info](https://realpython.com/read-write-files-python/), [documentation](https://docs.python.org/3/library/filesys.html)\)
+

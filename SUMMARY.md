@@ -62,7 +62,7 @@
 * [Dictionare](python/dictionare.md)
 * [Seturi](python/seturi.md)
 * [Fișiere](python/fisiere.md)
-* [Untitled](python/untitled.md)
+* [Try-except-finally. Lambda](python/untitled.md)
 * [Librării, module](python/librarii-module.md)
 * [Python](python/python.md)
 * [Exercitii](python/exercitii/README.md)
