@@ -129,6 +129,8 @@ print(lista_mea)
 
 ### Extinderea listei
 
+`list1.extend(list2)`
+
 ```python
 lista_ta = [True, "Marte"]
 lista_mea.extend(lista_ta)
@@ -153,6 +155,13 @@ print(lista_mea)
 
 ```python
 lista_mea.remove(3)
+print(lista_mea)
+```
+
+`del name_list[index]`
+
+```python
+del lista_mea[3]
 print(lista_mea)
 ```
 

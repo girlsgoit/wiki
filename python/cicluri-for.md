@@ -4,7 +4,7 @@ description: Să repetăm informația incă o dată! Și încă o dată! Pînă 
 
 # Cicluri for
 
-#### **`For` your health**  **✌️  While you are happy** 💖
+#### **`For` your health**  **✌️  `While` you are happy** 💖
 
 {% hint style="success" %}
  Există două scenarii de iterare a unui cod: [**definit** ](cicluri-for.md#for-loop)și [**indefinit**](cicluri-for.md#while-loop).

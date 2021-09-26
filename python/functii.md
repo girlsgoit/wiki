@@ -1,3 +1,7 @@
+---
+description: 'Funcția în Python are numai o funcție: de a fi funcțională!'
+---
+
 # Funcții
 
 Funcțiile sunt foarte utile pentru reutilizarea codului. Acestea ne permit să definim un bloc de cod care poate fi utilizat în mod repetat într-un program.
