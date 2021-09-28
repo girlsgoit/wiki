@@ -1,2 +1,6 @@
+---
+description: .. -
+---
+
 # Tipuri de Date
 

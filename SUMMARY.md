@@ -55,7 +55,7 @@
 * [Variabile](python/variabile.md)
 * [Tipuri de Date](python/tipuri-de-date.md)
 * [Operatori](python/operatori.md)
-* [Flow control](python/flow-control.md)
+* [Flow Control](python/flow-control.md)
 * [Liste](python/liste.md)
 * [Cicluri for](python/cicluri-for.md)
 * [Funcții](python/functii.md)
@@ -66,6 +66,10 @@
 * [Librării, module](python/librarii-module.md)
 * [Python](python/python.md)
 * [Exercitii](python/exercitii/README.md)
+  * [Variabile](python/exercitii/variabile.md)
+  * [TIpuri de Date](python/exercitii/untitled-1.md)
+  * [Operatori](python/exercitii/untitled-2.md)
+  * [Untitled](python/exercitii/untitled-3.md)
   * [Tipuri de Date](python/exercitii/tipuri-de-date.md)
 
 ## BACKEND

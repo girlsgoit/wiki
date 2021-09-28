@@ -1,0 +1,20 @@
+---
+description: '-.-- --- ..-'
+---
+
+# Operatori
+
+
+
+1. Calculeaza in Python si printeaza rezultatul sumei 35718 + 76983.
+2. Calculeaza, utlizand operatorii Python, cate secunde au trecut de la inceputul zilei daca in acest moment ar fi ora 14:55.
+3. Aflati restul impartirii 50/15.
+4. Efectueaza urmatoarele operatiuni folosind Python.
+   * Transforma 30 grade Celsius in Fahrenheit.
+   * Transfroma 86 grade Fahrenheit in Celsius.
+5. Creați o variabilă suma\_mea egală cu suma a două numere la dorința voastră \(folosiți funcția `input()` \) și afișați variabila la ecran.
+6. Creați o variabilă, numită `distanta` și folosiți ridicarea la putere pentru ca rezultatul să fie egal cu 100. ~~_\(Încercați să ridicați 10 la puterea 2\)_~~. Afișați rezultatul.
+7. Creaza un string care sa contina 147 de '\*'. Atribuie acest string unei variabile. Printeaza aceasta variabila.
+
+
+

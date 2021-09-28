@@ -4,7 +4,7 @@ description: >-
   construcția if...else! Și multe alte!
 ---
 
-# Flow control
+# Flow Control
 
 La fel ca în viața reală, uneori codul nostru trebuie să fie capabil să ia decizii.
 
