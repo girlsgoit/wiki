@@ -15,6 +15,12 @@ description: '-.-- --- ..-'
 5. Creați o variabilă suma\_mea egală cu suma a două numere la dorința voastră \(folosiți funcția `input()` \) și afișați variabila la ecran.
 6. Creați o variabilă, numită `distanta` și folosiți ridicarea la putere pentru ca rezultatul să fie egal cu 100. ~~_\(Încercați să ridicați 10 la puterea 2\)_~~. Afișați rezultatul.
 7. Creaza un string care sa contina 147 de '\*'. Atribuie acest string unei variabile. Printeaza aceasta variabila.
+8. Atribuiți variabilei `litera_patru` a patra literă din `string`-ul `"prieten"`. Țineți minte că a patra literă nu se află la index-ul 5. Începeți să numărați indecșii de la zero.
+9. Afișați `string`-urile concatenate `"Programarea "`, `"este "`, `"simpla"`. Asigurați-vă că ați inclus spații după `"Programarea "` și `"simpla "`
+
+```text
+
+```
 
 
 
