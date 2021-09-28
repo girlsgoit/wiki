@@ -69,8 +69,15 @@
   * [Variabile](python/exercitii/variabile.md)
   * [TIpuri de Date](python/exercitii/untitled-1.md)
   * [Operatori](python/exercitii/untitled-2.md)
-  * [Untitled](python/exercitii/untitled-3.md)
-  * [Tipuri de Date](python/exercitii/tipuri-de-date.md)
+  * [If...else](python/exercitii/untitled-3.md)
+  * [Liste](python/exercitii/tipuri-de-date.md)
+  * [Untitled](python/exercitii/untitled.md)
+  * [Untitled](python/exercitii/untitled-4.md)
+  * [Untitled](python/exercitii/untitled-5.md)
+  * [Untitled](python/exercitii/untitled-6.md)
+  * [Untitled](python/exercitii/untitled-7.md)
+  * [Untitled](python/exercitii/untitled-8.md)
+  * [Untitled](python/exercitii/untitled-9.md)
 
 ## BACKEND
 

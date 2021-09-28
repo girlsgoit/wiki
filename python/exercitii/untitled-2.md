@@ -18,9 +18,29 @@ description: '-.-- --- ..-'
 8. Atribuiți variabilei `litera_patru` a patra literă din `string`-ul `"prieten"`. Țineți minte că a patra literă nu se află la index-ul 5. Începeți să numărați indecșii de la zero.
 9. Afișați `string`-urile concatenate `"Programarea "`, `"este "`, `"simpla"`. Asigurați-vă că ați inclus spații după `"Programarea "` și `"simpla "`
 
-```text
+```python
+#5
+num_1 = input()
+num_2 = input()
+sum = num_1 + num_2
+print(sum)
 
+#6
+distanta = 10**2
+
+#7
+str_ = "*" *147
+print(str_)
+
+#8
+litera_patru = "prieten"[4]
+print(litera_patru)
+
+#9
+print("Programarea " + "este " + "simpla")
 ```
+
+
 
 
 
