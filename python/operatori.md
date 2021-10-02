@@ -6,7 +6,9 @@ description: Matematica! Acum și în Python!
 
 De matematică nu scăpați nici în programare. Partea bună este că programarea vă ajută să faceți operațiile matematice simplu și rapid. Putem să adunăm, scădem, înmulțim, împărțim și nu doar!
 
-### Operații matematice de bază
+### Operatori Aritmetici
+
+#### Operații matematice de bază
 
 ```python
 # adunare
@@ -14,21 +16,21 @@ De matematică nu scăpați nici în programare. Partea bună este că programar
 ```
 
 ```python
-# scadere
+# scădere
 25 - 15 
 ```
 
 ```python
-# imapartire
+# îmăparțire
 20 / 3.5
 ```
 
 ```python
-# inmultire
+# înmultire
 3 * 5
 ```
 
-### Operații avansate
+#### Operații avansate
 
 ```python
 # ridicare la putere
@@ -36,11 +38,13 @@ De matematică nu scăpați nici în programare. Partea bună este că programar
 ```
 
 ```python
-# restul imparțirii
+# restul împarțirii
 40 % 15
 ```
 
-### Comparatoarele
+### Operatori relaționali
+
+sau mai simplu - semnele de comparație
 
 {% hint style="info" %}
 Semne de comparație vor avea rezultat de tip `bool`
@@ -75,11 +79,11 @@ print(10 >= 5)
 
 Trebuie să cunoașteți că toate caracterele dintr-un `string` sunt aranjate într-o ordine. Această ordine presupune ca fiecărui caracter din `string` să-i fie atribuit un număr. Acest număr este numit **index**. Să analizăm diagrama de mai jos:
 
-![](../.gitbook/assets/3_4.png)
+![](../.gitbook/assets/index%20%281%29.png)
 
-`String`-ul `"Hello World"` are 12 caractere, enumerate de la 0 la 11. Observați că și caracterului spațiu \(de după virgulă\) îi este atribuit un index \(indicele 5\).
+`String`-ul `"Hello World"` are 11 caractere, enumerate de la 0 la 10. Observați că și caracterului spațiu îi este atribuit un index \(indicele 5\).
 
-Prin urmare, dacă doriți să accesați caracterul `"w"`din `string`-ul `"Hello World"`, trebuie pur și simplu să scrieți `"Hello World"[7]` \(pentru că enumerarea începe tot timpul de la 0!\).
+Prin urmare, dacă doriți să accesați caracterul `"w"`din `string`-ul `"Hello World"`, trebuie pur și simplu să scrieți `"Hello World"[6]` \(pentru că enumerarea începe tot timpul de la 0 !\).
 
 Pentru a însuși această logică mai bine, vă aduc un exemplu simplu:
 
@@ -88,7 +92,7 @@ p = "pix"[0]
 e = "creion"[2]
 ```
 
-În acest exemplu, am creat o variabilă nouă numită `p` și i-am atribuit "p" – caracterul de la index-ul zero al `string`-ului `"pix"`. Apoi, am creat o variabilă nouă, numită `e`, căreia i-am atribuit caracterul cu index-ul 2 din `string`-ul `"creion"`. În Python, enumerarea începe de la zero, și nu de la unu
+În acest exemplu, am creat o variabilă nouă numită `p` și i-am atribuit "p" – caracterul de la index-ul zero al `string`-ului `"pix"`. Apoi, am creat o variabilă nouă, numită `e`, căreia i-am atribuit caracterul cu index-ul 2 din `string`-ul `"creion"`. În Python, enumerarea începe de la zero, și nu de la unu!
 
 ### Concatenare 
 
@@ -112,7 +116,7 @@ Combinarea `string`-urilor în felul dat și presupune **concatenarea**.
 {% hint style="info" %}
 Putem să concatenăm `string` -urile chiar și în `print()`
 
-Sau putem sa multiplicăm un `string` : `print('a' * 55)`
+Sau putem să multiplicăm un `string` : `print('a' * 5)`
 {% endhint %}
 
 ```python
@@ -120,7 +124,7 @@ print('Aceasta ' + 'este' + ' o' + ' propozitie')
 ```
 
 ```python
-# ce va afisa functia print() de mai jos?
+# Ce va afișa funcția print() de mai jos?
 print('b ' * 5)
 ```
 
@@ -139,15 +143,15 @@ Ce credeți că se va afișa în urma executării acestui program?
 
 ```python
 str_1 = "Norvegia"
-str_2 = "tara"
-print("Haidem in %s. Este o %s frumoasa." % (str_1, str_2))
+str_2 = "țară"
+print("Hai în %s. Este o %s frumoasă." % (str_1, str_2))
 ```
 
 Cred că deja ați intuit că numărul operatorilor `%` dintr-un `string` trebuie să fie egal cu numărul variabilelor dintre paranteze.
 
 ```python
-print("%s viitoare se va %s %s!" % ("Luna", "numi", "septembrie"))
-# se va afisa "Luna viitoare se va numi septembrie".
+print("%s am învățat %s în %s!" % ("Astăzi", "concatenarea", "Pyhton"))
+# se va afisa "Astăzi am învățat concatenarea în Pyhton".
 ```
 
 > **“Computers are good at following** [**instructions** ](flow-control.md)**but not at reading your mind.”**

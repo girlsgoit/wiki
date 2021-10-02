@@ -66,8 +66,8 @@ for n in numbers:
 
 {% hint style="info" %}
 * Lambda este o funcție anonimă, ce nu are nume.
-* Funcția Lambda conține doar o expresie
-* Funcția Lambda poate conține multiple variabile
+* Funcția Lambda conține doar o expresie.
+* Funcția Lambda poate conține multiple variabile.
 {% endhint %}
 
 ### Structiră:

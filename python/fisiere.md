@@ -4,13 +4,13 @@ description: 'Ca fish, dar fiSHier)'
 
 # Fișiere
 
-Utilizarea fișierelor este larg răspândită pe larg în web developement, deorece ele ne permit să stocăm și să accesăm informația necesară nouă. Acestă informație poate fi stocată in fisiere CSV \(comma-separated values\) - fisiere cu valori separate de virgula.
+Utilizarea fișierelor este larg răspândită pe larg în web development, deorece ele ne permit să stocăm și să accesăm informația necesară nouă. Acestă informație poate fi stocată în fișiere CSV \(comma-separated values\) - fisiere cu valori separate de virgulă.
 
 ## Intro
 
-Pentru a putea deschide aceste fisiere, mai intai de toate trebuie sa le incarcam in Google Colab.
+Pentru a putea deschide aceste fisiere, mai întâi de toate trebuie să le încărcăm în Google Colab.
 
-Dupa ce am incarcat fisierul in mapa Files\(stanga sus\), putem sa folosim functia `open()` pentru a deschide acest fisier. Functia `open()` primeste ca argumente 'adresa' fisierului, in cazul nostru: `'./heroes_information.csv'` si tipul de permisiune, in cazul nostru `'r'` de la 'read'.
+Dupa ce am încarcat fișierul în mapa Files\(stanga sus\), putem să folosim funcția `open()` pentru a deschide acest fișier. Funcția `open()` primește ca argumente 'adresa' fișierului, în cazul nostru: `'./heroes_information.csv'` și tipul de permisiune, în cazul nostru `'r'` de la 'read'.
 
 ```python
 # pentru a deschide aceste fisiere, folosim comanda open()
@@ -50,7 +50,7 @@ f = open("demofile.txt", "r") #Read
 f = open("demofile.txt", "rt") #Read Text
 ```
 
- Dupa ce am deschis fisierul, avem nevoie de functia `reader()` din modulul csv care va citi acest fisier si ne va intoarce un obiect.
+După ce am deschis fișierul, avem nevoie de funcția `reader()` din modulul csv care va citi acest fișier și ne va întoarce un obiect.
 
 ## Citirea din fișier
 
@@ -59,19 +59,19 @@ from csv import reader  # importăm funcția reader din modulul csv
 read_file = reader(opened_file) # interpretăm datele csv din fișier
 ```
 
-Se poate intampla ca in fisierul nostru CSV datele nu vor fi separate prin **`,`** ci prin **`;`**. In cazul dat va trebui sa setam in fuctia reader delimitatorul sa fie **`;`**, care in mod implicit e setat sa fie **`,`**.
+Se poate întampla ca în fișierul nostru CSV datele să nu fie separate prin **`,`** ci prin **`;`**. În cazul dat va trebui să setam in funcția reader delimitatorul sa fie **`;`**, care în mod implicit e setat să fie **`,`**.
 
 ```python
 read_file = reader(opened_file, delimeter=';')
 ```
 
-Acum read\_file poate fi transformat intr-o structura de date deja familiara noua, intr-o lista de lista. Pentru asta folosim functia pre-creata \(built-in\) `list()`.
+Acum read\_file poate fi transformat într-o structura de date deja familiara nouă, într-o listă de liste. Pentru asta folosim funcția pre-stabilită \(built-in\) `list()`.
 
 ```python
 heroes = list(read_file) # transformăm datele csv într-o listă de liste
 ```
 
-## INTOTDEAUNA INCHIDE FIȘIERUL
+### INTOTDEAUNA INCHIDE FIȘIERUL
 
 ```python
 f.close()
@@ -125,9 +125,9 @@ import os
 os.remove("myfile.txt")
 ```
 
-### Dacă fișier există
+### Verificarea existenței fișierului
 
-Pentru a evita  o eroare, vă recomandăm să verificați dacă fișierul există înainte de a încerca să îl ștergeți!
+Pentru a evita o eroare, vă recomandăm să verificați dacă fișierul există înainte de a încerca să îl ștergeți!
 
 ```python
 import os

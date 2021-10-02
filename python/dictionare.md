@@ -19,7 +19,7 @@ print(d)
 
 Un **dicționar** este asemănător cu o listă, doar că în cazul dicționarelor puteți să accesați valorile prin intermediul unei chei, și nu prin intermediul unui index. O **cheie** poate fi un `string` sau un număr. 
 
-> #### Dicționarele sunt utile pentru asemenea lucruri, ca: lista numerelor de telefoane \(având perechile _nume - număr_\), pagini de logare \(având perechile _adresa de e-mail - nume de utilizator_\) și nu doar!
+> #### Dicționarele sunt utile pentru asemenea lucruri ca: lista numerelor de telefoane \(având perechile _nume - număr_\), pagini de logare \(având perechile _adresa de e-mail - nume de utilizator_\) și nu doar!
 
 ![](../.gitbook/assets/capture.png)
 
@@ -165,7 +165,7 @@ print(dictionar)
 ### Copierea dicționarului
 
 {% hint style="info" %}
-.copy\(\) - Copie elementele ditr-un dicționar în alt dicționar
+.copy\(\) - Copie elementele dintr-un dicționar în alt dicționar
 {% endhint %}
 
 Daca vom utiliza **dict2 = dict1, nu este corect**, deoarece variabila dict1 este o referință la structura de date creată. Când atribuim unei noi variabile o variabilă existentă, se copiază referința, nu elementele.
@@ -248,7 +248,7 @@ autori_carti = {
 ```
 
 {% hint style="info" %}
-Accesarea unui element din dicționar de așa fel este similara cu accesarea valorilor dintr-o lista 2-Dimențională
+Accesarea unui element din dicționar de așa fel este similară cu accesarea valorilor dintr-o listă 2-Dimensională
 {% endhint %}
 
 ```python

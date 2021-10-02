@@ -2,13 +2,13 @@
 
 ## Ce este un modul?
 
-* Modulele ne ajută să ne facem codul mai practic
-* Modulele sunt fișiere ce conțin funcții
-* Există module incorporate în limbaj și module care le putem crea
+* Modulele ne ajută să ne facem codul mai practic.
+* Modulele sunt fișiere ce conțin funcții.
+* Există module încorporate în limbaj și module care le putem crea.
 
 În Python un modul e o simplă colecție de variabile, funcții și/sau clase\(numite definiții\) care pot fi importate în Python \(de exemplu, modulul CSV\).
 
-Python conține multe module standarde, acestea sunt utilizate pentru a performa diferite operațiuni cum ar fi operații matematice avansate, operațiuni cu formate de fisșiere specifice și baze de date, lucru cu date temporale.
+Python conține multe module standarde, acestea sunt utilizate pentru a performa diferite operațiuni cum ar fi operații matematice avansate, operațiuni cu formate de fișiere specifice și baze de date, lucru cu date temporale.
 
 Ca să putem folosi definițiile dintr-un modul, mai întâi trebuie să le importăm din acest modul. Pentru aceasta avem nevoie de `import` .
 
@@ -117,7 +117,7 @@ math.sqrt(3)
 `math.pow(x, y)` - calculează un număr ridicat la o anumită putere
 
 ```text
-math.pow(5, 2)
+math.pow(5, 2) # 5 la puterea a 2
 ```
 
 **Funcții logaritmice:**
@@ -134,13 +134,13 @@ print(math.log10(100))
 
 **Funcții trigonometrice:**
 
-* `math.cos(x)` - calculează cosinusul de un număr
-* `math.sin(x)` - calculează sinusul de un număr
-* `math.tan(x)` - calculează tangenta de un număr
-* `math.acos(x)` - calculează arccosinusul de un număr
-* `math.asin(x)` - calculează arcsinusul de un număr
-* `math.atan(x)` - calculează tangenta de un număr
-* `math.atan2(y, x)` - calculează atan\(y / x\)
+* `math.cos(x)` - calculează cosinusul unui număr
+* `math.sin(x)` - calculează sinusul unui număr
+* `math.tan(x)` - calculează tangenta unui număr
+* `math.acos(x)` - calculează arccosinusul unui număr
+* `math.asin(x)` - calculează arcsinusul unui număr
+* `math.atan(x)` - calculează arctangenta unui număr
+* `math.atan2(y, x)` - calculează arctan\(y / x\)
 
 ```text
 print(math.cos(1))
@@ -175,7 +175,7 @@ Python are trei module standarde folosite pentru lucrul cu datele temporale:
 
 * Modulul `calendar`
 * Modulul `time`
-* Modulu `datetime`
+* Modulul `datetime`
 
 Fiecare modul este focusat pe o arie specifică de interes, dar cel mai util modul din acestea trei este `datetime`, respectiv despre el vom învăța mai departe.
 
@@ -242,9 +242,9 @@ Mai multe notații:
 * `%m`    - afișează luna ca numbăr
 * `%y`    - afișează anul fără primele două cifre
 * `%Y`    - afișează anul    
-* `%H`    -    afișează ora în format de 24 ore
+* `%H`    -  afișează ora în format de 24 ore
 * `%I`    - afișează ora în format de 12 ore
-* `%M`     - afișează minutele
+* `%M`    - afișează minutele
 * `%S`    - afișează secundele    
 * `%f`    - afișează milisecundele    
 * `%z`    - afișează ora militară

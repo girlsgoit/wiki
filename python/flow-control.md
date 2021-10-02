@@ -4,44 +4,52 @@ description: >-
   construcția if...else! Și multe alte!
 ---
 
-# Flow Control
+# Control Flow
 
-La fel ca în viața reală, uneori codul nostru trebuie să fie capabil să ia decizii.
+La fel ca și în viața reală, uneori codul nostru trebuie să fie capabil să ia decizii.
 
 Până acum, tot ce am scris împreună în _Python_ putea să urmeze doar un singur fir logic: fie că am adunat două numere sau fie că am afișat ceva. Codul nostru, însă, nu putea lua decizii de sine-stătător în privința a ce instrucțiuni să execute în dependență de o careva condiție. Conceptul de **Control Flow** oferă posibilitate programului de a alege ce să facă.
 
 Pentru a intra în esența conceptului de Control Flow, trebuie să definim câteva noțiuni importante.
 
 {% hint style="success" %}
-[Operatori de comparatie](operatori.md#comparatoarele) au un rol major in conceptul de Control Flow.
+[Operatorii de comparație](operatori.md#comparatoarele) au un rol major in conceptul de Control Flow.
 {% endhint %}
 
 ## **Operațiile Boolean**
 
-Operațiile `boolean` compară careva afirmații, rezultatul acestei comparații fiind o valoare `boolean`. Există trei operații `boolean`:
+Operațiile `boolean` compară careva afirmații, rezultatul acestei comparații fiind o valoare `boolean`. Există trei operații de tip `boolean`:
 
 ### `and`
 
-And verifică dacă _ambele_ afirmații sunt `True`. 
+_**And**_ verifică dacă _ambele_ afirmații sunt `True`. 
 
 {% hint style="info" %}
 _De exemplu:_ 
 
-Eu voi cumpăra pâine: 
+Eu voi cumpăra pâine dacă:
 
-1. Dacă voi avea bani  **ȘI \(AND\)**  2. Dacă va fi pâine la magazin
+1. Voi avea bani .
+
+**ȘI \(AND\)**  
+
+1. Dacă va fi pâine la magazin.
 {% endhint %}
 
 ### `or`
 
-Or verifică dacă _cel puțin_ o afirmație este `True`.
+_**Or**_ verifică dacă _cel puțin_ o afirmație este `True`.
 
 {% hint style="info" %}
 _De exemplu:_ 
 
-Eu voi fi fericit/fericită:
+Eu voi fi fericit/fericită dacă:
 
-1. Dacă se termina pandemia    **SAU \(OR\)**  2. Dacă mă vaccinez
+1. Se termină pandemia.
+
+    **SAU \(OR\)**  
+
+   ****2. Dacă mă vaccinez.
 {% endhint %}
 
 ### `not`
@@ -53,7 +61,7 @@ _De exemplu:_
 
 Eu voi sta acasă dacă:
 
- **NU \(NOT\)**  se deschide școala
+ **NU \(NOT\)**  se deschide școala.
 {% endhint %}
 
 În acest context, aflați că:
@@ -81,7 +89,17 @@ Rezultatul acestei expresii va fi `True` sau `False`? Pentru a răspunde la acea
 
 `1 < 2` este `True`. `2 < 3` este la fel `True`. `True and True` ce va fi? Corect! `True`!
 
-Dar care vor fi rezultatele următoarelor expresii? `1 < 2 and 2 > 3` \(_False_\) `1 < 2 or 2 > 3` \(_True_\) `1 > 2 or 2 > 3` \(_False_\) `not False` \(_True_\) `not 41 > 40` \(_False_\)
+Dar care vor fi rezultatele următoarelor expresii?
+
+`1 < 2 and 2 > 3` \(_False_\) 
+
+`1 < 2 or 2 > 3` \(_True_\) 
+
+`1 > 2 or 2 > 3` \(_False_\)
+
+`not False` \(_True_\) 
+
+`not 41 > 40` \(_False_\)
 
 {% hint style="warning" %}
 Operațiile `boolean` nu sunt pur și simplu evaluate de la stânga la dreapta. La fel ca operațiile aritmetice, operațiile `boolean` au o ordine de execuție:
@@ -160,11 +178,11 @@ else:
 {% hint style="success" %}
 Dar dacă avem mai mult de 2 opțiuni?
 
-Atunci folosim `elif` care e defapt e `else + if`.
+Atunci folosim `elif` care e de fapt este `else + if`.
 {% endhint %}
 
 ```python
-# vrem sa stim cat de accesibil este pretul unei inghetate pentru bugetul nostru
+# vrem să știm cât de accesibil este prețul unei înghețate pentru bugetul nostru
 ice_cream_price = 50
 accessibility = ''
 
@@ -176,7 +194,7 @@ else:
     accessibility = 'Scump'
  
 
-print(accessibility) # observati ca print() se afla in afara if-ului
+print(accessibility) # observați că print() se află în afara if-ului
 ```
 
 > **Some day, someone will construct a** [**list** ](liste.md)**of 500 Great Programming Quotes, and this will be one of them.**

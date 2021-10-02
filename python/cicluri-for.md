@@ -1,5 +1,5 @@
 ---
-description: Să repetăm informația incă o dată! Și încă o dată! Pînă obosim... cicluri!
+description: Să repetăm informația incă o dată! Și încă o dată! Până obosim... cicluri!
 ---
 
 # Cicluri for
@@ -46,7 +46,7 @@ for number in my_list:
 ```
 
 {% hint style="success" %}
-Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` \(sau `elif`, `else`\), necesită două puncte la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie indentat
+Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` \(sau `elif`, `else`\), necesită două puncte \( : \) la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie indentat
 {% endhint %}
 
 ```python
@@ -60,7 +60,7 @@ for x in fructe:
     print("Hi", name, "Please come to my party on Saturday!")
 ```
 
-✨AVANSĂM!✨ 
+#### ✨AVANSĂM!✨ 
 
 ```python
 votes = [8575855, 5555, 54433, 1001, 14000]
@@ -117,25 +117,31 @@ Bucla `while` este folosită pentru a itera o secțiune de cod atât timp cât c
 
 ![](../.gitbook/assets/2_7.png)
 
+
+
 ```python
-# exemplu cu while
+# Acest exemplu va executa „total = total + 1” până când valoarea condiția
+# total < 100 va fi falsă, 
 total = 0
-while total < 100:         #False
+while total < 100:     
     total = total + 1
 
 print(total)
 ```
 
+Odată ce variabila `total` a ajuns la valoarea de 100, programul se va opri și va afișa `100`
+
 ```python
-# cu for !!!!!!!!!!!!!!не знаю, если нужно и поможет понять!!!!!!!!!
 total = 0
-for total in range(100):
+for total in range(100): 
     total = total + 1
     
 print(total)    
 ```
 
-_Ciclul infinit_
+Ultima valoare din `range(100)` va fi numărul 99, respectiv variabila total va primi valoarea `99 + 1` = 100. Programul va afișa `100`.
+
+#### _Ciclul infinit_
 
 ```python
 a = 1
@@ -144,6 +150,10 @@ while True:
     a = a + 1
     print(a)
 ```
+
+{% hint style="warning" %}
+Orice număr cu excepția lui 0, are valoarea `True`, respectiv doar 0 are valoarea `False`.
+{% endhint %}
 
 ### Declarație de control `break`
 
@@ -157,7 +167,7 @@ O instrucțiune dată într-o buclă termină imediat bucla.
 n = 5
 while n > 0:
     n = n - 1
-    if n == 2:
+    if n == 2: # Când n va avea valoarea 2, programul se va ieși din bucla while.
         break
     print(n)
 ```
@@ -168,7 +178,7 @@ while n > 0:
 n = 5
 while n > 0:
     n = n - 1 #sau n-=1
-    if n == 2: 
+    if n == 2:  # Când n va avea valoarea 2, programul va ignora print(n) 
         continue
     print(n)
 ```

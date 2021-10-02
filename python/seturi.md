@@ -4,9 +4,9 @@ description: 'Nu un set de california, and THAT is a pitty'
 
 # Seturi
 
- **Setul** se utilizează pentru a stoca colecții de date. Un set e o colecție de date **neordonată** și **neindexată**.
+**Setul** se utilizează pentru a stoca colecții de date. Un set e o colecție de date **neordonată** și **neindexată**.
 
- Pentru a înțelege mai bine seturile trebuie să cunoașteți că acesta reprezintă noțiunea matematică a unei _mulțimi_.
+Pentru a înțelege mai bine seturile trebuie să cunoașteți că acesta reprezintă noțiunea matematică a unei _mulțimi_.
 
 ```python
 this_set = {"apple", "banana", "cherry"}
@@ -19,7 +19,9 @@ print(this_set)
 
 **Elemente neordonate** înseamnă că elementele dintr-un set nu au o ordine definită. Acestea pot apărea într-o ordine diferită de fiecare dată când le utilizați și nu pot fi apelate sau modificate prin index.
 
+{% hint style="warning" %}
 **Nu pot avea Valori duplicate** - Seturile nu pot avea două elemente cu aceeași valoare.
+{% endhint %}
 
 _Însă avantajul major al unui set, spre deosebire de o listă, este că are o metodă extrem de optimizată pentru a verifica dacă un anumit element se conține în set._
 
@@ -38,7 +40,7 @@ this_set = {"apple", "banana", "cherry", "apple"}
 print(this_set)
 ```
 
- **Elementele setului** pot fi de orice tip de date. La fel un set poate conține diferite tipuri de date. Tipul de date în așa fel de seturi este '`set`'
+**Elementele setului** pot fi de orice tip de date. La fel un set poate conține diferite tipuri de date. Tipul de date în așa fel de seturi este '`set`'
 
 ```python
 set1 = {"apple", "banana", "cherry"}
@@ -66,7 +68,7 @@ for name in girls:
     print(name)
 ```
 
-### Daca element este in set
+### Verificarea prezenței unui element în set
 
 ```python
 girls = {"Ana", "Aurelia", "Maria"} 
@@ -127,7 +129,7 @@ print(boys)
 ### Adaugarea elementelor din alt set
 
 {% hint style="info" %}
-`.update()` - Adaugă elemente din alt set sau din list, dicționar ș.a.
+`.update()` - Adaugă elemente din alt set sau din listă, dicționar ș.a.
 {% endhint %}
 
 `.update()` for sets
@@ -154,7 +156,7 @@ print(fruit_set)
 
 ### Unirea seturilor
 
- Doua seturi pot fi unite folosind metoda `union()`. Setul obținut ca rezultat al acestei operații v-a fi un alt set care v-a conține toate elementele din primul set și toate elementele din al doilea set, _dar fara duplicate._
+Doua seturi pot fi unite folosind metoda `union()`. Setul obținut ca rezultat al acestei operații v-a fi un alt set care v-a conține toate elementele din primul set și toate elementele din al doilea set, _dar fara duplicate._
 
 ```python
 set_1 = {"Ion", "Andrei", "Teofil", "Ana"} 
@@ -169,7 +171,7 @@ print(names)
 
 ### Intersecția seturilor
 
- **Intersecția** a două seturi se face folosind metoda `intersection()`. Setul obținut ca rezultat al acestei operații v-a fi un alt set care v-a _conține elementele comune din ambele setur_i.
+**Intersecția** a două seturi se face folosind metoda `intersection()`. Setul obținut ca rezultat al acestei operații v-a fi un alt set care v-a _conține elementele comune din ambele setur_i.
 
 ```python
 set_1 = {1, 2, 3, 4, 5, 6}

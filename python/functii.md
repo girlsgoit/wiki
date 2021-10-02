@@ -13,9 +13,9 @@ Funcția reprezintă un bloc de cod care cere un input, îl prelucrează, și-l 
 {% hint style="info" %}
 Pe scurt:
 
-* O funcție este un bloc de cod, ce poate fi folosit mai târziu în program
-* Structura funcției ține cont de indentarea codului
-* Este folosit pentru reducerea volumului și izolarea de cod scris
+* O funcție este un bloc de cod, ce poate fi folosit mai târziu în program.
+* Structura funcției ține cont de indentarea codului.
+* Este folosit pentru reducerea volumului și izolarea de cod scris.
 {% endhint %}
 
 ![](../.gitbook/assets/function.jpg)
@@ -52,7 +52,7 @@ def hello():
 hello() 
 ```
 
- Putem trimite informații unei funcții prin intermediul **argumentelor**. O funție poate avea unul sau mai multe argumente.
+Putem trimite informații unei funcții prin intermediul **argumentelor**. O funție poate avea unul sau mai multe argumente.
 
 ```python
 #O funcție cu un singur argument
@@ -99,11 +99,11 @@ def say_hello_to(greeting, *names):
 
 
 say_hello_to("Salut ", "Tetris", "Larnaca", "Abu", "Candi", "Loki")
-say_hello_to("hi, ", "tudor", "anton")
+say_hello_to("hi, ", "Tudor", "Anton")
 ```
 
 {% hint style="success" %}
-În python deosebim câteva tipuri de argumente:
+În Python deosebim câteva tipuri de argumente:
 
 * Positional Arguments
 * Keyword Arguments
@@ -112,7 +112,7 @@ say_hello_to("hi, ", "tudor", "anton")
 
 ### Positional Arguments
 
-Cele mai frecvente sunt argumentele de poziție\(Positional Arguments\), ale căror valori sunt într-o anumită ordine.
+Cele mai frecvente sunt argumentele de poziție \(Positional Arguments\), ale căror valori sunt într-o anumită ordine.
 
 ```python
 def func(name, rol):
@@ -162,7 +162,7 @@ x = sum(5, 4)
 print(x)
 ```
 
-Dacă vrem să returnăm mai multe valori, !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \(Дописать\)
+#### Dacă vrem să returnăm mai multe valori
 
 ```python
 def imparte(x, y):
@@ -170,17 +170,25 @@ def imparte(x, y):
     partea_intreaga = int(partea_intreaga)
 
     restul = x % y
-
+    
     return partea_intreaga, restul
 
-first_number = 9
-second_number = 10
-
-intreg, rest = imparte(first_number, second_number)
-print("partea intreagta " + str(intreg))
+intreg, rest = imparte(10, 8)
+# Variabila „intreg” ia valoarea variabilei „partea_intreaga” iar
+# variabila „rest” ia valoarea variabilei „restul” din functia imparte()
+print("partea intreaga " + str(intreg))
 print("restul " + str(rest))
-i, r = imparte(88, 66)
+
 ```
+
+{% hint style="info" %}
+Numărul variabilelor de la `return`, în cazul nostru 2, trebuie să coincidă cu numărul variabilelor declarate după funcție.  
+Adica, în cazul nostru variabila `intreg` va primi aceeași valoare pe care o are variabila `partea_intreaga` _\(intreg = partea\_intreaga_\), iar, analog, _rest = restul_ .
+{% endhint %}
+
+Ca rezultat vom primi afișat:  
+`partea intreaga 1  
+restul 2`
 
 Mai multe despre funcții \([documentație](https://docs.python.org/3/tutorial/controlflow.html#defining-functions), [site](https://www.geeksforgeeks.org/python-functions/)\)
 

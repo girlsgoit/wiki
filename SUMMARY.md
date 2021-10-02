@@ -55,7 +55,7 @@
 * [Variabile](python/variabile.md)
 * [Tipuri de Date](python/tipuri-de-date.md)
 * [Operatori](python/operatori.md)
-* [Flow Control](python/flow-control.md)
+* [Control Flow](python/flow-control.md)
 * [Liste](python/liste.md)
 * [Cicluri for](python/cicluri-for.md)
 * [Funcții](python/functii.md)

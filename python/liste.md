@@ -8,7 +8,7 @@ Mai jos avem un tabel cu date de pe portalul de filme fandango.com
 
 ![](../.gitbook/assets/screenshot-2020-05-13-at-11.46.55.png)
 
-Pentru a putea opera cu datele din acest tabel, trebuie sa le stocam in variabile.
+Pentru a putea opera cu datele din acest tabel, trebuie să le stocam în variabile.
 
 ```python
 movie_row0 = 'Avengers: Age of Ultron'
@@ -17,9 +17,9 @@ rating_value_row0 = 4.5
 votes_row0 = 14846 
 ```
 
-Daca am crea cate o variabila pentru fiecare valoare din acest tabel, am avea 20 de variabile. Prea multe!
+Dacă am crea câte o variabilă pentru fiecare valoare din acest tabel, am avea 20 de variabile. Prea multe!
 
-In schimb putem sa cream o **lista** de valori.
+În schimb putem să creăm o **lista** de valori.
 
 ```python
 row0 = ['Avengers: Age of Ultron', 2015, 4.5, 14846]
@@ -47,15 +47,15 @@ lista_goala = []
 ```python
 lista_mea = [ False, 56.4, 4, 'Ford', 1j]
 print(type(lista_mea))
-len(lista_mea) # funcția care ne permite să vedem lingimea listei
+len(lista_mea) # funcția care ne permite să vedem lungimea listei
 ```
 
-Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze pă+trate, cam așa: `nume_lista[index]`. Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
+Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze pătrate, cam așa: `nume_lista[index]`. Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
 
 ![](../.gitbook/assets/2_4%20%281%29.png)
 
 {% hint style="success" %}
-Este necesar să știm că prima poziție la indexare este 0
+Este necesar să știm că prima poziție la indexare este 0.
 {% endhint %}
 
 ### Accesăm mai multe variabile
@@ -63,23 +63,24 @@ Este necesar să știm că prima poziție la indexare este 0
  Dar dacă dorim să accesăm mai multe variabile în același timp?
 
 ```python
-# slice from 3rd item till 5th
+# Va printa elementele din listă cu indexul 2, 3 și 4.
 print(lista_mea[2:5])
+# 4, 'Ford', 1j
 ```
 
 ```python
-#slice from start till 4th item
+# Va printa elementele din listă de la început până la cel cu indexul 3 inclusiv.
 print(lista_mea[:4])
+# False, 56.4, 4, 'Ford'
 ```
 
 ```python
-#slice from 4th item till finish
+# Va printa elementele de la cel cu indexul 3 până la sfârșit.
 print(lista_mea[3:])
+# 'Ford', 1j
 ```
 
-### Daca element este in listă
-
-Cum verificăm dacă un element există în lista noastră?
+#### Cum verificăm dacă un element există în lista noastră?
 
 ```python
 if 4 in lista_mea:
@@ -120,7 +121,7 @@ my_list.append(9)
 print(my_list)
 ```
 
-`.insert(index, var)`
+`.insert(index, var)` - va adăuga variabila`var` pe poziția cu numărul `index` în lista noastră.
 
 ```python
 lista_mea.insert(1, "Luni")
@@ -129,7 +130,7 @@ print(lista_mea)
 
 ### Extinderea listei
 
-`list1.extend(list2)`
+`list1.extend(list2)` va concatena \(adăuga\) elementele din lista 2 - `list2`în lista 1 - `list1`.
 
 ```python
 lista_ta = [True, "Marte"]
@@ -210,7 +211,7 @@ culori.sort()
 # se va afisa ['albastru', 'galben', 'negru', 'rosu', 'verde']
 ```
 
-#### Mai multe [aici](https://developers.google.com/edu/python/lists), si [aici](https://www.w3schools.com/python/python_lists.asp)
+#### Mai multe [aici](https://developers.google.com/edu/python/lists), si [aici](https://www.w3schools.com/python/python_lists.asp).
 
 ## Listă de liste
 
