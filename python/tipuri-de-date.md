@@ -6,7 +6,7 @@ description: >-
 
 # Tipuri de Date
 
-În programare, **tipul de date**\(Data Type\) este un concept important.
+În programare, **tipurile de date** \(Data Type\) este un concept important.
 
 Variabilele pot stoca diferite tipuri de date.
 
@@ -26,10 +26,10 @@ Python are următoarele tipuri de date încorporate în mod implicit, în aceste
 
 `Str` este un șir de caractere \(un text\).
 
- Un `string` poate conține litere, numere, simboluri și spații. Ele trebuie să fie scrise între ghilimele.
+Un `string` poate conține litere, numere, simboluri și spații. Ele trebuie să fie scrise între ghilimele.
 
 ```python
-#poate fi orice caracter in " "
+# poate fi orice caracter în " " / ' '
 x = "Hello World" 
 y = '13478*/+'
 ```
@@ -38,7 +38,7 @@ Deși înca nu am învățat ce sunt funcțiile, noi deja le folosim.
 
 > `type()` - funcție care ne spune ce tip de date conține variabila data.
 
-`print()` la fel e o funcție.
+`print()` și `input()` la fel sunt funcții.
 
 ```python
 # haideti sa ne convingem 
@@ -48,15 +48,17 @@ print(type(x))
 print(type(y))
 ```
 
-Observați că în ultimul exemplu, `'iubeste limbajul Python'` nu este scris între ghilimele duble. Aceasta nu este o problemă.
-
 {% hint style="info" %}
-_Python_ acceptă și _ghilimele duble_, și _ghilimele unice_ ca fel de scriere a `string`-urilor.
+După cum am mai menționat, _Python_ acceptă și _ghilimele duble_, și _ghilimele unice_ ca fel de scriere a `string`-urilor.
 {% endhint %}
 
 ###  **Integer**
 
-`Int`, sau un număr întreg, este un număr întreg, pozitiv sau negativ, fără zecimale, de lungime nelimitată.
+`Int`este un număr întreg, pozitiv sau negativ, fără zecimale, de lungime nelimitată.
+
+{% hint style="info" %}
+Amintiți-vă de mulțimea numerelor întregi Z de la matematică, este același lucru.
+{% endhint %}
 
 ```python
 my_int = 3
@@ -65,7 +67,11 @@ your_int = -4
 
 ### Float
 
- `Float`, sau numarul rational este un număr, pozitiv sau negativ, care conține unul sau mai multe zecimale.
+ `Float`, sau numărul rațional este un număr, pozitiv sau negativ, care conține unul sau mai multe zecimale.
+
+{% hint style="info" %}
+`Float,`la fel, poate fi asociat cu mulțimea numerelor reale R.
+{% endhint %}
 
 ```python
 # iata cum arata un float
@@ -129,10 +135,14 @@ print(type(x))
 
 x = float(x)
 print(x)
-print(type(x))
+print(type(x)
 ```
 
 Convertirea din `string`  în  `int`
+
+{% hint style="info" %}
+Putem converti un `string` în`int` doar dacă este format în totalitate din cifre.
+{% endhint %}
 
 ```python
 x = "10"
