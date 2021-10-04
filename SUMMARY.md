@@ -71,13 +71,13 @@
   * [Operatori](python/exercitii/untitled-2.md)
   * [If...else](python/exercitii/untitled-3.md)
   * [Liste](python/exercitii/tipuri-de-date.md)
-  * [Untitled](python/exercitii/untitled.md)
-  * [Untitled](python/exercitii/untitled-4.md)
-  * [Untitled](python/exercitii/untitled-5.md)
-  * [Untitled](python/exercitii/untitled-6.md)
-  * [Untitled](python/exercitii/untitled-7.md)
-  * [Untitled](python/exercitii/untitled-8.md)
-  * [Untitled](python/exercitii/untitled-9.md)
+  * [Cicluri for](python/exercitii/untitled.md)
+  * [Funcții](python/exercitii/untitled-4.md)
+  * [Dicționare](python/exercitii/untitled-5.md)
+  * [Seturi](python/exercitii/untitled-6.md)
+  * [Fișiere](python/exercitii/untitled-7.md)
+  * [Try-except, Lambda](python/exercitii/untitled-8.md)
+  * [Librării , module](python/exercitii/untitled-9.md)
 
 ## BACKEND
 

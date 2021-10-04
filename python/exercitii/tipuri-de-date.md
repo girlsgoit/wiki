@@ -13,8 +13,26 @@ description: .. -
 
    Utilizați metoda `append ()`
 
-4. Fie date numerele `(3, 22, 8, 12, 45, -1, 19)`. Stocați-le într-o listă și determinați numărul minim și maxim.
+4. Fie date numerele `(3, 22, 8, 12, 45, -1, 19)`. Stocați-le într-o listă și manual determinați numărul minim și maxim in variabile repective.
 5.  ****Avem lista list1 = _\["a", "b", \["c", \["d", "e", \["f", "g"\], "k"\], "l"\], "m", "n"\]_ Extindeți lista dată cu adăugarea sub-listei `["h", "i", "j"]` în așa fel încât să arate ca următoarea listă **\['a', 'b', \['c', \['d', 'e', \['f', 'g', 'h', 'i', 'j'\], 'k'\], 'l'\], 'm', 'n'\]**
+
+```python
+#4
+numbers = [3, 22, 8, 12, 45, -1, 19]
+
+minimum = numbers[5]
+maximum = numbers[4]
+#bonus:
+print(min(numbers))
+print(max(numbers))
+
+#5
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+
+list1[2][1][2].extend(["h", "i", "j"])
+
+print(list1)
+```
 
 \_\_
 
