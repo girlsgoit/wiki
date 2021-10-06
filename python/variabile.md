@@ -138,6 +138,6 @@ print('Salut ' + name)
 # Exact! Același lucru, doar că mai simplificat.
 ```
 
-> **“It's easy to make mistakes that only come out much later, after you've already implemented a lot of code. You'll realize „ Oh I should have used a different** [**type of data**](tipuri-de-date.md) **structure.” Start over from scratch.”**  
+> **“It's easy to make mistakes that only come out much later, after you've already implemented a lot of code. You'll realize „ Oh I should have used a different** [**type of data**](tipuri-de-date.md)**.” Start over from scratch.”**  
 > _-- Guido van Rossum_
 

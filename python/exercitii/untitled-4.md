@@ -9,7 +9,7 @@
 5. Scrieți o funcție care calculează puterea unui număr fără a folosi operatorul \*\*.
 
 ```python
-#1 Solutie 2
+#1 Solutie
 aList = [121, 562, 2989, 92538, 9281]
 
 def invert(n):
@@ -36,10 +36,10 @@ def euclidean_distance(x1, y1, x2, y2):
     d = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
     return d
 
-x1= input()
-y1= input()
-x2= input()
-y2= input()
+x1= int(input('x1 ')
+y1= int(input('y1 ')
+x2= int(input('x2 ')
+y2= int(input('y2 ')
 
 euclidean_distance(x1, y1, x2, y2)
 
