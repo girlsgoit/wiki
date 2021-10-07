@@ -1,3 +1,7 @@
+---
+description: "\U0001F4C2\U0001F4C2\U0001F4C2\U0001F4C2"
+---
+
 # Fișiere
 
 1. Scrieți un program Python pentru a citi primele n linii ale unui fișier.

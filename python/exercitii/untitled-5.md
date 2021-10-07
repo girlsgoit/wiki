@@ -1,3 +1,7 @@
+---
+description: "\U0001F4D6\U0001F4D6\U0001F4D6"
+---
+
 # Dicționare
 
 1. Creați un dicționar numit `menu`

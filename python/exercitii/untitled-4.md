@@ -1,3 +1,7 @@
+---
+description: "def \U0001F6CF️(sleep):"
+---
+
 # Funcții
 
 

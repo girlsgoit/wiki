@@ -257,3 +257,5 @@ autori_carti["J.K.Rowling"][0]
 
 Mai multe despre dicționare:  \([+nested dictionary](https://www.geeksforgeeks.org/python-dictionary/),  [more info](https://realpython.com/python-dicts/)\)
 
+> Code -- a [set ](seturi.md)of symbols whose primary purpose is to restrict comprehension.
+

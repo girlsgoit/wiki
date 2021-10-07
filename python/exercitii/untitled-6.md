@@ -1,3 +1,7 @@
+---
+description: "\U0001F363\U0001F363\U0001F363 (set of sushi)"
+---
+
 # Seturi
 
 1. Scrieți un program pentru a afișa numărul de vocale in `string` utilizând seturi

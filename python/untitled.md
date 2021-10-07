@@ -109,3 +109,5 @@ print(sorted(fruits, key = lambda x: x[1]))
 
 Mai multe informații: Try-except\( [site](https://realpython.com/python-exceptions/), [documentation](https://docs.python.org/3/tutorial/errors.html)\) [Lambda](https://www.programiz.com/python-programming/anonymous-function)
 
+> When in doubt go to the [library](librarii-module.md)
+

@@ -215,3 +215,5 @@ print(unique_names)
 
 Mai multe informații \([documentație](https://docs.python.org/2/library/sets.html), [more info](https://realpython.com/python-sets/)\)
 
+> Nostalgia is a [file ](fisiere.md)that removes the rough edges from the good old days.
+

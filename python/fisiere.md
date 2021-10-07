@@ -225,3 +225,5 @@ with open('/content/drive/MyDrive/CSV/my_file.csv', mode='a') as csv_file:  #con
 
 Mai multă informație : \([site](https://www.programiz.com/python-programming/file-operation), [more info](https://realpython.com/read-write-files-python/), [documentation](https://docs.python.org/3/library/filesys.html)\)
 
+> To learn something new, you need to [try ](untitled.md)new things and not be afraid to be wrong.
+

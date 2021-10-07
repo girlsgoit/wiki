@@ -192,3 +192,5 @@ restul 2`
 
 Mai multe despre funcții \([documentație](https://docs.python.org/3/tutorial/controlflow.html#defining-functions), [site](https://www.geeksforgeeks.org/python-functions/)\)
 
+> Who needs a plain old [dictionary ](dictionare.md)when you can just come up with your own definitions of words?
+

@@ -78,7 +78,7 @@
   * [Fișiere](python/exercitii/untitled-7.md)
   * [Try-except, Lambda](python/exercitii/untitled-8.md)
   * [Librării , module](python/exercitii/untitled-9.md)
-  * [Mai multe exerciții](python/exercitii/mai-multe-exercitii.md)
+  * [✨Mai multe exerciții ✨](python/exercitii/mai-multe-exercitii.md)
 
 ## BACKEND
 
