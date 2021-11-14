@@ -120,9 +120,9 @@ text.toLowerCase(); // "hello world"
 
 Nimeni nu le tine minte pe toate deobicei, puteti intotdeauna sa gasiti toate metodele string-ului in resurse externe, e.g:
 
-w3school - [https://www.w3schools.com/jsref/jsref\_obj\_string.asp](https://www.w3schools.com/jsref/jsref\_obj\_string.asp)
+W3Schools - [https://www.w3schools.com/jsref/jsref\_obj\_string.asp](https://www.w3schools.com/jsref/jsref\_obj\_string.asp)
 
-mdn - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
+MDN - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ### Symbol
 
