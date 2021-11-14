@@ -97,7 +97,7 @@ console.log(101 + ' Dalmatians'); // "101 Dalmatians"
 console.log('Hello' + ' World');  // "Hello World"
 ```
 
-String-urile au o serie de metode (functii interne) utile care ne ajuta sa le manipulam usor. Cateva exemple mai populare:
+String-urile au o serie de metode (funcții interne) utile care ne ajută să le manipulăm ușor. Câteva exemple mai populare:
 
 ```javascript
 let text = "Hello World";
@@ -118,7 +118,7 @@ text.toUpperCase(); // "HELLO WORLD"
 text.toLowerCase(); // "hello world"
 ```
 
-Nimeni nu le tine minte pe toate deobicei, puteti intotdeauna sa gasiti toate metodele string-ului in resurse externe, e.g:
+Nimeni nu le ține minte pe toate deobicei, puteți întotdeauna să gasiți toate metodele string-ului în resurse externe, e.g:
 
 W3Schools - [https://www.w3schools.com/jsref/jsref\_obj\_string.asp](https://www.w3schools.com/jsref/jsref\_obj\_string.asp)
 
