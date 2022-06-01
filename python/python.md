@@ -1,4 +1,4 @@
-# Python
+# Python Archiva
 
 În decursul acestei sesiuni, veți afla ce înseamnă un limbaj de programare, de ce am ales să studiem **Python** și care este sintaxa acestuia. De asemenea, vă veți familiariza cu practica și logica de bază a scrierii unui program, făcând referință la unele situații cotidiene. În felul acesta, veți percepe mai ușor necesitatea programării în viața de zi cu zi.
 
@@ -12,7 +12,7 @@ Ce limbaje de programare cunoașteți? Probabil ați auzit de _Pascal_, _Delphi_
 
 Dacă există atât de multe limbaje de programare, de ce noi am ales să studiem anume _Python_? Deoarece _Python_ este un limbaj de programare:
 
-* **modern** \(mai modern decât _Pascal_\);
+* **modern** (mai modern decât _Pascal_);
 * **renumit**, fiind utilizat la ora actuală la o scară largă de către programatorii din toată lumea, crescându-și popularitatea tot mai mult;
 * **ușor de învățat**, deoarece există foarte multe comunități _Python_ online cu membri activi, dispuși să vă ajute dacă aveți vreo problemă, comunități unde puteți accesa ghiduri, manuale, exerciții, proiecte, etc.
 * **Sintaxă user-friendly,** asemănându-se cu engleza
@@ -23,13 +23,13 @@ Cu ajutorul _Python_, puteți crea site-uri, aplicații web, jocuri și chiar mo
 
 #### Python
 
-Pentru a instala Python \(vorbim de ultima versiune - 3.6 la moment\) pe Windows, este nevoie de a efectua următorii pași:
+Pentru a instala Python (vorbim de ultima versiune - 3.6 la moment) pe Windows, este nevoie de a efectua următorii pași:
 
 1. Descarcă Python de aici: [https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe](https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe)
 2. Pornește fișierul cu un dublu-click pe fișierul descărcat.
 3. În fereastra apărută asigură-te că opțiunea **Add Python 3.9.6 to PATH** este selectată și alege **Customize installation**
 4. La pasul doi, ai grijă ca toate boxele sa fie selectate și apasă **Next**
-5. La pasul trei selectează o directorie unde ai permisiuni de scriere \(dacă vorbim de bibliotecile Novateca - trebuie să fie pe **E:\** \)
+5. La pasul trei selectează o directorie unde ai permisiuni de scriere (dacă vorbim de bibliotecile Novateca - trebuie să fie pe **E:\\** )
 6. Ți se va cere să introduci datele administratorului după ce vei apăsa **Next**. Fă asta și așteaptă să termine de lucrat installer-ul.
 7. Apasă **Win + R** , tastează `cmd.exe` pentru a lansa linia de comandă.
 8. În terminalul apărut tastează `python`, ce va lansa interpretatorul limbajului în regim interactiv. Felicitări, acum poți utiliza Python pe Windows!
@@ -37,21 +37,20 @@ Pentru a instala Python \(vorbim de ultima versiune - 3.6 la moment\) pe Windows
 #### Django
 
 1. Asigură-te că ai instalat `python` conform pașilor de mai sus.
-2. Apasă **Win + R** , tastează `cmd.exe` pentru a lansa linia de comandă \(o fereastră de terminal Windows\).
-3. Pentru a instala Django, rulează următoarea comandă
+2. Apasă **Win + R** , tastează `cmd.exe` pentru a lansa linia de comandă (o fereastră de terminal Windows).
+3.  Pentru a instala Django, rulează următoarea comandă
 
-   ```text
-   pip install django
-   ```
+    ```
+    pip install django
+    ```
 
-   în terminal.
+    în terminal.
+4. Nu închide fereastra până când nu va termina de lucrat instalatorul (îți va scrie 'Successfully installed Django-3.2.5').
+5.  Pentru a verifica că totul s-a instalat corect, rulează această comandă în terminal - ea va afișa versiunea pachetului Django:
 
-4. Nu închide fereastra până când nu va termina de lucrat instalatorul \(îți va scrie 'Successfully installed Django-3.2.5'\).
-5. Pentru a verifica că totul s-a instalat corect, rulează această comandă în terminal - ea va afișa versiunea pachetului Django:
-
-   ```text
-   python -c "import django; print(django.__path__)"
-   ```
+    ```
+    python -c "import django; print(django.__path__)"
+    ```
 
 Acum ai totul pentru a dezvolta o aplicație Django.
 
@@ -67,9 +66,9 @@ Pentru început, executați următoarea instrucțiune:
 print("Diana Jalba")
 ```
 
-Pentru a face acest lucru, copiați textul de mai sus \(dar cu numele vostru între ghilimele\) și apăsați `Ctrl + F5` pe tastatură. În partea de jos a editorului de text, trebuie să vă apară consola, unde vă veți vedea numele afișat.
+Pentru a face acest lucru, copiați textul de mai sus (dar cu numele vostru între ghilimele) și apăsați `Ctrl + F5` pe tastatură. În partea de jos a editorului de text, trebuie să vă apară consola, unde vă veți vedea numele afișat.
 
-Instrucțiunea `print` este simplă și foarte des utilizată, practic în orice program. Ea nu face altceva, decât să afișeze la ecran informația pe care i-o transmiteți \(în cazul nostru, numele vostru\).
+Instrucțiunea `print` este simplă și foarte des utilizată, practic în orice program. Ea nu face altceva, decât să afișeze la ecran informația pe care i-o transmiteți (în cazul nostru, numele vostru).
 
 #### **Variabile**
 
@@ -171,7 +170,7 @@ La ce bun s-au inventat comentariile? Comentariile fac programul vostru mai ușo
 
 ### _Exercițiu:_
 
-Creați o variabilă și atribuiți-i o valoare de tip `string`. Înainte de asta, adăugați un comentariu în care puteți scrie orice doriți. Nu uitați de semnul \#.
+Creați o variabilă și atribuiți-i o valoare de tip `string`. Înainte de asta, adăugați un comentariu în care puteți scrie orice doriți. Nu uitați de semnul #.
 
 ```python
 # acesta este un comentariu
@@ -203,7 +202,7 @@ print(inmultire)
 print(impartire)
 ```
 
-Dacă toate operațiile matematice pot fi efectuate la un simplu calculator, de ce să folosim _Python_? Pentru că putem combina operațiile matematice cu diferite tipuri de date \(de exemplu `bool`\) și astfel se poate de creat programe utile.
+Dacă toate operațiile matematice pot fi efectuate la un simplu calculator, de ce să folosim _Python_? Pentru că putem combina operațiile matematice cu diferite tipuri de date (de exemplu `bool`) și astfel se poate de creat programe utile.
 
 Însă, să ne amintim că _Python_ nu se rezumă doar la cele patru operații matematice de bază! Haideți să vedem cum scriem ridicarea la putere.
 
@@ -212,13 +211,13 @@ opt = 2 ** 3
 print(opt)
 ```
 
-În acest exemplu, am creat o variabilă nouă pe care am numit-o `opt` și am setat-o ca fiind egală cu rezultatul a 2 la puterea 3 \(2^3\). Observați că am folosit două semne asterics `**`.
+În acest exemplu, am creat o variabilă nouă pe care am numit-o `opt` și am setat-o ca fiind egală cu rezultatul a 2 la puterea 3 (2^3). Observați că am folosit două semne asterics `**`.
 
 ### _Exercițiu:_
 
 Creați o variabilă `suma_mea` egală cu suma a două numere la dorința voastră și afișați variabila la ecran.
 
-Creați o altă variabilă, numită `distanta` și folosiți ridicarea la putere pentru ca rezultatul să fie egal cu 100. \(Încercați să ridicați 10 la puterea 2\). Afișați rezultatul.
+Creați o altă variabilă, numită `distanta` și folosiți ridicarea la putere pentru ca rezultatul să fie egal cu 100. (Încercați să ridicați 10 la puterea 2). Afișați rezultatul.
 
 ```python
 # setam variabila suma_mea egala cu suma a doua numere
@@ -255,9 +254,9 @@ Minunat! Acum, că v-ați reamintit ce înseamnă `string`-urile, haideți să l
 
 ![](../.gitbook/assets/diagrama.png)
 
-`String`-ul `"Hello World"` are 12 caractere, enumerate de la 0 la 11. Observați că și caracterului spațiu \(de după virgulă\) îi este atribuit un index \(indicele 5\).
+`String`-ul `"Hello World"` are 12 caractere, enumerate de la 0 la 11. Observați că și caracterului spațiu (de după virgulă) îi este atribuit un index (indicele 5).
 
-Prin urmare, dacă doriți să accesați caracterul `"w"`din `string`-ul `"Hello World"`, trebuie pur și simplu să scrieți `"Hello World"[7]` \(pentru că enumerarea începe tot timpul de la 0!\).
+Prin urmare, dacă doriți să accesați caracterul `"w"`din `string`-ul `"Hello World"`, trebuie pur și simplu să scrieți `"Hello World"[7]` (pentru că enumerarea începe tot timpul de la 0!).
 
 Pentru a însuși această logică mai bine, vă aduc un exemplu simplu:
 
@@ -287,7 +286,7 @@ Haideți să analizăm următoarea linie de cod:
 print("Python " + "este " + "dragut!")
 ```
 
-Aceasta va afișa propoziția `"Python este dragut!"`. Semnul `+` ‘unește’ toate aceste trei `string`-uri într-un singur `string`. Observați că sunt două spații în ghilimele: un spațiu după cuvântul `Python` și altul după cuvântul `este`. Am scris aceste spații pentru ca cuvintele _\(ca cuvintele… e cacofonie?\)_ să fie delimitate atunci când se va forma un singur `string`, adică să se afișeze trei cuvinte, și nu unul întreg. Combinarea `string`-urilor în felul dat și presupune **concatenarea**. Haideți acum să încercăm să concatenăm câteva `string`-uri împreună!
+Aceasta va afișa propoziția `"Python este dragut!"`. Semnul `+` ‘unește’ toate aceste trei `string`-uri într-un singur `string`. Observați că sunt două spații în ghilimele: un spațiu după cuvântul `Python` și altul după cuvântul `este`. Am scris aceste spații pentru ca cuvintele _(ca cuvintele… e cacofonie?)_ să fie delimitate atunci când se va forma un singur `string`, adică să se afișeze trei cuvinte, și nu unul întreg. Combinarea `string`-urilor în felul dat și presupune **concatenarea**. Haideți acum să încercăm să concatenăm câteva `string`-uri împreună!
 
 ### _Exercițiu:_
 
@@ -380,12 +379,12 @@ Pentru a intra în esența conceptului de Control Flow, trebuie să definim cât
 
 În _Python_ există șase comparatoare:
 
-* egal \(`==`\)
-* diferit \(`!=`\)
-* mai mic \(`<`\)
-* mai mic sau egal \(`<=`\)
-* mai mare \(`>`\)
-* mai mare sau egal \(`>=`\)
+* egal (`==`)
+* diferit (`!=`)
+* mai mic (`<`)
+* mai mic sau egal (`<=`)
+* mai mare (`>`)
+* mai mare sau egal (`>=`)
 
 **Atrageți atenția că `==` compară dacă două lucruri sunt egale, pe când `=` atribuie o valoare unei variabile.**
 
@@ -422,7 +421,7 @@ Rezultatul acestei expresii va fi `True` sau `False`? Pentru a răspunde la acea
 
 `1 < 2` este `True`. `2 < 3` este la fel `True`. `True and True` ce va fi? Corect! `True`!
 
-Dar care vor fi rezultatele următoarelor expresii? `1 < 2 and 2 > 3` \(_False_\) `1 < 2 or 2 > 3` \(_True_\) `1 > 2 or 2 > 3` \(_False_\) `not False` \(_True_\) `not 41 > 40` \(_False_\)
+Dar care vor fi rezultatele următoarelor expresii? `1 < 2 and 2 > 3` (_False_) `1 < 2 or 2 > 3` (_True_) `1 > 2 or 2 > 3` (_False_) `not False` (_True_) `not 41 > 40` (_False_)
 
 Operațiile `boolean` nu sunt pur și simplu evaluate de la stânga la dreapta. La fel ca operațiile aritmetice, operațiile `boolean` au o ordine de execuție:
 
@@ -436,7 +435,7 @@ De exemplu, `True or not False and False` returnează `True`. De ce?
 
 ### **Sintaxa condiționalelor**
 
-`if` \(dacă\) este cea mai simplă instrucțiune condițională. `if`-ul execută o anumită bucată de cod dacă expresia pe care o verifică este `True`.
+`if` (dacă) este cea mai simplă instrucțiune condițională. `if`-ul execută o anumită bucată de cod dacă expresia pe care o verifică este `True`.
 
 Aici avem un exemplu de sintaxă:
 
@@ -458,11 +457,11 @@ if 8 > 9:
 
 În acest caz, consola Visual Code Studio nu ne va afișa nimic.
 
-Să ne întoarcem la exemplul nostru _corect_. Luați în considerare și faptul că a doua linie de cod, cea de după `if`, este scrisă cu câteva spații mai la dreapta, și mai exact cu 4 spații \(sau cu un tab\). Această linie de cod este **indentată**.
+Să ne întoarcem la exemplul nostru _corect_. Luați în considerare și faptul că a doua linie de cod, cea de după `if`, este scrisă cu câteva spații mai la dreapta, și mai exact cu 4 spații (sau cu un tab). Această linie de cod este **indentată**.
 
 ### **Indentarea**
 
-Noțiunea de **indentare** este foarte importantă în programare, atunci când scrieți cod. În cazul în care scrieți cod în limbajul _Python_, această noțiune nu este doar importantă, dar este absolut **necesară**. Indentarea presupune plasarea codului pe linii, pentru scrierea corectă și cât mai clară a acestuia. Uneori, programatorii începători uită de indentare atunci când scriu cod și din acest motiv se confruntă cu erori la execuția programelor. De aceea, fiți atenți la acest capitol și **nu uitați de indentare**! &lt;3
+Noțiunea de **indentare** este foarte importantă în programare, atunci când scrieți cod. În cazul în care scrieți cod în limbajul _Python_, această noțiune nu este doar importantă, dar este absolut **necesară**. Indentarea presupune plasarea codului pe linii, pentru scrierea corectă și cât mai clară a acestuia. Uneori, programatorii începători uită de indentare atunci când scriu cod și din acest motiv se confruntă cu erori la execuția programelor. De aceea, fiți atenți la acest capitol și **nu uitați de indentare**! <3
 
 Dacă scriem expresia if încă o dată, dar cu a doua linie neindentată, adică așa:
 
@@ -477,7 +476,7 @@ Dar haideți să examinăm eroarea: `"IndentationError: expected an indented blo
 
 Else Instrucțiunea condițională `else` completează instrucțiunea condițională `if`. O pereche `if/else` spune: _"Hey, Python, dacă această expresie este adevărată, execută blocul de cod indentat de după if; în caz contrar, execută cealaltă bucată de cod indentat de după instrucțiunea else."_
 
-Spre deosebire de `if`, `else` nu depinde de o expresie \(pe care ar trebui să o verifice\). De exemplu:
+Spre deosebire de `if`, `else` nu depinde de o expresie (pe care ar trebui să o verifice). De exemplu:
 
 ```python
 if 8 > 9:
@@ -608,7 +607,7 @@ print('%s:%s:%s' % (now.hour, now.minute, now.second))
 
 ## **Funcții**
 
-Funcția este un concept important în programare \(la fel ca și în matematică\). Fiecare programator trebuie să poată să scrie funcții.
+Funcția este un concept important în programare (la fel ca și în matematică). Fiecare programator trebuie să poată să scrie funcții.
 
 Funcția reprezintă un bloc de cod care cere un input, îl prelucrează, și-l returnează sub formă de output. Cu alte cuvinte, funcția cere de la noi careva parametri cu care face niște operații. În urma acestor operații efectuate asupra parametrilor, funcția ne returnează rezultatul dorit.
 
@@ -625,7 +624,7 @@ Primul component este **header**-ul funcției, care include: cuvântul-cheie `de
 def hello_world():
 ```
 
-Al doilea component este **corpul** funcției, care descrie, propriu-zis, ce face funcția voastră. Corpul funcției trebuie să fie **indentat**, la fel ca și în cazul instrucțiunilor condiționale. _\(Vă amintiți de indentarea condiționalelor?\)_
+Al doilea component este **corpul** funcției, care descrie, propriu-zis, ce face funcția voastră. Corpul funcției trebuie să fie **indentat**, la fel ca și în cazul instrucțiunilor condiționale. _(Vă amintiți de indentarea condiționalelor?)_
 
 ```python
 print("Hello World!") # acesta este corpul functiei
@@ -706,7 +705,7 @@ def func_two(m):
 
 ### _Exercițiu:_
 
-Să analizăm următoarele două funcții: `o_afisare` \(care adună 1 la un număr pe care-l ia ca parametru\) și `merita_alta_afisare` \(care adună 2\).
+Să analizăm următoarele două funcții: `o_afisare` (care adună 1 la un număr pe care-l ia ca parametru) și `merita_alta_afisare` (care adună 2).
 
 ```python
 def o_afisare(n):
@@ -732,7 +731,7 @@ def merita_alta_afisare(n):
 
 Definiți `(def)` o funcție numită `cub` care cere un parametru numit `numar`. Nu uitați de paranteze și de două puncte!
 
-Faceți ca funcția să returneze `(return)` cubul unui număr \(adică un număr ridicat la puterea a treia\).
+Faceți ca funcția să returneze `(return)` cubul unui număr (adică un număr ridicat la puterea a treia).
 
 Definiți a doua funcție, numită `mai_mare`, care cere un parametru numit `numar`.
 
@@ -775,13 +774,13 @@ NameError: name 'sqrt' is not defined
 
 _Python_ ne-a spus: `"NameError: name 'sqrt' is not defined."` _Python_ nu știe ce înseamnă extragerea rădăcinii… până când!
 
-În _Python_ există un modul, numit `math` \(de la matematică\), care include un număr mare de variabile și funcții utile, iar `sqrt()` este una dintre aceste funcții. Pentru a accesa `math`, tot de ce avem nevoie este cuvântul-cheie `import`.
+În _Python_ există un modul, numit `math` (de la matematică), care include un număr mare de variabile și funcții utile, iar `sqrt()` este una dintre aceste funcții. Pentru a accesa `math`, tot de ce avem nevoie este cuvântul-cheie `import`.
 
 ```python
 import #modul
 ```
 
-Acest fel de import de modul \(ca cel de mai sus\) se numește **import generic**.
+Acest fel de import de modul (ca cel de mai sus) se numește **import generic**.
 
 ### _Exercițiu:_
 
@@ -812,7 +811,7 @@ from #modul import #functie
 
 Să mergem mai departe.
 
-Haideți să importăm doar funcția `sqrt` din modulul `math`. \(Nu avem nevoie de `()` după `sqrt`!\)
+Haideți să importăm doar funcția `sqrt` din modulul `math`. (Nu avem nevoie de `()` după `sqrt`!)
 
 ```python
 from math import sqrt
@@ -848,9 +847,9 @@ Din aceste motive, cel mai bine este fie să utilizați `import modul` și apoi 
 
 ### _Exercițiu:_
 
-Definiți \(`def`\) o funcție, numită `shut_down`, care cere un singur parametru `s`. Nu uitați de paranteze și de două puncte!
+Definiți (`def`) o funcție, numită `shut_down`, care cere un singur parametru `s`. Nu uitați de paranteze și de două puncte!
 
-Dacă \(`if`\) funcția `shut_down` primește un `s` egal cu `"yes"`, ea trebuie să vă returneze `"Shutting down"`, iar dacă \(`elif`\) `s` este egal cu `"no"`, atunci funcția trebuie să vă returneze `"Shutdown aborted"`. În final, dacă `shut_down` nu primește nimic din cele spuse mai sus, atunci funcția trebuie să returneze `"Sorry"`.
+Dacă (`if`) funcția `shut_down` primește un `s` egal cu `"yes"`, ea trebuie să vă returneze `"Shutting down"`, iar dacă (`elif`) `s` este egal cu `"no"`, atunci funcția trebuie să vă returneze `"Shutdown aborted"`. În final, dacă `shut_down` nu primește nimic din cele spuse mai sus, atunci funcția trebuie să returneze `"Sorry"`.
 
 ```python
 def shut_down(s):
@@ -864,7 +863,7 @@ def shut_down(s):
 
 ### **Review: Module**
 
-Să ne reamintim despre importarea modulelor \(și, în mod special, ce este accesibil din modulul `math`\).
+Să ne reamintim despre importarea modulelor (și, în mod special, ce este accesibil din modulul `math`).
 
 ### _Exercițiu:_
 
@@ -901,7 +900,7 @@ Lista de mai jos, `zoo_animale`, are trei itemi:
 zoo_animale = ["urs", "vulpe", "tigru"]
 ```
 
-Adăugați un al patrulea item listei! Introduceți numele animalului vostru preferat \(ca un `string`\) după `"tigru"`, prin virgulă. Afișați rezultatul final.
+Adăugați un al patrulea item listei! Introduceți numele animalului vostru preferat (ca un `string`) după `"tigru"`, prin virgulă. Afișați rezultatul final.
 
 ```python
 zoo_animale = ["urs", "vulpe", "tigru", "elefant"]
@@ -911,7 +910,7 @@ zoo_animale = ["urs", "vulpe", "tigru", "elefant"]
 
 Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze pă+trate, cam așa: `nume_lista[index]`.
 
-Indecșii listei încep cu 0, nu cu 1! \(Da, da, la fel ca și la `string`-uri\). Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
+Indecșii listei încep cu 0, nu cu 1! (Da, da, la fel ca și la `string`-uri). Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
 
 ### _Exercițiu:_
 
@@ -924,7 +923,7 @@ print(numere[1] + numere[3])
 
 #### **New Neighbours**
 
-Știți deja cum se accesează un item al listei. \(După index\).
+Știți deja cum se accesează un item al listei. (După index).
 
 ```python
 zoo_animale = ["urs", "vulpe", "tigru", "elefant"]
@@ -978,7 +977,7 @@ Mai jos, aveți o listă goală, numită `bagaj`.
 bagaj = []
 ```
 
-Adăugați în lista dată trei obiecte \(ochelari de soare, spre exemplu\). Folosiți metoda `append()`. Afișați lista finală.
+Adăugați în lista dată trei obiecte (ochelari de soare, spre exemplu). Folosiți metoda `append()`. Afișați lista finală.
 
 ```python
 bagaj = []
@@ -1061,7 +1060,7 @@ dictionar = {'cheie1' : 1, 'cheie2' : 2, 'cheie3' : 3}
 
 Mai sus avem exemplul unui dicționar cu trei perechi _cheie-valoare_. Cheia `cheie1` are valoarea `1`, `cheie2` - valoarea `2` ș.a.m.d.
 
-Dicționarele sunt utile pentru asemenea lucruri, ca: lista numerelor de telefoane \(având perechile _nume - număr_\), pagini de logare \(având perechile _adresa de e-mail - nume de utilizator_\) și nu doar!
+Dicționarele sunt utile pentru asemenea lucruri, ca: lista numerelor de telefoane (având perechile _nume - număr_), pagini de logare (având perechile _adresa de e-mail - nume de utilizator_) și nu doar!
 
 Mai jos, vă prezint un exemplu de dicționar, care stochează informația pentru perechile _e-mail - parolă_.
 
@@ -1287,7 +1286,7 @@ print(list_function(n))
 
 #### **Using an element from a list in a function**
 
-Atunci când transmitem o listă unei funcții, noi stocăm în funcție această listă drept parametru \(la fel ca și în cazul `string`-urilor sau numerelor!\)
+Atunci când transmitem o listă unei funcții, noi stocăm în funcție această listă drept parametru (la fel ca și în cazul `string`-urilor sau numerelor!)
 
 ```python
 def first_item(items):
@@ -1356,7 +1355,7 @@ for i in range(10):
 
 Această sintaxă ne spune următoarele: _"pentru fiecare număr_ `i` _din range de la_ `0` _la_ `10`_, afișează_ `i`_"_.
 
-Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` \(sau `elif`, `else`\), necesită două puncte la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie indentat.
+Observați că instrucțiunea iterativă `for`, la fel ca și instrucțiunea condițională `if` (sau `elif`, `else`), necesită două puncte la sfârșit de linie, respectiv necesită ca și codul ce urmează să fie indentat.
 
 Mai observați că, deși argumentul transmis funcției `range()` este `10`, consola ne-a afișat numerele de la 0 până la 9. Dacă doriți să se afișeze la consolă inclusiv numărul `10`, atunci trebuie să transmiteți argumentul `11` funcției `range()`.
 
@@ -1434,9 +1433,9 @@ for key in d:
 ## **Lucru în echipă cu mentorii**
 
 1. **Exercițiul 1** Scrieți o funcție care va afișa rădăcinile următoarei ecuații de gradul 2: `123 * x**2 - 232 * x + 1 = 0`.
-2. **Exercițiul 2** Scrabble este un joc în care participanții câștigă puncte scriind cuvinte. Cuvintele sunt evaluate prin adunarea punctajului fiecărei litere.
+2.  **Exercițiul 2** Scrabble este un joc în care participanții câștigă puncte scriind cuvinte. Cuvintele sunt evaluate prin adunarea punctajului fiecărei litere.
 
-   Mai jos aveți dicționarul tuturor literelor din alfabet cu punctajul corespunzător lor.
+    Mai jos aveți dicționarul tuturor literelor din alfabet cu punctajul corespunzător lor.
 
 ```python
 score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
@@ -1448,5 +1447,4 @@ score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
 
 De exemplu, cuvântul `"helix"` va acumula 15 puncte deoarece suma literelor din acest cuvânt este: 4 + 1 + 1 + 1 + 8.
 
-Definiți o funcție care primește un cuvânt \(evident de tip `string`\) și returnează punctajul echivalent al sumei literelor acestui cuvânt.
-
+Definiți o funcție care primește un cuvânt (evident de tip `string`) și returnează punctajul echivalent al sumei literelor acestui cuvânt.

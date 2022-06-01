@@ -31,8 +31,8 @@
   * [Funcții](frontend-dinamic/javascript/functii.md)
   * [DOM & Window API](frontend-dinamic/javascript/dom-and-window-api.md)
   * [Math API](frontend-dinamic/javascript/math-api.md)
-  * [Condiționale \(if\)](frontend-dinamic/javascript/conditionale-if.md)
-  * [Cicluri \(for & while\)](frontend-dinamic/javascript/cicluri-for-and-while.md)
+  * [Condiționale (if)](frontend-dinamic/javascript/conditionale-if.md)
+  * [Cicluri (for & while)](frontend-dinamic/javascript/cicluri-for-and-while.md)
 * [Vue.js](frontend-dinamic/vue.js/README.md)
   * [Componente Vue](frontend-dinamic/vue.js/componente-vue.md)
   * [Componente & Forme](frontend-dinamic/vue.js/date-in-formular.md)
@@ -64,7 +64,6 @@
 * [Fișiere](python/fisiere.md)
 * [Try-except-finally. Lambda](python/untitled.md)
 * [Librării, module](python/librarii-module.md)
-* [Python](python/python.md)
 * [Exercitii](python/exercitii/README.md)
   * [Variabile](python/exercitii/variabile.md)
   * [TIpuri de Date](python/exercitii/untitled-1.md)
@@ -79,6 +78,7 @@
   * [Try-except, Lambda](python/exercitii/untitled-8.md)
   * [Librării , module](python/exercitii/untitled-9.md)
   * [✨Mai multe exerciții ✨](python/exercitii/mai-multe-exercitii.md)
+* [Python Archiva](python/python.md)
 
 ## BACKEND
 
@@ -150,4 +150,3 @@
   * [Noțiuni și explicații](arhiva/robotica/notiuni-si-explicatii.md)
   * [Delay fara sa opreasca programul](arhiva/robotica/delay-fara-sa-opreasca-programul.md)
   * [Alte  resurse și exemple](arhiva/robotica/alte-resurse-si-exemple.md)
-
