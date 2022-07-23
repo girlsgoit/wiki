@@ -4,24 +4,24 @@
 
 Aplicațiile Web deobicei nu sunt compuse dintr-o singură componentă, ci din mai multe componente care toate impreună îndeplinesc funcționalitatea noastră. În general, se obișnuiește organizarea aplicației într-un arbore de componente imbricate:
 
-![](../../.gitbook/assets/image%20%28318%29.png)
+![](<../../.gitbook/assets/image (318).png>)
 
 Deobicei avem o coponenta parinte, care reprezintă însăși pagina, și ea include o serie de componente copii, care la rândul său pot avea alți copii.
 
 Spre exemplu, am putea avea componente pentru header, sidebar și content area, fiecare conținând, de obicei, alte componente pentru blog posts, link-uri de navigare ș.a.
 
-Aceste componente trebuie să comunice intre ele pentru a oferi o funcționalitate integrată. Avem 2 direcții de comunicare: 
+Aceste componente trebuie să comunice intre ele pentru a oferi o funcționalitate integrată. Avem 2 direcții de comunicare:&#x20;
 
 1. **De la părinte spre copil** - componenta parinte transmite informație catre o componentă copil
 2. **De la copil spre părinte** - componenta copil informează părintele că au intervenit modificări
 
-## Proprietăți \(comunicarea părinte - copil\)
+## Proprietăți (comunicarea părinte - copil)
 
-Să presupunem că vrem să implementăm o pagină, care ar avea o listă de comentarii, și fiecare comentariu are text, un autor, si un număr like-uri care le-a primit. 
+Să presupunem că vrem să implementăm o pagină, care ar avea o listă de comentarii, și fiecare comentariu are text, un autor, si un număr like-uri care le-a primit.&#x20;
 
-![Exemplu cum ar ar&#x103;ta componentele](../../.gitbook/assets/image%20%28324%29.png)
+![Exemplu cum ar arăta componentele](<../../.gitbook/assets/image (324).png>)
 
-O structură clasică a acestei funcționalități ar fi o componentă care reprezintă un comentariu, și o componentă părinte - pagina. Pagina va include o listă de componente `Comment` în ea. 
+O structură clasică a acestei funcționalități ar fi o componentă care reprezintă un comentariu, și o componentă părinte - pagina. Pagina va include o listă de componente `Comment` în ea.&#x20;
 
 Desigur comentariile vor fi păstrate în pagina părinte, ca o listă de obiecte, respectiv avem nevoie de un mecanism să transmitem către elementul copil informația necesară.
 
@@ -113,7 +113,7 @@ export default {
 În programare avem câțiva termeni care definesc convenții de unire a mai multor cuvinte într-o singură expresie, 2 din ele:
 
 * **CameCase** - înseamnă că fiecare cuvânt nou din expresia noastră va începe cu literă mare. Toate și funcțiile în JavaScript, spre exemplu, e recomandat să respecte această convenție
-* **kebab-case** - înseamnă că unim cuvintele în expresia noastră cu **`-`** , și toate sunt cu litere mici. Un exemplu unde se utilizează această convenție sunt atributele în html
+* **kebab-case** - înseamnă că unim cuvintele în expresia noastră cu **`-` ** , și toate sunt cu litere mici. Un exemplu unde se utilizează această convenție sunt atributele în html
 
 Având această diferență de convenții între html și JavaScript, Vue a adoptat o regulă simplă: Definim proprietățile în JavaScript sub convenția **CamelCase**, iar când le transmitem din html, le transmitem sub **kebab-case**, și el va avea grijă să știe care și cui aparține:
 
@@ -251,21 +251,21 @@ h1 {
 Array-ul de comentarii deja sunt obiecte, cu mai multe atribute în ele, și am inclus și un `id`, care îl folosim ca `:key` în `v-for`
 {% endhint %}
 
-## Evenimente \(comunicarea copil - părinte\)
+## Evenimente (comunicarea copil - părinte)
 
 Pe parcursul anilor de dezvoltare a tehnologiilor web, au fost învățate o serie de lecții și practici care par să fie cele mai bune. Una din aceste practici, este ideea de direcția de parcurgere a datelor.
 
 În termeni simpli, toată ideea se bazeaza pe faptul că componentele copii primesc direct datele de la componente părinți prin proprietăți, dar nu pot modifica direct datele componentelor parinti. Dacă vor să comunice o schimbare, trebuie să **emită** un eveniment.
 
-![](../../.gitbook/assets/image%20%28323%29.png)
+![](<../../.gitbook/assets/image (323).png>)
 
 {% hint style="warning" %}
-O altă concluzie a acestei practici este că interpretăm toate datele care le primim prin **`props`** ca date **nemodificabile.** Asta inseamnă că nu putem să le folosim direct în forme prin **`v-model`**, dacă vrem să le includem intr-o formă, le copiem întrun **`data`** local, și îl folosim pe acela.
+O altă concluzie a acestei practici este că interpretăm toate datele care le primim prin **`props`** ca date **nemodificabile.** Asta inseamnă că nu putem să le folosim direct în forme prin **`v-model`**, dacă vrem să le includem intr-o formă, le copiem întrun **`data` ** local, și îl folosim pe acela.
 {% endhint %}
 
 Extindem un pic lista noastră de comentarii, și adăguăm posibilitatea ca oamenii să dea like la fiecare comentariu. De asemenea vrem sa metinem un contor cu numărul total de like-uri care le-am primit:
 
-![Exemplu de comentarii cu func&#x21B;ionalit&#x103;&#x21B;i de like / dislike](../../.gitbook/assets/image%20%28320%29.png)
+![Exemplu de comentarii cu funcționalități de like / dislike](<../../.gitbook/assets/image (320).png>)
 
 ### Modificarea internă a valorilor
 
@@ -353,9 +353,9 @@ export default {
 ```
 
 {% hint style="info" %}
-Spre deosebire de proprietăți, evenimentele e recomandat să le scriem întotdeauna cu **kebab-case**. 
+Spre deosebire de proprietăți, evenimentele e recomandat să le scriem întotdeauna cu **kebab-case**.&#x20;
 
-Motivul principal este că html nu face deosebire între litere mici și mari la atributele elementelor, respectiv **`likeChange`** nu ar avea sens.
+Motivul principal este că html nu face deosebire între litere mici și mari la atributele elementelor, respectiv **`likeChange` ** nu ar avea sens.
 {% endhint %}
 
 {% hint style="info" %}
@@ -404,7 +404,7 @@ export default {
 ```
 
 {% hint style="info" %}
-Ca date într-un eveniment putem transmite atât tipuri simple de date \(numere, string\), cât și obiecte complexe, cum in cazul de mai sus - un obiect cu proprietatea `likeDelta` 
+Ca date într-un eveniment putem transmite atât tipuri simple de date (numere, string), cât și obiecte complexe, cum in cazul de mai sus - un obiect cu proprietatea `likeDelta`&#x20;
 
 Deobicei e recomandat să transmitem obiecte cu proprietăți, pentru a fi mai expliciți care e informația transmisă.
 {% endhint %}
@@ -445,9 +445,9 @@ export default {
 ```
 
 {% hint style="info" %}
-Observați că în template transmitem variabila **`$event`** când apelăm metoda **`onLikeChange($event)`**. această variabilă e automat disponibilă și conține datele care au fost transmite de componenta `Comment` 
+Observați că în template transmitem variabila **`$event`** când apelăm metoda **`onLikeChange($event)`**. această variabilă e automat disponibilă și conține datele care au fost transmite de componenta `Comment`&#x20;
 
-De asemenea la declarația metodei în javascript am definit un parametru de intrare **`event`**- care îl folosim pentru a modifica valoarea lui `totalLikes` 
+De asemenea la declarația metodei în javascript am definit un parametru de intrare **`event`**- care îl folosim pentru a modifica valoarea lui `totalLikes`&#x20;
 {% endhint %}
 
 ### Exemplul complet
@@ -606,4 +606,3 @@ h1 {
 }
 </style>
 ```
-

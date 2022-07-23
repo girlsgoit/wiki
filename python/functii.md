@@ -31,11 +31,11 @@ Funcțiile sunt constituite din două componente.
 #numele_funcției()
 ```
 
-1️⃣ Primul component este **header**-ul funcției, care include: cuvântul-cheie `def`, **numele** funcției și **parametrii** pe care-i transmiteți funcției. Parametrii sunt opționali. 
+1️⃣ Primul component este **header**-ul funcției, care include: cuvântul-cheie `def`, **numele** funcției și **parametrii** pe care-i transmiteți funcției. Parametrii sunt opționali.&#x20;
 
-2️⃣ Al doilea component este **corpul** funcției, care descrie, propriu-zis, ce face funcția voastră. Corpul funcției trebuie să fie **indentat**, la fel ca și în cazul instrucțiunilor condiționale. _\(Vă amintiți de indentarea condiționalelor?\)_ 
+2️⃣ Al doilea component este **corpul** funcției, care descrie, propriu-zis, ce face funcția voastră. Corpul funcției trebuie să fie **indentat**, la fel ca și în cazul instrucțiunilor condiționale. _(Vă amintiți de indentarea condiționalelor?)_&#x20;
 
-3️⃣ __Pentru a **apela** funcția dată, se scrie numele ei, urmat de două paranteze `( )`.
+3️⃣ __ Pentru a **apela** funcția dată, se scrie numele ei, urmat de două paranteze `( )`.
 
 
 
@@ -73,7 +73,7 @@ func('Alexandru', 'trainer')
 ```
 
 {% hint style="info" %}
-Putem trimite orice tip de date ca argumente unei funcții \(string, integer, listă, dicționar etc.\).
+Putem trimite orice tip de date ca argumente unei funcții (string, integer, listă, dicționar etc.).
 {% endhint %}
 
 De exemplu. dacă trimiteți o listă ca argument, aceasta va rămâne o listă atunci când apelăm funcția.
@@ -112,7 +112,7 @@ say_hello_to("hi, ", "Tudor", "Anton")
 
 ### Positional Arguments
 
-Cele mai frecvente sunt argumentele de poziție \(Positional Arguments\), ale căror valori sunt într-o anumită ordine.
+Cele mai frecvente sunt argumentele de poziție (Positional Arguments), ale căror valori sunt într-o anumită ordine.
 
 ```python
 def func(name, rol):
@@ -123,7 +123,7 @@ func('Ion', 'trainer')
 
 ### Keyword Arguments
 
-Pentru a evita confuzia argumentelor poziționale, putem folosi numele parametrilor \(Keyword Arguments\)
+Pentru a evita confuzia argumentelor poziționale, putem folosi numele parametrilor (Keyword Arguments)
 
 ```python
 def func(name, rol):
@@ -147,7 +147,7 @@ func('Dan')
 
 ### Returnarea unei valori
 
- Pentru a returna o valoare întro funcție, utilizam pur declarația `return`. 
+&#x20;Pentru a returna o valoare întro funcție, utilizam pur declarația `return`.&#x20;
 
 {% hint style="success" %}
 Odată executată o declarația `return`, nimic altceva în corpul funcției nu este executat.
@@ -182,15 +182,14 @@ print("restul " + str(rest))
 ```
 
 {% hint style="info" %}
-Numărul variabilelor de la `return`, în cazul nostru 2, trebuie să coincidă cu numărul variabilelor declarate după funcție.  
-Adica, în cazul nostru variabila `intreg` va primi aceeași valoare pe care o are variabila `partea_intreaga` _\(intreg = partea\_intreaga_\), iar, analog, _rest = restul_ .
+Numărul variabilelor de la `return`, în cazul nostru 2, trebuie să coincidă cu numărul variabilelor declarate după funcție.\
+Adica, în cazul nostru variabila `intreg` va primi aceeași valoare pe care o are variabila `partea_intreaga` _(intreg = partea\_intreaga_), iar, analog, _rest = restul_ .
 {% endhint %}
 
-Ca rezultat vom primi afișat:  
-`partea intreaga 1  
-restul 2`
+Ca rezultat vom primi afișat:\
+`partea intreaga 1`\
+`restul 2`
 
-Mai multe despre funcții \([documentație](https://docs.python.org/3/tutorial/controlflow.html#defining-functions), [site](https://www.geeksforgeeks.org/python-functions/)\)
+Mai multe despre funcții ([documentație](https://docs.python.org/3/tutorial/controlflow.html#defining-functions), [site](https://www.geeksforgeeks.org/python-functions/))
 
 > Who needs a plain old [dictionary ](dictionare.md)when you can just come up with your own definitions of words?
-

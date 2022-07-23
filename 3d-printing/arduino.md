@@ -4,35 +4,35 @@ description: "O plăcuță Arduino este compusă dintr-un microcontroler\_Atmel\
 
 # Arduino
 
-![](../.gitbook/assets/arduino-2168193_960_720.png)
+![](../.gitbook/assets/arduino-2168193\_960\_720.png)
 
 ### Lista Functiilor:
 
-#### \*pinMode\(pin, mode\)
+#### \*pinMode(pin, mode)
 
 pin: the number of the pin whose mode you wish to set
 
 mode: INPUT, OUTPUT
 
-#### \*digitalWrite\(pin, value\)
+#### \*digitalWrite(pin, value)
 
 pin: the pin number
 
 value: HIGH or LOW
 
-#### \*delay\(ms\)
+#### \*delay(ms)
 
 ms: the number of milliseconds to pause
 
-#### \*Serial.begin\(speed\)
+#### \*Serial.begin(speed)
 
 speed: in bits per second
 
-#### \*Serial.println\(val\) 
+#### \*Serial.println(val)&#x20;
 
 val: the value to print - any data type
 
-#### \*analogRead\(pin\)
+#### \*analogRead(pin)
 
 pin: the number of the analog input pin
 
@@ -40,9 +40,9 @@ pin: the number of the analog input pin
 
 ### Exercitii:
 
-#### Ex.1 Cum aprindem un led.
+#### &#xD;Ex.1 Cum aprindem un led.
 
-Pentru acest circuit arduino va avea rol de sursa de alimentare \(baterie\).
+Pentru acest circuit arduino va avea rol de sursa de alimentare (baterie).
 
 ![](../.gitbook/assets/schema-1.1.jpg)
 
@@ -54,7 +54,7 @@ Folosim arduino pentru a controla comportamentul unui singur led.
 
 ![](../.gitbook/assets/schema-1.2.jpg)
 
-```text
+```
 #define led1 (10)
 #define timp (250)
 
@@ -77,7 +77,7 @@ delay(timp);
 
 ![](../.gitbook/assets/schema-2.jpg)
 
-```text
+```
 #define led1 (10)
 #define led2 (9)
 #define led3 (8)
@@ -145,7 +145,7 @@ delay (timp);
 
 ![](../.gitbook/assets/schema-3.jpg)
 
-```text
+```
 #define led1 (10)
 #define led2 (9)
 #define led3 (8)
@@ -218,7 +218,7 @@ delay (timp);
 
 #### Exemplu de cod in care este implementat ciclul FOR:
 
-```text
+```
 #define led1 (10)
 #define led2 (9)
 #define led3 (8)
@@ -296,4 +296,3 @@ delay (timp);
 }
 }
 ```
-

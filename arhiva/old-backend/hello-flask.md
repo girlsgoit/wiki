@@ -2,17 +2,17 @@
 
 ## Hello Flask
 
-Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 50 centimetri pe 50 centimetri. Bănuiesc că ai face asta destul de ușor. Acum taie 1000 de bucăți de hârtie de aceleași dimensiuni. Nu e foarte eficient să măsori bucățile de hârtie de 1000 de ori. O metodă de a soluţiona această problemă ar fi să faci un cadru al unei forme de 50 cm pe 50 cm ce ar permite tăierea hârtiei cu dimensiunile dorite fără măsurarea ei. Cam aceasta ar însemna să folosești un framework \(cadru, schelet\). Un framework permite efectuarea sarcinilor complicate sau repetitive rapid și eficient. Flask este un **web framework**, adică un framework ce facilitează crearea unui site web.
+Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 50 centimetri pe 50 centimetri. Bănuiesc că ai face asta destul de ușor. Acum taie 1000 de bucăți de hârtie de aceleași dimensiuni. Nu e foarte eficient să măsori bucățile de hârtie de 1000 de ori. O metodă de a soluţiona această problemă ar fi să faci un cadru al unei forme de 50 cm pe 50 cm ce ar permite tăierea hârtiei cu dimensiunile dorite fără măsurarea ei. Cam aceasta ar însemna să folosești un framework (cadru, schelet). Un framework permite efectuarea sarcinilor complicate sau repetitive rapid și eficient. Flask este un **web framework**, adică un framework ce facilitează crearea unui site web.
 
 În acest capitol vei învăța cum să instalezi și să utilizezi **Flask**-ul. Tot de ce este nevoie este un computer cu Python instalat pe el.
 
-### Utilizarea ”Mediului Virtual” _\(Virtual Environments\)_
+### Utilizarea ”Mediului Virtual” _(Virtual Environments)_
 
-Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual _\(virtual environment\)_? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un _contra-exemplu_ a necesităţii unui mediu virtual este geanta \(poşeta\) unei fete - acolo, mereu, poţi găsi de toate.
+Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual _(virtual environment)_? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un _contra-exemplu_ a necesităţii unui mediu virtual este geanta (poşeta) unei fete - acolo, mereu, poţi găsi de toate.
 
-Așa e și cu mediu virtual, instalezi doar ceea ce ai nevoie.   
- Pentru început, verificaţi dacă acest program de creare a mediilor virtuale este instalat.  
- Rulează următoarea instrucțiune:
+Așa e și cu mediu virtual, instalezi doar ceea ce ai nevoie. \
+&#x20;Pentru început, verificaţi dacă acest program de creare a mediilor virtuale este instalat.\
+&#x20;Rulează următoarea instrucțiune:
 
 ```bash
 $ virtualenv --version
@@ -46,7 +46,7 @@ Also creating executable in venv/bin/python
 Installing setuptools, pip...done
 ```
 
-Acum că ai acest mediu virtual atât de mult râvnit în folderul `venv`, trebuie să-l activezi, altfel nu-i nici un _tolk_ din el. Pentru a face asta e nevoie de următoarea instrucțiune **\(ori de câte ori o să vrei să lucrezi la proiectul tău, o să fii nevoit să rulezi această instrucțiune\)**:
+Acum că ai acest mediu virtual atât de mult râvnit în folderul `venv`, trebuie să-l activezi, altfel nu-i nici un _tolk_ din el. Pentru a face asta e nevoie de următoarea instrucțiune **(ori de câte ori o să vrei să lucrezi la proiectul tău, o să fii nevoit să rulezi această instrucțiune)**:
 
 ```bash
 $ source venv/bin/activate
@@ -64,11 +64,11 @@ Acum în terminal, printr-un `venv` în fața numelui, ar trebui să ţi se men�
 (venv)flask@ubuntu:~ $
 ```
 
-Îţi mai aminteşti ce este relaţia **client - server**? Exact, _clientul_ solicită un serviciu \(ex: vizualizarea unei pagini de Facebook\), iar _serverul_, după ce a primit cererea, transmite un răspuns \(ex: informaţia necesară browserului pentru ca el să afişeze pagina solicitată\).
+Îţi mai aminteşti ce este relaţia **client - server**? Exact, _clientul_ solicită un serviciu (ex: vizualizarea unei pagini de Facebook), iar _serverul_, după ce a primit cererea, transmite un răspuns (ex: informaţia necesară browserului pentru ca el să afişeze pagina solicitată).
 
 În cazul nostru, Flask va îndeplini rolul de _server_, iar browserul - _clientul_.
 
-Acum să instalăm programul care ne va permite să instalăm \(descărcăm\) programe \(module\) pentru `Python`:
+Acum să instalăm programul care ne va permite să instalăm (descărcăm) programe (module) pentru `Python`:
 
 ```bash
 $ sudo apt-get install python-pip
@@ -80,8 +80,8 @@ Pentru ca Flask-ul să îndeplinească rolul de _server_, el trebuie instalat. A
 $ pip install flask
 ```
 
-Perfect, acum să creăm un fișier. Pentru început să-l numim `hello.py`, dar tu poţi să-l numeşti cum vrei atâta timp cât extensia fișierului este `.py`. _\(Vă mai amintiți ce a vorbit azi Sergiu despre extensiile fişierelor?\)_   
- Scrie în fișier:
+Perfect, acum să creăm un fișier. Pentru început să-l numim `hello.py`, dar tu poţi să-l numeşti cum vrei atâta timp cât extensia fișierului este `.py`. _(Vă mai amintiți ce a vorbit azi Sergiu despre extensiile fişierelor?)_ \
+&#x20;Scrie în fișier:
 
 > **Notă:** Structura curentă a proiectului este provizorie. Pentru moment o s-o folosim pe aceasta pentru că e mai simplă şi va facilita înţelegerea framework-ului. La sfârşitul lecţiei vom discuta despre structura recomandată a unui proiect Flask.
 
@@ -104,16 +104,16 @@ $ python hello.py
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Acum să mergem și să vedem ce site frumos și interesant am creat. În browser accesează adresa respectivă:   
- `127.0.0.1:5000` sau `localhost:5000`
+Acum să mergem și să vedem ce site frumos și interesant am creat. În browser accesează adresa respectivă: \
+&#x20;`127.0.0.1:5000` sau `localhost:5000`
 
-![](../../.gitbook/assets/hello_world.png)
+![](../../.gitbook/assets/hello\_world.png)
 
 Felicitări, ai creat un site!
 
-Acum, să analizăm ce am scris în super programul nostru.   
- Pentru început trebuie să importăm modului Flask.   
- După convenţie toate aplicațiile Flask trebuie să conțină o instanță a aplicației noastre, pe care, convenabil, o numim `app`. Ea se defineşte în felul următor:
+Acum, să analizăm ce am scris în super programul nostru. \
+&#x20;Pentru început trebuie să importăm modului Flask. \
+&#x20;După convenţie toate aplicațiile Flask trebuie să conțină o instanță a aplicației noastre, pe care, convenabil, o numim `app`. Ea se defineşte în felul următor:
 
 ```python
 from flask import Flask
@@ -122,13 +122,13 @@ app = Flask(__name__)
 
 ### Back in time - **URL**-uri
 
-Înainte să continuăm analiza programului nostru, îţi mai aminteşti ce este un URL?   
- Întocmai, **URL** este un acronim pentru **U**niform **R**esource **L**ocator, și este utilizat pentru a specifica adresa \(a unui fișier sau resursă\) pe internet _\(the World Wide Web\)_.
+Înainte să continuăm analiza programului nostru, îţi mai aminteşti ce este un URL? \
+&#x20;Întocmai, **URL** este un acronim pentru **U**niform **R**esource **L**ocator, și este utilizat pentru a specifica adresa (a unui fișier sau resursă) pe internet _(the World Wide Web)_.
 
-### Rute și Funcții View _\(Routes and View Functions\)_
+### Rute și Funcții View _(Routes and View Functions)_
 
-Clienții, cum ar fi browserele, trimit **cereri** la serverele web \(ceea ce ai creat tu acum două minute\), care, la rândul lor, trimit cererile la aplicația voastră Flask. Aplicația trebuie să știe ce cod să ruleze pentru fiecare cerere URL, așa că ea creează o **asociere** a URL-urilor cu funcțiile Python. Asocierea dintre un URL și o funcție se numește un **route** \(rută, cale, traseu, drum, cărărușă, itinerar, șosea, canal, marșrut, șleau\).   
- În următorul exemplu se demonstrează cum se face această mapare în Flask:
+Clienții, cum ar fi browserele, trimit **cereri** la serverele web (ceea ce ai creat tu acum două minute), care, la rândul lor, trimit cererile la aplicația voastră Flask. Aplicația trebuie să știe ce cod să ruleze pentru fiecare cerere URL, așa că ea creează o **asociere** a URL-urilor cu funcțiile Python. Asocierea dintre un URL și o funcție se numește un **route** (rută, cale, traseu, drum, cărărușă, itinerar, șosea, canal, marșrut, șleau). \
+&#x20;În următorul exemplu se demonstrează cum se face această mapare în Flask:
 
 ```python
 @app.route('/')
@@ -136,14 +136,14 @@ def index():
     return 'Hello World!'
 ```
 
-Înainte de a crea funcţia, definim `route`-ul aşa: `@app.route('/<adresa route-lui>')`.   
- Aici, funcția `index()` este înregistrată la URL-ul de bază al aplicației: `/`. Dacă aplicația ar fi lansată pe un server asociat cu domeniul `www.exemplu.com` și veți naviga la `http://www.exemplu.com`, atunci funția `index()` va fi rulată pe server și va fi afișat _Hello World!_, aceasta fiind un **response** \(răspuns\) - valoare returnată de funcție.   
- Funcțiile, ca și `index()`, se numesc **view functions**, funcții care afișează. Un response returnat de o funcție view poate fi un simplu **string** \(ca și în cazul nostru\), sau poate fi ceva mai complicat, după cum veți vedea mai târziu.
+Înainte de a crea funcţia, definim `route`-ul aşa: `@app.route('/<adresa route-lui>')`. \
+&#x20;Aici, funcția `index()` este înregistrată la URL-ul de bază al aplicației: `/`. Dacă aplicația ar fi lansată pe un server asociat cu domeniul `www.exemplu.com` și veți naviga la `http://www.exemplu.com`, atunci funția `index()` va fi rulată pe server și va fi afișat _Hello World!_, aceasta fiind un **response** (răspuns) - valoare returnată de funcție. \
+&#x20;Funcțiile, ca și `index()`, se numesc **view functions**, funcții care afișează. Un response returnat de o funcție view poate fi un simplu **string** (ca și în cazul nostru), sau poate fi ceva mai complicat, după cum veți vedea mai târziu.
 
 ### Modul Debug
 
-Fă o modificare la valoare returnată de funcția `index()`, salvează fișierul și să fă un refresh la pagina din browser. După cum vezi, serverul nu a inclus schimbarea, deoarece el rulează după o versiune mai veche a fișierului `hello.py`.   
- Un truc foarte util este modul **debug** care zice serverului să fie atent la toate schimbările ce au loc. Pe lângă asta, atunci când serverul va întâlni o eroare, el va încerca să analizeze cauza și vă va da o sugestie la cum să remediați greșeala. Tot ce trebuie să faci pentru a activa acest mod este să adaugi următoarea linie de cod:
+Fă o modificare la valoare returnată de funcția `index()`, salvează fișierul și să fă un refresh la pagina din browser. După cum vezi, serverul nu a inclus schimbarea, deoarece el rulează după o versiune mai veche a fișierului `hello.py`. \
+&#x20;Un truc foarte util este modul **debug** care zice serverului să fie atent la toate schimbările ce au loc. Pe lângă asta, atunci când serverul va întâlni o eroare, el va încerca să analizeze cauza și vă va da o sugestie la cum să remediați greșeala. Tot ce trebuie să faci pentru a activa acest mod este să adaugi următoarea linie de cod:
 
 ```python
 app.debug = True
@@ -168,14 +168,14 @@ def show_date():
     return 'Azi este ' + 20 + ' august.'
 ```
 
-Salvează modificările şi mergi la `localhost:5000/date`.   
- Rezultatul ar trebuie să fie următorul:
+Salvează modificările şi mergi la `localhost:5000/date`. \
+&#x20;Rezultatul ar trebuie să fie următorul:
 
-![](../../.gitbook/assets/first_error.png)
+![](../../.gitbook/assets/first\_error.png)
 
-Ce palpitant! Prima eroare! Dar să nu-ţi fie frică, `debugger`-ul te va ajuta să soluționezi eroarea. Aminteşte-ţi ce ţi-a zis Diana despre convertirea `string`-urilor. Bravo, Python nu poate concatena \(uni\) un `string` cu un non-string. Din această cauză trebuie să transformi `20` într-un `string`.   
- Cum faci asta? Corect! Aplică metoda `str()` asupra numărului.  
- Acum linia buclucaşă arată aşa:
+Ce palpitant! Prima eroare! Dar să nu-ţi fie frică, `debugger`-ul te va ajuta să soluționezi eroarea. Aminteşte-ţi ce ţi-a zis Diana despre convertirea `string`-urilor. Bravo, Python nu poate concatena (uni) un `string` cu un non-string. Din această cauză trebuie să transformi `20` într-un `string`. \
+&#x20;Cum faci asta? Corect! Aplică metoda `str()` asupra numărului.\
+&#x20;Acum linia buclucaşă arată aşa:
 
 ```python
 return 'Azi este ' + str(20) + ' august.'
@@ -183,10 +183,10 @@ return 'Azi este ' + str(20) + ' august.'
 
 Accesează acum `localhost:5000/date` şi totul trebuie să ruleze bine:
 
-![](../../.gitbook/assets/fixed_error.png)
+![](../../.gitbook/assets/fixed\_error.png)
 
-Probabil o să te întrebi: _"De ce nu am scris de la început_ `'Azi e 20 august.'`_? Fără ca să-mi mai bat capul de_ `string`_-uri,_ `int`_-uri, concatenare..."_  
- Răspunsul e simplu: **flexibilitate**. Efectuând câteva modificări mici, poţi face ca pagina ta să afişeze data corect în fiecare zi a anului şi nu doar pe `20 august`. Importă modulul `datetime` despre care ţi s-a vorbit la **Basic Python Statements**, care îţi va permite să manipulezi timpul ca ora sau data \(dar nu; nu vei putea să călătoreşti în timp\). Scrie următorul cod chiar sub `from flask import Flask`:
+Probabil o să te întrebi: _"De ce nu am scris de la început_ `'Azi e 20 august.'`_? Fără ca să-mi mai bat capul de_ `string`_-uri,_ `int`_-uri, concatenare..."_\
+&#x20;Răspunsul e simplu: **flexibilitate**. Efectuând câteva modificări mici, poţi face ca pagina ta să afişeze data corect în fiecare zi a anului şi nu doar pe `20 august`. Importă modulul `datetime` despre care ţi s-a vorbit la **Basic Python Statements**, care îţi va permite să manipulezi timpul ca ora sau data (dar nu; nu vei putea să călătoreşti în timp). Scrie următorul cod chiar sub `from flask import Flask`:
 
 ```python
 from datetime import datetime
@@ -211,12 +211,12 @@ def user(name):
     return 'Hello, %s!' % name
 ```
 
-Porțiunea dintre `< >` este partea dinamică, așa că orice URL care coincide cu partea statică \(`localhost:5000/user/`\) va fi asociată cu funcția `user()`. Când funcția este chemată, Flask trimite partea dinamică ca o variabilă \(argument\), astfel `name` va fi trimisă în funcție ca parametru.
+Porțiunea dintre `< >` este partea dinamică, așa că orice URL care coincide cu partea statică (`localhost:5000/user/`) va fi asociată cu funcția `user()`. Când funcția este chemată, Flask trimite partea dinamică ca o variabilă (argument), astfel `name` va fi trimisă în funcție ca parametru.
 
-Salvează fișierul, mergi în browser și accesează adresa:   
- `localhost:5000/user/numele-vostru`
+Salvează fișierul, mergi în browser și accesează adresa: \
+&#x20;`localhost:5000/user/numele-vostru`
 
-![](../../.gitbook/assets/hello_user.png)
+![](../../.gitbook/assets/hello\_user.png)
 
 Acum, fişierul tău `hello.py` ar trebuie să arate cam aşa:
 
@@ -245,12 +245,12 @@ if __name__ == '__main__':
 
 ### Structura unui proiect Flask
 
-Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul să vorbim despre structura recomandată a unui proiect Flask, altfel fişierul va continua să crească şi codul va deveni dificil de menţinut.   
+Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul să vorbim despre structura recomandată a unui proiect Flask, altfel fişierul va continua să crească şi codul va deveni dificil de menţinut. \
 
 
-![](../../.gitbook/assets/project_structure.png)
+![](../../.gitbook/assets/project\_structure.png)
 
-```text
+```
 savanna-tweet
     /app
         /static
@@ -261,8 +261,8 @@ savanna-tweet
     run.py
 ```
 
-Pentru început, în folderul proiectului, creează un folder `/app`. În interiorul acestui folder `/app`, creează 2 fişiere: `__init__.py` şi `views.py`.   
- `__init__.py` este un fişier special în limbajul `Python`, pentru că el permite ca directoriul \(folderul\) în care se află să devină un modul ce poate fi importat în alte fişiere `.py`. Aici o să includem instanţa aplicaţiei noastre şi o să importăm conţinutul fişierului `views.py`.
+Pentru început, în folderul proiectului, creează un folder `/app`. În interiorul acestui folder `/app`, creează 2 fişiere: `__init__.py` şi `views.py`. \
+&#x20;`__init__.py` este un fişier special în limbajul `Python`, pentru că el permite ca directoriul (folderul) în care se află să devină un modul ce poate fi importat în alte fişiere `.py`. Aici o să includem instanţa aplicaţiei noastre şi o să importăm conţinutul fişierului `views.py`.
 
 ```python
 from flask import Flask 
@@ -308,7 +308,7 @@ Ultimul folder pe care trebuie să-l creezi este `/static` şi se va alfa în fo
 
 ### Fișiere statice
 
-După cum presupune numele, Flask permite utilizarea fișierelor statice \(și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului\). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. Introdu un text asemănător în interiorul lui:
+După cum presupune numele, Flask permite utilizarea fișierelor statice (și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. Introdu un text asemănător în interiorul lui:
 
 ```markup
 Hello from the static page!
@@ -316,13 +316,13 @@ Hello from the static page!
 
 După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
 
-![](../../.gitbook/assets/static_page.png)
+![](../../.gitbook/assets/static\_page.png)
 
 ## Bonus
 
 ### Zi-i vecinului să-ți acceseze site-ul
 
-Pentru a face site-ul vizibil \(și accesibil\) tuturor **de pe rețeaua locală** trebuie să menționăm acest lucru lui Flask. Modifică ultima linie de cod ca să arate în felul următor:
+Pentru a face site-ul vizibil (și accesibil) tuturor **de pe rețeaua locală** trebuie să menționăm acest lucru lui Flask. Modifică ultima linie de cod ca să arate în felul următor:
 
 ```python
 app.run(host = '0.0.0.0', debug = True)
@@ -341,24 +341,21 @@ Aceasta va afișa multă informație în consolă, caută ultima coloană, unde 
 Creează workspace-ul pentru proiectul tău
 
 1. Creează un folder unde o să păstrezi noul tău proiect
-2. Creează mediul virtual `virtualenv`-ul \(şi nu uita să-l activezi\)
+2. Creează mediul virtual `virtualenv`-ul (şi nu uita să-l activezi)
 3. Instalează Flask-ul
 4. Creează alt folder `/app` unde o să incluzi `__init__.py`, `views.py` şi folderul `/static`
-5. Include codul necesar în fişierele `__init__.py` şi `views.py` \(dacă nu-ţi aminteşti ce trebuie să scrii în ele, fă un scroll la **Structura unui proiect Flask**\)
-6. Creează fişierul `run.py` \(la acelaşi nivel cu folderele `/app` şi `/venv`\) unde să incluzi codul pentru pornirea aplicaţiei
+5. Include codul necesar în fişierele `__init__.py` şi `views.py` (dacă nu-ţi aminteşti ce trebuie să scrii în ele, fă un scroll la **Structura unui proiect Flask**)
+6. Creează fişierul `run.py` (la acelaşi nivel cu folderele `/app` şi `/venv`) unde să incluzi codul pentru pornirea aplicaţiei
 7. Porneşte serverul, şi minunează-te
 
 **Adiţional:**
 
-* Creează o nouă rută cu URL dinamic \(ex: `localhost:5000/string/ggit`\) care să afişeze partea de după `/string/` de 3 ori.   
+*   Creează o nouă rută cu URL dinamic (ex: `localhost:5000/string/ggit`) care să afişeze partea de după `/string/` de 3 ori. \
 
 
-  Pentru ruta de mai sus, output-ul corect este `ggitggitggit`
+    Pentru ruta de mai sus, output-ul corect este `ggitggitggit`
+*   Adaugă o pagină, ca şi `/date`, care pe lângă data curenta, va afişa şi ora. \
 
-* Adaugă o pagină, ca şi `/date`, care pe lângă data curenta, va afişa şi ora.   
 
-
-  \(ex: `"Azi e 20 august. Ora 19:03"`\)
-
+    (ex: `"Azi e 20 august. Ora 19:03"`)
 * Creează două pagini statice unde poţi să incluzi ce vrei tu în ele
-

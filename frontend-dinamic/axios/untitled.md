@@ -1,29 +1,15 @@
 # Rest api GET one
 
-{% api-method method="get" host="https://ggit.mysevidu.com" path="/api/posts/:id" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://ggit.mysevidu.com" path="/api/posts/:id" method="get" summary="Get Cakes" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```javascript
 {
     "participanta": "Ana Maria",
@@ -31,20 +17,11 @@ Cake successfully retrieved.
     "descriere": "Descrierea postarii"
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="Could not find a cake matching this query." %}
 ```javascript
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

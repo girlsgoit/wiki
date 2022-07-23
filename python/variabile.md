@@ -10,7 +10,7 @@ Ca orice limba Python are regulile sale de scriere.
 
 Hai sa invatam cateva reguli mai jos.
 
-![](../.gitbook/assets/c1_4.png)
+![](../.gitbook/assets/c1\_4.png)
 
 Pentru a scrie și executa toate exercițiile propuse mai jos, veți folosi editorul de text Visual Studio Code.
 
@@ -22,9 +22,9 @@ Pentru început, executați următoarea instrucțiune:
 print("Hello world") 
 ```
 
-Instrucțiunea `print` este simplă și foarte des utilizată, practic în orice program. Ea nu face nimic altceva decât să afișeze la ecran informația pe care i-o transmiteți \(în cazul nostru, numele vostru\).
+Instrucțiunea `print` este simplă și foarte des utilizată, practic în orice program. Ea nu face nimic altceva decât să afișeze la ecran informația pe care i-o transmiteți (în cazul nostru, numele vostru).
 
-Pentru a face acest lucru, copiați textul de mai sus \(dar cu numele vostru între ghilimele\) și apăsați `Ctrl + F5` pe tastatură. În partea de jos a editorului de text trebuie să vă apară consola, unde vă veți vedea numele afișat.
+Pentru a face acest lucru, copiați textul de mai sus (dar cu numele vostru între ghilimele) și apăsați `Ctrl + F5` pe tastatură. În partea de jos a editorului de text trebuie să vă apară consola, unde vă veți vedea numele afișat.
 
 ```python
 # Python știe matematica :)
@@ -61,7 +61,7 @@ print(x, limbaj_de_programare)
 ```
 
 {% hint style="info" %}
-**Variabile** : etichete atașate datelor \(inclusiv text sau chiar cod\).
+**Variabile** : etichete atașate datelor (inclusiv text sau chiar cod).
 {% endhint %}
 
 Variabilele reprezintă un element important în programare. O **variabilă** reprezintă o valoare care se poate schimba de mai multe ori în timpul execuției unui program. Gândiți-vă la o variabilă ca la o cutie. Atunci când creați variabila, cutia este goală. Când îi atribuiți variabilei o valoare, e ca și cum ați pune în cutie un obiect, să zicem un pix. Peste o perioadă de timp, decideți să nu mai păstrați pixul în cutie, de aia puneți un creion în loc. Acest proces se numește _realocare de date_.
@@ -80,18 +80,19 @@ print(name, name)
 ```
 
 {% hint style="info" %}
-Puteți observa că de data aceasta am folosit   '  '  \(single quotes\) în loc de   **"  "**  \(double quotes\) - în Pyhton acestea au același rol, deci nu contează pe care dintre ele le folosim.  
+Puteți observa că de data aceasta am folosit   '  '  (single quotes) în loc de   **"  "**  (double quotes) - în Pyhton acestea au același rol, deci nu contează pe care dintre ele le folosim.\
+
 {% endhint %}
 
-O variabilă poate avea un nume scurt \(precum `x` și `y`\) sau un nume mai descriptiv \(`age`, `name`, `total_volume`\).
+O variabilă poate avea un nume scurt (precum `x` și `y`) sau un nume mai descriptiv (`age`, `name`, `total_volume`).
 
 {% hint style="success" %}
- Reguli pentru variabilele Python:
+&#x20;Reguli pentru variabilele Python:
 
 * O variabilă trebuie să înceapă cu o literă sau un caracter de subliniere: „ \_ ”
 * O variabilă nu poate să înceapă cu un număr
-* O variabilă nu poate conține decât caractere alfa-numerice și scrise \(A-z, 0-9 și \_\)
-* Denumirile de variabilă sunt sensibile la majuscule/case-sensitive \(name, Name și NAME sunt trei variabile diferite\)
+* O variabilă nu poate conține decât caractere alfa-numerice și scrise (A-z, 0-9 și \_)
+* Denumirile de variabilă sunt sensibile la majuscule/case-sensitive (name, Name și NAME sunt trei variabile diferite)
 {% endhint %}
 
 ```python
@@ -104,7 +105,7 @@ MYVAR = "John"
 myvar2 = "John"
 ```
 
-> **Nota bene**: Pentru ca să înțelegeți mai bine conceptul de variabilă, gândiți-vă la constante, adică la opusul variabilelor. O constantă este pur și simplu o valoare care este ... constantă, cu alte cuvinte - o valoare care nu se modifică, în acest sens, constantele sunt opusul variabilelor, deoarece valoarea unei variabile se poate modifica pe durata execuției unui program. Constantele au o valoare fixă pe tot parcursul rulării. O constantă arhi-cunoscută este _PI_ care are o valoare fixă \(de aproximativ 3.14 \) pe care nu o putem schimba deloc în timpul execuției.
+> **Nota bene**: Pentru ca să înțelegeți mai bine conceptul de variabilă, gândiți-vă la constante, adică la opusul variabilelor. O constantă este pur și simplu o valoare care este ... constantă, cu alte cuvinte - o valoare care nu se modifică, în acest sens, constantele sunt opusul variabilelor, deoarece valoarea unei variabile se poate modifica pe durata execuției unui program. Constantele au o valoare fixă pe tot parcursul rulării. O constantă arhi-cunoscută este _PI_ care are o valoare fixă (de aproximativ 3.14 ) pe care nu o putem schimba deloc în timpul execuției.
 
 ## Comentarii
 
@@ -138,6 +139,5 @@ print('Salut ' + name)
 # Exact! Același lucru, doar că mai simplificat.
 ```
 
-> **“It's easy to make mistakes that only come out much later, after you've already implemented a lot of code. You'll realize „ Oh I should have used a different** [**type of data**](tipuri-de-date.md)**.” Start over from scratch.”**  
+> &#x20;**“It's easy to make mistakes that only come out much later, after you've already implemented a lot of code. You'll realize „ Oh I should have used a different** [**type of data**](tipuri-de-date.md)**.” Start over from scratch.”**\
 > _-- Guido van Rossum_
-

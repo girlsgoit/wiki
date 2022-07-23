@@ -22,16 +22,16 @@ Operațiile `boolean` compară careva afirmații, rezultatul acestei comparații
 
 ### `and`
 
-_**And**_ verifică dacă _ambele_ afirmații sunt `True`. 
+_**And**_ verifică dacă _ambele_ afirmații sunt `True`.&#x20;
 
 {% hint style="info" %}
-_De exemplu:_ 
+_De exemplu:_&#x20;
 
 Eu voi cumpăra pâine dacă:
 
 1. Voi avea bani .
 
-**ȘI \(AND\)**  
+**ȘI (AND)** &#x20;
 
 1. Dacă va fi pâine la magazin.
 {% endhint %}
@@ -41,15 +41,15 @@ Eu voi cumpăra pâine dacă:
 _**Or**_ verifică dacă _cel puțin_ o afirmație este `True`.
 
 {% hint style="info" %}
-_De exemplu:_ 
+_De exemplu:_&#x20;
 
 Eu voi fi fericit/fericită dacă:
 
 1. Se termină pandemia.
 
-    **SAU \(OR\)**  
+&#x20;   **SAU (OR)** &#x20;
 
-   ****2. Dacă mă vaccinez.
+&#x20;  ****   2. Dacă mă vaccinez.
 {% endhint %}
 
 ### `not`
@@ -57,11 +57,11 @@ Eu voi fi fericit/fericită dacă:
 Not este _opusul_ afirmației.
 
 {% hint style="info" %}
-_De exemplu:_ 
+_De exemplu:_&#x20;
 
 Eu voi sta acasă dacă:
 
- **NU \(NOT\)**  se deschide școala.
+&#x20;**NU (NOT)**  se deschide școala.
 {% endhint %}
 
 În acest context, aflați că:
@@ -91,15 +91,15 @@ Rezultatul acestei expresii va fi `True` sau `False`? Pentru a răspunde la acea
 
 Dar care vor fi rezultatele următoarelor expresii?
 
-`1 < 2 and 2 > 3` \(_False_\) 
+`1 < 2 and 2 > 3` (_False_)&#x20;
 
-`1 < 2 or 2 > 3` \(_True_\) 
+`1 < 2 or 2 > 3` (_True_)&#x20;
 
-`1 > 2 or 2 > 3` \(_False_\)
+`1 > 2 or 2 > 3` (_False_)
 
-`not False` \(_True_\) 
+`not False` (_True_)&#x20;
 
-`not 41 > 40` \(_False_\)
+`not 41 > 40` (_False_)
 
 {% hint style="warning" %}
 Operațiile `boolean` nu sunt pur și simplu evaluate de la stânga la dreapta. La fel ca operațiile aritmetice, operațiile `boolean` au o ordine de execuție:
@@ -117,7 +117,7 @@ De exemplu, `True or not False and False` returnează `True`. De ce?
 
 Dacă tot am învățat mai devreme cum să comparăm datele între ele, acum putem să punem și condiții.
 
-Condiția `if` este considerată cea mai simplă dintre cele trei și ia o decizie în funcție dacă condiția e adevărată sau nu. Dacă condiția este adevărată, imprimă expresia indentată. Dacă condiția este falsă, omite imprimarea expresiei indentate. 
+Condiția `if` este considerată cea mai simplă dintre cele trei și ia o decizie în funcție dacă condiția e adevărată sau nu. Dacă condiția este adevărată, imprimă expresia indentată. Dacă condiția este falsă, omite imprimarea expresiei indentate.&#x20;
 
 ```python
 if 100 == 100:          # specificam conditia, si ne amintim sa punem ':'
@@ -127,7 +127,7 @@ if 100 == 100:          # specificam conditia, si ne amintim sa punem ':'
 ```
 
 {% hint style="success" %}
- Este foarte important să **indentăm** corect codul când folosim conditionalul if.
+&#x20;Este foarte important să **indentăm** corect codul când folosim conditionalul if.
 {% endhint %}
 
 In caz contrar vom obține eroarea de mai jos.
@@ -150,11 +150,11 @@ Python folosește indentare pentru a indica un bloc de cod.
 
 Pentru a deplasa o linie de cod spre dreapta la distanța cerută de Python, utilizăm tasta `tab`
 
-![](../.gitbook/assets/c1_2.png)
+![](../.gitbook/assets/c1\_2.png)
 
- Sa vedem care e structura **condiționalului if**
+&#x20;Sa vedem care e structura **condiționalului if**
 
-![](../.gitbook/assets/c1_3.png)
+![](../.gitbook/assets/c1\_3.png)
 
 {% hint style="success" %}
 Când folosim `else`?
@@ -198,4 +198,3 @@ print(accessibility) # observați că print() se află în afara if-ului
 ```
 
 > **Some day, someone will construct a** [**list** ](liste.md)**of 500 Great Programming Quotes, and this will be one of them.**
-

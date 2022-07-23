@@ -57,7 +57,7 @@ Acum urmează să stilizăm HTML-ul cu CSS. Pentru aceasta vom adăuga în `head
 
 Acum deschide fișierul `index.html` în browser-ul tău preferat și vei vedea următorul rezultat.
 
-![Selector tag](../.gitbook/assets/selector_tag.png)
+![Selector tag](../.gitbook/assets/selector\_tag.png)
 
 Arată mai bine decât fără stil, așa-i?
 
@@ -82,11 +82,11 @@ Apoi vom adăuga un selector pentru clasa `my-class` înăuntrul tag-ului `style
 
 Fă refresh la pagina din browser și vei vedea următorul rezultat:
 
-![Selector class](../.gitbook/assets/selector_class.png)
+![Selector class](../.gitbook/assets/selector\_class.png)
 
 ### Selectori utilizând ID
 
-În calitate de selector poate fi utilizat și un ID \(identificator unic pentru orice element HTML\).
+În calitate de selector poate fi utilizat și un ID (identificator unic pentru orice element HTML).
 
 Pentru a exemplifica, vom modifica puțin `div`-ul din exemplul precedent: în loc de atributul `class` vom scrie un `id` al elementului:
 
@@ -105,7 +105,7 @@ Iar pentru a stiliza, vom mai adăuga un selector pentru `id`:
 
 În exemplul dat, ID-ul elementului `div` este `my-id`. Reactualizează pagina din browser și vei vedea următorul rezultat:
 
-![Selector id](../.gitbook/assets/selector_id.png)
+![Selector id](../.gitbook/assets/selector\_id.png)
 
 ### Selectori multipli
 
@@ -127,7 +127,7 @@ div.my-class .my-paragraph-class {
 <div>
 ```
 
-Ai remarcat structura? Dacă dorești să alegi/setezi un selector pentru un element `child` \(copil\) care este _înăuntrul_ altui element `parent` \(părinte\), trebuie doar să înlănțui selectorul părintelui și al copilului, separându-le prin spații:
+Ai remarcat structura? Dacă dorești să alegi/setezi un selector pentru un element `child` (copil) care este _înăuntrul_ altui element `parent` (părinte), trebuie doar să înlănțui selectorul părintelui și al copilului, separându-le prin spații:
 
 ```css
 parent child {
@@ -135,25 +135,24 @@ parent child {
 }
 ```
 
-Mai multe despre selectori poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp).
+Mai multe despre selectori poți să afli [aici](https://www.w3schools.com/cssref/css\_selectors.asp).
 
 ## Cum să folosesc CSS?
 
 Sunt 3 metode cum poți stiliza HTML-ul cu CSS:
 
-1. Incluzi CSS-ul într-un fișier extern cu extensia `.css` \(external style sheet\).
+1.  Incluzi CSS-ul într-un fișier extern cu extensia `.css` (external style sheet).
 
-   De asemenea, vei _lega_ documentul CSS `style.css` de cel HTML, folosind tag-ul `<link rel="stylesheet" type="text/css" href="style.css">`. Atrage atenția la atributul `href`---acesta arată calea spre fișierul `.css`.
+    De asemenea, vei _lega_ documentul CSS `style.css` de cel HTML, folosind tag-ul `<link rel="stylesheet" type="text/css" href="style.css">`. Atrage atenția la atributul `href`---acesta arată calea spre fișierul `.css`.
+2.  Folosești tagul `style` în `head`-ul al documentului HTML (internal style sheet):
 
-2. Folosești tagul `style` în `head`-ul al documentului HTML \(internal style sheet\):
-
-   ```css
-   <style> p { text-indent: 25px; } </style>
-   ```
+    ```css
+    <style> p { text-indent: 25px; } </style>
+    ```
 
 În interiorul `style` poți lista mai multe declarații de stil.
 
-1. Folosești atributul `style` pentru fiecare tag din document \(inline style\):
+1. Folosești atributul `style` pentru fiecare tag din document (inline style):
 
 ```markup
 <p style="text-indent: 25px">Hola!</p>
@@ -223,7 +222,7 @@ Acum se va seta _Times New Roman_ pentru elementul tău. În caz că acest font 
 
 ### Mărimea fontului
 
-Pentru a controla mărimea fontului de folos îți va fi proprietatea `font-size`, unde poți indica în pixeli \(`px`\) înălțimea textului:
+Pentru a controla mărimea fontului de folos îți va fi proprietatea `font-size`, unde poți indica în pixeli (`px`) înălțimea textului:
 
 ```css
 h1 {
@@ -231,22 +230,22 @@ h1 {
 }
 ```
 
-Mai multe despre fonturi poți să afli [aici](https://www.w3schools.com/css/css_font.asp).
+Mai multe despre fonturi poți să afli [aici](https://www.w3schools.com/css/css\_font.asp).
 
 ### Alte proprietăți
 
 Dacă dorești să schimbi modul în care arată textul, poți folosi următoarele proprietăți:
 
-| Proprietatea | Descrierea |
-| :--- | :--- |
-| color | Setează culoarea textului |
-| letter-spacing | Mărește sau micșoreaza spațiul între litere |
-| line-height | Setează înălțimea liniei |
-| text-align | Specifică alinierea orizontală a textului |
-| text-decoration | Specifică modul de decorare a textului |
-| text-indent | Setează indentarea primei linii a textului |
+| Proprietatea    | Descrierea                                  |
+| --------------- | ------------------------------------------- |
+| color           | Setează culoarea textului                   |
+| letter-spacing  | Mărește sau micșoreaza spațiul între litere |
+| line-height     | Setează înălțimea liniei                    |
+| text-align      | Specifică alinierea orizontală a textului   |
+| text-decoration | Specifică modul de decorare a textului      |
+| text-indent     | Setează indentarea primei linii a textului  |
 
-Mai multe despre proprietățile CSS care specifică cum va arăta textul poți să afli [aici](https://www.w3schools.com/css/css_text.asp).
+Mai multe despre proprietățile CSS care specifică cum va arăta textul poți să afli [aici](https://www.w3schools.com/css/css\_text.asp).
 
 ## Box model
 
@@ -274,9 +273,9 @@ div {
 }
 ```
 
-Lățimea acestuia va fi de 350px: 320px + 20px \(left + right padding\) + 10px \(left + right border\) + 0px \(left + right margin\).
+Lățimea acestuia va fi de 350px: 320px + 20px (left + right padding) + 10px (left + right border) + 0px (left + right margin).
 
-Despre parametrii proprietăților din box model poți citi suplimentar [aici](https://www.w3schools.com/css/css_margin.asp) și [aici](https://www.w3schools.com/css/css_padding.asp).
+Despre parametrii proprietăților din box model poți citi suplimentar [aici](https://www.w3schools.com/css/css\_margin.asp) și [aici](https://www.w3schools.com/css/css\_padding.asp).
 
 ## Poziționare
 
@@ -295,7 +294,7 @@ div.static {
 }
 ```
 
-![Static element](../.gitbook/assets/static_element.png)
+![Static element](../.gitbook/assets/static\_element.png)
 
 **relative** _–_ elementul este poziționat relativ față de poziția lui inițială, însa ocupa spațiul rezervat;
 
@@ -307,7 +306,7 @@ div.relative {
 }
 ```
 
-![Relative element](../.gitbook/assets/relative_element.png)
+![Relative element](../.gitbook/assets/relative\_element.png)
 
 **absolute** – elementul este poziționat absolut față de primul părinte cu poziția _relative_ sau, dacă acesta nu este, față de elementul body al documentului HTML;
 
@@ -328,9 +327,9 @@ div.absolute {
 }
 ```
 
-![Absolute element](../.gitbook/assets/absolute_element.png)
+![Absolute element](../.gitbook/assets/absolute\_element.png)
 
-**fixed** __– specifică poziționarea fixă pe pagină, asta înseamnă că elementul va rămâne constant pe ecran, chiar dacă facem scroll.
+**fixed** __ – specifică poziționarea fixă pe pagină, asta înseamnă că elementul va rămâne constant pe ecran, chiar dacă facem scroll.
 
 ```css
 div.fixed {
@@ -342,7 +341,7 @@ div.fixed {
 }
 ```
 
-![Fixed element](../.gitbook/assets/fixed_element.png)
+![Fixed element](../.gitbook/assets/fixed\_element.png)
 
 ## Float
 
@@ -367,13 +366,13 @@ Astfel, elementele HTML cu proprietatea `float: left` se vor aranja orizontal un
 <div class='float'></div>
 ```
 
-![Float element](../.gitbook/assets/float_elements.png)
+![Float element](../.gitbook/assets/float\_elements.png)
 
 Odată cu libertatea de a plasa elementele pe orizontală apare problema cu elementele statice care apar mai jos în documentul HTML. În mod special, dacă acestea sunt statice, ele se vor suprapune cu elementele plutitoare.
 
 De exemplu, dacă la exemplul de mai sus adăugăm un element  după elementele cu clasa _float_, el se va suprapune cu elementele plutitoare.
 
-![Fixed element](../.gitbook/assets/fixed_element%20%281%29.png)
+![Fixed element](<../.gitbook/assets/fixed\_element (1).png>)
 
 Pentru a evita această suprapunere trebuie să atribuim elementului care urmează după elementele plutitoare proprietatea `clear: both`:
 
@@ -399,7 +398,7 @@ Pentru a evita această suprapunere trebuie să atribuim elementului care urmeaz
 <div class='element'></div>
 ```
 
-![Clear element](../.gitbook/assets/float_elements%20%281%29.png)
+![Clear element](<../.gitbook/assets/float\_elements (1).png>)
 
 ## Pseudo-clase și pseudo-elemente
 
@@ -515,17 +514,17 @@ Container-ul setat pe **display: flex** face ca elementele child să aibă aceea
 
 Nu este nevoie să specificăm altceva pentru a obține elemente child de aceeași înălțime. Asta pentru că de default proprietatea **align-items** este setată pe valoarea **baseline**, ceea ce înseamnă că elementele child iau înălțimea maximă în interiorul părintelui.
 
-În flexbox ajunge să setăm container-ului **direcția de coloană** și sî **centrăm elementele pe axa principală și transversală**:  
-_`display: flex;  
-flex-direction: column;  
-justify-content: center;  
-align-items: center;`_
+În flexbox ajunge să setăm container-ului **direcția de coloană** și sî **centrăm elementele pe axa principală și transversală**:\
+_`display: flex;`_\
+_`flex-direction: column;`_\
+_`justify-content: center;`_\
+_`align-items: center;`_
 
-`flex-direction` proprietate specifică direcția elementelor flexibile din interiorul containerului flexibil. Valoarea implicită a `flex-direction` este `row` \( de la stânga la dreapta, de sus în jos\).
+`flex-direction` proprietate specifică direcția elementelor flexibile din interiorul containerului flexibil. Valoarea implicită a `flex-direction` este `row` ( de la stânga la dreapta, de sus în jos).
 
 Celelalte valori sunt după cum urmează:
 
-* `row-reverse` - În cazul în scris-mode \(direction\) este la stânga la dreapta, elementele flex vor fi dispuse la dreapta la stânga
+* `row-reverse` - În cazul în scris-mode (direction) este la stânga la dreapta, elementele flex vor fi dispuse la dreapta la stânga
 * `column` - În cazul în care sistemul de scriere este orizontală, elementele flex vor fi dispuse vertical
 * `column-reverse` - La fel ca și coloană, dar inversat
 
@@ -546,7 +545,7 @@ Valorile posibile sunt după cum urmează:
 * `stretch` - valoarea implicită. Elementele sunt întinse pentru a se potrivi containerului
 * `flex-start` - Elementele sunt poziționate în partea superioară a containerului
 * `flex-end` - Elementele sunt poziționate în partea inferioară a recipientului
-* `center` - Elementele sunt poziționate în centrul containerului \(vertically\)
+* `center` - Elementele sunt poziționate în centrul containerului (vertically)
 * de `baseline` - Elementele sunt poziționate la linia de bază a containerului
 
 `flex-wrap` proprietate specifică dacă elementele flex ar trebui să înveliți sau nu, în cazul în care nu există spațiu suficient pentru ei pe o singură linie flex.
@@ -701,25 +700,25 @@ Specificitatea determină care stiluri trebuie aplicate atunci când au fost apl
 
 Pentru a calcula specificitatea unui selectore putem folosi tabelul de mai jos.
 
-| Tag | 1 punct |
-| :--- | :--- |
-| Clasă | 10 puncte |
-| ID | 100 puncte |
+| Tag    | 1 punct     |
+| ------ | ----------- |
+| Clasă  | 10 puncte   |
+| ID     | 100 puncte  |
 | Inline | 1000 puncte |
 
 ### Un exemplu?
 
-| **Selector** | **Specificitate** |
-| :--- | :--- |
-| \* { } | 0 \(selector universal\) |
-| li { } | 1 \(un tag\) |
-| ul li { } | 2 \(două tag-uri\) |
-| ul ol li.red { } | 13 \(o clasă și trei tag-uri\) |
-| li.red.level { } | 21 \(două clase și un tag\) |
-| style=“” | 1000 puncte \(inline / pe tag\) |
-| .sith | 10 \(o clasă\) |
-| \#sith | 100 \(un ID\) |
-| body \#darkside .sith p { } | 112 \(un ID, o clasă și două tag-uri\) |
+| **Selector**               | **Specificitate**                    |
+| -------------------------- | ------------------------------------ |
+| \* { }                     | 0 (selector universal)               |
+| li { }                     | 1 (un tag)                           |
+| ul li { }                  | 2 (două tag-uri)                     |
+| ul ol li.red { }           | 13 (o clasă și trei tag-uri)         |
+| li.red.level { }           | 21 (două clase și un tag)            |
+| style=“”                   | 1000 puncte (inline / pe tag)        |
+| .sith                      | 10 (o clasă)                         |
+| #sith                      | 100 (un ID)                          |
+| body #darkside .sith p { } | 112 (un ID, o clasă și două tag-uri) |
 
 În acest [exemplu](https://jsfiddle.net/gxep08g0/) putem vedea cum 6 clase nu sunt în stare să „bată” un singur ID.
 
@@ -733,4 +732,3 @@ Noi am pregătit un [joc interactiv](http://apps.vsart.me/csswar/) care ilustrea
 * [CodeCademy](https://www.codecademy.com/)
 * [CSS Tricks](https://css-tricks.com/)
 * [Workshop](https://github.com/girlsgoit/CSS-Workshop/archive/master.zip)
-

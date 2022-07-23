@@ -1,37 +1,23 @@
 # Rest api POST
 
-{% api-method method="post" host="https://ggit.mysevidu.com" path="/api/posts" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://ggit.mysevidu.com" path="/api/posts" method="post" summary="Get Cakes" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-form-data-parameters %}
-{% api-method-parameter name="participanta" type="string" required=true %}
+{% swagger-parameter in="body" name="participanta" type="string" %}
 Numele participantei care a facut postarea
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="titlu" type="string" required=true %}
+{% swagger-parameter in="body" name="titlu" type="string" %}
 Titlul postarii
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="descriere" type="string" required=true %}
+{% swagger-parameter in="body" name="descriere" type="string" %}
 Corpul postarii
-{% endapi-method-parameter %}
-{% endapi-method-form-data-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```javascript
 {
     "participanta": "Ana Maria",
@@ -39,53 +25,33 @@ Cake successfully retrieved.
     "descriere": "Descrierea postarii"
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="Could not find a cake matching this query." %}
 ```javascript
 500
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="http://ggit.mysevidu.com" path="/api/posts" %}
-{% api-method-summary %}
+{% swagger baseUrl="http://ggit.mysevidu.com" path="/api/posts" method="get" summary="" %}
+{% swagger-description %}
 
-{% endapi-method-summary %}
+{% endswagger-description %}
 
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-form-data-parameters %}
-{% api-method-parameter name="participanta" type="string" required=false %}
+{% swagger-parameter in="body" name="participanta" type="string" %}
 numele participantei
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
+{% swagger-parameter in="body" name="" type="string" %}
 Titlul postarii
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
+{% swagger-parameter in="body" name="" type="string" %}
 Descrierea postarii
-{% endapi-method-parameter %}
-{% endapi-method-form-data-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "id":1
@@ -94,10 +60,6 @@ Descrierea postarii
     "descriere": "descrierea articolului"
 },
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 
