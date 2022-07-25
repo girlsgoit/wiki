@@ -1,6 +1,6 @@
 # Cum rezolvi un task la proiect
 
-1\. Accesează link-ul din care se va crea sandbox-ul, ex: [https://githubbox.com/girlsgoit/notes-2021](https://githubbox.com/girlsgoit/notes-2021)
+1\. Accesează link-ul din care se va crea sandbox-ul, ex: [https://githubbox.com/girlsgoit/notes-2022](https://githubbox.com/girlsgoit/notes-2022)
 
 2\. După ce s-a încărcat pagina de la CodeSandbox, click pe **Fork**
 
