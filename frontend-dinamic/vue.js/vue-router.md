@@ -16,15 +16,15 @@ Vue router e o dependență separată față de Vue.js, pentru a-l putea folosi,
 
 Instalrea lui `vue-router` în code sandbox e destul de simplă. Pentru asta trebuie să deschidem IDE-ul la **`Explorer`**, și să apăsăm butonul **`Add dependency`**, din category Dependencies
 
-![](../../.gitbook/assets/image%20%28331%29.png)
+![](<../../.gitbook/assets/image (331).png>)
 
 In acest moment se deschide un modal, care ne permite sa căutăm și instalăm dependențe. Scriem vue-router în câmpul de căutare și dăm click să instalăm dependeța care zice ca-i „Official router vor Vue.js 2”
 
-![](../../.gitbook/assets/image%20%28327%29.png)
+![](<../../.gitbook/assets/image (327).png>)
 
 Atît! După acest pas ar trebui să avem **`vue`** și **`vue-router`** în lista de Dependencies:
 
-![](../../.gitbook/assets/image%20%28328%29.png)
+![](<../../.gitbook/assets/image (328).png>)
 
 ### Instalare locală
 
@@ -44,7 +44,7 @@ Atît! După acest pas puteți utiliza **`vue-router`** în proiectul vostru loc
 
 ## Configurare
 
-Pentru a putea folosi routerul vue în aplicația noastră, mai întâi trebuie să-l configurăm să fie folosit. 
+Pentru a putea folosi routerul vue în aplicația noastră, mai întâi trebuie să-l configurăm să fie folosit.&#x20;
 
 Pentru asta modificăm fișierul **`main.js`**, care fișierul JavaScript principal de intrare și configurăm aplicația să-l folosescă:
 
@@ -69,7 +69,7 @@ Liniile importante aici sunt linia **`2`** și **`6`**, care importă vue-router
 
 ### Router view
 
-Pentru a defini paginile noastre prin router, avem nevoie să pregătim un pic aplicația noastră. 
+Pentru a defini paginile noastre prin router, avem nevoie să pregătim un pic aplicația noastră.&#x20;
 
 Vom folosi **`App.vue`** ca punctul principal al aplicației, și înăuntrul lui trebuie să definim locul unde vom randa paginile concrete accesate prin router. Facem asta cu ajutorul componentei **`router-view`**
 
@@ -85,7 +85,7 @@ Vom folosi **`App.vue`** ca punctul principal al aplicației, și înăuntrul lu
 Putem adăuga alte elemente pe lângă `router-view`, și ele vor apărea în toate paginile, indiferent de calea pe care suntem. Vom folosi asta un pic mai târziu când vom defini link-urile de navigare
 {% endhint %}
 
-**`router-view`** zice lui Vue.js că în acest spațiu va trebui sa randeze componentele care vor corespunde paginii care vrem să o accesăm. 
+**`router-view`** zice lui Vue.js că în acest spațiu va trebui sa randeze componentele care vor corespunde paginii care vrem să o accesăm.&#x20;
 
 ### Pagina principală
 
@@ -111,13 +111,11 @@ export default {
 La momentul actual, această componentă nu e folosită nicăieri, deci nimeni nu o va putea vizualiza. Pentru a o defini ca pagina când utilizatorii acceseaza adresa de bază, trebuie să configurăm prima cale în main.js:
 
 ```javascript
-import Vue from "vue";
-import VueRouter from "vue-router";
+import { createApp } from "vue";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import App from "./App.vue";
 import Home from "./Home.vue";
-
-Vue.use(VueRouter);
 
 // Aici vom defini toate routes din aplicatia noastra
 const routes = [
@@ -128,22 +126,19 @@ const routes = [
 
 
 // definim router-ul nostru, in care adaugam routes definite mai sus
-const router = new VueRouter({
-  mode: "history", // ne ajuta sa avem URL mai curate (fara #)
+const router = new createRouter({
+  history: createWebHashHistory(),
   routes: routes
 });
 
 
-// includem router-ul in aplicatia noastra Vue (linia 24)
-new Vue({
-  render: h => h(App),
-  router: router
-}).$mount("#app");
+// includem router-ul in aplicatia noastra Vue
+createApp(App).use(router).mount("#app");
 ```
 
 În acest moment, dacă încărcăm pagina noastră principală, vedem conținutul componentei **`Home.vue`**
 
-![Pagina Home](../../.gitbook/assets/image%20%28329%29.png)
+![Pagina Home](<../../.gitbook/assets/image (329).png>)
 
 V-ați putea intreba - până acum am scris o mulțime de cod pentru a arăta un simplu text, cu același succes am fi putut scrie tot in `App.vue` direct. Pentru ce toată complicarea asta?
 
@@ -190,7 +185,7 @@ const routes = [
 
 În așa mod putem accesa pagina about pe adresa URL respectivă:
 
-![Pagina About](../../.gitbook/assets/image%20%28325%29.png)
+![Pagina About](<../../.gitbook/assets/image (325).png>)
 
 În același mod putem adăuga oricâte pagini vrem, pur și simplu creând componente, și introducând calea lor în **`routes`**.
 
@@ -235,17 +230,17 @@ E important ca această cale globală să fie declarată la sfârșit, de altfel
 
 În acest mod când utilizatorul încearcă să acceseze orice URL necunoscut, va fi redirecționat la pagina **not found**.
 
-![Pagina Not Found](../../.gitbook/assets/image%20%28332%29.png)
+![Pagina Not Found](<../../.gitbook/assets/image (332).png>)
 
 ### Pagini dinamice
 
-Uneori avem nevoie de pagini care să aibă informație dinamică in URL. Un exemplu bun e o pagină ce ar afișa un articol. 
+Uneori avem nevoie de pagini care să aibă informație dinamică in URL. Un exemplu bun e o pagină ce ar afișa un articol.&#x20;
 
-În acest caz nu creăm câte o componentă separată pentru fiecare articol, ci creăm o singură componentă, și folosim URL-uri dinamice pentru a-i spune componentei care articol anume să-l încarce. 
+În acest caz nu creăm câte o componentă separată pentru fiecare articol, ci creăm o singură componentă, și folosim URL-uri dinamice pentru a-i spune componentei care articol anume să-l încarce.&#x20;
 
-Un exemplu de URL dinamic ar putea fi: **`/articles/article-2`** 
+Un exemplu de URL dinamic ar putea fi: **`/articles/article-2`**&#x20;
 
-În acest caz componenta ar trebui să citească textul după **`/articles/`** \(în cazul nostru - **`article-2`**\) și să încarce articolul cu acest identificator.
+În acest caz componenta ar trebui să citească textul după **`/articles/`** (în cazul nostru - **`article-2`**) și să încarce articolul cu acest identificator.
 
 Pentru a crea o componentă cu URL dinamic vom merge în direcție inversă - mai intâi creăm un route cu un segment dinamic în ea:
 
@@ -294,20 +289,20 @@ export default {
 ```
 
 {% hint style="info" %}
-**`this.$route.params.id`** nu e o bucată de cod aleatoare: 
+**`this.$route.params.id`** nu e o bucată de cod aleatoare:&#x20;
 
 * **`$route`** - avem acces la el în orice pagină
 * **`.params`** - toti parametrii dinamici a route-ului curent
 * **`.id`** - același nume care l-am definit in calea dinamică din `main.js`
 {% endhint %}
 
-Astfel putem accesa un URL dinamic \(care începe cu /article/\) și pagina noastră îl va putea citi:
+Astfel putem accesa un URL dinamic (care începe cu /article/) și pagina noastră îl va putea citi:
 
-![Pagina care deschide articolul cu id=articol-23](../../.gitbook/assets/image%20%28326%29.png)
+![Pagina care deschide articolul cu id=articol-23](<../../.gitbook/assets/image (326).png>)
 
 ## Link-uri de navigare
 
-Până acum am definit o serie de pagini care pot fi accesate direct prin URL. O parte foarte importantă a oricărei aplicații este menu de navigare, care ne permite prin cateva link-uri să navigăm prin paginile noastre. 
+Până acum am definit o serie de pagini care pot fi accesate direct prin URL. O parte foarte importantă a oricărei aplicații este menu de navigare, care ne permite prin cateva link-uri să navigăm prin paginile noastre.&#x20;
 
 Deobicei vrem să creăm menu-ul de navigare într-o componentă care știm că va fi randată în toate paginile unde vrem să arătăm acest menu. În cazul nostru un candidat bun e **`App.vue`**, care e punctul de intrare si e întotdeauna prezent.
 
@@ -360,11 +355,11 @@ din cauza că folosim componenta **`router-link`**, putem să stilizăm clasa **
 
 Rezultatul care îl obținem în browser cu această modificare:
 
-![Pagina About este activ&#x103;](../../.gitbook/assets/image%20%28333%29.png)
+![Pagina About este activă](<../../.gitbook/assets/image (333).png>)
 
 ## Navigare programatică
 
-Putem naviga din cod direct către o pagină utilizând variabila **`$router`** la care avem acces din orice pagină. 
+Putem naviga din cod direct către o pagină utilizând variabila **`$router`** la care avem acces din orice pagină.&#x20;
 
 Spre exemplu putem adăuga un buton în componenta **`Article.vue`**, care ne către pagina primară:
 
@@ -404,16 +399,14 @@ Astfel am implementat câteva pagini și un menu de navigare care ne permite să
 **`main.js`**:
 
 ```javascript
-import Vue from "vue";
-import VueRouter from "vue-router";
+import { createApp } from "vue";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import App from "./App.vue";
 import Home from "./Home.vue";
 import About from "./About.vue";
 import Article from "./Article.vue";
 import NotFound from "./NotFound.vue";
-
-Vue.use(VueRouter);
 
 const routes = [
   { path: "/", component: Home },
@@ -422,15 +415,12 @@ const routes = [
   { path: "*", component: NotFound }
 ];
 
-const router = new VueRouter({
-  mode: "history", // ne ajuta sa avem URL mai curate (fara #)
+const router = createRouter({
+  history: createWebHashHistory(),
   routes: routes
 });
 
-new Vue({
-  render: h => h(App),
-  router: router
-}).$mount("#app");
+createApp(App).use(router).mount("#app");
 ```
 
 **`App.Vue`**:
@@ -518,5 +508,4 @@ export default {
 
 Celelalte componente sunt doar template gol fără nimic semnificativ în ele, doar poziția lor în folder e importantă:
 
-![Structura proiectului de navigare](../../.gitbook/assets/image%20%28330%29.png)
-
+![Structura proiectului de navigare](<../../.gitbook/assets/image (330).png>)
