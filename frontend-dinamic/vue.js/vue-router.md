@@ -46,19 +46,15 @@ Atît! După acest pas puteți utiliza **`vue-router`** în proiectul vostru loc
 
 Pentru a putea folosi routerul vue în aplicația noastră, mai întâi trebuie să-l configurăm să fie folosit.&#x20;
 
-Pentru asta modificăm fișierul **`main.js`**, care fișierul JavaScript principal de intrare și configurăm aplicația să-l folosescă:
+Pentru asta modificăm fișierul **`main.js`**, care fișierul JavaScript principal de intrare și configurăm aplicația să-l folosească:
 
 ```javascript
-import Vue from "vue";
-import VueRouter from 'vue-router'
+import { createApp } from "vue";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import App from "./App.vue";
 
-Vue.use(VueRouter)
-
-new Vue({
-  render: h => h(App)
-}).$mount("#app");
+createApp(App).use(router).mount("#app");
 ```
 
 {% hint style="info" %}
@@ -112,7 +108,7 @@ La momentul actual, această componentă nu e folosită nicăieri, deci nimeni n
 
 ```javascript
 import { createApp } from "vue";
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 import App from "./App.vue";
 import Home from "./Home.vue";
@@ -127,7 +123,7 @@ const routes = [
 
 // definim router-ul nostru, in care adaugam routes definite mai sus
 const router = new createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: routes
 });
 
@@ -220,7 +216,8 @@ import NotFound from "./NotFound.vue";
 const routes = [
   { path: "/", component: Home },
   { path: "/about", component: About },
-  { path: "*", component: NotFound }
+  { path: "/not-found", component: ErrorPage },
+  { path: "/:catchAll(.*)", redirect: "/not-found" }
 ];
 ```
 
